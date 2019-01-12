@@ -1,0 +1,47 @@
+<div class="container" style="margin-top:50px;padding:35px;">
+
+	    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+		      <h1 class="display-4">Turnos</h1>
+		      <p class="lead">Ten cuidado al escribir los turnos de tu trabajador, cuida que se cumpla el horario pactado en el contrato.</p>
+	    </div>
+
+<hr>
+
+
+
+    <form #forma='ngForm' (ngSubmit)="guardar(forma)">
+
+
+<div class="card" style="padding:50px;">
+  <div class="card-body">
+     <div class="form-group" *ngFor="let dia of dias ;let i = index">
+		    <label><strong>{{ dia | uppercase}}</strong></label>
+		         <div class="form-row">       	
+				    <div class="form-group col-md-6">
+				      <label>Entrada</label>
+				      <input name="{{i}}e" type="time" class="form-control" [(ngModel)]="datosTurnosFijoValuesImpar[i]">
+				    </div>
+				    <div class="form-group col-md-6">
+				      <label>Salida</label>
+				      <input name="{{i}}s" type="time" class="form-control" [(ngModel)]="datosTurnosFijoValuesPar[i]">
+				    </div>
+		        </div>
+		  </div>
+  </div>
+<input type="hidden" name="trabajador_id" [ngModel]="trabajador_id">
+    <div class="text-center">
+	 <button type="submit" class="btn btn-outline-primary">Guardar Horario</button>
+	</div>
+
+</div>
+		
+
+ 
+
+		  	 
+
+    </form>
+
+
+
+</div>

@@ -1,0 +1,47 @@
+<div class="container" style="margin-top:50px;padding:50px">
+            <div class="row justify-content-center">
+                <h3>Edición datos generales </h3>
+            </div>
+
+            <div class="row justify-content-center">
+                <h3><small class="text-muted">Los siguientes campos serán los oficiales para tu trabajador.</small></h3>
+            </div>
+            <br>
+
+            <div class="row justify-content-center">
+                    <div class="col-8">
+
+                            <form #forma='ngForm' (ngSubmit)="guardar(forma)">
+                                <div class="form-group" *ngFor="let s of Empleado; let i = index" [style.display]="s?.hidden  ? 'none' : 'block' ">
+
+                                    <label>{{ s.label }}</label>
+
+                                        <div *ngIf="!s?.select && s?.hidden !=true ">
+                                                <input  [type]="s.tipo" [name]="s.name" class="form-control" [(ngModel)]="s.value"  #qtyInput="ngModel"  required >
+                                                <small *ngIf="s?.info" class="form-text text-muted">{{s.info}}.</small>
+
+
+                                                <div [hidden]="qtyInput.valid || qtyInput.pristine" class="alert alert-danger">
+                                                  Este campo es requerido
+                                                </div>
+                                        </div>
+
+                                        <div *ngIf="s?.hidden">
+                                            <input [hidden]="s.hidden" [name]="s.name"  [(ngModel)]="s.valor" [value]="s.valor" >
+                                        </div>
+
+
+                                        <div *ngIf="s.select">
+                                            <select  class="form-control" [name]="s.name" [(ngModel)]="s.value"  required>
+                                                 <option [value]="o" *ngFor="let o of s.opciones">{{ o }}</option>
+                                            </select>
+                                        </div>
+
+                                </div>
+
+                                <button   type="submit" class="btn btn-outline-danger btn-lg">Actualizar </button>
+                                <hr>
+                            </form>
+                    </div>
+            </div>
+</div>

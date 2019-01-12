@@ -1,0 +1,127 @@
+<ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Perfil</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Opciones</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" [routerLink]="['./IngresoSucursal']">Ingresar Sucusal</a>
+                <a class="dropdown-item" [routerLink]="['./Reportes']">Visualizar Reportes</a>
+                <a class="dropdown-item" [routerLink]="['./SueldosComponent']">Sueldos</a>
+                <a class="dropdown-item" [routerLink]="['./Cargos']">Ingresar Cargos</a>
+                <!--<a class="dropdown-item" [routerLink]="['./PerfilTrabajador']">Something else here</a> -->
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" [routerLink]="['./Clientes']">Clientes</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link"  [routerLink]="['./ConfiguracionComponent']">Configuracion</a>
+        </li>
+    
+    </ul>
+<br>
+
+<div class="container bootstrap snippet animated fadeIn">
+    <div class="row">
+  		<div class="col-sm-10"><h6 class="card-subtitle mb-2 text-muted">{{ nombreEmpresa | uppercase }}</h6></div>
+        <div class="col-sm-2"><!--  <a href="/users" class="pull-right">
+          <img title="profile image" width="150px" class="img-circle img-responsive" src="./assets/img/logoalternativo.png"></a>--></div>
+    </div>
+    <div class="row">
+  		<div class="col-sm-3"><!--left col-->
+              
+
+      <div class="text-center">
+       <!-- <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" alt="avatar">-->
+        <img [src]="url" class="avatar img-circle img-thumbnail" alt="avatar">
+
+        <h6>Logo Corporativo</h6>
+        <button (click)="FuncionActualizarFoto()" type="button" class="btn btn-outline-primary">Actualizar</button>
+      </div><br>
+
+               
+       <!--   <div class="panel panel-default">
+            <div class="panel-heading">Website <i class="fa fa-link fa-1x"></i></div>
+            <div class="panel-body"><a href="http://bootnipets.com">bootnipets.com</a></div>
+          </div>-->
+          
+          
+          <ul class="list-group">
+            <li class="list-group-item text-muted">Plan {{Datos?.info.tipoPlan}} <i class="fa fa-dashboard fa-1x"></i></li>
+            <li class="list-group-item text-right"><span class="pull-left"><strong>Trabajadores</strong></span> {{numeroEmpleados}}</li>
+           <!-- <li class="list-group-item text-right"><span class="pull-left"><strong>Likes</strong></span> 13</li>
+            <li class="list-group-item text-right"><span class="pull-left"><strong>Posts</strong></span> 37</li>
+            <li class="list-group-item text-right"><span class="pull-left"><strong>Followers</strong></span> 78</li>-->
+          </ul> 
+               
+       <!--   <div class="panel panel-default">
+            <div class="panel-heading">Social Media</div>
+            <div class="panel-body">
+            	<i class="fa fa-facebook fa-2x"></i> <i class="fa fa-github fa-2x"></i> <i class="fa fa-twitter fa-2x"></i> <i class="fa fa-pinterest fa-2x"></i> <i class="fa fa-google-plus fa-2x"></i>
+            </div>
+          </div>-->
+          
+        </div><!--/col-3-->
+    	<div class="col-sm-9">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                        </li>
+                      <!--  <li class="nav-item">
+                          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+                        </li>-->
+                      </ul>
+              
+          <div class="tab-content">
+            <div class="tab-pane active" id="home">
+                <hr>
+                  <form #forma='ngForm' (ngSubmit)="guardar(forma)"  class="form" >
+                      <div class="form-group" *ngFor="let s of Cliente; let i = index" [style.display]="s?.hidden  ? 'none' : 'block' ">
+
+                                    <label>{{ s.label }}</label>
+
+                                        <div *ngIf="!s?.select && s?.hidden !=true ">
+                                                <input  [type]="s.tipo" [name]="s.name" class="form-control" [(ngModel)]="s.value"  #qtyInput="ngModel"  required >
+                                                <small *ngIf="s?.info" class="form-text text-muted">{{s.info}}.</small>
+
+
+                                                <div [hidden]="qtyInput.valid || qtyInput.pristine" class="alert alert-danger">
+                                                  Este campo es requerido
+                                                </div>
+                                        </div>
+
+                                        <div *ngIf="s?.hidden">
+                                            <input [hidden]="s.hidden" [name]="s.name"  [(ngModel)]="s.valor" [value]="s.valor" >
+                                        </div>
+
+
+                                        <div *ngIf="s.select">
+                                            <select  class="form-control" [name]="s.name" [(ngModel)]="s.value"  required>
+                                                 <option [value]="o" *ngFor="let o of s.opciones">{{ o }}</option>
+                                            </select>
+                                        </div>
+
+                                </div>
+
+                      
+                      <div class="form-group">
+                           <div class="col-xs-12">
+                                <br>
+                              	<button class="btn btn-lg btn-success" type="submit"><i class="glyphicon glyphicon-ok-sign"></i> Actualizar</button>
+                              <!-- 	<button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i> Reset</button> -->
+                            </div>
+                      </div>
+              	</form>
+              
+              <hr>
+              
+             </div><!--/tab-pane-->
+        
+          </div><!--/tab-content-->
+
+        </div><!--/col-9-->
+    </div><!--/row-->
+                                                      

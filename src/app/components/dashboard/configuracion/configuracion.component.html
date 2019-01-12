@@ -1,0 +1,42 @@
+<body class="text-center" style="padding:40px;">
+
+  <div class="container">
+     <h2>En éste formulario deberás ingresar la clave default para nuevas sesiones de trabajadores y para cada instalación.</h2>
+  </div>
+
+  <hr>  
+
+  <form #forma='ngForm' (ngSubmit)="guardar(forma)">
+      <div class="form-group" *ngFor="let clave of claves; let i = index" [style.display]="s?.hidden  ? 'none' : 'block' ">
+
+          <label><strong>{{ clave.label }}</strong></label>
+
+              <div *ngIf="!s?.select && s?.hidden !=true ">
+                      <input  [type]="clave.tipo" [name]="clave.rol" class="form-control" [(ngModel)]="clave.clave"  #qtyInput="ngModel"  required >
+                      <small *ngIf="clave?.info" class="form-text text-muted">{{clave.info}}.</small>
+
+
+                      <div [hidden]="qtyInput.valid || qtyInput.pristine" class="alert alert-danger">
+                        Este campo es requerido
+                      </div>
+              </div>
+
+              <div *ngIf="clave?.hidden">
+                  <input [hidden]="clave.hidden" [name]="clave.rol"  [(ngModel)]="clave.valor" [value]="clave.valor" >
+              </div>
+
+
+              <div *ngIf="clave.select">
+                  <select  class="form-control" [name]="clave.rol" ngModel required>
+                      <option [value]="o" *ngFor="let o of clave.opciones">{{ o }}</option>
+                  </select>
+              </div>
+
+      </div>
+
+      <button   type="submit" class="btn btn-outline-primary">Enviar </button>
+      <hr>
+  </form>
+
+</body>
+
