@@ -2,13 +2,13 @@
 <div class="row justify-content-center container-fluid animacion fadeIn" style="margin-top:30px;padding:50px">
 
     <div class="col-sm-3"> <!-- Lateral con algunas notificaciones -->
-      <h5 class="card-title">Notificaciones</h5>
-      <br>
+      <h6 class="card-title"> <i class="fas fa-bell"></i> NOTIFICACIONES</h6>
+      
       <hr>
 
 
 
-  <h4 class="card-subtitle mb-2 text-muted" style="margin-bottom: 20px !important">Trabajando Ahora</h4>
+  <h4 class="card-subtitle mb-2 text-muted" style="font-family: 'Dosis', sans-serif !important; margin-bottom: 20px !important">TRABAJANDO AHORA</h4>
 
         <ul class="list-group" *ngIf="actualmenteTrabajando?.info !== undefined">
           
@@ -36,7 +36,7 @@
 
 
 
-       <h4 class="card-subtitle mb-2 text-muted" style="margin-bottom: 20px !important">Analisis GPS</h4>
+       <h4 class="card-subtitle mb-2 text-muted" style="font-family: 'Dosis', sans-serif !important; margin-bottom: 20px !important">ANALISIS GPS</h4>
 
         <ul class="list-group" *ngIf="ultimosIngresos?.info.length !== 0 ">
           
@@ -51,7 +51,7 @@
         </ul>
 
         <br>
-        <h4 class="card-subtitle mb-2 text-muted" style="margin-bottom: 20px !important">Analisis Biométrico</h4>
+        <h4 class="card-subtitle mb-2 text-muted" style="font-family: 'Dosis', sans-serif !important; margin-bottom: 20px !important">ANÁLISIS BIÓMETRICO</h4>
         <ul class="list-group" *ngIf="ultimosIngresos?.info.length !== 0 ">
           
           <ng-container *ngFor="let ingresos of ultimosIngresos.info" >

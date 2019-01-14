@@ -71,10 +71,14 @@ export class RepactualmentetrabajandoComponent implements OnInit {
    getNumeroTrabajador(id){
      console.log(id)
      for (var i = 0; i < this.datosTrabajadores.length; ++i) {
-        if( this.datosTrabajadores[i].id === ( id * 1 )  && this.datosTrabajadores[i].fono1){
-          return this.datosTrabajadores[i].fono1
+        if( this.datosTrabajadores[i].id === ( id * 1 )    ){
+            if(this.datosTrabajadores[i].fono1 !== null){
+              return this.datosTrabajadores[i].fono1
+              }else{
+                 return '';
+              }
         }else{
-          return ''
+         
         } 
      }
 

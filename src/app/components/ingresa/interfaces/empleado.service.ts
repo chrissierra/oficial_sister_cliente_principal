@@ -40,7 +40,7 @@ public editarEmpleado(empleado){
     this.array_empleado[34].valor=empleado.id
     this.array_empleado[36].value=empleado.status
     this.array_empleado[37].value=empleado.rol
-
+    this.array_empleado[38].value=empleado.fono1
     return this.array_empleado;
 
 }
@@ -394,6 +394,17 @@ public array_empleado: any[] = [
       value:''
 
     },
+
+         { 
+     label: 'Teléfono Contacto',  //38
+      name: 'fono1',
+      info: 'Escribe un número telefónico',
+      tipo: 'text',
+      select: false,
+      value:''
+
+    },
+
 
   ];
 

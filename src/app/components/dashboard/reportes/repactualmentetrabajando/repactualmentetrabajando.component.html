@@ -5,7 +5,7 @@
 		<button class="btn btn-outline-success btn-block" (click)="actualizarTabla()" >Visualizar</button>
 	</div>
 
-	
+		
 
 		<div class="m-3">
 			  		<ul class="list-group" *ngIf="Trabajadores.info.length !== 0">
@@ -35,11 +35,15 @@
                                   </button>
                                 </div>
                                 <div class="modal-body">
-
-
+                                	<div *ngIf="DatosSucursal['telefono'].length ===0">
+                                		<p class="text-muted">Tu sucursal no tiene número telefónico asignado</p>
+                                	</div>
+                                	<div *ngIf="DatosSucursal['telefono'].length > 0">
                                 	<p class="text-muted">Número Sucursal: </p>
   									&nbsp;<a href="tel:{{DatosSucursal['telefono']}}">Llamar {{DatosSucursal['telefono']}} <i class="fas fa-phone"></i></a>
-  									{{getNumeroTrabajador(actualmenteTrabajando.id_trabajador)}}
+                                	</div>
+   
+  									
 <hr>
   									<p 
 	  									*ngIf="getNumeroTrabajador(actualmenteTrabajando.id_trabajador)" 
