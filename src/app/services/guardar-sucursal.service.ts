@@ -11,6 +11,10 @@ export class GuardarSucursalService {
   	return this.http.post(this.rutasService_.rutas['GuardarSucursal'], data);
   }
 
+  update_sucursales(data){
+  	return this.http.post(this.rutasService_.rutas['update_sucursales'], data);
+  }
+
 
     get_sucursales_servidor(data){
   	return this.http.post(this.rutasService_.rutas['get_sucursales'], data);

@@ -1,6 +1,5 @@
 import { Action } from '@ngrx/store';
 
-
 export const ACTUALIZARURL = '[Marcaje] ActualizarURl';
 export const ACTUALIZARCTE = '[Marcaje] ActualizarCte';
 export const ACTUALIZARSUCURSAL = '[Marcaje] ActualizarSucursal';
@@ -16,7 +15,7 @@ export const ACTUALIZARHITO  = '[Marcaje] ActualizarHito';
 export const ACTUALIZARMANDANTE  = '[Marcaje] ActualizarMandante';
 export const ACTUALIZARCOMENTARIO  = '[Marcaje] ActualizarComentario';
 
-
+export const ACTUALIZARLOCACION  = '[Marcaje] ActualizarLocacion';
 export const ACTUALIZARNOMBRETRABAJADOR = '[Marcaje] ActualizarNombreTrabajador';
 
 
@@ -99,6 +98,12 @@ export class ACTUALIZARCOMENTARIOAction implements Action {
     constructor( public payload: any ) { }
 }
 
+export class ACTUALIZARLOCACIONAction implements Action {
+    readonly type = ACTUALIZARLOCACION;
+
+    constructor( public payload: any ) { }
+}
+
 
 export type actions = ACTUALIZARURLAction |
 					  ACTUALIZARCTEAction | 
@@ -111,4 +116,5 @@ export type actions = ACTUALIZARURLAction |
                       ACTUALIZARURL3Action |
                       ACTUALIZARHITOAction |
                       ACTUALIZARMANDANTEAction |
-                      ACTUALIZARCOMENTARIOAction;
+                      ACTUALIZARCOMENTARIOAction| 
+                      ACTUALIZARLOCACIONAction;

@@ -51,6 +51,11 @@ import { DesvinculacionBasicaComponent } from './components/perfil-trabajador/de
 import { TurnosNocheComponent } from './components/perfil-trabajador/turnos-noche/turnos-noche.component'
 import { RepviaticosComponent } from './components/dashboard/reportes/repviaticos/repviaticos.component'
 
+
+import { RepunitarioComponent } from './components/dashboard/reportes/repunitario/repunitario.component';
+import { RepactualmentetrabajandoComponent } from './components/dashboard/reportes/repactualmentetrabajando/repactualmentetrabajando.component';
+import { EditarSucursalComponent } from './components/dashboard/editar-sucursal/editar-sucursal.component';
+
 const routes: Routes = [
   { path: 'Login', component: LoginComponent },
   
@@ -58,6 +63,7 @@ const routes: Routes = [
    
     { path: 'PerfilEmpleador' , component: PerfilEmpleadorComponent},
     { path: 'IngresoSucursal' , component: IngresoSucursalComponent},
+    { path: 'EditarSucursal' , component: EditarSucursalComponent},
     { path: 'ConfiguracionComponent' , component: ConfiguracionComponent},
     { path: 'Clientes' , component: ClientesComponent},
     { path: 'SueldosComponent' , component: SueldosComponent},
@@ -70,6 +76,8 @@ const routes: Routes = [
         { path: 'Repasistenciareprobado' , component: RepasistenciareprobadoComponent},
         { path: 'Repasistenciaxtrabajador' , component: RepasistenciaxtrabajadorComponent},
         { path: 'Repviaticos' , component: RepviaticosComponent},
+        { path: 'Repunitario/:id' , component: RepunitarioComponent},
+        { path: 'Repactualmentetrabajando' , component: RepactualmentetrabajandoComponent},
 
         ]},
     { path: '**',canActivate:[AuthGuard], component: PerfilEmpleadorComponent }

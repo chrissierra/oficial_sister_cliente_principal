@@ -1,0 +1,81 @@
+<div class="container">
+	<app-titulo subtitulo="ACTUALMENTE TRABAJANDO" style="font-family: 'Dosis', sans-serif !important;"></app-titulo>
+	<app-select-sucursales></app-select-sucursales>
+	<div>
+		<button class="btn btn-outline-success btn-block" (click)="actualizarTabla()" >Visualizar</button>
+	</div>
+
+	
+
+		<div class="m-3">
+			  		<ul class="list-group" *ngIf="Trabajadores.info.length !== 0">
+			            
+			              <ng-container *ngFor="let actualmenteTrabajando of Trabajadores?.info" >
+			                   <li  class="list-group-item p-1">
+
+			                   <small class="text-muted">
+			                       <a data-toggle="modal" [attr.data-target]="'#s' + actualmenteTrabajando.id">
+			                         {{ actualmenteTrabajando.nombre }} {{ actualmenteTrabajando.apellido }} {{ actualmenteTrabajando.hora }}  
+			                       </a>
+			                   </small>   
+			                  <!-- Button trigger modal -->
+			                         <span aria-label="Activo(a) ahora" style="background: rgb(66, 183, 42); border-radius: 50%; display: inline-block; height: 6px; margin-left: 4px; width: 6px;">			                         	
+			                         </span>			                     
+			                   </li>  
+			                    <!-- Aca va el modal -->
+                  <!-- Button trigger modal -->
+                      <!-- Modal -->
+                       <div class="modal fade" [id]="'s'+actualmenteTrabajando.id" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Registro</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+
+
+                                	<p class="text-muted">Número Sucursal: </p>
+  									&nbsp;<a href="tel:{{DatosSucursal['telefono']}}">Llamar {{DatosSucursal['telefono']}} <i class="fas fa-phone"></i></a>
+  									{{getNumeroTrabajador(actualmenteTrabajando.id_trabajador)}}
+<hr>
+  									<p 
+	  									*ngIf="getNumeroTrabajador(actualmenteTrabajando.id_trabajador)" 
+	  									class="text-muted">
+	  									Número Personal Trabajador: 
+  									</p>
+
+
+
+
+  									<p 
+  									*ngIf="getNumeroTrabajador(actualmenteTrabajando.id_trabajador).length === 0" 
+  									class="text-muted">
+  									No hay un registro telefónico de tu trabajador.
+  									</p>
+
+  									&nbsp;
+  									<a 
+  									*ngIf="getNumeroTrabajador(actualmenteTrabajando.id_trabajador).length > 0" 
+  									href="tel:{{  getNumeroTrabajador(actualmenteTrabajando.id_trabajador) }}">
+  									Llamar {{  getNumeroTrabajador(actualmenteTrabajando.id_trabajador) }}
+  									<i class="fas fa-phone"></i>
+  									</a>
+   									
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                <!--  <button type="button" class="btn btn-primary">Save changes</button> -->
+                                </div>
+                              </div>
+                            </div>
+                          </div>  
+        				<!-- Aca va el modal -->
+
+			              </ng-container>
+			                  
+			        </ul>
+		</div>
+</div>

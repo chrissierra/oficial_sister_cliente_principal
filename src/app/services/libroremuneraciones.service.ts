@@ -11,16 +11,16 @@ export class LibroremuneracionesService {
 		return this.http.post(this.rutasService_.rutas['libroremuneraciondiario'], JSON.stringify(data));     
  	} // Fin funcion login
 
- 	  GetLibroMensual(data) {
+ 	GetLibroMensual(data) {
 		return this.http.post(this.rutasService_.rutas['libroremuneracionmensual'], JSON.stringify(data));     
  	} // Fin funcion login
 
 
-	 GetdiarioPorTrabajador(data) {
+	GetdiarioPorTrabajador(data) {
 		return this.http.post(this.rutasService_.rutas['diarioPorTrabajador'], JSON.stringify(data));     
  	} // Fin funcion login
 
- 	  GetmensualPorTrabajador(data) {
+ 	GetmensualPorTrabajador(data) {
 		return this.http.post(this.rutasService_.rutas['mensualPorTrabajador'], JSON.stringify(data));     
  	} // Fin funcion login
 
@@ -28,13 +28,25 @@ export class LibroremuneracionesService {
 		return this.http.post(this.rutasService_.rutas['mensualPorSucursal'], JSON.stringify(data));     
  	} // Fin funcion login
 
- 	  GetdiarioPorSucursal(data) {
+ 	GetdiarioPorSucursal(data) {
 		return this.http.post(this.rutasService_.rutas['diarioPorSucursal'], JSON.stringify(data));     
  	} // Fin funcion login
 
- 	  GetdiarioUltimos(data) {
+ 	GetdiarioUltimos(data) {
 		return this.http.post(this.rutasService_.rutas['diarioUltimos'], JSON.stringify(data));     
  	} // Fin funcion login
 
 
+ 	actualmenteTrabajando(data) {
+		return this.http.post(this.rutasService_.rutas['actualmenteTrabajando'],JSON.stringify(data));     
+ 	} // Fin funcion login
+
+
+ 	actualmenteTrabajandoPorSucursal(data) {
+		return this.http.post(this.rutasService_.rutas['actualmenteTrabajandoPorSucursal'],JSON.stringify(data));     
+ 	} // Fin funcion login
+
+ 	getmovimientounitario(data) {
+		return this.http.post(this.rutasService_.rutas['getmovimientounitario'],JSON.stringify(data));     
+ 	} // Fin funcion login
 }

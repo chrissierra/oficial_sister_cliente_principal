@@ -52,6 +52,10 @@ export function MarcajeReducer( state=estadoInicial, action: fromContador.action
             state.mandante = action.payload;
             return state;                        
        
+        case fromContador.ACTUALIZARLOCACION:
+            state.locacion = action.payload;
+            return state;   
+       
 
         default:
             return state;

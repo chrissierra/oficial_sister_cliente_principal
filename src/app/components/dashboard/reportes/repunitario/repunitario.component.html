@@ -1,0 +1,71 @@
+<div class="container">
+	<div class="card mb-3 ">
+
+	  
+	  <div class="card-body">
+	    <h6 style="font-family: 'Dosis', sans-serif !important;" class="card-title"><strong>REPORTE MOVIMIENTO UNITARIO</strong></h6>
+	   
+	    <p class="card-text"></p>
+	   
+	<ul class="list-group list-group-flush">
+	  <li class="list-group-item">{{ datosUnitarios?.content.nombre }} {{ datosUnitarios?.content.apellido }}</li>
+	  <li class="list-group-item">{{ datosUnitarios?.content.tipo_movimiento | titlecase
+ }} <h6 *ngIf="datosUnitarios?.content.aprobado === 0">El marcaje es dudoso por análisis biométrico</h6></li>
+	  <li *ngIf="datosUnitarios?.content.status_entrada.length === 'ok' " class="list-group-item">Marcaje correcto en hora</li>               <!-- Modal -->
+		                          <div class="modal fade" [id]="'d'+datosUnitarios?.content.id" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		                            <div class="modal-dialog" role="document">
+		                              <div class="modal-content">
+		                                <div class="modal-header">
+		                                  <h5 class="modal-title" id="exampleModalLabel">Registro GPS </h5>
+		                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		                                    <span aria-hidden="true">&times;</span>
+		                                  </button>
+		                                </div>
+		                                <div class="modal-body">
+		                                	   
+			                                 <div class="text-center">
+
+			                                          	<agm-map style="height:300px;"  [latitude]="datosUnitarios?.content.latitude * 1" [longitude]="datosUnitarios?.content.longitude * 1"    zoomControl="true">
+										     				 <agm-marker [latitude]="datosUnitarios?.content.latitude * 1" [longitude]="datosUnitarios?.content.longitude * 1"  ></agm-marker>
+										    			</agm-map>
+			                                 </div>    
+		                                </div>
+		                                <div class="modal-footer">
+		                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+		                                <!--  <button type="button" class="btn btn-primary">Save changes</button> -->
+		                                </div>
+		                              </div>
+		                            </div>
+		                          </div>  
+	  
+	  <li class="list-group-item">Ubicación del marcaje 
+	  	 <!-- Aca va el modal -->
+          <!-- Button trigger modal -->
+
+             <button type="button" class="btn btn-warning" data-toggle="modal" [attr.data-target]="'#d' + datosUnitarios?.content.id">
+		                    Mapa GPS
+		     </button>
+
+		           
+
+
+        <!-- Aca va el modal -->
+
+	  </li>
+	  <li class="list-group-item">Marcaje realizado a {{ datosUnitarios?.content.distancia  | number:'1.1-4' }} KM de Sucursal {{ datosUnitarios?.content.locacion }}</li>
+	</ul>
+
+
+	<br>
+	    <p class="card-text"><small style="font-family: 'Dosis', sans-serif !important;" class="text-muted">REGISTRO TOMADO EL {{ datosUnitarios?.content.fecha  }} A LAS {{ datosUnitarios?.content.hora }}</small></p>
+	  </div>
+
+
+	  	<div class="text-center">
+	  			<img [src]="datosUnitarios?.content.url"  class="img-thumbnail" alt="...">
+	  	</div>
+	</div>
+
+	<!--{{ datosUnitarios?.content.url }} -->
+
+</div>

@@ -21,6 +21,7 @@ export class IngresoSucursalComponent implements OnInit   {
     descripcion: '',
     lat: 51.678418,
     lng: 7.809007,
+    telefono:'',
     marker: {
       lat: 51.678418,
       lng: 7.809007,
@@ -173,6 +174,7 @@ export class IngresoSucursalComponent implements OnInit   {
      const snackBarRef = this.snackBar.open('Sucursal Guardada', 'OK', {
               duration: 1500
             });
+     
 
    
    })
@@ -211,6 +213,7 @@ interface Location {
   lat: number;
   lng: number;
   viewport?: Object;
+  telefono?:any;
   zoom: number;
   address_level_1?:string;
   address_level_2?: string;

@@ -1,44 +1,19 @@
 {
-  "configVersion": 2,
+  "configVersion": 1,
   "index": "/index.html",
   "assetGroups": [
     {
       "name": "app",
       "installMode": "prefetch",
-   
-      "resources":{
-        "files":[
-          "/favicon.ico",
-          "/index.html",
-          "/manifest.json",
-          "/*.css",
-          "/*.js",
-        "/main.bbd32c339c993a9db634.js",
-        "/polyfills.c6e41b86763c13ea8ab8.js",
-        "/runtime.ec2944dd8b20ec099bf3.js",
-        "/styles.db5fa3fbbe7f30b167b5.css"
-        ]
-      },
+      "updateMode": "prefetch",
       "urls": [
-        "https://stackpath.bootstrapcdn.com/**",
         "/favicon.ico",
         "/index.html",
-        "/main.bbd32c339c993a9db634.js",
-        "/polyfills.c6e41b86763c13ea8ab8.js",
+        "/main.daace3874522853dfa02.js",
+        "/polyfills.d150ecacd834b24bd961.js",
         "/runtime.ec2944dd8b20ec099bf3.js",
         "/styles.db5fa3fbbe7f30b167b5.css"
       ],
-      "files":[
-          "/favicon.ico",
-          "/index.html",
-          "/manifest.json",
-          "/*.css",
-          "/*.js",
-        "/main.bbd32c339c993a9db634.js",
-        "/polyfills.c6e41b86763c13ea8ab8.js",
-        "/runtime.ec2944dd8b20ec099bf3.js",
-        "/styles.db5fa3fbbe7f30b167b5.css"
-        ],
       "patterns": []
     },
     {
@@ -93,9 +68,9 @@
     "/assets/img/logov3.png": "93a1b8083c9f5ec280545d2a1bbb50c38f8a90a4",
     "/assets/img/logov5.png": "18bf9cbdbbf73b8c1308717913a40ba52dc87049",
     "/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "/index.html": "174ef878c06d39f9bd209b9c79bbfc1a84708814",
-    "/main.bbd32c339c993a9db634.js": "d24264b0aeab91aba62dbcd147e6619574804518",
-    "/polyfills.c6e41b86763c13ea8ab8.js": "eceea495b93354e231e7d4dbd9b5b8879ae03568",
+    "/index.html": "f9bb85b6520c3c31391ba6b98a33e4e68404d816",
+    "/main.daace3874522853dfa02.js": "b2feb10d51209312db734e629112cb4d871bd93d",
+    "/polyfills.d150ecacd834b24bd961.js": "3f1380e0b7f6b0f1df4c336f57b952ea8b6ccd3d",
     "/runtime.ec2944dd8b20ec099bf3.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
     "/styles.db5fa3fbbe7f30b167b5.css": "3725c681995ab5aba6c50abe091296a4c5a5dbf8"
   },

@@ -4,6 +4,7 @@ import { Injectable } from '@angular/core';
 export class RutasservidorService {
   public urlServer:any = 'https://sister.cl/';
   public urlBase:any = 'https://sister.cl/laravel/index.php/';
+  public urlBaseNode:any = 'https://sister.cl/SocketsSister/'
 //  public urlBase:any = 'http://127.0.0.1:80/';
 
   constructor() { }
@@ -65,10 +66,20 @@ export class RutasservidorService {
     'InsertViaticos': this.urlBase + 'api/InsertViaticos',
     'GetViaticosPorTrabajador': this.urlBase + 'api/GetViaticosPorTrabajador/',
     'GetViaticosPorEmpleador': this.urlBase + 'api/GetViaticosPorEmpleador',
-    
+    'actualmenteTrabajando': this.urlBase + 'api/actualmenteTrabajando',
+    'actualmenteTrabajandoPorSucursal': this.urlBase + 'api/actualmenteTrabajandoPorSucursal',
+    'getmovimientounitario': this.urlBase + 'api/getmovimientounitario',
+    'update_sucursales': this.urlBase + 'api/update_sucursales',
+
+
+
     //Envíos a servidor:
     'recepcionimagenclientesrrhh': this.urlServer + 'recepcionimagenclientesrrhh.php',
-    'recepcionimagen1v1': this.urlServer + 'recepcionimagen1v1.php'
+    'recepcionimagen1v1': this.urlServer + 'recepcionimagen1v1.php',
+
+    // NODE
+    'TrabajadoresEnTurno': this.urlBaseNode + 'TrabajadoresEnTurno',
+
   };
 
 }

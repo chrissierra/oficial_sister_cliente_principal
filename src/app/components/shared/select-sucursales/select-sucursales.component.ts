@@ -40,6 +40,18 @@ export class SelectSucursalesComponent {
     	const accion = new fromMarcaje.ACTUALIZARSUCURSALAction(this.SucursalElegida);
     	this.store.dispatch( accion );
 
+      for (var i = 0; i < this.sucursales.length; ++i) {
+        // code...
+
+        if(this.sucursales[i].id === (this.SucursalElegida*1) ){
+                 console.log("los id... ", this.sucursales[i].id)
+                const accion2 = new fromMarcaje.ACTUALIZARLOCACIONAction(this.sucursales[i]);
+                this.store.dispatch( accion2 );
+        }
+      }
+
+
+
 	}
 
 }

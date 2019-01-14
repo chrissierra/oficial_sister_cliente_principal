@@ -103,6 +103,8 @@ import { DesvinculacionService } from './services/desvinculacion.service';
 import { ViaticosService } from './services/viaticos.service';
 
 
+
+
 //Pipes
 import { EntradaosalidaPipe } from './pipes/entradaosalida.pipe';
 import { NombreDelDiaDelMesPipe } from './pipes/nombre-del-dia-del-mes.pipe';
@@ -120,6 +122,15 @@ import { TurnosNocheComponent } from './components/perfil-trabajador/turnos-noch
 import { RepviaticosComponent } from './components/dashboard/reportes/repviaticos/repviaticos.component';
 import { FooterComponent } from './components/shared/footer/footer.component'
 
+import { DeviceDetectorModule } from 'ngx-device-detector';
+//Sockets
+import { SocketIoModule, SocketIoConfig } from 'ngx-socket-io';
+import { RepunitarioComponent } from './components/dashboard/reportes/repunitario/repunitario.component';
+import { RepactualmentetrabajandoComponent } from './components/dashboard/reportes/repactualmentetrabajando/repactualmentetrabajando.component';
+import { EditarSucursalComponent } from './components/dashboard/editar-sucursal/editar-sucursal.component';
+import { TituloComponent } from './components/shared/titulo/titulo.component';
+import { RepresumenmensualComponent } from './components/dashboard/reportes/represumenmensual/represumenmensual.component';
+const config: SocketIoConfig = { url: environment.wsUrl, options:{ transport : ['websocket'] } };
 
 @NgModule({
   declarations: [
@@ -169,7 +180,12 @@ import { FooterComponent } from './components/shared/footer/footer.component'
     DesvinculacionBasicaComponent,
     TurnosNocheComponent,
     RepviaticosComponent,
-    FooterComponent
+    FooterComponent,
+    RepunitarioComponent,
+    RepactualmentetrabajandoComponent,
+    EditarSucursalComponent,
+    TituloComponent,
+    RepresumenmensualComponent
   ],
   imports: [
     BrowserModule,
@@ -184,6 +200,8 @@ import { FooterComponent } from './components/shared/footer/footer.component'
     MatProgressSpinnerModule,
     StoreModule.forRoot({ marcaje: MarcajeReducer }),
     MatTabsModule,
+    DeviceDetectorModule.forRoot(),
+   // SocketIoModule.forRoot(config),
     MatSnackBarModule,
     MatGridListModule,
     MatListModule,
