@@ -60,4 +60,9 @@ export class PerfilTrabajadorServiceService {
        return  this.http_.post(this.rutas_.rutas['UpdateTurnoNoche'], JSON.stringify(datos));
   }
 
+
+    rotarImagen(rut){
+       return  this.http_.get(this.rutas_.rutas['rotarImagen']+'?rut='+rut);
+  }
+
 }

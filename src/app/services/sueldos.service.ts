@@ -15,7 +15,7 @@ export class SueldosService {
 
     getDiasTrabajados(id, mes, anio) {
         this.getFechas(mes, anio);
-        return this.http.get(this.rutasService_.rutas['DiasLaboralesRealizados'] + id + '/' + this.mesReal + '/' + this.anioReal);
+        return this.http.get(this.rutasService_.rutas['DiasLaboralesRealizadosProd'] + id + '/' + this.mesReal + '/' + this.anioReal);
   }
 
   getDiasCalendarizados(id, mes, anio) {

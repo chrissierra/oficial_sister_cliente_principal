@@ -58,10 +58,10 @@ constructor(private snackBar: MatSnackBar,
       console.log("turnos_sin_liberar",data);
 
     });
-
+    
     this.perfilServicio_.getPerfil(this.param.parent.snapshot.paramMap.get('id')).subscribe( data => {
 
-    this.urlImagenTrabajador =  'https://sister.cl/trabajadores/'+ data[0].rut +'/registro/'+ data[0].rut +'.jpg' ;
+    this.urlImagenTrabajador =  'https://sister.cl/trabajadores/'+ data[0].rut +'/registro/'+ data[0].rut +'.jpg?id='+ new Date().getTime() ;
    	
    	this.datos_perfil_empleado = data;
 
@@ -95,6 +95,15 @@ constructor(private snackBar: MatSnackBar,
           confirmButtonText: boton
         })
    } // Fin funcion mensajeError
+
+   RotarImagen(){
+     //alert(this.datos_perfil_empleado[0].rut)
+     this.perfilServicio_.rotarImagen(this.datos_perfil_empleado[0].rut)
+     .subscribe( data => {
+       console.log(data)
+     })
+     window.location.reload();
+   }
 
 
 

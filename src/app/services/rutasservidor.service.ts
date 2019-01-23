@@ -30,6 +30,7 @@ export class RutasservidorService {
     'ComisionAfp': this.urlBase + 'ComisionAfp/',
     'DiasLaboralesRealizados': this.urlBase + 'DiasLaboralesRealizados/',
     'DiasLaboralesCalendarizados': this.urlBase + 'DiasLaboralesCalendarizados/',
+    'DiasLaboralesRealizadosNoche': this.urlBase + 'DiasLaboralesRealizadosNoche/',
     'LiberarSueldo': this.urlBase + 'api/LiberarSueldo/',
     'ConfirmarEstadoSueldo': this.urlBase + 'api/ConfirmarEstadoSueldo/',
     'SueldosLiberados': this.urlBase + 'api/SueldosLiberados/',
@@ -70,13 +71,13 @@ export class RutasservidorService {
     'actualmenteTrabajandoPorSucursal': this.urlBase + 'api/actualmenteTrabajandoPorSucursal',
     'getmovimientounitario': this.urlBase + 'api/getmovimientounitario',
     'update_sucursales': this.urlBase + 'api/update_sucursales',
-
+    'DiasLaboralesRealizadosProd': this.urlBase + '/DiasLaboralesRealizadosProd/',
 
 
     //Envíos a servidor:
     'recepcionimagenclientesrrhh': this.urlServer + 'recepcionimagenclientesrrhh.php',
     'recepcionimagen1v1': this.urlServer + 'recepcionimagen1v1.php',
-
+    'rotarImagen': this.urlServer + 'rotando.php',
     // NODE
     'TrabajadoresEnTurno': this.urlBaseNode + 'TrabajadoresEnTurno',
 

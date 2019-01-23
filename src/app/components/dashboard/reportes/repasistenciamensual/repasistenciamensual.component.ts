@@ -71,7 +71,6 @@ exportAsExcel()
 
 
        ActualizarPorSucursal(){
-
            // this.geolocalizacion.findAddressByCoordinates( -33.4067802, -70.668223);     
            // this.arrayDirecciones = this.geolocalizacion.array_direccion;
            this.getFromState();
@@ -84,8 +83,6 @@ exportAsExcel()
               console.log(data);
               this.movimiento = data;
             } );
-
-
       }
 
       public exportAsExcelFile(json: any[], excelFileName: string): void {
