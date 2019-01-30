@@ -49,4 +49,12 @@ export class LibroremuneracionesService {
  	getmovimientounitario(data) {
 		return this.http.post(this.rutasService_.rutas['getmovimientounitario'],JSON.stringify(data));     
  	} // Fin funcion login
+
+ 	getMovimientosOfflineMensual(data) {
+		return this.http.post(this.rutasService_.rutas['getAsistenciaOfflineMensual'],JSON.stringify(data));     
+ 	} // Fin funcion login
+
+ 	getMovimientosOfflineDiario(data) {
+		return this.http.post(this.rutasService_.rutas['getAsistenciaOfflineDiario'],JSON.stringify(data));     
+ 	} // Fin funcion login
 }

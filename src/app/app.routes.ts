@@ -56,6 +56,7 @@ import { RepunitarioComponent } from './components/dashboard/reportes/repunitari
 import { RepactualmentetrabajandoComponent } from './components/dashboard/reportes/repactualmentetrabajando/repactualmentetrabajando.component';
 import { EditarSucursalComponent } from './components/dashboard/editar-sucursal/editar-sucursal.component';
 import { RepresumenmensualComponent } from './components/dashboard/reportes/represumenmensual/represumenmensual.component';
+import { RepofflinemensualComponent } from './components/dashboard/reportes/repofflinemensual/repofflinemensual.component';
 
 const routes: Routes = [
   { path: 'Login', component: LoginComponent },
@@ -80,6 +81,7 @@ const routes: Routes = [
         { path: 'Represumenmensual' , component: RepresumenmensualComponent},        
         { path: 'Repunitario/:id' , component: RepunitarioComponent},
         { path: 'Repactualmentetrabajando' , component: RepactualmentetrabajandoComponent},
+        { path: 'Repofflinemensual' , component: RepofflinemensualComponent},
 
         ]},
     { path: '**',canActivate:[AuthGuard], component: PerfilEmpleadorComponent }

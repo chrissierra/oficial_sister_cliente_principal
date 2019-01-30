@@ -33,10 +33,12 @@ export class RepresumenmensualComponent  {
 
   	private generarArray(data, mes, anio){
   		let arrayDatosAsistencia = new Array();
-  		let observables: Observable<T>[] = [];
+  		
+      let observables: Observable<T>[] = [];
+
   		data.map(value => {
 						  		observables.push(this.SueldosService_.getDiasTrabajados(value.id, mes, anio));
-					  	});
+			});
 
   		forkJoin(observables)
 	    .subscribe(dataArray => {

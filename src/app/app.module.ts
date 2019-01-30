@@ -130,6 +130,7 @@ import { RepactualmentetrabajandoComponent } from './components/dashboard/report
 import { EditarSucursalComponent } from './components/dashboard/editar-sucursal/editar-sucursal.component';
 import { TituloComponent } from './components/shared/titulo/titulo.component';
 import { RepresumenmensualComponent } from './components/dashboard/reportes/represumenmensual/represumenmensual.component';
+import { RepofflinemensualComponent } from './components/dashboard/reportes/repofflinemensual/repofflinemensual.component';
 const config: SocketIoConfig = { url: environment.wsUrl, options:{ transport : ['websocket'] } };
 
 @NgModule({
@@ -185,7 +186,8 @@ const config: SocketIoConfig = { url: environment.wsUrl, options:{ transport : [
     RepactualmentetrabajandoComponent,
     EditarSucursalComponent,
     TituloComponent,
-    RepresumenmensualComponent
+    RepresumenmensualComponent,
+    RepofflinemensualComponent
   ],
   imports: [
     BrowserModule,

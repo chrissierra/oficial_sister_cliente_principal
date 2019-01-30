@@ -72,7 +72,8 @@ export class RutasservidorService {
     'getmovimientounitario': this.urlBase + 'api/getmovimientounitario',
     'update_sucursales': this.urlBase + 'api/update_sucursales',
     'DiasLaboralesRealizadosProd': this.urlBase + '/DiasLaboralesRealizadosProd/',
-
+    'getAsistenciaOfflineDiario': this.urlBase + 'api/getAsistenciaOfflineDiario',
+    'getAsistenciaOfflineMensual': this.urlBase + 'api/getAsistenciaOfflineMensual',
 
     //Envíos a servidor:
     'recepcionimagenclientesrrhh': this.urlServer + 'recepcionimagenclientesrrhh.php',
