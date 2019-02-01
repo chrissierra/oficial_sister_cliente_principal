@@ -71,8 +71,39 @@
       <td>{{movimientos.hora}}</td>
       <td>{{movimientos.fecha }}</td>
       <td>{{movimientos.locacion}}</td>
-      <td *ngIf="movimientos.tipo_movimiento == 'entrada'">{{movimientos.cuantia_entrada}}</td>
-      <td *ngIf="movimientos.tipo_movimiento == 'salida'">{{movimientos.cuantia_salida}}</td>
+          <th scope="col">
+            <!-- Aca va el modal -->
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-warning" data-toggle="modal" [attr.data-target]="'#d' + movimientos.id">
+                        Mapa GPS
+                      </button>
+
+                              <!-- Modal -->
+                              <div class="modal fade" [id]="'d'+movimientos.id" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel">Registro GPS</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                       <div class="text-center">
+                                                  <agm-map style="height:300px;" [latitude]="movimientos.latitude * 1" [longitude]="movimientos.longitude * 1"  zoomControl="true">
+                                 <agm-marker [latitude]="movimientos.latitude * 1" [longitude]="movimientos.longitude * 1"  ></agm-marker>
+                              </agm-map>
+                                       </div>    
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                    <!--  <button type="button" class="btn btn-primary">Save changes</button> -->
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>  
+            <!-- Aca va el modal -->
+          </th>   
       <th scope="col">
         <!-- Aca va el modal -->
                   <!-- Button trigger modal -->

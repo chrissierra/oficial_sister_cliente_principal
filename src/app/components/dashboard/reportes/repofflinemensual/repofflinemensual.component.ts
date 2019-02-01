@@ -11,6 +11,8 @@ import * as XLSX from 'xlsx';
 import { Store } from '@ngrx/store';
 import * as fromMarcaje from '../../../marcaje.actions';
 import { AppState } from '../../../../app.reducers';
+import { MensajesSwalService, TipoMensaje } from './../../../../services/mensajes-swal.service';
+
 @Component({
   selector: 'app-repofflinemensual',
   templateUrl: './repofflinemensual.component.html',
@@ -28,7 +30,8 @@ export class RepofflinemensualComponent {
 	public movimientos: any[] = [];
   @ViewChild('TABLE') table: ElementRef;
 
-  constructor(private store: Store<AppState>,
+  constructor(public MensajesSwalService_: MensajesSwalService,
+              private store: Store<AppState>,
               public servicioLibroDiario:LibroremuneracionesService) {
 
   	  	this.nombreEmpresa = localStorage.getItem("nombre_empresa");
@@ -36,16 +39,36 @@ export class RepofflinemensualComponent {
    }
 
 
+    error(){
+      this.MensajesSwalService_.mensajeStandar({
+        titulo:'Error',
+        texto: 'Completa todos los campos necesario.',
+        tipo: 'error',
+        boton: 'Ok'
+      })
+    } // FIN Función Error
+
+
+    errorVacio(){
+      this.MensajesSwalService_.mensajeStandar({
+        titulo:'Error',
+        texto: 'No hay datos para tu consulta.',
+        tipo: 'warning',
+        boton: 'Ok'
+      })
+    } // FIN Función Error
+
       ActualizarFecha(){
       
       const FORMATO_ENTRADA = 'MM-DD-YYYY';
       const FORMATO_SALIDA = 'MM-YYYY';
       const fecha1 = moment(this.calendario, FORMATO_ENTRADA);
       //alert(fecha1.format(FORMATO_SALIDA));
-      this.servicioLibroDiario.getMovimientosOfflineMensual({'id': this.nombreEmpresa, 'mes': this.mes, 'anio': this.anio }).subscribe( (data)=> {
-      	console.log(data);
+      this.servicioLibroDiario.getMovimientosOfflineMensual({'id': this.nombreEmpresa, 'mes': this.mes, 'anio': this.anio }).subscribe( (data:any[])=> {
+      	if( data.length === 0 ) this.errorVacio()
+        console.log(data);
       	this.movimiento = data;
-      } );
+      } , (error) =>  this.error());
   }
 
 exportAsExcel()
@@ -79,10 +102,11 @@ exportAsExcel()
             const fecha1 = moment(this.calendario, FORMATO_ENTRADA);
           //  alert(fecha1.format(FORMATO_SALIDA));
             this.servicioLibroDiario.getMovimientosOfflineMensual({'id': this.nombreEmpresa, 'mes': this.mes, 'anio': this.anio,
-                                                            'sucursal': this.sucursal  }).subscribe( (data)=> {
+                                                            'sucursal': this.sucursal  }).subscribe( (data:any[])=> {
+              if( data.length === 0 ) this.errorVacio()
               console.log(data);
               this.movimiento = data;
-            } );
+            } , (error) =>  this.error());
       }
 
       public exportAsExcelFile(json: any[], excelFileName: string): void {

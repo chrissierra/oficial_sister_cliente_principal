@@ -68,7 +68,7 @@ export class RepasistenciaxtrabajadorComponent  {
 
 
  onChange(e){
-  	alert(e)
+
   	console.log(e)
   	this.nombreSeleccion = e.nombre;
   	this.apellidoSeleccion = e.apellido;

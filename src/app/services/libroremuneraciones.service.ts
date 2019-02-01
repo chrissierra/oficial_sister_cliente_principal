@@ -57,4 +57,18 @@ export class LibroremuneracionesService {
  	getMovimientosOfflineDiario(data) {
 		return this.http.post(this.rutasService_.rutas['getAsistenciaOfflineDiario'],JSON.stringify(data));     
  	} // Fin funcion login
+
+
+ 	TurnosSinTerminar(usuario_cliente, mes, anio) {
+		return this.http.get(this.rutasService_.rutas['TurnosSinTerminar'] +usuario_cliente + '/' + mes+ '/' + anio );     
+ 	} // Fin funcion login
+
+ 	TurnosSinTerminarPorTrabajador(id_trabajador, mes, anio) {
+		return this.http.get(this.rutasService_.rutas['TurnosSinTerminarPorTrabajador']+id_trabajador + '/' +mes + '/' + anio);     
+ 	} // Fin funcion login
+
+
+ 	TurnosSinTerminarPorSucursal(usuario_cliente, mes, anio, sucursal) {
+		return this.http.get(this.rutasService_.rutas['TurnosSinTerminarPorSucursal']+usuario_cliente + '/' +mes  + '/' +anio + '/' + sucursal);     
+ 	} // Fin funcion login
 }

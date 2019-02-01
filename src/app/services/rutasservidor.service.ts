@@ -72,6 +72,12 @@ export class RutasservidorService {
     'getmovimientounitario': this.urlBase + 'api/getmovimientounitario',
     'update_sucursales': this.urlBase + 'api/update_sucursales',
     'DiasLaboralesRealizadosProd': this.urlBase + '/DiasLaboralesRealizadosProd/',
+
+    // Turnos sin terminar:
+    'TurnosSinTerminar': this.urlBase + '/TurnosSinTerminar/',
+    'TurnosSinTerminarPorTrabajador': this.urlBase + '/TurnosSinTerminarPorTrabajador/',
+    'TurnosSinTerminarPorSucursal': this.urlBase + '/TurnosSinTerminarPorSucursal/',
+
     'getAsistenciaOfflineDiario': this.urlBase + 'api/getAsistenciaOfflineDiario',
     'getAsistenciaOfflineMensual': this.urlBase + 'api/getAsistenciaOfflineMensual',
 
