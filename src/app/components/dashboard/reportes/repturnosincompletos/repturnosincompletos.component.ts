@@ -16,6 +16,7 @@ import { MensajesSwalService, TipoMensaje } from './../../../../services/mensaje
   styleUrls: ['./repturnosincompletos.component.css']
 })
 export class RepturnosincompletosComponent {
+	public selectedPersonId:any;
 	public idTrabajador:any;
 	public arrayNombres:any[];
 	public nombreSeleccion:any;
@@ -106,6 +107,14 @@ export class RepturnosincompletosComponent {
     		boton: 'Ok'
     	})
     }
+
+
+        exportAsExcel(){
+      let ws: XLSX.WorkSheet= XLSX.utils.table_to_sheet(this.table.nativeElement);//converts a DOM TABLE element to a worksheet
+      let wb: XLSX.WorkBook = XLSX.utils.book_new();
+      XLSX.utils.book_append_sheet(wb, ws, 'Asistencia mensual');
+      XLSX.writeFile(wb, 'Asistencia'+this.mes+'_'+this.anio+'.xlsx');
+    }
 /*
   	private generarArray(data, mes, anio){
   		let arrayDatosAsistencia = new Array();
@@ -150,12 +159,7 @@ export class RepturnosincompletosComponent {
 
 
 
-    exportAsExcel(){
-      let ws: XLSX.WorkSheet= XLSX.utils.table_to_sheet(this.table.nativeElement);//converts a DOM TABLE element to a worksheet
-      let wb: XLSX.WorkBook = XLSX.utils.book_new();
-      XLSX.utils.book_append_sheet(wb, ws, 'Asistencia mensual');
-      XLSX.writeFile(wb, 'Asistencia'+this.mes+'_'+this.anio+'.xlsx');
-    }
+
 */
 
 } // Fin CLASE *******************************************************

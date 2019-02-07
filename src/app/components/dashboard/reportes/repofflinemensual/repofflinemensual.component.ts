@@ -19,7 +19,7 @@ import { MensajesSwalService, TipoMensaje } from './../../../../services/mensaje
   styleUrls: ['./repofflinemensual.component.css']
 })
 export class RepofflinemensualComponent {
-
+  public selectedPersonId:any;
 	public nombreEmpresa:any;	
 	public calendario:any;
 	public movimiento:any;
