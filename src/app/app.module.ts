@@ -132,6 +132,10 @@ import { TituloComponent } from './components/shared/titulo/titulo.component';
 import { RepresumenmensualComponent } from './components/dashboard/reportes/represumenmensual/represumenmensual.component';
 import { RepofflinemensualComponent } from './components/dashboard/reportes/repofflinemensual/repofflinemensual.component';
 import { RepturnosincompletosComponent } from './components/dashboard/reportes/repturnosincompletos/repturnosincompletos.component';
+import { RepgraficassucursalesComponent } from './components/dashboard/reportes/repgraficassucursales/repgraficassucursales.component';
+
+import { ChartsModule } from 'ng2-charts/ng2-charts';
+
 const config: SocketIoConfig = { url: environment.wsUrl, options:{ transport : ['websocket'] } };
 
 @NgModule({
@@ -189,7 +193,8 @@ const config: SocketIoConfig = { url: environment.wsUrl, options:{ transport : [
     TituloComponent,
     RepresumenmensualComponent,
     RepofflinemensualComponent,
-    RepturnosincompletosComponent
+    RepturnosincompletosComponent,
+    RepgraficassucursalesComponent
   ],
   imports: [
     BrowserModule,
@@ -206,6 +211,7 @@ const config: SocketIoConfig = { url: environment.wsUrl, options:{ transport : [
     MatTabsModule,
     DeviceDetectorModule.forRoot(),
    // SocketIoModule.forRoot(config),
+    ChartsModule,
     MatSnackBarModule,
     MatGridListModule,
     MatListModule,

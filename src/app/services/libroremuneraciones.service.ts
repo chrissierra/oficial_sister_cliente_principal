@@ -71,4 +71,14 @@ export class LibroremuneracionesService {
  	TurnosSinTerminarPorSucursal(usuario_cliente, mes, anio, sucursal) {
 		return this.http.get(this.rutasService_.rutas['TurnosSinTerminarPorSucursal']+usuario_cliente + '/' +mes  + '/' +anio + '/' + sucursal);     
  	} // Fin funcion login
+
+ 	HorasPorSucursalDia(usuario_cliente, mes, anio, dia, sucursal) {
+		return this.http.get(this.rutasService_.rutas['HorasPorSucursalDia']+usuario_cliente + '/' +mes  + '/' +anio  + '/' +dia + '/' +sucursal);     
+ 	} // Fin funcion login
+
+
+ 	HorasPorSucursalMes(usuario_cliente, mes, anio, sucursal) {
+ 		console.log(mes + '/'+ anio)
+		return this.http.get(this.rutasService_.rutas['HorasPorSucursalMes']+usuario_cliente + '/' +mes  + '/' +anio + '/' + sucursal);     
+ 	} // Fin funcion login
 }
