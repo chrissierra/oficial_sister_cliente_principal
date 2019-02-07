@@ -55,7 +55,10 @@ export class RepgraficassucursalesComponent implements OnInit {
   }
 
 
-
+chartClicked(e){
+  alert("hola")
+  console.log(e)
+}
 
   	getFromState(){
             this.store.select('marcaje')

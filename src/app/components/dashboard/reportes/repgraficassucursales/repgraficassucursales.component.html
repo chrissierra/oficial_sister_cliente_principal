@@ -79,7 +79,7 @@
 <hr>
 <div *ngIf="!anual" class="container">
   <div style="display: block">
-    <canvas baseChart
+    <canvas #primero baseChart
             [datasets]="barChartData"
             [labels]="barChartLabels"
             [options]="barChartOptions"
@@ -88,6 +88,7 @@
             (chartHover)="chartHovered($event)"
             (chartClick)="chartClicked($event)"></canvas>
   </div>
+  <button (click)="primero.click()"></button>
 </div>
 
 
