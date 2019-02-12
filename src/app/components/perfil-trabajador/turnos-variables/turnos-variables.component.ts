@@ -29,13 +29,11 @@ constructor(private perfilServicio_: PerfilTrabajadorServiceService,
 	
 	 this.id_parent = this.param.parent.snapshot.paramMap.get('id');
 
-     this.perfilServicio_.getStatusHorarios_mes_proximo(this.id_parent );
+     this.perfilServicio_.getStatusHorarios_mes_proximo(this.id_parent ).subscribe(data => this.estatus_mes_actual = data)
 
-	 this.perfilServicio_.getStatusHorarios_mes_actual(this.id_parent );	
+	 this.perfilServicio_.getStatusHorarios_mes_actual(this.id_parent ).subscribe(data => this.estatus_proximo_mes = data)	
 
-	 this.estatus_mes_actual = this.perfilServicio_.mes_en_curso;
 
-	 this.estatus_proximo_mes = this.perfilServicio_.mes_proximo;
 
 	 this.perfilServicio_.getPerfil(this.id_parent ).subscribe( (data:any[]) => {
 

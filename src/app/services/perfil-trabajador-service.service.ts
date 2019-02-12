@@ -25,9 +25,7 @@ export class PerfilTrabajadorServiceService {
   getStatusHorarios_mes_actual(trabajador_id){
 
     	let date= new Date();
-    	this.http_.get(this.rutas_.rutas['estatusTurnos'] + trabajador_id + '/' + (date.getMonth()+1) + '/' +  date.getFullYear()).toPromise().then(data=>{
-        this.mes_en_curso = data;
-    	});  
+    	return this.http_.get(this.rutas_.rutas['estatusTurnos'] + trabajador_id + '/' + (date.getMonth()+1) + '/' +  date.getFullYear());
   } // Fin funcion getStatusHorarios_mes_actual
 
 
@@ -35,9 +33,7 @@ export class PerfilTrabajadorServiceService {
   			
         let date= new Date();
 
-  			this.http_.get(this.rutas_.rutas['estatusTurnos'] + trabajador_id + '/' + (date.getMonth()+2) + '/' +  date.getFullYear()).toPromise().then(data=>{
-  		    this.mes_proximo = data;
-  			});
+  			return this.http_.get(this.rutas_.rutas['estatusTurnos'] + trabajador_id + '/' + (date.getMonth()+2) + '/' +  date.getFullYear());
 
   } // Fin funcion getStatusHorarios_mes_proximo
 
