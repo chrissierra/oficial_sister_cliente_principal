@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { PerfilTrabajadorServiceService } from '../../../services/perfil-trabajador-service.service';
 import { Router } from '@angular/router';
@@ -8,7 +8,7 @@ import { IngresoUsuarioServidorService } from './../../../services/ingreso-usuar
   selector: 'app-turnos-variables',
   templateUrl: './turnos-variables.component.html'
 })
-export class TurnosVariablesComponent implements OnInit {
+export class TurnosVariablesComponent  {
 	  hola:any[];
 	  mes:any;
       anio:any;
@@ -37,40 +37,20 @@ constructor(private perfilServicio_: PerfilTrabajadorServiceService,
 
 	 this.estatus_proximo_mes = this.perfilServicio_.mes_proximo;
 
-	 this.perfilServicio_.getPerfil(this.id_parent ).subscribe( data => {
+	 this.perfilServicio_.getPerfil(this.id_parent ).subscribe( (data:any[]) => {
 
-	 this.datos_perfil_empleado = data;
+				 this.datos_perfil_empleado = data;	 
 
-	 this.meses_pendiente_de_hacer_turnos();
-
-   });
+			   },(error) => {
+			   	alert("Error: " + JSON.stringify(error))
+			   }, ()=> {
+			   	this.meses_pendiente_de_hacer_turnos();
+     });
 
   }// Fin constructor
 
 
-  ngOnInit() {
 
-
-
-	 this.id_parent = this.param.parent.snapshot.paramMap.get('id');
-
-     this.perfilServicio_.getStatusHorarios_mes_proximo(this.id_parent );
-
-	 this.perfilServicio_.getStatusHorarios_mes_actual(this.id_parent );	
-
-	 this.estatus_mes_actual = this.perfilServicio_.mes_en_curso;
-
-	 this.estatus_proximo_mes = this.perfilServicio_.mes_proximo;
-
-	 this.perfilServicio_.getPerfil(this.id_parent ).subscribe( data => {
-
-	 this.datos_perfil_empleado = data;
-
-	 this.meses_pendiente_de_hacer_turnos();
-
-   });
-
-  }// FIn funcion ngOnInit
 
 
  private DiasDelMes () {
@@ -119,11 +99,11 @@ meses_pendiente_de_hacer_turnos(){
     let mes = fecha.getMonth();
 	let array_meses_pendientes = new Array();
 
-	if(this.estatus_mes_actual == 0){
+	if(this.estatus_mes_actual === 0){
        array_meses_pendientes.push( (mes+1) + "/"+ anio);
 	}
 
-	if (this.estatus_proximo_mes == 0) {
+	if (this.estatus_proximo_mes === 0) {
 	   array_meses_pendientes.push( (mes+2) + "/"+ anio);
 	}
 

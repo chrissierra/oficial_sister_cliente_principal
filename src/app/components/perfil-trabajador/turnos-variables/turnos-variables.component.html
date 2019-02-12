@@ -4,7 +4,7 @@
         <label for="exampleFormControlSelect1">Meses pendientes de turnos: </label>
         <select class="form-control" [(ngModel)]="meses_select" #heroInput="ngModel">
 
-			      <option *ngFor="let meses_pendienes_de_hacer_turnos of meses_pendienes_de_hacer_turnos  ; let i = index" [value]="meses_pendienes_de_hacer_turnos">{{meses_pendienes_de_hacer_turnos}}</option>
+			      <option *ngFor="let meses_pendienes of meses_pendienes_de_hacer_turnos; let i = index" [value]="meses_pendienes">{{meses_pendienes}}</option>
 
 			    </select>
         <br>

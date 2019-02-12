@@ -40,7 +40,7 @@
                         <button [routerLink]="['../DesvinculacionBasica/']"  class="btn btn-warning btn-sm">Desvinculación </button>
                     </li>
                     
-                    <li class="list-group-item">
+                    <li class="list-group-item" style="display:none">
                         <p class="text-muted"> Marcar Asistencia de trabajador</p>
                         
                         <button *ngIf="trabaja_dia_en_curso == 1" class="btn btn-danger btn-sm" [routerLink]="['../Marcaje/']">Marcar asistencia</button>
@@ -49,11 +49,11 @@
                     </li>
                     
                     <li class="list-group-item">
-                               <div *ngIf="boleano_boton === 'Turnos'">
+                               <div *ngIf="tipoTurno === 'Turnos'">
                                     <button [routerLink]="['../TurnosVariables/']" class="btn btn-primary" type="submit">Ir a turnos</button>
                                 </div>
 
-                                <div *ngIf="tipoTurno === 'Turnos' && TrabajadorSinTurno">
+                                <div *ngIf="tipoTurno === 'Horario Fijo' && TrabajadorSinTurno">
                                    
                                     <p  class="text-muted">Tu trabajador no tiene generado los turnos aún. Genéralos</p>
                                     <button  [routerLink]="['../TurnosFijos/']"  class="btn btn-primary btn-sm" type="submit">Turnos fijos</button>
@@ -71,7 +71,7 @@
 
                                   
 
-                                    <div *ngIf="boleano_boton !== 'Turnos' && !TrabajadorSinTurno && tipoTurno === 'Horario Fijo'">
+                                    <div *ngIf="!TrabajadorSinTurno && tipoTurno === 'Horario Fijo'">
                                     <p  class="text-muted">Puedes modificar los turnos si lo deseas. Pero debe ser en común acuerdo con el trabajador.</p>
 
                                     <button  [routerLink]="['../ActualizarTurnosFijos/']"  class="btn btn-success btn-sm" type="submit">Modificar turnos fijos</button>

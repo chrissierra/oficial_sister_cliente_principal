@@ -42,8 +42,8 @@ constructor(private snackBar: MatSnackBar,
                   console.log("LOs datos del marcaje ", data); // => Hora de la entrada, hora de la salida. 
                   console.log("tipo turno", data['TipoTurno']) // => Con esto empiezo . ***   1
                   this.tipoTurno = data['TipoTurno'];
-                  this.turnoFijoSinTurno = (data['trabajaDiaEnCurso'] == 0) ? true : false;
-                  this.TrabajadorSinTurno = (data['TurnoYaRealizado'] ==  "No tiene horario") ? this.funcionNoTieneTurnos() : false;
+                  this.turnoFijoSinTurno = (data['trabajaDiaEnCurso'] === 0) ? true : false;
+                  this.TrabajadorSinTurno = (data['TurnoYaRealizado'] ===  "No tiene horario") ? this.funcionNoTieneTurnos() : false;
                   this.trabaja_dia_en_curso = data['trabajaDiaEnCurso'];
                   this.entrada = data['Entrada'];
                   this.salida = data['Salida'];
