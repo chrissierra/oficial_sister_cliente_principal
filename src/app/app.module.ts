@@ -135,8 +135,10 @@ import { RepturnosincompletosComponent } from './components/dashboard/reportes/r
 import { RepgraficassucursalesComponent } from './components/dashboard/reportes/repgraficassucursales/repgraficassucursales.component';
 
 import { ChartsModule } from 'ng2-charts/ng2-charts';
+import { ReplibroasistenciaComponent } from './components/dashboard/reportes/replibroasistencia/replibroasistencia.component';
 
 const config: SocketIoConfig = { url: environment.wsUrl, options:{ transport : ['websocket'] } };
+import { AgGridModule } from 'ag-grid-angular';
 
 @NgModule({
   declarations: [
@@ -194,7 +196,8 @@ const config: SocketIoConfig = { url: environment.wsUrl, options:{ transport : [
     RepresumenmensualComponent,
     RepofflinemensualComponent,
     RepturnosincompletosComponent,
-    RepgraficassucursalesComponent
+    RepgraficassucursalesComponent,
+    ReplibroasistenciaComponent
   ],
   imports: [
     BrowserModule,
@@ -208,6 +211,7 @@ const config: SocketIoConfig = { url: environment.wsUrl, options:{ transport : [
     BrowserAnimationsModule,
     MatProgressSpinnerModule,
     StoreModule.forRoot({ marcaje: MarcajeReducer }),
+    AgGridModule.withComponents([]),
     MatTabsModule,
     DeviceDetectorModule.forRoot(),
    // SocketIoModule.forRoot(config),

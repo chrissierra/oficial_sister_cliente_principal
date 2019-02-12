@@ -27,7 +27,7 @@ export class RepgraficassucursalesComponent implements OnInit {
   public sucursal:any;
 	public movimientos: any[] = [];
   public anual:boolean=false;
-
+  public begin:boolean= false;
       public arrayResultado: any[]= []
       public arrayResultado1: any[]= []
       public arrayMeses:any[]= []
@@ -84,7 +84,7 @@ chartClicked(e){
   
 
     Anual(){
-
+      this.begin= true;
       this.anual = true;
       this.getFromState();
       var observables: Observable<any>[] = [];
@@ -127,7 +127,7 @@ chartClicked(e){
 
     ActualizarPorSucursal(){
       this.anual = false;
-      
+      this.begin= true;
       this.getFromState();
 
       this.getResumen()

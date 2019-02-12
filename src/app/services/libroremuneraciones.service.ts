@@ -7,6 +7,79 @@ export class LibroremuneracionesService {
 
   constructor(private http: HttpClient, private rutasService_: RutasservidorService) { }
 
+  	getMesesPorNumero(numero){
+  		numero = parseInt(numero)
+  		switch (numero) {
+  			case 1:
+  			return 'Enero';
+  				// code...
+  				break;
+
+  			case 2:
+  			return 'Febrero';
+  				// code...
+  				break;
+
+   			case 3:
+  			return 'Marzo';
+  				// code...
+  				break;
+
+
+  			case 4:
+  			return 'Abril';
+  				// code...
+  				break;
+
+   			case 5:
+  			return 'Mayo';
+  				// code...
+  				break;
+
+  			case 6:
+  			return 'Junio';
+  				// code...
+  				break;
+
+   			case 7:
+  			return 'Julio';
+  				// code...
+  				break;
+
+
+  			case 8:
+  			return 'Agosto';
+  				// code...
+  				break;
+
+   			case 9:
+  			return 'Septiembre';
+  				// code...
+  				break;
+
+  			case 10:
+  			return 'Octubre';
+  				// code...
+  				break;
+
+   			case 11:
+  			return 'Noviembre';
+  				// code...
+  				break;
+
+
+  			case 12:
+  			return 'Diciembre';
+  				// code...
+  				break;
+  			
+  			default:
+  			return 'ERROR'
+  				// code...
+  				break;
+  		}
+  	}
+
     GetLibroDiario(data) {
 		return this.http.post(this.rutasService_.rutas['libroremuneraciondiario'], JSON.stringify(data));     
  	} // Fin funcion login
@@ -81,4 +154,8 @@ export class LibroremuneracionesService {
  		console.log(mes + '/'+ anio)
 		return this.http.get(this.rutasService_.rutas['HorasPorSucursalMes']+usuario_cliente + '/' +mes  + '/' +anio + '/' + sucursal);     
  	} // Fin funcion login
+
+ 	LibroTipoPlanillaAsistencia(id, mes, anio){
+		return this.http.get(this.rutasService_.rutas['LibroTipoPlanillaAsistencia']+id + '/' +mes  + '/' +anio);     
+ 	}
 }

@@ -59,6 +59,7 @@ import { RepresumenmensualComponent } from './components/dashboard/reportes/repr
 import { RepofflinemensualComponent } from './components/dashboard/reportes/repofflinemensual/repofflinemensual.component';
 import { RepturnosincompletosComponent } from './components/dashboard/reportes/repturnosincompletos/repturnosincompletos.component';
 import { RepgraficassucursalesComponent } from './components/dashboard/reportes/repgraficassucursales/repgraficassucursales.component';
+import { ReplibroasistenciaComponent } from './components/dashboard/reportes/replibroasistencia/replibroasistencia.component';
 
 const routes: Routes = [
   { path: 'Login', component: LoginComponent },
@@ -86,6 +87,7 @@ const routes: Routes = [
         { path: 'Repofflinemensual' , component: RepofflinemensualComponent},
         { path: 'Repturnosincompletos' , component: RepturnosincompletosComponent},
         { path: 'Repgraficassucursales' , component: RepgraficassucursalesComponent},
+        { path: 'Replibroasistencia' , component: ReplibroasistenciaComponent},
 
 
 

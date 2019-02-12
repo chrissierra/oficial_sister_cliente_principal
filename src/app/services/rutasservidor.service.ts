@@ -74,7 +74,7 @@ export class RutasservidorService {
     'DiasLaboralesRealizadosProd': this.urlBase + '/DiasLaboralesRealizadosProd/',
     'HorasPorSucursalDia': this.urlBase + '/HorasPorSucursalDia/',
     'HorasPorSucursalMes': this.urlBase + '/HorasPorSucursalMes/',
-
+    'LibroTipoPlanillaAsistencia': this.urlBase + 'LibroTipoPlanillaAsistencia/',
 
     // Turnos sin terminar:
     'TurnosSinTerminar': this.urlBase + '/TurnosSinTerminar/',
