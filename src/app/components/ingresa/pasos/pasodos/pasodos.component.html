@@ -33,7 +33,7 @@
 
                                         <div *ngIf="s.select">
                                             <select  class="form-control" [name]="s.name" ngModel required>
-                                                 <option [value]="o" *ngFor="let o of s.opciones">{{ o }}</option>
+                                                 <option  *ngFor="let o of s.opciones; let indice= index" [value]="sucursales[indice]">{{ o }}</option>
                                             </select>
 
                                              <small *ngIf="s?.info" class="form-text text-muted">{{s.info}}.</small>

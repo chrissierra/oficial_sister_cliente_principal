@@ -29,21 +29,36 @@ constructor(private perfilServicio_: PerfilTrabajadorServiceService,
 	
 	 this.id_parent = this.param.parent.snapshot.paramMap.get('id');
 
-     this.perfilServicio_.getStatusHorarios_mes_proximo(this.id_parent ).subscribe(data => this.estatus_mes_actual = data)
+     this.perfilServicio_.getStatusHorarios_mes_proximo(this.id_parent ).subscribe(data => this.estatus_mes_actual = data
+     	,error => console.log(error)
+     	,() => {
+     		 this.perfilServicio_.getStatusHorarios_mes_actual(this.id_parent ).subscribe(data => this.estatus_proximo_mes = data
+     		 	,error => console.log(error)
+     		 	,()=> {
+     		 		/*
+     		 		*/
 
-	 this.perfilServicio_.getStatusHorarios_mes_actual(this.id_parent ).subscribe(data => this.estatus_proximo_mes = data)	
+     		 			 this.perfilServicio_.getPerfil(this.id_parent ).subscribe( (data:any[]) => {
+
+									 this.datos_perfil_empleado = data;	 
+
+								   },(error) => {
+								   	alert("Error: " + JSON.stringify(error))
+								   }, ()=> {
+								   	this.meses_pendiente_de_hacer_turnos();
+					     });
+
+
+     		 		//
+
+     		 	})	
+     	})
+
+	
 
 
 
-	 this.perfilServicio_.getPerfil(this.id_parent ).subscribe( (data:any[]) => {
 
-				 this.datos_perfil_empleado = data;	 
-
-			   },(error) => {
-			   	alert("Error: " + JSON.stringify(error))
-			   }, ()=> {
-			   	this.meses_pendiente_de_hacer_turnos();
-     });
 
   }// Fin constructor
 

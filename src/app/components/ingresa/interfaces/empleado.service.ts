@@ -1,9 +1,26 @@
 import { Injectable } from '@angular/core';
-import { EmpleadoInterface, InputInterface } from './empleado.interface'
+import { EmpleadoInterface, InputInterface } from './empleado.interface';
+import { GuardarSucursalService } from '../../../services/guardar-sucursal.service';
+
 @Injectable()
 export class EmpleadoService {
-  constructor() {}
+  public sucursalesNombre:any[] = [];
+  public sucursalesId:any[] = [];
+  public nombreEmpresa:any;
 
+  constructor(public GuardarSucursalService_: GuardarSucursalService) {
+    this.nombreEmpresa = localStorage.getItem('nombre_empresa');
+    this.getSucursales();
+  }
+
+public getSucursales(){
+    this.GuardarSucursalService_.get_sucursales_servidor(JSON.stringify({usuario:this.nombreEmpresa }))
+        .subscribe( ( data:any[] ) => {
+          console.log("Desde empleado service", data)
+          data.map(value =>{ this.sucursalesNombre.push(value.nombre); this.sucursalesId.push(value.id)  })
+          console.log(this.sucursalesId[0])
+        } );  
+}
     
 public editarEmpleado(empleado){
     this.array_empleado[0].value=empleado.nombre
@@ -221,13 +238,27 @@ public array_empleado: any[] = [
       value:''
 
     },
+    /*
     {
-      label: 'Comuna sucursal', // Debe extraerse las sucursales del empleador 20
+      label: 'Sucursal',
       name: 'comuna_sucursal',
       tipo: 'text',
-      info: 'Escribe donde trabajará tu trabajador',
-      select: false,
+      info: 'Selecciona la sucursal',
+      select: true,
+      opciones: this.sucursalesNombre,
       value:''
+
+    },
+
+    */
+    {
+      label: 'Sucursal',  // 20
+      name: 'comuna_sucursal',
+      tipo: 'text',
+      info: 'Selecciona la sucursal',
+      select: true,
+      opciones: this.sucursalesNombre,
+      valores:this.sucursalesId
 
     },
     {

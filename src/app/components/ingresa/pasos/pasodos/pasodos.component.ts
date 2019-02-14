@@ -13,7 +13,7 @@ export class PasodosComponent {
 
   forma: FormGroup;
   Empleado: any[];
-
+  sucursales:any;
   constructor(public servicio_empleado: IngresoUsuarioServidorService, 
               public empleadoService_: EmpleadoService, 
               private router: Router, 
@@ -22,7 +22,7 @@ export class PasodosComponent {
    
     this.Empleado = this.empleadoService_.array_empleado;
     console.log(this.Empleado[0].name);
-   
+   this.sucursales = this.empleadoService_.sucursalesId;
 
 
    }  // Fin Constructor
