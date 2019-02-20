@@ -61,6 +61,10 @@ import { RepturnosincompletosComponent } from './components/dashboard/reportes/r
 import { RepgraficassucursalesComponent } from './components/dashboard/reportes/repgraficassucursales/repgraficassucursales.component';
 import { ReplibroasistenciaComponent } from './components/dashboard/reportes/replibroasistencia/replibroasistencia.component';
 
+
+import { JefaturasComponent } from './components/dashboard/jefaturas/jefaturas.component';
+import { CentrosCostosComponent } from './components/dashboard/centros-costos/centros-costos.component';
+import { DepartamentosComponent } from './components/dashboard/departamentos/departamentos.component';
 const routes: Routes = [
   { path: 'Login', component: LoginComponent },
   
@@ -73,6 +77,9 @@ const routes: Routes = [
     { path: 'Clientes' , component: ClientesComponent},
     { path: 'SueldosComponent' , component: SueldosComponent},
     { path: 'Cargos' , component: CargosComponent},
+    { path: 'Jefaturas' , component: JefaturasComponent},
+    { path: 'CentrosCostos' , component: CentrosCostosComponent},
+    { path: 'Departamentos' , component: DepartamentosComponent},
     { path: 'ActualizarFoto/:rut' , component: ActualizarFotoComponent},
     { path: 'Reportes' , component: ReportesComponent, children:[
       

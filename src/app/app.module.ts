@@ -139,6 +139,11 @@ import { ReplibroasistenciaComponent } from './components/dashboard/reportes/rep
 
 const config: SocketIoConfig = { url: environment.wsUrl, options:{ transport : ['websocket'] } };
 import { AgGridModule } from 'ag-grid-angular';
+import { JefaturasComponent } from './components/dashboard/jefaturas/jefaturas.component';
+import { CentrosCostosComponent } from './components/dashboard/centros-costos/centros-costos.component';
+import { DepartamentosComponent } from './components/dashboard/departamentos/departamentos.component';
+import { CrudEstandarComponent } from './components/shared/crud-estandar/crud-estandar.component';
+import { HorarioxsucursalComponent } from './components/dashboard/horarioxsucursal/horarioxsucursal.component';
 
 @NgModule({
   declarations: [
@@ -197,7 +202,12 @@ import { AgGridModule } from 'ag-grid-angular';
     RepofflinemensualComponent,
     RepturnosincompletosComponent,
     RepgraficassucursalesComponent,
-    ReplibroasistenciaComponent
+    ReplibroasistenciaComponent,
+    JefaturasComponent,
+    CentrosCostosComponent,
+    DepartamentosComponent,
+    CrudEstandarComponent,
+    HorarioxsucursalComponent
   ],
   imports: [
     BrowserModule,

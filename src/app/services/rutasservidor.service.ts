@@ -76,6 +76,21 @@ export class RutasservidorService {
     'HorasPorSucursalMes': this.urlBase + '/HorasPorSucursalMes/',
     'LibroTipoPlanillaAsistencia': this.urlBase + 'LibroTipoPlanillaAsistencia/',
 
+
+    'ingresardepartamento': this.urlBase + 'api/ingresardepartamento/',
+    'actualizardepartamento': this.urlBase + 'api/actualizardepartamento/',
+    'getdepartamento': this.urlBase + 'api/getdepartamento/',
+    'deletedepartamento': this.urlBase + 'api/deletedepartamento/',
+    'ingresar_centrocosto': this.urlBase + 'api/ingresar_centrocosto/',
+    'actualizar_centrocosto': this.urlBase + 'api/actualizar_centrocosto/',
+    'get_centrocosto': this.urlBase + 'api/get_centrocosto/',
+    'delete_centrocosto': this.urlBase + 'api/delete_centrocosto/',
+    'ingresarjefaturas': this.urlBase + 'api/ingresarjefaturas/',
+    'actualizarjefaturas': this.urlBase + 'api/actualizarjefaturas/',
+    'getjefaturas': this.urlBase + 'api/getjefaturas/',
+    'deletejefaturas': this.urlBase + 'api/deletejefaturas/',
+
+
     // Turnos sin terminar:
     'TurnosSinTerminar': this.urlBase + '/TurnosSinTerminar/',
     'TurnosSinTerminarPorTrabajador': this.urlBase + '/TurnosSinTerminarPorTrabajador/',

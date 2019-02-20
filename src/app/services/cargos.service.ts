@@ -5,7 +5,7 @@ import { RutasservidorService } from './rutasservidor.service';
 export class CargosService {
 
   constructor(	 private http: HttpClient,
-  				 private rutasService_: RutasservidorService) { }
+  				       private rutasService_: RutasservidorService) { }
 
 
     AddCargo(data){
