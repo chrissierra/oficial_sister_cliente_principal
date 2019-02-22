@@ -65,6 +65,8 @@ import { ReplibroasistenciaComponent } from './components/dashboard/reportes/rep
 import { JefaturasComponent } from './components/dashboard/jefaturas/jefaturas.component';
 import { CentrosCostosComponent } from './components/dashboard/centros-costos/centros-costos.component';
 import { DepartamentosComponent } from './components/dashboard/departamentos/departamentos.component';
+import { HorarioxsucursalComponent } from './components/dashboard/horarioxsucursal/horarioxsucursal.component';
+
 const routes: Routes = [
   { path: 'Login', component: LoginComponent },
   
@@ -78,6 +80,7 @@ const routes: Routes = [
     { path: 'SueldosComponent' , component: SueldosComponent},
     { path: 'Cargos' , component: CargosComponent},
     { path: 'Jefaturas' , component: JefaturasComponent},
+    { path: 'Horarioxsucursal' , component: HorarioxsucursalComponent},
     { path: 'CentrosCostos' , component: CentrosCostosComponent},
     { path: 'Departamentos' , component: DepartamentosComponent},
     { path: 'ActualizarFoto/:rut' , component: ActualizarFotoComponent},

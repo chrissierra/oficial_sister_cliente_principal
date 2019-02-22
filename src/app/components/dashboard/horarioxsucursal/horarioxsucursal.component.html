@@ -1,3 +1,8 @@
-<p>
-  horarioxsucursal works!
-</p>
+<app-titulo titulo="Horarios por sucursal" subtitulo="Gestiona el horario" ></app-titulo>
+<app-crud-estandar
+ [array_mandante]="array_horarios"
+ [ruta_get]="ruta_get"
+ [ruta_update]="ruta_update"
+ [ruta_delete]="ruta_delete"
+ [ruta_add]="ruta_add"
+ ></app-crud-estandar>

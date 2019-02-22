@@ -90,6 +90,11 @@ export class RutasservidorService {
     'getjefaturas': this.urlBase + 'api/getjefaturas/',
     'deletejefaturas': this.urlBase + 'api/deletejefaturas/',
 
+    'ingresar_horario_por_sucursal': this.urlBase + 'api/ingresar_horario_por_sucursal/',
+    'actualizar_horario_por_sucursal': this.urlBase + 'api/actualizar_horario_por_sucursal/',
+    'get_horario_por_sucursal': this.urlBase + 'api/get_horario_por_sucursal/',
+    'delete_horario_por_sucursal': this.urlBase + 'api/delete_horario_por_sucursal/',
+
 
     // Turnos sin terminar:
     'TurnosSinTerminar': this.urlBase + '/TurnosSinTerminar/',
