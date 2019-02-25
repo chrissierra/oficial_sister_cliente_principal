@@ -10,8 +10,11 @@
 
   <h4 class="card-subtitle mb-2 text-muted" style="font-family: 'Dosis', sans-serif !important; margin-bottom: 20px !important">TRABAJANDO AHORA</h4>
 
+  <app-select-sucursales (onSucursalSelected)="SucursalSelected($event)" ></app-select-sucursales>
         <ul class="list-group" *ngIf="actualmenteTrabajando?.info !== undefined">
-          
+               <li *ngIf="actualmenteTrabajando?.info.length === 0 && sucursal" class="list-group-item p-1"><p class="text-muted">No hay funcionarios trabajando actualmente en ésta sucursal</p></li>
+
+              <li *ngIf="cantidad_trabajadores !== false && actualmenteTrabajando?.info.length > 0 && sucursal" class="list-group-item p-1"><p class="text-muted">Hay {{actualmenteTrabajando?.info.length}}  de {{cantidad_trabajadores}} trabajadores.</p></li>
               <ng-container *ngFor="let actualmenteTrabajando of actualmenteTrabajando?.info" >
                    <li  class="list-group-item p-1">
 
@@ -36,7 +39,7 @@
 
 
 
-       <h4 class="card-subtitle mb-2 text-muted" style="font-family: 'Dosis', sans-serif !important; margin-bottom: 20px !important">ANALISIS GPS</h4>
+       <h4 *ngIf="boolean_distancia_alerta" class="card-subtitle mb-2 text-muted" style="font-family: 'Dosis', sans-serif !important; margin-bottom: 20px !important">ANALISIS GPS</h4>
 
         <ul class="list-group" *ngIf="ultimosIngresos?.info.length !== 0 ">
           
@@ -51,7 +54,7 @@
         </ul>
 
         <br>
-        <h4 class="card-subtitle mb-2 text-muted" style="font-family: 'Dosis', sans-serif !important; margin-bottom: 20px !important">ANÁLISIS BIÓMETRICO</h4>
+        <h4 *ngIf="boolean_biometrico_alerta"  class="card-subtitle mb-2 text-muted" style="font-family: 'Dosis', sans-serif !important; margin-bottom: 20px !important">ANÁLISIS BIÓMETRICO</h4>
         <ul class="list-group" *ngIf="ultimosIngresos?.info.length !== 0 ">
           
           <ng-container *ngFor="let ingresos of ultimosIngresos.info" >

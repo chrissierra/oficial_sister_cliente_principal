@@ -9,6 +9,8 @@ import { CrudService } from '../../../services/crud.service';
   styleUrls: ['./departamentos.component.css']
 })
 export class DepartamentosComponent   {
+	public jefatura_nombre:any[] = [];
+	public jefatura_id:any[] = [];
 	public centro_de_costos_valor:any[] = [];
 	public centro_de_costos_id:any[] = [];
 	public booleanoIngreso:boolean=false;
@@ -23,7 +25,13 @@ export class DepartamentosComponent   {
 
   constructor(	public CrudService_:CrudService,
   				public CentroCostosService_:CentroCostosService,
-  				public CargosService_: CargosService)  { 
+  				public CargosService_: CargosService)  {
+
+  						this.CrudService_.get({'nombre_empresa': localStorage.getItem('nombre_empresa')}, 'getjefaturas')
+  						.subscribe((data:any[]) => {
+					  		data.map(value => this.jefatura_nombre.push(value.nombre))
+					  		data.map(value => this.jefatura_id.push(value.id))
+  						})
 
 					  	this.CentroCostosService_.getcentroCosto({ 'nombre_empresa': localStorage.getItem('nombre_empresa') })
 					  	.subscribe((data:any[]) => {
@@ -31,6 +39,9 @@ export class DepartamentosComponent   {
 					  		data.map(value => this.centro_de_costos_valor.push(value.nombre))
 					  		data.map(value => this.centro_de_costos_id.push(value.id))
 					  	});
+
+
+
 					  	this.array_mandante[3].value = this.nombre_empresa;
 
 		  }
@@ -67,8 +78,13 @@ export class DepartamentosComponent   {
 		    	  label: 'Jefatura',
 		    	  name: 'jefatura_id',
 		    	  tipo: 'text',
-		    	  select: false,
+		    	  select: true,
+		    	  opciones: this.jefatura_nombre,
+		    	  opciones_clave: this.jefatura_id,
 		    	  value:'',
+		    	  name_valor:'jefatura_nombre',
+		    	  valor:'',
+		    	  valor_boolean:true,
 		    	  id:''
 		
 	    	},

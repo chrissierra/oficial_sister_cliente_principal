@@ -50,10 +50,16 @@
 		                    		<td *ngIf="!array_mandante.hidden">
 		                    			
 		                    			<input 
-		                    			*ngIf="!array_mandante.hidden && !array_mandante.select" 
+		                    			*ngIf="!array_mandante.select && !array_mandante.valor_boolean" 
 		                    			[(ngModel)]="array_mandante['value']" 
 		                    			type="text" class="form-control" name="nombre_mandante" id="name">
 
+
+                                         <input 
+                                        *ngIf="!array_mandante.select && array_mandante.valor_boolean" 
+                                        [(ngModel)]="array_mandante['valor']" 
+
+                                        type="text" class="form-control" name="nombre_mandante" id="name">
 
 
 		                    			<select *ngIf="array_mandante.select && array_mandante.valor_boolean"  

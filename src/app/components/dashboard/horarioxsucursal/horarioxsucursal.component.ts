@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GuardarSucursalService } from '../../../services/guardar-sucursal.service';
 
 @Component({
   selector: 'app-horarioxsucursal',
@@ -11,8 +12,15 @@ export class HorarioxsucursalComponent implements OnInit {
 	public ruta_update:string = 'actualizar_horario_por_sucursal'
 	public ruta_delete:string = 'delete_horario_por_sucursal'
 	public ruta_add:string = 'ingresar_horario_por_sucursal'
-
-  constructor() { }
+	public sucursal_id:any[] = [];
+	public sucursal_nombre:any[] = [];
+  constructor(public GuardarSucursalService_: GuardarSucursalService) {
+  	this.GuardarSucursalService_.get_sucursales_servidor(JSON.stringify({usuario: localStorage.getItem('nombre_empresa') }))
+  	.subscribe( (data:any[]) => {
+  		console.log("Sucursales ? ", data)
+  		data.map(value =>{ this.sucursal_id.push(value.id);  this.sucursal_nombre.push(value.nombre) })
+  	 } )
+   }
 
   ngOnInit() {
   }
@@ -25,7 +33,10 @@ export class HorarioxsucursalComponent implements OnInit {
 		    	  tipo: 'text',
 		    	  select: false,
 		    	  value:'',
-		    	  id:true,
+	    		  name_valor:'cuantia_inferior_formato_hora',
+		    	  valor:'',
+		    	  valor_boolean:true,
+				  id:true,
 		    	  id_valor:''
 		
 	    	},
@@ -35,6 +46,9 @@ export class HorarioxsucursalComponent implements OnInit {
 		    	  tipo: 'text',
 		    	  select: false,
 		    	  value:'',
+	    		  name_valor:'cuantia_superior_formato_hora',
+		    	  valor:'',
+		    	  valor_boolean:true,
 		    	  id:''
 		
 	    	},
@@ -99,6 +113,20 @@ export class HorarioxsucursalComponent implements OnInit {
 	      		  hidden: true,
 	      		  select: false,
 		    	  value: localStorage.getItem("nombre_empresa"),
+		    	  id:''
+		
+	    	},
+	    	{
+		    	  label: 'Sucursal',
+		    	  name: 'sucursal_id',
+		    	  tipo: 'select',
+		    	  select: true,
+		    	  opciones: this.sucursal_nombre,
+		    	  opciones_clave: this.sucursal_id,
+		    	  value:'',
+		    	  name_valor:'sucursal_nombre',
+		    	  valor:'',
+		    	  valor_boolean:true,
 		    	  id:''
 		
 	    	},

@@ -4,7 +4,9 @@ import { FormGroup, FormControl, Validators, FormArray } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { IngresoUsuarioServidorService } from '../../../../services/ingreso-usuario-servidor.service';
 import { Router, ActivatedRoute } from '@angular/router';
-import swal from 'sweetalert2'
+import swal from 'sweetalert2';
+import { CargosService } from '../../../../services/cargos.service';
+
 @Component({
   selector: 'app-pasodos',
   templateUrl: './pasodos.component.html'
@@ -14,7 +16,8 @@ export class PasodosComponent {
   forma: FormGroup;
   Empleado: any[];
   sucursales:any;
-  constructor(public servicio_empleado: IngresoUsuarioServidorService, 
+  constructor(public CargosService_: CargosService,
+              public servicio_empleado: IngresoUsuarioServidorService, 
               public empleadoService_: EmpleadoService, 
               private router: Router, 
               private param: ActivatedRoute,) {
@@ -26,6 +29,9 @@ export class PasodosComponent {
 
 
    }  // Fin Constructor
+
+
+
 
     funcion_paso3(rut){
     this.router.navigate(['../Ingresa/paso3/'+rut]);

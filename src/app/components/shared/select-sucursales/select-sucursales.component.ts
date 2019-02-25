@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { GuardarSucursalService } from '../../../services/guardar-sucursal.service';
 import { Store } from '@ngrx/store';
 import * as fromMarcaje from '../../marcaje.actions';
@@ -14,11 +14,14 @@ export class SelectSucursalesComponent {
 	sucursales:any;
 	SucursalElegida:any;
   nombreEmpresa:any;
+  @Output() onSucursalSelected: EventEmitter<any>;
   constructor(	private GuardarSucursalService_: GuardarSucursalService,
   				      private store: Store<AppState>) 
   { 
   		this.nombreEmpresa = localStorage.getItem('nombre_empresa');
      
+      this.onSucursalSelected = new EventEmitter();
+
   		this.getSucursal();
 
   }
@@ -37,6 +40,7 @@ export class SelectSucursalesComponent {
 		console.log("evento..", e)
     	console.log("select..", select)
     	console.log("SucursalElegida", this.SucursalElegida)
+      this.onSucursalSelected.emit(this.SucursalElegida);
     	const accion = new fromMarcaje.ACTUALIZARSUCURSALAction(this.SucursalElegida);
     	this.store.dispatch( accion );
 

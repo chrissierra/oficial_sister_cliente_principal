@@ -1,17 +1,42 @@
 import { Injectable } from '@angular/core';
 import { EmpleadoInterface, InputInterface } from './empleado.interface';
 import { GuardarSucursalService } from '../../../services/guardar-sucursal.service';
+import { CrudService } from '../../../services/crud.service';
+import { CargosService } from '../../../services/cargos.service';
 
 @Injectable()
 export class EmpleadoService {
   public sucursalesNombre:any[] = [];
   public sucursalesId:any[] = [];
   public nombreEmpresa:any;
+  public jefatura_nombre:any[] = [];
+  public jefatura_id:any[] = [];
+  public cargos_nombre:any[] = [];
+  public cargos_id:any[] = [];
+  constructor(public CargosService_: CargosService,
+              public CrudService_: CrudService,
+              public GuardarSucursalService_: GuardarSucursalService) {
 
-  constructor(public GuardarSucursalService_: GuardarSucursalService) {
+     this.CrudService_.get({'nombre_empresa': localStorage.getItem('nombre_empresa')}, 'getjefaturas')
+              .subscribe((data:any[]) => {
+                data.map(value => this.jefatura_nombre.push(value.nombre))
+                data.map(value => this.jefatura_id.push(value.id))
+                console.log(this.jefatura_id)
+    });
+    this.getCargos();
     this.nombreEmpresa = localStorage.getItem('nombre_empresa');
     this.getSucursales();
   }
+
+
+    getCargos(){
+        this.CargosService_.getCargo({nombre_empresa: localStorage.getItem('nombre_empresa')})
+        .subscribe( (data:any[]) => {
+                data.map(value => this.cargos_nombre.push(value.cargo))
+                data.map(value => this.cargos_id.push(value.id))
+        } )
+   
+     }
 
 public getSucursales(){
     this.GuardarSucursalService_.get_sucursales_servidor(JSON.stringify({usuario:this.nombreEmpresa }))
@@ -99,8 +124,8 @@ public array_empleado: any[] = [
       name: 'sexo',
       tipo: 'select',
       select: true,
-      opciones: [ 'Masculino', 'Femenino']
-
+      opciones: [ 'Masculino', 'Femenino'],
+      valores: [ 'Masculino', 'Femenino']
     },
     {
       label: 'Fecha Nacimiento',
@@ -118,6 +143,7 @@ public array_empleado: any[] = [
       value:''
 
     },
+    /*
     {
       label: 'Puesto',
       name: 'puesto',
@@ -125,13 +151,29 @@ public array_empleado: any[] = [
       select: false,
       value:''
 
+    },*/
+     {
+      label: 'Cargo',  // 20
+      name: 'cargo_id',
+      tipo: 'select',
+      info: 'Elige el cargo',
+      select: true,
+      opciones: this.cargos_nombre,
+      valores:this.cargos_id
+
     },
     {
       label: 'Jefatura',
-      name: 'jefatura',
-      tipo: 'text',
-      select: false,
-      value:''
+      name: 'jefatura_id',
+      tipo: 'select',
+      select: true,
+      opciones: this.jefatura_nombre,
+      valores: this.jefatura_id,
+      value:'',
+      name_valor:'jefatura_nombre',
+      valor:'',
+      valor_boolean:true,
+      id:''
 
     },
    
@@ -235,6 +277,7 @@ public array_empleado: any[] = [
       info: 'Selecciona el tipo de contrato para tu trabajador',
       select: true,
       opciones: [ 'Fijo', 'Indefinido', 'Plazo'],
+      valores: [ 'Fijo', 'Indefinido', 'Plazo'],
       value:''
 
     },
@@ -387,6 +430,7 @@ public array_empleado: any[] = [
       tipo: 'select',
       select: true,
       opciones: [ 'Turnos', 'Horario Fijo', 'Noches'],
+      valores: [ 'Turnos', 'Horario Fijo', 'Noches'],
       value:''
     },    
      {
@@ -422,6 +466,7 @@ public array_empleado: any[] = [
       tipo: 'select',
       select: true,
       opciones: [ 'Administrador', 'Sin Rol'],
+      valores: [ 'Administrador', 'Sin Rol'],
       value:''
 
     },

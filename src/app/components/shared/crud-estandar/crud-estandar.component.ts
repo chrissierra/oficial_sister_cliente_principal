@@ -81,6 +81,9 @@ EditarMandante(id){
 
 		if(this.array_mandante[i]['id']){
 			this.array_mandante[i]['id_valor'] = id['id']
+			this.array_mandante[i]['value'] = id[this.array_mandante[i]['name']]
+			if(this.array_mandante[i]['valor_boolean']) this.array_mandante[i]['valor'] = id[this.array_mandante[i]['name_valor']] 
+
 		}else{
 			this.array_mandante[i]['value'] = id[this.array_mandante[i]['name']]
 			if(this.array_mandante[i]['valor_boolean']) this.array_mandante[i]['valor'] = id[this.array_mandante[i]['name_valor']] 
@@ -95,6 +98,12 @@ EditarMandante(id){
 
   EnviarCliente(){	
   	console.log(this.array_mandante)
+  		  	console.log(this.array_mandante);
+	  		for (var i = 0; i < this.array_mandante.length; ++i) {
+				if(this.array_mandante[i]['valor_boolean'] && !this.array_mandante[i]['select']){
+					this.array_mandante[i]['value'] = this.array_mandante[i]['valor'] 
+				}
+			}
 
   	this.CrudService_.Add(this.array_mandante, this.ruta_add)
   	.subscribe( data => {
@@ -117,6 +126,11 @@ EditarMandante(id){
 
   ActualizarCliente(){
 	  	console.log(this.array_mandante);
+	  		for (var i = 0; i < this.array_mandante.length; ++i) {
+				if(this.array_mandante[i]['valor_boolean'] && !this.array_mandante[i]['select']){
+					this.array_mandante[i]['value'] = this.array_mandante[i]['valor'] 
+				}
+			}
 	  	this.CrudService_.update(this.array_mandante, this.ruta_update)
 	  	.subscribe( data => {
 	  		console.log(data);
