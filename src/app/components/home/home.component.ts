@@ -21,6 +21,10 @@ public boolean_distancia_alerta:boolean = false;
 public boolean_biometrico_alerta:boolean=false;
 public sucursal:any = false;
 public cantidad_trabajadores:any = false;
+public boleanoLoader:boolean= false;
+public  array_dias:string[] = [
+  'nada', 'Lunes',  'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'
+  ];
 constructor(  public CrudService_: CrudService,
               private store: Store<AppState>,
               public LibroremuneracionesService_: LibroremuneracionesService) {
@@ -68,25 +72,36 @@ constructor(  public CrudService_: CrudService,
 
 
   SucursalSelected(evento){
+    this.boleanoLoader = true;
     this.sucursal = evento;
     this.cantidad_trabajadores = false;
     this.CrudService_.get({'nombre_empresa': this.nombre_empresa, 'sucursal': this.sucursal}, 'get_horario_por_sucursal')
                 .subscribe((data:any[]) => {
                     let f = new Date();
                     let cuantia_actual = f.getHours() + (f.getMinutes()  / 60 );
+
                     data.map(value => {
-                      if(value.cuantia_inferior < cuantia_actual && value.cuantia_superior > cuantia_actual){
-                        this.cantidad_trabajadores = value.cantidad_trabajadores;                                                        
+                      if(value.caso_especial === 'Si'){
+                         // alert(f.getFullYear()) // Normal, el año.
+                         // alert(f.getMonth())  //debo sumarle uno
+                         // alert(f.getDate()) // el día, esta bien.
+                         //    alert(value.fecha_caso_especial.split('-')[0]) // año
+                         //    alert(value.fecha_caso_especial.split('-')[1] *1) // mes
+                         //    alert(value.fecha_caso_especial.split('-')[2]) // dia
+
+                             if(f.getFullYear() === (value.fecha_caso_especial.split('-')[0]*1) &&  1*(f.getMonth()+1) === ( value.fecha_caso_especial.split('-')[1]*1) &&  f.getDate() === (1*value.fecha_caso_especial.split('-')[2]) ){
+                                  this.cantidad_trabajadores = value.cantidad_trabajadores;
+                                  
+                              }
                       }else{
-                        this.cantidad_trabajadores = false;
-                      } 
+                           if(this.cantidad_trabajadores === false && value.cuantia_inferior < cuantia_actual && value.cuantia_superior > cuantia_actual && this.array_dias[f.getDay()] === value.dia && value.caso_especial === 'No'){
+                              this.cantidad_trabajadores = value.cantidad_trabajadores;     
+                           }
+                      }
+
                     })
     })
     this.GetActualmenteTrabajando();
-
-    //this.intervalo= setInterval(()=>{
-     //      this.GetActualmenteTrabajando();
-   // }, 3500)
   }
 
   GetActualmenteTrabajando(){
@@ -108,7 +123,7 @@ constructor(  public CrudService_: CrudService,
                   console.log("****** ES LA MISMA INFO ************")
                 }
  
-        })
+        }, (error) => {}, ()=>this.boleanoLoader = false)
       } // Fin función GetActualmenteTrabajando
 
 } // Fin CLASE *******

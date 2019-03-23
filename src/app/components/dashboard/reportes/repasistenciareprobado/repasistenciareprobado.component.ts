@@ -11,6 +11,8 @@ import * as XLSX from 'xlsx';
 import { Store } from '@ngrx/store';
 import * as fromMarcaje from '../../../marcaje.actions';
 import { AppState } from '../../../../app.reducers';
+import { MensajesSwalService } from './../../../../services/mensajes-swal.service';
+
 @Component({
   selector: 'app-repasistenciareprobado',
   templateUrl: './repasistenciareprobado.component.html',
@@ -28,7 +30,8 @@ export class RepasistenciareprobadoComponent  {
 	public movimientos: any[] = [];
   @ViewChild('TABLE') table: ElementRef;
 
-  constructor(private store: Store<AppState>,
+  constructor(public MensajesSwalService_: MensajesSwalService,
+              private store: Store<AppState>,
               public servicioLibroDiario:LibroremuneracionesService) {
 
   	  	this.nombreEmpresa = localStorage.getItem("nombre_empresa");
@@ -42,10 +45,11 @@ export class RepasistenciareprobadoComponent  {
       const FORMATO_SALIDA = 'MM-YYYY';
       const fecha1 = moment(this.calendario, FORMATO_ENTRADA);
       //alert(fecha1.format(FORMATO_SALIDA));
-      this.servicioLibroDiario.GetLibroMensual({'id': this.nombreEmpresa, 'mes': this.mes, 'anio': this.anio }).subscribe( (data)=> {
-      	console.log(data);
+      this.servicioLibroDiario.GetLibroMensual({'id': this.nombreEmpresa, 'mes': this.mes, 'anio': this.anio }).subscribe( (data:any[])=> {
+      	if(data.length === 0) return this.MensajesSwalService_.error();
+        console.log(data);
       	this.movimiento = data;
-      } );
+      }, (error) =>   this.MensajesSwalService_.error() );
   }
 
 exportAsExcel()
@@ -80,10 +84,11 @@ exportAsExcel()
             const fecha1 = moment(this.calendario, FORMATO_ENTRADA);
           //  alert(fecha1.format(FORMATO_SALIDA));
             this.servicioLibroDiario.GetmensualPorSucursal({'id': this.nombreEmpresa, 'mes': this.mes, 'anio': this.anio,
-                                                            'sucursal': this.sucursal  }).subscribe( (data)=> {
+                                                            'sucursal': this.sucursal  }).subscribe( (data:any[])=> {
+              if(data.length === 0) return this.MensajesSwalService_.error();
               console.log(data);
               this.movimiento = data;
-            } );
+            }, (error) =>   this.MensajesSwalService_.error() );
 
 
       }

@@ -29,6 +29,15 @@ export class MensajesSwalService {
                 })
    } // Fin funcion mensajepromesa
 
+      public error(){
+      this.mensajeStandar({
+        titulo:'Error',
+        texto: 'Debes marcar todos los campos necesarios para tu consulta. También es posible que no hayan datos para tu consulta. Verifícalo',
+        tipo: 'error',
+        boton: 'Ok'
+      })
+    }
+
 }
 
 

@@ -1,4 +1,10 @@
- <div class="container">
+      <nav aria-label="breadcrumb" class="shadow p-0 mb-5 bg-white rounded" >
+          <ol class="breadcrumb " style="background-color: white">
+            <li class="breadcrumb-item"><a [routerLink]="['../']">Perfil</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Clientes</li>
+          </ol>
+    </nav>
+     <div class="container">
  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
  	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <div class="table-wrapper">
@@ -10,6 +16,8 @@
                     </div>
                 </div>
             </div>
+            <div class="table-responsive">
+
             <table class="table table-bordered">
                 <thead>
                     <tr>
@@ -55,5 +63,6 @@
 
                 </tbody>
             </table>
+        </div>
         </div>
     </div>    

@@ -1,4 +1,4 @@
- <div class="container">
+ <div class="container" style="margin-bottom: 300px">
  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
  	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <div class="table-wrapper">
@@ -10,83 +10,87 @@
                     </div>
                 </div>
             </div>
-            <table class="table table-bordered">
-                <thead>
-                    <tr>
+            <div class="table-responsive">
 
-                    	<ng-container *ngFor="let dato of array_mandante ">
-                    		 <th  *ngIf="!dato.hidden">{{ dato.label }}</th>
-                    	</ng-container>
-                       
-                    </tr>
-                </thead>
-                <tbody>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
 
-
-                    <tr *ngFor="let Dato of Datos; let i = index" >
-                        
-
-                    	<ng-container *ngFor="let dato of array_mandante ">
-                    		<td  *ngIf="!dato.hidden && !dato.valor_boolean ">{{ Dato[dato.name] }}</td>
-                    		<td  *ngIf="!dato.hidden && dato.valor_boolean ">{{ Dato[dato.name_valor] }}</td>
-
-                    	</ng-container>
+                            	<ng-container *ngFor="let dato of array_mandante ">
+                            		 <th  *ngIf="!dato.hidden">{{ dato.label }}</th>
+                            	</ng-container>
+                               
+                            </tr>
+                        </thead>
+                        <tbody>
 
 
-                       <!-- <td >{{ Dato.hitos }}</td>-->
+                            <tr *ngFor="let Dato of Datos; let i = index" >
+                                
 
-                        
-                        <td>
-							
-                            <a (click)="EditarMandante(Dato)" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                            <a (click)="borrarCliente(Dato)" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
-                        </td>
-                    </tr>
+                            	<ng-container *ngFor="let dato of array_mandante ">
+                            		<td  *ngIf="!dato.hidden && !dato.valor_boolean ">{{ Dato[dato.name] }}</td>
+                            		<td  *ngIf="!dato.hidden && dato.valor_boolean ">{{ Dato[dato.name_valor] }}</td>
 
-
-                    <tr *ngIf="booleanoIngreso">
-
-							<ng-container *ngFor="let array_mandante of array_mandante">	
-		                    		<td *ngIf="!array_mandante.hidden">
-		                    			
-		                    			<input 
-		                    			*ngIf="!array_mandante.select && !array_mandante.valor_boolean" 
-		                    			[(ngModel)]="array_mandante['value']" 
-		                    			type="text" class="form-control" name="nombre_mandante" id="name">
+                            	</ng-container>
 
 
-                                         <input 
-                                        *ngIf="!array_mandante.select && array_mandante.valor_boolean" 
-                                        [(ngModel)]="array_mandante['valor']" 
+                               <!-- <td >{{ Dato.hitos }}</td>-->
 
-                                        type="text" class="form-control" name="nombre_mandante" id="name">
-
-
-		                    			<select *ngIf="array_mandante.select && array_mandante.valor_boolean"  
-		                    			[(ngModel)]="array_mandante['value']" 
-		                    			class="form-control" name="hito" required>
-		                    			
-				                    		<ng-container *ngFor="let opcion of array_mandante.opciones; let e= index ">		 
-						                    		    <option [value]="array_mandante.opciones_clave[e]">{{ opcion }}</option>
-				                    		</ng-container>
-		                                              
-		                                         
-		                           		 </select>
-		                    		</td>
-							</ng-container>
+                                
+                                <td>
+        							
+                                    <a (click)="EditarMandante(Dato)" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                    <a (click)="borrarCliente(Dato)" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                                </td>
+                            </tr>
 
 
-		                        <td>
-									<a *ngIf="!tipoEnvio" (click)="EnviarCliente()" class="add" title="AGREGAR" data-toggle="tooltip"><i class="material-icons">&#xe03b;</i></a>
+                            <tr *ngIf="booleanoIngreso">
 
-									<a *ngIf="tipoEnvio" (click)="ActualizarCliente()" class="edit" title="ACTUALIZAR" data-toggle="tooltip"><i class="material-icons">&#xe03b;</i></a>
-		                          
-		                            <a (click)="agregarNuevoCliente(false)" class="delete" title="BORRAR" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
-		                        </td>
-                    </tr>
-                 
+        							<ng-container *ngFor="let array_mandante of array_mandante">	
+        		                    		<td *ngIf="!array_mandante.hidden">
+        		                    			
+        		                    			<input 
+        		                    			*ngIf="!array_mandante.select && !array_mandante.valor_boolean" 
+        		                    			[(ngModel)]="array_mandante['value']" 
+        		                    			[type]="array_mandante['tipo']" class="form-control" name="nombre_mandante" id="name">
 
-                </tbody>
-            </table>
+
+                                                 <input 
+                                                *ngIf="!array_mandante.select && array_mandante.valor_boolean" 
+                                                [(ngModel)]="array_mandante['valor']" 
+
+                                                [type]="array_mandante['tipo']" class="form-control" name="nombre_mandante" id="name">
+
+
+        		                    			<select style="min-width: 150px" *ngIf="array_mandante.select && array_mandante.valor_boolean"  
+        		                    			[(ngModel)]="array_mandante['value']" 
+        		                    			class="form-control" name="hito" required>
+        		                    			
+        				                    		<ng-container *ngFor="let opcion of array_mandante.opciones; let e= index ">		 
+        						                    		    <option [value]="array_mandante.opciones_clave[e]">{{ opcion }}</option>
+        				                    		</ng-container>
+        		                                              
+        		                                         
+        		                           		 </select>
+        		                    		</td>
+        							</ng-container>
+
+
+        		                        <td>
+        									<a *ngIf="!tipoEnvio" (click)="EnviarCliente()" class="add" title="AGREGAR" data-toggle="tooltip"><i class="material-icons">&#xe03b;</i></a>
+
+        									<a *ngIf="tipoEnvio" (click)="ActualizarCliente()" class="edit" title="ACTUALIZAR" data-toggle="tooltip"><i class="material-icons">&#xe03b;</i></a>
+        		                          
+        		                            <a (click)="agregarNuevoCliente(false)" class="delete" title="BORRAR" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+        		                        </td>
+                            </tr>
+                         
+
+                        </tbody>
+                    </table>
+                    </div>
         </div>
     </div>    
+    <app-footer></app-footer>

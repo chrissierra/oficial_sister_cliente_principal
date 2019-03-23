@@ -83,6 +83,7 @@ public editarEmpleado(empleado){
     this.array_empleado[36].value=empleado.status
     this.array_empleado[37].value=empleado.rol
     this.array_empleado[38].value=empleado.fono1
+    this.array_empleado[39].value=empleado.email1
     return this.array_empleado;
 
 }
@@ -475,6 +476,17 @@ public array_empleado: any[] = [
      label: 'Teléfono Contacto',  //38
       name: 'fono1',
       info: 'Escribe un número telefónico',
+      tipo: 'text',
+      select: false,
+      value:''
+
+    },
+
+
+     { 
+     label: 'Email',  //39
+      name: 'email1',
+      info: 'Escribe un correo válido',
       tipo: 'text',
       select: false,
       value:''

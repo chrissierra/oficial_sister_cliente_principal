@@ -8,6 +8,8 @@ import * as fromMarcaje from '../../../marcaje.actions';
 import { AppState } from '../../../../app.reducers';
 import { PlanillaservicesService } from './../../../../services/planillaservices.service';
 import { Observable, of, forkJoin } from 'rxjs'; 
+import { MensajesSwalService } from './../../../../services/mensajes-swal.service';
+
 @Component({
   selector: 'app-represumenmensual',
   templateUrl: './represumenmensual.component.html',
@@ -24,9 +26,10 @@ export class RepresumenmensualComponent  {
 	public DatosAsistencia:DatosDeAsistencia;
 	@ViewChild('TABLE') table: ElementRef;
 
-  constructor(	private SueldosService_: SueldosService,
-  				private planillaServicio_: PlanillaservicesService,
-  				private store: Store<AppState>,
+  constructor(	public MensajesSwalService_: MensajesSwalService,
+                private SueldosService_: SueldosService,
+        				private planillaServicio_: PlanillaservicesService,
+        				private store: Store<AppState>,
               	public servicioLibroDiario:LibroremuneracionesService) 
   {} // Fin constructor
 
@@ -93,9 +96,10 @@ export class RepresumenmensualComponent  {
     ActualizarFecha(){
 	        this.planillaServicio_.obtener_planilla(this.nombreEmpresa).subscribe((data:any[]) => {
                // this.datosTrabajadores = { info: data };
+                 if(data.length === 0) return this.MensajesSwalService_.error();
 
                 this.generarArray(data, this.mes, this.anio);
-          	});
+          	}, (error) =>   this.MensajesSwalService_.error() );
   	}// Fin funcion actualizar Fecha
 
 

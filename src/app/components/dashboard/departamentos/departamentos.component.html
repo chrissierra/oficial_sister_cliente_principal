@@ -1,4 +1,10 @@
-<app-titulo titulo="Departamentos" subtitulo="Edita los departamentos" ></app-titulo>
+      <nav aria-label="breadcrumb" class="shadow p-0 mb-5 bg-white rounded" >
+          <ol class="breadcrumb " style="background-color: white">
+            <li class="breadcrumb-item"><a [routerLink]="['../']">Perfil</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Departamentos</li>
+          </ol>
+    </nav>
+    <app-titulo titulo="Departamentos" subtitulo="Edita los departamentos" ></app-titulo>
 <app-crud-estandar
  [array_mandante]="array_mandante"
  [ruta_get]="ruta_get"

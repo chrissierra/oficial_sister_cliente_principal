@@ -43,7 +43,9 @@ export class RepactualmentetrabajandoComponent implements OnInit {
   actualizarTabla(){
   	this.getFromState()
   	this.LibroremuneracionesService_.actualmenteTrabajandoPorSucursal({'id': this.nombre_empresa, 'sucursal': this.sucursal})
-  	.subscribe(data => {
+  	.subscribe((data: any[]) => {
+
+      if(data.length === 0) return this.error();
   		console.log('this.Trabajadores = { info: data };',data)
   		this.Trabajadores = { info: data };
       console.log(this.Trabajadores.info)
@@ -57,6 +59,15 @@ export class RepactualmentetrabajandoComponent implements OnInit {
                this.DatosSucursal = marcaje.locacion;
           });
     } // Fin getFromState
+
+     error(){
+      this.MensajesSwalService_.mensajeStandar({
+        titulo:'Error',
+        texto: 'Debes marcar todos los campos necesarios para tu consulta. También es posible que no hayan datos para tu consulta. Verifícalo',
+        tipo: 'error',
+        boton: 'Ok'
+      })
+    }
 
 
 

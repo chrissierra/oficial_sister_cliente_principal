@@ -11,8 +11,9 @@
   <h4 class="card-subtitle mb-2 text-muted" style="font-family: 'Dosis', sans-serif !important; margin-bottom: 20px !important">TRABAJANDO AHORA</h4>
 
   <app-select-sucursales (onSucursalSelected)="SucursalSelected($event)" ></app-select-sucursales>
+       <div class="row justify-content-center"><mat-spinner *ngIf="boleanoLoader"></mat-spinner></div>
         <ul class="list-group" *ngIf="actualmenteTrabajando?.info !== undefined">
-               <li *ngIf="actualmenteTrabajando?.info.length === 0 && sucursal" class="list-group-item p-1"><p class="text-muted">No hay funcionarios trabajando actualmente en ésta sucursal</p></li>
+               <li *ngIf="actualmenteTrabajando?.info.length === 0 && sucursal" class="list-group-item p-1"><p class="text-muted">No hay funcionarios trabajando actualmente en ésta sucursal</p><p *ngIf="cantidad_trabajadores !== false"> Deberían haber {{ cantidad_trabajadores }} trabajadores. </p></li>
 
               <li *ngIf="cantidad_trabajadores !== false && actualmenteTrabajando?.info.length > 0 && sucursal" class="list-group-item p-1"><p class="text-muted">Hay {{actualmenteTrabajando?.info.length}}  de {{cantidad_trabajadores}} trabajadores.</p></li>
               <ng-container *ngFor="let actualmenteTrabajando of actualmenteTrabajando?.info" >

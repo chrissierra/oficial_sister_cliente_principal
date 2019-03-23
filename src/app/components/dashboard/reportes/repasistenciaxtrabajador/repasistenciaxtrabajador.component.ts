@@ -12,6 +12,8 @@ import * as XLSX from 'xlsx';
 import { Store } from '@ngrx/store';
 import * as fromMarcaje from '../../../marcaje.actions';
 import { AppState } from '../../../../app.reducers';
+import { MensajesSwalService } from './../../../../services/mensajes-swal.service';
+
 @Component({
   selector: 'app-repasistenciaxtrabajador',
   templateUrl: './repasistenciaxtrabajador.component.html',
@@ -27,7 +29,8 @@ export class RepasistenciaxtrabajadorComponent  {
  public nombreEmpresa:any;
  public calendario:any;
  public movimiento:any;
-  constructor(private store: Store<AppState>,
+  constructor(public MensajesSwalService_: MensajesSwalService,
+              private store: Store<AppState>,
               public servicioLibroDiario:LibroremuneracionesService,
               public PlanillaservicesService_ :PlanillaservicesService) {
   	  	
@@ -55,10 +58,11 @@ export class RepasistenciaxtrabajadorComponent  {
 		      	 										   'mes': this.mes, 
 		      	 										   'anio': this.anio,
 		      	 										   'id_trabajador': this.selectedPersonId }).
-      	 			subscribe( (data)=> {
-			      	console.log(data);
+      	 			subscribe( (data:any[])=> {
+			      	if(data.length === 0) return this.MensajesSwalService_.error();
+              console.log(data);
 			      	this.movimiento = data;
-			      } );
+			      } , (error) =>   this.MensajesSwalService_.error() );
 
       }else{
       	alert("selecciona trabajador")

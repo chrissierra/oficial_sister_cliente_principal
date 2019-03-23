@@ -9,6 +9,8 @@ import * as XLSX from 'xlsx';
 import { Store } from '@ngrx/store';
 import * as fromMarcaje from '../../../marcaje.actions';
 import { AppState } from '../../../../app.reducers';
+import { MensajesSwalService } from './../../../../services/mensajes-swal.service';
+
 @Component({
   selector: 'app-repasistenciadiario',
   templateUrl: './repasistenciadiario.component.html',
@@ -25,7 +27,8 @@ export class RepasistenciadiarioComponent  {
   public sucursal:any;
   public anio:any;
   @ViewChild('TABLE') table: ElementRef;
-  constructor(private store: Store<AppState>,
+  constructor(public MensajesSwalService_: MensajesSwalService,
+              private store: Store<AppState>,
               public servicioLibroDiario:LibroremuneracionesService,
               public geolocalizacion: GeolocalizacionService,
               public mapsApiLoader: MapsAPILoader,
@@ -36,6 +39,15 @@ export class RepasistenciadiarioComponent  {
   	  	this.nombreEmpresa = localStorage.getItem("nombre_empresa");
 
    }
+
+   error(){
+      this.MensajesSwalService_.mensajeStandar({
+        titulo:'Error',
+        texto: 'Debes marcar todos los campos necesarios para tu consulta. También es posible que no hayan datos para tu consulta. Verifícalo',
+        tipo: 'error',
+        boton: 'Ok'
+      })
+    }
 
 
 exportAsExcel()
@@ -72,10 +84,13 @@ exportAsExcel()
             const FORMATO_SALIDA = 'MM-DD-YYYY';
             const fecha1 = moment(this.calendario, FORMATO_ENTRADA);
           //  alert(fecha1.format(FORMATO_SALIDA));
-            this.servicioLibroDiario.GetLibroDiario({'id': this.nombreEmpresa, 'dia': fecha1.format(FORMATO_SALIDA) }).subscribe( (data)=> {
+            this.servicioLibroDiario.GetLibroDiario({'id': this.nombreEmpresa, 'dia': fecha1.format(FORMATO_SALIDA) }).subscribe( (data:any[])=> {
             	console.log(data);
+
+              if(data.length === 0) return this.MensajesSwalService_.error();
+
             	this.movimiento = data;
-            } );
+            }, (error) => this.error() );
 
 
       }
@@ -95,10 +110,11 @@ exportAsExcel()
           //  alert(fecha1.format(FORMATO_SALIDA));
             this.servicioLibroDiario.GetdiarioPorSucursal({'id': this.nombreEmpresa, 
                                                             'dia': fecha1.format(FORMATO_SALIDA),
-                                                            'sucursal': this.sucursal  }).subscribe( (data)=> {
+                                                            'sucursal': this.sucursal  }).subscribe( (data: any[])=> {
+              if(data.length === 0) return this.error();                                                               
               console.log(data);
               this.movimiento = data;
-            } );
+            } , (error) => this.error() );
 
 
       }

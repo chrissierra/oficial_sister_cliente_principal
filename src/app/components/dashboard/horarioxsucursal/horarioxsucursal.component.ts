@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { GuardarSucursalService } from '../../../services/guardar-sucursal.service';
+import {Observable, from}  from 'rxjs';
+import {MatSnackBar} from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-horarioxsucursal',
@@ -14,7 +16,9 @@ export class HorarioxsucursalComponent implements OnInit {
 	public ruta_add:string = 'ingresar_horario_por_sucursal'
 	public sucursal_id:any[] = [];
 	public sucursal_nombre:any[] = [];
-  constructor(public GuardarSucursalService_: GuardarSucursalService) {
+	public subtitulo:string;
+  constructor(	private snackBar: MatSnackBar,
+  				public GuardarSucursalService_: GuardarSucursalService) {
   	this.GuardarSucursalService_.get_sucursales_servidor(JSON.stringify({usuario: localStorage.getItem('nombre_empresa') }))
   	.subscribe( (data:any[]) => {
   		console.log("Sucursales ? ", data)
@@ -23,6 +27,13 @@ export class HorarioxsucursalComponent implements OnInit {
    }
 
   ngOnInit() {
+  	     const snackBarRef = this.snackBar.open('Por favor leer la breve instrucción ubicada en sección superior', 'OK', {
+              duration: 3500
+            });
+  	this.subtitulo=`
+  	INSTRUCCIÓN: Debes poner para cada día de la semana el horario de cada sucursal u instalación. Para casos especiales, es importante notar que requieren que rellenes 
+  	la casilla de "fecha"; en el caso que no fuera un caso especial basta que pongas que "No" y dejes la fecha sin rellenar.
+  	`
   }
 
 	  public array_horarios: any[] = [
@@ -30,7 +41,7 @@ export class HorarioxsucursalComponent implements OnInit {
 			{
 		    	  label: 'Hora Entrada Segmento',
 		    	  name: 'cuantia_inferior',
-		    	  tipo: 'text',
+		    	  tipo: 'time',
 		    	  select: false,
 		    	  value:'',
 	    		  name_valor:'cuantia_inferior_formato_hora',
@@ -43,7 +54,7 @@ export class HorarioxsucursalComponent implements OnInit {
 	    	{
 		    	  label: 'Hora Salida Segmento',
 		    	  name: 'cuantia_superior',
-		    	  tipo: 'text',
+		    	  tipo: 'time',
 		    	  select: false,
 		    	  value:'',
 	    		  name_valor:'cuantia_superior_formato_hora',
@@ -55,7 +66,7 @@ export class HorarioxsucursalComponent implements OnInit {
 	    	{
 		    	  label: 'Cantidad Trabajadores',
 		    	  name: 'cantidad_trabajadores',
-		    	  tipo: 'text',
+		    	  tipo: 'number',
 		    	  select: false,
 		    	  value:'',
 		    	  id:''
@@ -64,45 +75,65 @@ export class HorarioxsucursalComponent implements OnInit {
 	    	{
 		    	  label: 'Feriados',
 		    	  name: 'feriados',
-		    	  tipo: 'text',
-		    	  select: false,
+		    	  tipo: 'select',
+		    	  select: true,
+		    	  opciones: ['Si', 'No'] ,
+		    	  opciones_clave: ['Si', 'No'] ,
 		    	  value:'',
+		    	  name_valor:'feriados',
+		    	  valor:'',
+		    	  valor_boolean:true,
 		    	  id:''
 		
 	    	},
 	    	{
 		    	  label: 'Feriado Irrenunciable',
 		    	  name: 'feriado_irrenunciable',
-		    	  tipo: 'text',
-		    	  select: false,
+		    	  tipo: 'select',
+		    	  select: true,
+		    	  opciones: ['Si', 'No'] ,
+		    	  opciones_clave: ['Si', 'No'] ,
 		    	  value:'',
+		    	  name_valor:'feriado_irrenunciable',
+		    	  valor:'',
+		    	  valor_boolean:true,
 		    	  id:''
 		
 	    	},
 	    	{
 		    	  label: 'Día',
 		    	  name: 'dia',
-		    	  tipo: 'text',
-		    	  select: false,
+		    	  tipo: 'select',
+		    	  select: true,
+		    	  opciones: ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'] ,
+		    	  opciones_clave: ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'] ,
 		    	  value:'',
+		    	  name_valor:'dia',
+		    	  valor:'',
+		    	  valor_boolean:true,
 		    	  id:''
 		
 	    	},
 	    	{
 		    	  label: 'Caso Especial',
 		    	  name: 'caso_especial',
-		    	  tipo: 'text',
-		    	  select: false,
+		    	  tipo: 'select',
+		    	  select: true,
+		    	  opciones: ['Si', 'No'] ,
+		    	  opciones_clave: ['Si', 'No'] ,
 		    	  value:'',
+		    	  name_valor:'caso_especial',
+		    	  valor:'',
+		    	  valor_boolean:true,
 		    	  id:''
 		
 	    	},
 	    	{
 		    	  label: 'Fecha',
 		    	  name: 'fecha_caso_especial',
-		    	  tipo: 'text',
+		    	  tipo: 'date',
 		    	  select: false,
-		    	  value:'',
+		    	  value:'No',
 		    	  id:''
 		
 	    	},

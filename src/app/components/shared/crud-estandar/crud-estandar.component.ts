@@ -59,7 +59,9 @@ export class CrudEstandarComponent implements OnInit{
 	for (var i = 0; i < this.array_mandante.length; ++i) {
 		// code...
 		if(this.array_mandante[i]['name']!=='nombre_empresa'){
-			this.array_mandante[i]['value'] = ''
+			this.array_mandante[i]['value'] = '';
+
+			if(this.array_mandante[i]['valor']) this.array_mandante[i]['valor'] = '';
 		}
 		
 	}

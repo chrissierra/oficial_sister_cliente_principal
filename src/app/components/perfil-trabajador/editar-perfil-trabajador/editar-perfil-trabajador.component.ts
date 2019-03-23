@@ -21,9 +21,9 @@ export class EditarPerfilTrabajadorComponent   {
   public urlImagenTrabajador:any;	
   public Empleado:any;
 
-  constructor(	  public servicio_empleado: IngresoUsuarioServidorService, 
-  				  private perfilServicio_ : PerfilTrabajadorServiceService,
-  				  private snackBar: MatSnackBar,
+  constructor(	public servicio_empleado: IngresoUsuarioServidorService, 
+      				  private perfilServicio_ : PerfilTrabajadorServiceService,
+      				  private snackBar: MatSnackBar,
 	              private MarcajeServiceService: MarcajeServiceService,
 	              private param: ActivatedRoute,
 	              private router: Router,
@@ -62,7 +62,7 @@ export class EditarPerfilTrabajadorComponent   {
 			           },
 			           error =>{
 			             console.log("Errorcito...", error)
-			           })
+			           }, () => this.mensajeExito())
 			           console.log(forma.value)
 			           if(this.param.snapshot.paramMap.get('formato')){
 			                 // this.router.navigate(['./Ingresa/paso3/']);
@@ -79,6 +79,16 @@ export class EditarPerfilTrabajadorComponent   {
           type: 'error',
           confirmButtonText: 'Ok'
         })
+   }
+
+      public mensajeExito(){
+       swal({
+          title: 'Proceso realizado',
+          text: 'Se actualizó correctamente',
+          type: 'success',
+          confirmButtonText: 'Ok'
+        });
+       this.router.navigate(['./PerfilTrabajador/'+this.id+'/Perfil']);
    }
 
 

@@ -14,6 +14,8 @@ import { distinct } from 'rxjs/operators';
 import { find } from 'rxjs/operators';
 import { PlanillaservicesService } from './../../../../services/planillaservices.service';
 import { Observable, of, forkJoin } from 'rxjs'; 
+import { MensajesSwalService } from './../../../../services/mensajes-swal.service';
+
 
 @Component({
   selector: 'app-replibroasistencia',
@@ -37,12 +39,13 @@ export class ReplibroasistenciaComponent  {
   public responseForkJoin:any;
   @ViewChild('TABLE') table: ElementRef;
 
-  constructor(public PlanillaservicesService_: PlanillaservicesService,
+  constructor(public MensajesSwalService_: MensajesSwalService,
+              public PlanillaservicesService_: PlanillaservicesService,
               private store: Store<AppState>,
               public servicioLibroDiario:LibroremuneracionesService) {
 
   	  	this.nombreEmpresa = localStorage.getItem("nombre_empresa");
-  	  
+  	    
 
    }
 
@@ -54,7 +57,9 @@ export class ReplibroasistenciaComponent  {
         });
 
         forkJoin(observables)
-        .subscribe(dataArray => {
+        .subscribe((dataArray:any[]) => {
+                         if(dataArray.length === 0) return this.MensajesSwalService_.error();
+
            console.log("En forkjoin", dataArray)
            this.trabajadores = dataArray;
            this.responseForkJoin = dataArray;
@@ -126,7 +131,7 @@ exportAsExcel()
       public exportAsExcelFile(json: any[], excelFileName: string): void {
         const worksheet: XLSX.WorkSheet = XLSX.utils.json_to_sheet(json);
         const workbook: XLSX.WorkBook = {Sheets: {'data': worksheet}, SheetNames: ['data']};
-        XLSX.writeFile(workbook, this.toExportFileName(excelFileName));
+       // XLSX.writeFile(workbook, this.toExportFileName(excelFileName));
       }
 
 

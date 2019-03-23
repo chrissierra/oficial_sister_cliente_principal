@@ -1,3 +1,8 @@
 <app-navbar></app-navbar>
-
+      <nav aria-label="breadcrumb" class="shadow p-0 mb-5 bg-white rounded" >
+          <ol class="breadcrumb " style="background-color: white">
+            <li class="breadcrumb-item"><a [routerLink]="['../Home']">Inicio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Enrolamiento</li>
+          </ol>
+    </nav>
 <router-outlet></router-outlet>
