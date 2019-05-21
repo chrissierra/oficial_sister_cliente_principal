@@ -39,7 +39,7 @@
 
                                         <div *ngIf="s.select">
                                             <select  class="form-control" [name]="s.name" [(ngModel)]="s.value"  required>
-                                                 <option [value]="o" *ngFor="let o of s.opciones">{{ o }}</option>
+                                                 <option  *ngFor="let o of s.opciones; let indice = index" [value]="s.valores[indice]">{{ o }}</option>
                                             </select>
                                         </div>
 

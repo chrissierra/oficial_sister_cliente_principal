@@ -144,6 +144,9 @@ import { CentrosCostosComponent } from './components/dashboard/centros-costos/ce
 import { DepartamentosComponent } from './components/dashboard/departamentos/departamentos.component';
 import { CrudEstandarComponent } from './components/shared/crud-estandar/crud-estandar.component';
 import { HorarioxsucursalComponent } from './components/dashboard/horarioxsucursal/horarioxsucursal.component';
+import { SelectCentroCostosComponent } from './components/shared/select-centro-costos/select-centro-costos.component';
+import { SelectDepartamentosComponent } from './components/shared/select-departamentos/select-departamentos.component';
+import { SelectJefaturasComponent } from './components/shared/select-jefaturas/select-jefaturas.component';
 
 @NgModule({
   declarations: [
@@ -207,7 +210,10 @@ import { HorarioxsucursalComponent } from './components/dashboard/horarioxsucurs
     CentrosCostosComponent,
     DepartamentosComponent,
     CrudEstandarComponent,
-    HorarioxsucursalComponent
+    HorarioxsucursalComponent,
+    SelectCentroCostosComponent,
+    SelectDepartamentosComponent,
+    SelectJefaturasComponent
   ],
   imports: [
     BrowserModule,

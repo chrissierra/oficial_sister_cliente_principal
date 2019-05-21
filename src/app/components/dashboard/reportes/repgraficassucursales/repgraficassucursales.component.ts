@@ -56,7 +56,7 @@ export class RepgraficassucursalesComponent implements OnInit {
 
 
 chartClicked(e){
-  alert("hola")
+  //alert("hola")
   console.log(e)
 }
 

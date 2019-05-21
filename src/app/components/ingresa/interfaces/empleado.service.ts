@@ -69,7 +69,7 @@ public editarEmpleado(empleado){
     this.array_empleado[17].value=empleado.hora_salida_jornada
     this.array_empleado[18].value=empleado.descanso_o_almuerzo_en_minutos
     this.array_empleado[19].value=empleado.tipo_contrato
-    this.array_empleado[20].value=empleado.comuna_sucursal
+    this.array_empleado[20].value=empleado.sucursal_id
     this.array_empleado[21].value=empleado.direccion_sucursal
     this.array_empleado[25].value=empleado.estado_civil
     this.array_empleado[26].value=empleado.tiempo_de_pago
@@ -285,7 +285,7 @@ public array_empleado: any[] = [
     /*
     {
       label: 'Sucursal',
-      name: 'comuna_sucursal',
+      name: 'sucursal_id',
       tipo: 'text',
       info: 'Selecciona la sucursal',
       select: true,
@@ -297,7 +297,7 @@ public array_empleado: any[] = [
     */
     {
       label: 'Sucursal',  // 20
-      name: 'comuna_sucursal',
+      name: 'sucursal_id',
       tipo: 'text',
       info: 'Selecciona la sucursal',
       select: true,
@@ -771,7 +771,7 @@ public Empleado: EmpleadoInterface = {
   comunaSucursal:{
 
       label: 'Comuna sucursal', // Debe extraerse las sucursales del empleador 
-      name: 'comuna_sucursal',
+      name: 'sucursal_id',
       tipo: 'text',
       info: 'Escribe donde trabajará tu trabajador',
       select: false,

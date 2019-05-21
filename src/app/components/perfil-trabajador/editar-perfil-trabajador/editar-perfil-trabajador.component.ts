@@ -20,7 +20,7 @@ export class EditarPerfilTrabajadorComponent   {
   public id:any;
   public urlImagenTrabajador:any;	
   public Empleado:any;
-
+  sucursales:any;
   constructor(	public servicio_empleado: IngresoUsuarioServidorService, 
       				  private perfilServicio_ : PerfilTrabajadorServiceService,
       				  private snackBar: MatSnackBar,
@@ -29,18 +29,21 @@ export class EditarPerfilTrabajadorComponent   {
 	              private router: Router,
 	              private empleadoService_ :EmpleadoService) {
 
-	this.id =  this.param.parent.snapshot.paramMap.get('id');    
+	  this.id =  this.param.parent.snapshot.paramMap.get('id');    
 
   	this.perfilServicio_.getPerfil(this.param.parent.snapshot.paramMap.get('id')).subscribe( data => {
 
-    this.urlImagenTrabajador =  'https://sister.cl/trabajadores/'+ data[0].rut +'/registro/'+ data[0].rut +'.jpg' ;
-   	
-   	this.Empleado = this.empleadoService_.editarEmpleado(data[0]);
+          this.urlImagenTrabajador =  'https://sister.cl/trabajadores/'+ data[0].rut +'/registro/'+ data[0].rut +'.jpg' ;
+         	
+         	this.Empleado = this.empleadoService_.editarEmpleado(data[0]);
 
-   	console.log(data[0])
+          console.log(this.Empleado[0].name);
+          
+          this.sucursales = this.empleadoService_.sucursalesId;
 
+         	console.log(data[0])
 
-	})
+  	})
 			
   }
 
