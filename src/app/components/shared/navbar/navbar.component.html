@@ -21,15 +21,21 @@
           Acciones
         </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                   <a class="dropdown-item" routerLinkActive="active" [routerLink]="['/Planilla']">Visualizar planilla</a>
                 
+                        <a class="dropdown-item" routerLinkActive="active" [routerLink]="['/Planilla']">Visualizar planilla</a>                
                     
-                    <a class="dropdown-item" routerLinkActive="active" [routerLink]="['/Ingresa']">Ingresar trabajador</a>
-                    <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" routerLinkActive="active" [routerLink]="['/Importacion']">Importación de trabajadores</a>
+
+                        <a class="dropdown-item" routerLinkActive="active" [routerLink]="['/Ingresa']">Ingresar trabajador</a>
+                     
+                <div class="dropdown-divider"></div>
+
+                    
                       <a style="cursor: pointer;" (click)="logout()" class="dropdown-item" routerLinkActive="active">  Cerrar Sesión
-                          <span  style="font-size: 0.8em; color: black;">
+                            <span  style="font-size: 0.8em; color: black;">
                                     <i class="fas fa-sign-out-alt"></i>
-                    </span></a>
+                            </span>
+                      </a>
                 </div>
             </li>
             <!--    <li class="nav-item">

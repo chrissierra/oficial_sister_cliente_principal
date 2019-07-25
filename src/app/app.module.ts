@@ -147,6 +147,7 @@ import { HorarioxsucursalComponent } from './components/dashboard/horarioxsucurs
 import { SelectCentroCostosComponent } from './components/shared/select-centro-costos/select-centro-costos.component';
 import { SelectDepartamentosComponent } from './components/shared/select-departamentos/select-departamentos.component';
 import { SelectJefaturasComponent } from './components/shared/select-jefaturas/select-jefaturas.component';
+import { ImportacionComponent } from './components/ingresa/importacion/importacion.component';
 
 @NgModule({
   declarations: [
@@ -213,7 +214,8 @@ import { SelectJefaturasComponent } from './components/shared/select-jefaturas/s
     HorarioxsucursalComponent,
     SelectCentroCostosComponent,
     SelectDepartamentosComponent,
-    SelectJefaturasComponent
+    SelectJefaturasComponent,
+    ImportacionComponent
   ],
   imports: [
     BrowserModule,

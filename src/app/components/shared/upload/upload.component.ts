@@ -19,7 +19,7 @@ export class UploadComponent implements OnInit {
   @Input() URL_REGRESO: string='';
   constructor(private MensajesSwalService_: MensajesSwalService,
               public http: HttpClient,
-              private param: ActivatedRoute, 
+              private param: ActivatedRoute,// hzxh 24
               private router: Router,
               private store: Store<AppState>) { 
   	this.getFromState();

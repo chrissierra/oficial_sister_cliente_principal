@@ -66,6 +66,7 @@ import { JefaturasComponent } from './components/dashboard/jefaturas/jefaturas.c
 import { CentrosCostosComponent } from './components/dashboard/centros-costos/centros-costos.component';
 import { DepartamentosComponent } from './components/dashboard/departamentos/departamentos.component';
 import { HorarioxsucursalComponent } from './components/dashboard/horarioxsucursal/horarioxsucursal.component';
+import { ImportacionComponent } from './components/ingresa/importacion/importacion.component';
 
 const routes: Routes = [
   { path: 'Login', component: LoginComponent },
@@ -124,11 +125,13 @@ const routes: Routes = [
       { path: 'EditarFoto/:rut' , component: EditarFotoComponent},
 
   ] },
-  { path: 'Ingresa', canActivate:[AuthGuard],component: IngresaComponent, children: [
+    { path: 'Importacion' , component: ImportacionComponent},
+    { path: 'Ingresa', canActivate:[AuthGuard],component: IngresaComponent, children: [
 
-{ path: 'paso1' , component: PasounoComponent},
-{ path: 'paso2/:formato' , component: PasodosComponent},
-{ path: 'paso3/:rut' , component: PasotresComponent},
+
+      { path: 'paso1' , component: PasounoComponent},
+      { path: 'paso2/:formato' , component: PasodosComponent},
+      { path: 'paso3/:rut' , component: PasotresComponent},
   ]
    },
  { path: 'Home',canActivate:[AuthGuard], component: HomeComponent },

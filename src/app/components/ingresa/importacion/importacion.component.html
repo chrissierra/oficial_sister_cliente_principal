@@ -1,0 +1,8 @@
+<app-navbar></app-navbar>
+<div class="container">
+	
+	<input type="file" name="image" id="image" (change)="onFileChanged($event)" />
+	<mat-spinner *ngIf="boleanoLoader"></mat-spinner>
+
+
+</div>

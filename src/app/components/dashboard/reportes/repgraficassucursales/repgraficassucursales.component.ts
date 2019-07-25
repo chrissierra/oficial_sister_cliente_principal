@@ -39,7 +39,7 @@ export class RepgraficassucursalesComponent implements OnInit {
   public barChartLabels:any[] = ['Horas Pactadas', 'Horas Extras'];
   public barChartType:string = 'bar';
   public barChartLegend:boolean = true;
-  public barChartLabelsM = ['Ene', 'Feb', 'Mar', 'Abr', 'Mar', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic']
+  public barChartLabelsM = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic']
   public barChartData:any[] = [
     {data: [65], label: 'Series A'},
     {data: [28], label: 'Series B'}
