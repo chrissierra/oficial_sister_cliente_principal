@@ -1310,6 +1310,8 @@ MIT
 @ng-select/ng-select
 MIT
 
+@angular/material/slide-toggle
+
 @angular/material/tabs
 
 @angular/material/grid-list

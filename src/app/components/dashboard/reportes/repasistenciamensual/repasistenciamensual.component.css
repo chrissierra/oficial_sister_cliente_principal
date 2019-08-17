@@ -1,0 +1,16 @@
+.imagen1 {
+  display: block;
+  position: relative;		
+  width: 300px;
+}
+
+.texto1 {
+  background-color: rgba(255,255,255,.8);
+  display: block;
+  position: absolute;
+  bottom: -16px;
+  left: 0;
+  padding: 5px;
+  width: 100%;
+  font-size: 12px;
+}

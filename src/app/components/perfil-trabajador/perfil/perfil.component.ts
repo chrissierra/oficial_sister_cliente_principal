@@ -28,6 +28,7 @@ export class PerfilComponent {
     urlImagenTrabajador:any;
     TrabajadorSinTurno:any;
     tipoTurno:any;
+    EstadoFotografiaTrabajador: boolean;
 constructor(private snackBar: MatSnackBar, 
             private perfilServicio_ : PerfilTrabajadorServiceService, 
             private MarcajeServiceService: MarcajeServiceService,
@@ -69,9 +70,33 @@ constructor(private snackBar: MatSnackBar,
 
    	this.empleado_ = data[0];
 
+    this.perfilServicio_.GetEstatusFotografia({'trabajador_id': this.param.parent.snapshot.paramMap.get('id')})
+    .subscribe( data => {
+          console.log("GetEstatusFotografia", data[0].validado);
+          if(data[0].validado === 'false'){
+            this.EstadoFotografiaTrabajador = false;
+          }else{
+            this.EstadoFotografiaTrabajador = true;
+          }
+    } )
+
    })
   
   } // FIn constructor
+
+
+  changed(){
+    //alert("Asdfasfdadsf")
+    //alert(this.EstadoFotografiaTrabajador)
+    this.perfilServicio_.InsertContrasteFotograficoValidacion({
+      'nombre_empresa_usuario_plataforma': localStorage.getItem('nombre_empresa'),
+      'trabajador_id': this.param.parent.snapshot.paramMap.get('id'),
+      'empresa_id':localStorage.getItem('id'),
+      'validado': this.EstadoFotografiaTrabajador
+    }).subscribe( data => {
+      console.log(data)
+    } )
+  }
 
 
   funcionNoTieneTurnos(){

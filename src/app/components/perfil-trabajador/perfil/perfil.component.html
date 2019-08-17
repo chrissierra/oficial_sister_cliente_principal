@@ -18,6 +18,24 @@
     <h5 class="card-title">{{ empleado_?.nombre }} {{ empleado_?.apellido }}</h5>
     <h6 class="card-subtitle mb-2 text-muted">Administrativo</h6>
 
+    <hr>
+    <small *ngIf="EstadoFotografiaTrabajador" class="text-muted">Imagen Válida</small>
+    <small *ngIf="!EstadoFotografiaTrabajador" class="text-muted">Imagen No Válida</small>
+
+    <br>
+    <mat-slide-toggle
+   [(ngModel)]="EstadoFotografiaTrabajador"
+   (change)="changed()"
+   color="primary">
+    <!-- Slide me! {{checked}} -->
+</mat-slide-toggle>
+<br>
+
+    <!-- FIN TOGGLE -->
+
+
+
+
         <a (click)="editarImagen()"> <img  class="img-thumbnail" [src]="urlImagenTrabajador" style="width:100px; max-height:120px"></a><!-- antes img-thumbnail    v rounded-circle-->
 
         <div class="text-center m-1 p-2">   

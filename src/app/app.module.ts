@@ -19,6 +19,7 @@ import {MatInputModule} from '@angular/material';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 //import {MatMomentDateModule} from '@angular/material-moment-adapter';
  import {MatNativeDateModule} from '@angular/material';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 
 
 
@@ -148,6 +149,7 @@ import { SelectCentroCostosComponent } from './components/shared/select-centro-c
 import { SelectDepartamentosComponent } from './components/shared/select-departamentos/select-departamentos.component';
 import { SelectJefaturasComponent } from './components/shared/select-jefaturas/select-jefaturas.component';
 import { ImportacionComponent } from './components/ingresa/importacion/importacion.component';
+import { VisualizacionContrastadaComponent } from './components/shared/visualizacion-contrastada/visualizacion-contrastada.component';
 
 @NgModule({
   declarations: [
@@ -215,7 +217,8 @@ import { ImportacionComponent } from './components/ingresa/importacion/importaci
     SelectCentroCostosComponent,
     SelectDepartamentosComponent,
     SelectJefaturasComponent,
-    ImportacionComponent
+    ImportacionComponent,
+    VisualizacionContrastadaComponent
   ],
   imports: [
     BrowserModule,
@@ -239,6 +242,7 @@ import { ImportacionComponent } from './components/ingresa/importacion/importaci
     MatListModule,
     MatStepperModule,
     MatFormFieldModule,
+    MatSlideToggleModule,
     MatButtonModule,
     MatInputModule,
     MatDatepickerModule,

@@ -95,6 +95,7 @@ export class RutasservidorService {
     'get_horario_por_sucursal': this.urlBase + 'api/get_horario_por_sucursal/',
     'delete_horario_por_sucursal': this.urlBase + 'api/delete_horario_por_sucursal/',
     'InsertContrasteFotograficoValidacion': this.urlBase + 'api/InsertContrasteFotograficoValidacion/',
+    'getContrasteFotograficoValidacion': this.urlBase + 'api/getContrasteFotograficoValidacion/',
 
 
 

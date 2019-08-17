@@ -17,8 +17,13 @@ export class PerfilTrabajadorServiceService {
   }  // Fin funcion getPerfil
 
 
-  actualizarEstatusFotografia(valores_a_enviar){
+  InsertContrasteFotograficoValidacion(valores_a_enviar){
     return this.http_.post(this.rutas_.rutas['InsertContrasteFotograficoValidacion'], valores_a_enviar);
+  }  // Fin funcion getPerfil
+
+
+  GetEstatusFotografia(valores_a_enviar){
+    return this.http_.post(this.rutas_.rutas['getContrasteFotograficoValidacion'], valores_a_enviar);
   }  // Fin funcion getPerfil
 
 
