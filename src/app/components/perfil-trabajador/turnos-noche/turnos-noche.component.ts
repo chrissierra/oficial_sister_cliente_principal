@@ -174,6 +174,11 @@ actualizarTurno(){
 
 
 ActualizarMesEnCurso(){
+
+	this.hora_a = [];
+	this.tipo_a = [];
+	this.hora_b = [];
+	this.tipo_b = [];
 	
 	this.mes = this.mesIntermedio;
 	this.anio = this.anioIntermedio;

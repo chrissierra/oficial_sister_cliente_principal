@@ -32,7 +32,7 @@ export class EditarPerfilTrabajadorComponent   {
 	  this.id =  this.param.parent.snapshot.paramMap.get('id');    
 
   	this.perfilServicio_.getPerfil(this.param.parent.snapshot.paramMap.get('id')).subscribe( data => {
-
+      console.log(data)
           this.urlImagenTrabajador =  'https://sister.cl/trabajadores/'+ data[0].rut +'/registro/'+ data[0].rut +'.jpg' ;
          	
          	this.Empleado = this.empleadoService_.editarEmpleado(data[0]);

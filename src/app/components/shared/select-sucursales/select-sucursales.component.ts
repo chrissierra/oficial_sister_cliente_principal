@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Output, Input, OnInit } from '@angular/core';
 import { GuardarSucursalService } from '../../../services/guardar-sucursal.service';
 import { Store } from '@ngrx/store';
 import * as fromMarcaje from '../../marcaje.actions';
@@ -8,12 +8,13 @@ import { AppState } from '../../../app.reducers';
   templateUrl: './select-sucursales.component.html',
   styleUrls: ['./select-sucursales.component.css']
 })
-export class SelectSucursalesComponent {
+export class SelectSucursalesComponent implements OnInit {
 	
 	datosTrabajador:any;
 	sucursales:any;
 	SucursalElegida:any;
   nombreEmpresa:any;
+  @Input() public LabelSelect: string;
   @Output() onSucursalSelected: EventEmitter<any>;
   constructor(	private GuardarSucursalService_: GuardarSucursalService,
   				      private store: Store<AppState>) 
@@ -24,7 +25,17 @@ export class SelectSucursalesComponent {
 
   		this.getSucursal();
 
+
+
   }
+
+  ngOnInit(){
+      if(this.LabelSelect == ''){
+        this.LabelSelect = "Sucursales"
+      }
+  }
+
+
 
 
 
@@ -36,8 +47,10 @@ export class SelectSucursalesComponent {
 		} )
 	} // Fin GetSucursal
 
+
+
 	onChange(e, select){
-		console.log("evento..", e)
+		  console.log("evento..", e)
     	console.log("select..", select)
     	console.log("SucursalElegida", this.SucursalElegida)
       this.onSucursalSelected.emit(this.SucursalElegida);
@@ -48,7 +61,7 @@ export class SelectSucursalesComponent {
         // code...
 
         if(this.sucursales[i].id === (this.SucursalElegida*1) ){
-                 console.log("los id... ", this.sucursales[i].id)
+                console.log("los id... ", this.sucursales[i].id)
                 const accion2 = new fromMarcaje.ACTUALIZARLOCACIONAction(this.sucursales[i]);
                 this.store.dispatch( accion2 );
         }

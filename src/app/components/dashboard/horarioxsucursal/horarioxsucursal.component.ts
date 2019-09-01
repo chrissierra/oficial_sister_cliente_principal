@@ -31,7 +31,7 @@ export class HorarioxsucursalComponent implements OnInit {
               duration: 3500
             });
   	this.subtitulo=`
-  	INSTRUCCIÓN: Debes poner para cada día de la semana el horario de cada sucursal u instalación. Para casos especiales, es importante notar que requieren que rellenes 
+  	INSTRUCCIÓN: Debes poner para cada día de la semana el horario de cada sucursal o instalación. Para casos especiales, es importante notar que requieren que rellenes 
   	la casilla de "fecha"; en el caso que no fuera un caso especial basta que pongas que "No" y dejes la fecha sin rellenar.
   	`
   }

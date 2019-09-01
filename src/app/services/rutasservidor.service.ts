@@ -75,6 +75,13 @@ export class RutasservidorService {
     'HorasPorSucursalDia': this.urlBase + '/HorasPorSucursalDia/',
     'HorasPorSucursalMes': this.urlBase + '/HorasPorSucursalMes/',
     'LibroTipoPlanillaAsistencia': this.urlBase + 'LibroTipoPlanillaAsistencia/',
+    
+    'ingresarDocumento': this.urlBase + 'api/ingresarDocumento/',
+    'GetDocumento': this.urlBase + 'api/GetDocumento/',
+
+    'ingresarDocumentoPorTrabajador': this.urlBase + 'api/ingresarDocumentoPorTrabajador/',
+    'GetDocumentoPorTrabajador': this.urlBase + 'api/GetDocumentoPorTrabajador/',
+    'GetDocumentosGeneradorPorEmpresa': this.urlBase + 'api/GetDocumentosGeneradorPorEmpresa/',
 
 
     'ingresardepartamento': this.urlBase + 'api/ingresardepartamento/',
@@ -96,9 +103,10 @@ export class RutasservidorService {
     'delete_horario_por_sucursal': this.urlBase + 'api/delete_horario_por_sucursal/',
     'InsertContrasteFotograficoValidacion': this.urlBase + 'api/InsertContrasteFotograficoValidacion/',
     'getContrasteFotograficoValidacion': this.urlBase + 'api/getContrasteFotograficoValidacion/',
+    'armarDocumento': this.urlBase + 'api/armarDocumento/',
 
-
-
+    'getPostulantes': this.urlBase + 'api/getPostulantes/',
+    'getTodos': this.urlBase + 'api/getTodos/',
 
 
     // Turnos sin terminar:

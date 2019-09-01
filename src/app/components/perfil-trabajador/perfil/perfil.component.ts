@@ -5,14 +5,17 @@ import { Router } from '@angular/router';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { MarcajeServiceService } from '../../../services/marcaje-service.service';
 import swal from 'sweetalert2'
-
-
+import * as jspdf from 'jspdf';  
+import html2canvas from 'html2canvas';
+import domtoimage from 'dom-to-image';
+import * as pdfMake from 'pdfmake/build/pdfmake.js';
 @Component({
   selector: 'app-perfil',
   templateUrl: './perfil.component.html'
 })
 export class PerfilComponent {
-
+    someHtml:any = 'Escribe acá';
+    logoHtml:any ='<div><img class="img-thumbnail" title="profile image" width="100px" src="https://sister.cl/clientes_rrhh/12341234/registro/12341234.jpg"></div>'
     empleado_:any;
   	datos_perfil_empleado: any;
   	id_parent: string;
@@ -61,7 +64,7 @@ constructor(private snackBar: MatSnackBar,
     });
     
     this.perfilServicio_.getPerfil(this.param.parent.snapshot.paramMap.get('id')).subscribe( data => {
-
+      
     this.urlImagenTrabajador =  'https://sister.cl/trabajadores/'+ data[0].rut +'/registro/'+ data[0].rut +'.jpg?id='+ new Date().getTime() ;
    	
    	this.datos_perfil_empleado = data;
@@ -112,6 +115,33 @@ constructor(private snackBar: MatSnackBar,
 
   }
 
+  public verHTML(e){
+
+     this.someHtml = this.logoHtml + e;
+     console.log(this.someHtml)
+     setTimeout(()=> {
+           var data = document.getElementById('parentdiv');  //Id of the table
+          html2canvas(data).then(canvas => {  
+            // Few necessary setting options  
+            let imgWidth = 208;   
+            let pageHeight = 295;    
+            let imgHeight = canvas.height * imgWidth / canvas.width;  
+            let heightLeft = imgHeight;  
+
+            const contentDataURL = canvas.toDataURL('image/png')  
+            let pdf = new jspdf('p', 'mm', 'a4'); // A4 size page of PDF  
+            let position = 0;  
+            pdf.addImage(contentDataURL, 'PNG', 0, position, imgWidth, imgHeight)  
+            pdf.save('MYPdf.pdf'); // Generated PDF   
+          }); 
+     }, 20000)
+ 
+  }
+
+  //<img class="img-thumbnail" title="profile image" width="100px" src="https://sister.cl/clientes_rrhh/12341234/registro/12341234.jpg">
+
+
+ 
    public mensajeError(titulo, texto, tipo, boton){
        swal({
           title: titulo,

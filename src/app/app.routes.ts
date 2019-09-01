@@ -67,12 +67,18 @@ import { CentrosCostosComponent } from './components/dashboard/centros-costos/ce
 import { DepartamentosComponent } from './components/dashboard/departamentos/departamentos.component';
 import { HorarioxsucursalComponent } from './components/dashboard/horarioxsucursal/horarioxsucursal.component';
 import { ImportacionComponent } from './components/ingresa/importacion/importacion.component';
+import { DocumentosComponent } from './components/perfil-trabajador/documentos/documentos.component';
+import { GeneracionDocumentosComponent } from './components/dashboard/generacion-documentos/generacion-documentos.component';
+import { ReporteDocumentosGeneradosComponent } from './components/perfil-trabajador/reporte-documentos-generados/reporte-documentos-generados.component';
+import { VisualizacionDocumentacionEmpresaComponent } from './components/dashboard/visualizacion-documentacion-empresa/visualizacion-documentacion-empresa.component';
+import { VisualizacionHorarioComponent } from './components/perfil-trabajador/visualizacion-horario/visualizacion-horario.component';
 
 const routes: Routes = [
   { path: 'Login', component: LoginComponent },
   
   { path: 'DashBoard', component: DashBoardComponent,canActivate:[AuthGuard], children: [
-   
+    { path: 'VisualizacionDocumentacionEmpresa' , component: VisualizacionDocumentacionEmpresaComponent},         
+    { path: 'GeneracionDocumentos' , component: GeneracionDocumentosComponent},     
     { path: 'PerfilEmpleador' , component: PerfilEmpleadorComponent},
     { path: 'IngresoSucursal' , component: IngresoSucursalComponent},
     { path: 'EditarSucursal' , component: EditarSucursalComponent},
@@ -108,7 +114,8 @@ const routes: Routes = [
   ] },
   { path: 'Planilla',canActivate:[AuthGuard], component: PlanillaComponent },
   { path: 'PerfilTrabajador/:id',canActivate:[AuthGuard], component: PerfilTrabajadorComponent, children:[
-  		{ path: 'Perfil' , component: PerfilComponent},
+      { path: 'Documentos' , component: DocumentosComponent}, 		
+      { path: 'Perfil' , component: PerfilComponent},
 		  { path: 'TurnosVariables' , component: TurnosVariablesComponent},
 		  { path: 'TurnosFijos' , component: TurnosFijosComponent},
       { path: 'TurnosNoche' , component: TurnosNocheComponent},
@@ -123,6 +130,8 @@ const routes: Routes = [
       { path: 'HistorialTurnos' , component: HistorialTurnosComponent},
       { path: 'LiberarTurnos/:mes/:anio' , component: LiberarTurnosComponent},
       { path: 'EditarFoto/:rut' , component: EditarFotoComponent},
+      { path: 'ReporteDocumentosGenerados' , component: ReporteDocumentosGeneradosComponent},      
+      { path: 'VisualizacionHorario' , component: VisualizacionHorarioComponent},      
 
   ] },
     { path: 'Importacion' , component: ImportacionComponent},

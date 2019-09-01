@@ -1,0 +1,185 @@
+    <nav aria-label="breadcrumb" class="shadow p-0 mb-5 bg-white rounded" >
+          <ol class="breadcrumb " style="background-color: white">
+            <li class="breadcrumb-item"><a [routerLink]="['../Perfil']">Perfil</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Emisión documentos</li>
+          </ol>
+    </nav>
+    <body style="margin:50px;">
+
+    <app-titulo titulo="Documentos y cartas" subtitulo="Selecciona la carta o documento que deseas asociar a tu trabajador" ></app-titulo>
+
+<div class="form-group">	
+	<label>Documentos</label>
+ 	<select (change)="onChange($event, selectTipoDocumentos)" name="Parametrizadas" [(ngModel)]="TipoDocumento" class="form-control" #selectTipoDocumentos>
+ 		<option *ngFor="let item of selectTipoDocumento;let index = i" [value]="item.id"   >{{ item.titulo }}</option>
+ 	</select> 
+ 	<br>
+ 	<button class="btn btn-outline-success" (click)="armarFormularioDocumento(TipoDocumento)">Implementar</button>
+ </div>
+
+<!--
+ <div class="form-group">	
+	<label>Documentos Estándar</label>
+ 	<select (change)="onChangeEstandar($event, selectTipoDocumentosEstandar)" name="Estandar" [(ngModel)]="TipoDocumentoEstandar" class="form-control" #selectTipoDocumentosEstandar>
+ 		<option >Finiquito</option>
+ 		<option >Amonestación</option>
+ 	</select> 
+ 	<br>
+ 	<button class="btn btn-outline-primary" (click)="armarFormularioDocumentoEstandar(TipoDocumentoEstandar)">Implementar</button>
+ </div>-->
+
+
+ <hr>
+<!--{{ variablesDefinitivasNoParametrizadas | json}}-->
+<br>
+<h3 class="text-center">{{seleccionEnCurso?.titulo}}</h3>
+<div class="container" style="padding:50px">
+	
+
+	<div  *ngFor="let item1 of variablesDefinitivasNoParametrizadas;let index = i" >
+		<div class="form-group">	
+			<label>{{item1.valor}}</label>
+			<input  class="form-control" [(ngModel)]="item1.value" type="text" name="variables"> 
+			<br>
+					<!-- Aca va el modal -->
+                  <!-- Button trigger modal -->
+             <div class="container">
+                <button type="button" style="float: right" class="btn btn-primary btn-sm" data-toggle="modal" [attr.data-target]="'#s' + item1.nombre">
+                        ASOCIAR A VARIABLES 
+                </button>
+			</div>
+		</div>	
+		 
+
+
+
+                              <!-- Modal -->
+                              <div class="modal fade" [id]="'s'+item1.nombre" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Registro</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                 <div class="text-center">
+                                   <!-- *************** CONTENIDO DEL MODAL ************************ -->
+										<div *ngFor="let item of TipoDocumentoEstandarSeleccionado.Articulos" >
+											    		<div>
+												    			<h5>Art. {{ item.nombre }}</h5>
+												    			<div *ngFor="let peo of item.numeros" class="form-check">
+																  <input name="Articulado" [value]="peo.nombre" (change)="checkValue(peo, item1, item.nombre)" #ArticuloInput class="form-check-input" type="radio" >
+																  <label class="form-check-label" for="defaultCheck1">
+																    {{peo.nombre}} {{item.nombre}}
+																  </label>
+																</div>
+																    			
+												    			<hr>
+											    		</div>   		
+										 </div>
+
+
+                                   <!-- **************** Fin contenido modal ¨**************************-->
+                                 </div>    
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                <!--  <button type="button" class="btn btn-primary">Save changes</button> -->
+                                </div>
+                              </div>
+                            </div>
+                          </div>  
+        <!-- Aca va el modal -->
+         <div><br><hr>	</div>
+	 </div>
+	 
+
+    <!--<div *ngIf="TipoDocumentoEstandarSeleccionado.Seleccionado"> -->
+
+
+    	<!--<div *ngFor="let item of TipoDocumentoEstandarSeleccionado.pagos" >
+	    		<div>
+		    			
+		    			<div class="form-group row">
+		    				<label class="form-check-label" for="defaultCheck1">
+						    	{{item.label}}
+						  	</label>
+						  	<input class="form-control" type="number" name="valores" [(ngModel)]="item.valor" value=""><br>
+						  	<input style="margin-top:10px"  class="form-control"  *ngIf="item.liquidacion" placeholder="Ingresa la fecha de la liquidacion, EJ: Julio 2019" [(ngModel)]="item.fechaLiquidacion" type="text" name="">
+						</div>						    			
+		    			<hr>
+	    		</div>   		
+    	</div>  
+
+
+    	<hr>-->
+    	
+    	<!--<div *ngFor="let item of TipoDocumentoEstandarSeleccionado.Articulos" >
+	    		<div>
+		    			<h1>Art. {{ item.nombre }}</h1>
+		    			<div *ngFor="let peo of item.numeros" class="form-check">
+						  <input name="Articulado" [value]="peo.nombre" (change)="checkValue(peo)" #ArticuloInput class="form-check-input" type="radio" >
+						  <label class="form-check-label" for="defaultCheck1">
+						    {{peo.nombre}}
+						  </label>
+						</div>
+						    			
+		    			<hr>
+	    		</div>   		
+    	</div>
+
+
+    		    <div>
+		    			<h4>Por parte de ( PP )</h4>
+		    			<div class="form-check">
+						  <input name="PP" (change)="checkValuePP(true)" class="form-check-input" type="radio" >
+						  <label class="form-check-label" for="defaultCheck1">
+						    PP
+						  </label>
+						</div>
+						    			
+		    			<hr>
+	    		</div>   
+
+    	<button (click)="Generarfiniquito()" >Generar Finiquito</button> -->
+
+
+
+  <!--  </div>-->
+
+<!--
+ <hr style="height: 12px; border: 0; box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);">
+
+	 <div  class="form-group">	
+		<label>Ciudad donde se emite documento</label>
+		<input  class="form-control" [(ngModel)]="ciudad" type="text" name="ciudad"> 	
+	 </div>-->
+
+
+	 <div  class="form-group">	
+ 		<button class="btn btn-block btn-outline-danger" (click)="revisarFinal()" >EMITIR DOCUMENTO</button>
+	 </div>
+
+
+	<div class="container text-center"  style="padding:50px">
+						<!--	<button class="btn btn-outline-primary btn-block" style="margin:10px" (click)="refrescarIframe()" >Refrescar</button>-->
+							<br>
+							<iframe *ngIf="DocumentoEmitidoBoleano"
+							id="iframeID" 
+							[src]="URL_IFRAME" 
+							frameborder="0" 
+							width="655" 
+							height="550" 
+							marginheight="0" 
+							marginwidth="0">								
+							</iframe>
+							
+	</div>
+
+	
+ </div>
+
+
+ </body>

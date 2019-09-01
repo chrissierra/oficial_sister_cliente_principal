@@ -1,0 +1,175 @@
+<nav aria-label="breadcrumb" class="shadow p-0 mb-5 bg-white rounded" >
+      <ol class="breadcrumb " style="background-color: white">
+        <li class="breadcrumb-item"><a [routerLink]="['../']">Perfil</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Generación Documentos</li>
+      </ol>
+</nav>
+
+
+
+<div class="container-fluid" style="margin-top:50px">
+			  	<div class="row">
+			  		<div class="col-sm-4">
+					  			
+					  			<div class="alert alert-dark" role="alert">
+								  <h4 class="alert-heading">Documentos Dinámicos</h4>
+								  <p>Desde ésta sección podrás generar documentos tipo. Deberás agregar el titulo que tendrá el documento y agregar
+								  las variables que luego se llenarán para cada trabajador. El cuerpo del documento tendrá cada variable,
+								y luego al ir al trabajador que requieres sea generado el documento; te pedirá rellenar esas variables para generar el
+							documento. También puedes usar variables propias de cada trabajador, están en la lista desplegable de más abajo.</p>
+
+						<!--	<div>
+								<button (click)="agregarSaltoDeLinea()" class="btn btn-outline-warning">Agregar Salto De Línea<i class="fas fa-level-down-alt"></i></button>
+							</div> -->
+
+								  <hr>
+
+								</div>
+
+
+									<div class="form-group">	
+										<label>Selecciona datos de tu trabajador: </label>
+								    	<select name="Parametrizadas" [(ngModel)]="valorSelectParametrizado" class="form-control">
+								    		<option *ngFor="let item of SelectParametrizadas" >{{ item }}</option>
+								    	</select> <br>
+								    	<button class="btn btn-outline-primary btn-block" (click)="implementarVariableParametrizada(valorSelectParametrizado)">Implementar</button>
+								    </div>
+
+
+			  		</div>
+			  		<!-- ****** Separación de columnas *******  -->
+			  		<div class="col-sm-8">
+
+			  			
+						  <div class="form-group">
+						    <label for="exampleInputEmail1">Titulo</label>
+						    <input type="email" name="titulo" [(ngModel)]="titulo" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Titulo del documento">
+						   <!-- <small id="emailHelp" class="form-text text-muted">Debes escribir la cabecera del documento.</small>-->
+						  </div>
+						  
+						  <!--<div class="form-group">
+						    <label for="exampleInputPassword1">Cuerpo Documento</label>
+						     <textarea [(ngModel)]="CuerpoDocumento" name="Cuerpo" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+						  </div>-->
+
+						  
+						  <div>
+							  	
+
+							  	<div class="card">
+								  <div class="card-body">
+								  				 <h5 class="card-title">Agrega variables para tu documento: </h5>
+								    				<button class="btn btn-outline-success btn-block" (click)="agregarVariableNoParametrizada()">Agrega
+													  	<i class="fas fa-plus-circle"></i>
+													</button>
+
+														<br>
+													  <div *ngFor="let item of variablesNoParametrizadas">
+													  	<input 
+													  	style="margin:5px" 
+													  	class="form-control" 
+													  	placeholder="Nombra tu variable" 
+													  	type="text" 
+													  	[(ngModel)]="item.valor" 
+													  	name="item">
+													  	<br>
+													  	<button class="btn btn-outline-primary" (click)="implementarVariable(item.valor)">Implementar</button>
+													  	<hr>
+													  </div>
+													  <br>
+								  </div>
+								</div>
+
+
+
+						  </div>
+						 
+					<!-- Firmas Sección{{firmas | json}} 
+						  <div *ngFor="let item of firmas" class="form-group form-check">
+						    <input  [(checked)]="item.estado"(change)="item.estado = !item.estado" type="checkbox" class="form-check-input">
+						    <label class="form-check-label" for="exampleCheck1">{{item.nombre}}</label>
+						    <input [(ngModel)]="item.valor" placeholder="Nombre firma" type="text" class="form-control" name="firmas">
+						  </div>-->
+
+						  <hr>
+				    <!-- Formato carta
+						  <div class="form-group form-check">
+						    <input  [(checked)]="tipocarta"(change)="tipocarta = !tipocarta" type="checkbox" class="form-check-input">
+						    <label class="form-check-label" for="exampleCheck1">Tipo Carta</label>
+						  </div>
+						 -->
+
+
+
+						  <button (click)="Envio()" class="btn btn-warning btn-block">¿ Terminaste el documento ? Envíalo !</button>
+						
+							
+
+
+					</div>
+
+			</div><!-- Fin Row -->
+						
+
+						<div class="container" style="padding:50px">
+								<fate-ui  uiId="foo"></fate-ui>
+								<fate-input uiId="foo" [(ngModel)]="someHtml" ></fate-input>
+						</div>
+
+
+
+						<div class="container text-center"  style="padding:50px">
+							<button class="btn btn-outline-primary btn-block" style="margin:10px" (click)="refrescarIframe()" >Refrescar</button>
+							<br>
+							<iframe 
+							id="iframeID" 
+							[src]="URL_IFRAME" 
+							frameborder="0" 
+							width="655" 
+							height="550" 
+							marginheight="0" 
+							marginwidth="0">								
+							</iframe>
+							
+						</div>
+
+
+	</div>
+
+
+<!--
+
+ASESORIAS AGR CIA. LTDA. 
+Rut: 63.558.517-7 
+Calle negrete n°1871 
+Conchalí-Santiago 
+
+                                                                                                             FINIQUITO DE TRABAJO 
+
+En Concepción a 30 de agosto de 2019, ASESORIAS A.G.R. COMPAÑÍA LIMITADA, Rut: 63.558.517-7 representada en este acto por don LUIS ALFREDO GALDAMES ROJO, cédula nacional N° 6.248.002-5 en adelante El Empleador, y don (ña) CONSTANZA JAVIERA HENRIQUEZ MUÑOZ, cédula de identidad N° 18.626.339-1 domiciliada AV. MEXICO N° 0764, comuna de RECOLETA en adelante “El Trabajador” vienen en suscribir el presente finiquito. 
+
+PRIMERO: Las partes dejan constancia que la relación laboral se inició con fecha 01 de ABRIL de 2019 y concluyó el día 10 de JULIO de 2019. 
+
+SEGUNDO: El término de la relación laboral se verificó por la causal del Artículo 159, Número 2 del Código del Trabajo, esto es, RENUNCIA VOLUNTARIA. 
+
+TERCERO: En este acto, el Empleador paga al Trabajador, lo siguiente: - Vacaciones proporcionales $45.000 - Liquidación de sueldo mes Julio 2019 $45.000 - Indemnización Sustitutiva $45.000 - Mes de aviso $45.000 - Vacaciones legales $45.000 
+
+CUARTO: El trabajador acepta y está conforme con el monto indicado en la cláusula precedente, y declara haber recibido el pago de la suma a plena conformidad. 
+
+QUINTO: Doña CONSTANZA HENRIQUEZ MUÑOZ, deja constancia que durante el tiempo que prestó servicios a ASESORIAS A.G.R. COMPAÑÍA LIMITADA recibió de forma correcta y oportunamente el total de las remuneraciones convenidas, de acuerdo a su contrato de trabajo, clase de trabajo ejecutado, reajustes legales, feriados legales en conformidad a la ley y que nada se le adeuda por los conceptos antes indicados ni por ningún otro, sea de origen legal o contractual derivado de la prestación de sus servicios. Motivo por el cual, no teniendo reclamo ni cargo alguno que formular en contra de ASESORIAS A.G.R. COMPAÑÍA LIMITADA ni en contra de don LUIS ALFREDO GALDAMES ROJO, ni en contra de DANHER CORPGRUP COMPAÑIA LIMITADA, ni empresas relacionadas ni filiales, por lo que otorga el más amplio y total finiquito, renunciando expresamente a las acciones de naturaleza laboral, penal, civil o administrativa en contra de ASESORIAS A.G.R. COMPAÑÍA LIMITADA, LUIS ALFREDO GALDAMES ROJO, SOCIEDAD DANHER LIMITADA, así como respecto de empresas relacionadas o filiales, declaración que formula libre y espontáneamente, en perfecto y cabal conocimiento de cada uno de todos sus derechos, sin perjuicio de reservarse el derecho a exigir el cumplimiento de las obligaciones asumidas en este contrato. 
+
+SEXTO: Las partes asimismo se otorgan el más completo y amplio finiquito respecto de cualquier accidente laboral o enfermedad profesional que haya tenido su origen durante la relación laboral, renunciando el Trabajador a ejercer todo tipo de acciones. SEPTIMO: Se suscribe el presente finiquito en dos ejemplares, quedando uno en poder de la cada parte.
+
+SEPTIMO: Se suscribe el presente finiquito en dos ejemplares, quedando uno en poder de la cada parte. 
+
+
+
+
+
+_____________________________________           
+                 TRABAJADOR 
+               RUT 17.961.493-6 
+    CHRISTOPHER SIERRA MELÉNDEZ
+
+
+    -->

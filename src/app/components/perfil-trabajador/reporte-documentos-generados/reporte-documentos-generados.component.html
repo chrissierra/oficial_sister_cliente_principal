@@ -1,0 +1,31 @@
+    <nav aria-label="breadcrumb" class="shadow p-0 mb-5 bg-white rounded" >
+          <ol class="breadcrumb " style="background-color: white">
+            <li class="breadcrumb-item"><a [routerLink]="['../Perfil']">Perfil</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Visualización documentos</li>
+          </ol>
+    </nav>
+
+<body style="margin:50px;">
+
+    <app-titulo titulo="Visualización de documentos" subtitulo="Visualiza y exporta los documentos de tu trabajador." ></app-titulo>
+
+<div class="table-responsive-sm">
+<table class="table table-sm">
+  <thead>
+    <tr>
+      <th scope="col">Nombre</th>
+      <th scope="col">Fecha Emisión</th>
+      <th scope="col">Visualizar</th>
+    </tr>
+  </thead>
+  <tbody>
+	    <tr *ngFor="let item of resultData" >
+	      <th scope="row">{{item.titulo}}</th>
+	      <td>{{item.fecha_emision}}</td>
+	      <td><button class="btn btn-outline-primary" (click)="visualizarPDF(item)" >Descargar</button></td>
+	    </tr>
+  </tbody>
+</table>
+</div>
+
+ </body>

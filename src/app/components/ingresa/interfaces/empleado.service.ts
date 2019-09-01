@@ -84,6 +84,8 @@ public editarEmpleado(empleado){
     this.array_empleado[37].value=empleado.rol
     this.array_empleado[38].value=empleado.fono1
     this.array_empleado[39].value=empleado.email1
+    this.array_empleado[40].value=empleado.ingreso
+    this.array_empleado[40].value=empleado.estatus
     return this.array_empleado;
 
 }
@@ -430,10 +432,12 @@ public array_empleado: any[] = [
       name: 'horario_con_o_sin_turnos',
       tipo: 'select',
       select: true,
-      opciones: [ 'Turnos', 'Horario Fijo', 'Noches'],
-      valores: [ 'Turnos', 'Horario Fijo', 'Noches'],
+      opciones: [ 'Horario Variable', 'Horario Fijo'],
+      valores: [ 'Turnos', 'Horario Fijo'],
       value:''
     },    
+    /*      opciones: [ 'Turnos', 'Horario Fijo', 'Noches'],
+      valores: [ 'Turnos', 'Horario Fijo', 'Noches'],*/
      {
       name: 'id', // 34
       tipo: 'hidden',
@@ -489,6 +493,28 @@ public array_empleado: any[] = [
       info: 'Escribe un correo válido',
       tipo: 'text',
       select: false,
+      value:''
+
+    },
+
+         { 
+     label: 'Fecha Ingreso',  //40
+      name: 'ingreso',
+      info: 'Escribe la fecha de ingreso del trabajador',
+      tipo: 'text',
+      select: false,
+      value:''
+
+
+    },
+     { 
+     label: 'Estado',  //41
+      name: 'estatus',
+      info: 'Selecciona si el trabajador está activo o es simplemente un postulante.',
+      tipo: 'select',
+      select: true,
+      opciones: [ 'Activo', 'Postulante'],
+      valores: [ 'Activo', 'Postulante'],
       value:''
 
     },

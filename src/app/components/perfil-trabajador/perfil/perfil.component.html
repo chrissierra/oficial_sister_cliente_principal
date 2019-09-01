@@ -10,6 +10,18 @@
         <a class="nav-link" routerLinkActive="active"  [routerLink]="['../EditarPerfilTrabajador']">Editar</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" routerLinkActive="active"  [routerLink]="['../Documentos']">Emisión Documentación</a>
+      </li>  
+       <li class="nav-item">
+        <a class="nav-link" routerLinkActive="active"  [routerLink]="['../ReporteDocumentosGenerados']">Documentos Generados</a>
+      </li>       
+
+       <li class="nav-item">
+        <a class="nav-link" routerLinkActive="active"  [routerLink]="['../VisualizacionHorario']">Visualizacion Horario </a>
+      </li>       
+
+
+      <li class="nav-item">
      <!--   <a class="nav-link disabled" href="#">Disabled</a>-->
       </li>
     </ul>
@@ -83,7 +95,7 @@
                                    
                                     <p *ngIf="TrabajadorSinTurno" class="text-muted">Tu trabajador no tiene generado los turnos aún. Genéralos</p>                                
                                     <p *ngIf="!TrabajadorSinTurno" class="text-muted">El mes en curso tiene turno. </p>
-                                    <button  [routerLink]="['../TurnosNoche/']"  class="btn btn-primary btn-sm" type="submit">Turnos Noche</button>
+                                    <button  [routerLink]="['../TurnosNoche/']"  class="btn btn-primary btn-sm" type="submit">Horario Variable</button>
                                 </div>
 
 
@@ -107,6 +119,15 @@
             </ul>
         </div>
         <br>
+<div >
+       <!-- <fate-ui uiId="foo"></fate-ui>
+<fate-input uiId="foo" [(ngModel)]="someHtml"></fate-input>-->
+<!--<app-ngx-editor [placeholder]="'Enter text here...'" [spellcheck]="true" [(ngModel)]="someHtml"></app-ngx-editor>-->
+
+<!--<button (click)="verHTML(someHtml)"> LISTO</button>-->
+    
+</div>
+<!--<div id="parentdiv" [innerHTML]="logoHtml+ someHtml"></div>-->
     <a [routerLink]="['../../../Planilla/']" class="btn btn-primary">Volver a planilla</a>
   </div>
 </div>

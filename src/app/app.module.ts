@@ -4,6 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
 //import { ImageUploadModule } from "angular2-image-upload";
+import { FateModule } from 'fate-editor';
 
 // Angular material
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -26,7 +27,8 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 // Input autocomplete
 import { polyfill as keyboardEventKeyPolyfill } from 'keyboardevent-key-polyfill';
 import { TextInputAutocompleteModule } from 'angular-text-input-autocomplete';
-
+//Loader
+import { NgxLoadingModule } from 'ngx-loading';
 
 //Guards
 import { AuthGuard } from './services/auth.guard';
@@ -150,6 +152,13 @@ import { SelectDepartamentosComponent } from './components/shared/select-departa
 import { SelectJefaturasComponent } from './components/shared/select-jefaturas/select-jefaturas.component';
 import { ImportacionComponent } from './components/ingresa/importacion/importacion.component';
 import { VisualizacionContrastadaComponent } from './components/shared/visualizacion-contrastada/visualizacion-contrastada.component';
+import { NgxEditorModule } from 'ngx-editor';
+import { DocumentosComponent } from './components/perfil-trabajador/documentos/documentos.component';
+import { GeneracionDocumentosComponent } from './components/dashboard/generacion-documentos/generacion-documentos.component';
+import { ReporteDocumentosGeneradosComponent } from './components/perfil-trabajador/reporte-documentos-generados/reporte-documentos-generados.component';
+import { VisualizacionDocumentacionEmpresaComponent } from './components/dashboard/visualizacion-documentacion-empresa/visualizacion-documentacion-empresa.component';
+import { FullCalendarModule } from '@fullcalendar/angular';
+import { VisualizacionHorarioComponent } from './components/perfil-trabajador/visualizacion-horario/visualizacion-horario.component';
 
 @NgModule({
   declarations: [
@@ -218,9 +227,18 @@ import { VisualizacionContrastadaComponent } from './components/shared/visualiza
     SelectDepartamentosComponent,
     SelectJefaturasComponent,
     ImportacionComponent,
-    VisualizacionContrastadaComponent
+    VisualizacionContrastadaComponent,
+    DocumentosComponent,
+    GeneracionDocumentosComponent,
+    ReporteDocumentosGeneradosComponent,
+    VisualizacionDocumentacionEmpresaComponent,
+    VisualizacionHorarioComponent
   ],
   imports: [
+  NgxLoadingModule.forRoot({}),
+  FateModule,
+  NgxEditorModule,
+  FullCalendarModule,
     BrowserModule,
     TextInputAutocompleteModule,
     NgSelectModule,
