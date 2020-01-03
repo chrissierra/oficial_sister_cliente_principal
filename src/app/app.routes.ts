@@ -72,6 +72,8 @@ import { GeneracionDocumentosComponent } from './components/dashboard/generacion
 import { ReporteDocumentosGeneradosComponent } from './components/perfil-trabajador/reporte-documentos-generados/reporte-documentos-generados.component';
 import { VisualizacionDocumentacionEmpresaComponent } from './components/dashboard/visualizacion-documentacion-empresa/visualizacion-documentacion-empresa.component';
 import { VisualizacionHorarioComponent } from './components/perfil-trabajador/visualizacion-horario/visualizacion-horario.component';
+import { BonificacionesComponent } from './components/perfil-trabajador/bonificaciones/bonificaciones.component';
+import { RepBonoficacionesComponent } from './components/dashboard/reportes/rep-bonoficaciones/rep-bonoficaciones.component';
 
 const routes: Routes = [
   { path: 'Login', component: LoginComponent },
@@ -105,6 +107,7 @@ const routes: Routes = [
         { path: 'Repturnosincompletos' , component: RepturnosincompletosComponent},
         { path: 'Repgraficassucursales' , component: RepgraficassucursalesComponent},
         { path: 'Replibroasistencia' , component: ReplibroasistenciaComponent},
+        { path: 'RepBonoficaciones' , component: RepBonoficacionesComponent},
 
 
 
@@ -132,6 +135,7 @@ const routes: Routes = [
       { path: 'EditarFoto/:rut' , component: EditarFotoComponent},
       { path: 'ReporteDocumentosGenerados' , component: ReporteDocumentosGeneradosComponent},      
       { path: 'VisualizacionHorario' , component: VisualizacionHorarioComponent},      
+      { path: 'Bonificaciones' , component: BonificacionesComponent},      
 
   ] },
     { path: 'Importacion' , component: ImportacionComponent},

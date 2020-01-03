@@ -28,7 +28,7 @@ export class RepasistenciamensualComponent {
 	public date = new FormControl();
   public sucursal:any;
 	public movimientos: any[] = [];
-  @ViewChild('TABLE') table: ElementRef;
+  @ViewChild('TABLE', { static: true }) table: ElementRef;
 
   constructor(public MensajesSwalService_: MensajesSwalService,
               private store: Store<AppState>,

@@ -82,6 +82,10 @@ export class RutasservidorService {
     'ingresarDocumentoPorTrabajador': this.urlBase + 'api/ingresarDocumentoPorTrabajador/',
     'GetDocumentoPorTrabajador': this.urlBase + 'api/GetDocumentoPorTrabajador/',
     'GetDocumentosGeneradorPorEmpresa': this.urlBase + 'api/GetDocumentosGeneradorPorEmpresa/',
+    'ingresarResExtra': this.urlBase + 'api/ingresarResExtra/',
+    'GetResExtra_unico': this.urlBase + 'api/GetResExtra_unico/',
+    'GetResExtra_porSucursal': this.urlBase + 'api/GetResExtra_porSucursal', //?page=3
+        'loginTrabajador': this.urlBase + 'api/loginTrabajador',
 
 
     'ingresardepartamento': this.urlBase + 'api/ingresardepartamento/',

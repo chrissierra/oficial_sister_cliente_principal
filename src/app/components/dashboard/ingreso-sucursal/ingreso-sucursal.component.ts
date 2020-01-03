@@ -29,7 +29,7 @@ export class IngresoSucursalComponent implements OnInit   {
     },
     zoom: 5
   };
-  @ViewChild(AgmMap) map: AgmMap;
+  @ViewChild(AgmMap, { static: true }) map: AgmMap;
   constructor(public mapsApiLoader: MapsAPILoader,
               private zone: NgZone,
               private wrapper: GoogleMapsAPIWrapper,

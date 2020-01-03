@@ -433,7 +433,7 @@ public array_empleado: any[] = [
       tipo: 'select',
       select: true,
       opciones: [ 'Horario Variable', 'Horario Fijo'],
-      valores: [ 'Turnos', 'Horario Fijo'],
+      valores: [ 'Noches', 'Horario Fijo'],
       value:''
     },    
     /*      opciones: [ 'Turnos', 'Horario Fijo', 'Noches'],

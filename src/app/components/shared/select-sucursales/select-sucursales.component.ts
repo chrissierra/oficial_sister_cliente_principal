@@ -30,7 +30,8 @@ export class SelectSucursalesComponent implements OnInit {
   }
 
   ngOnInit(){
-      if(this.LabelSelect == ''){
+    console.log(this.LabelSelect)
+      if(this.LabelSelect === undefined){
         this.LabelSelect = "Sucursales"
       }
   }

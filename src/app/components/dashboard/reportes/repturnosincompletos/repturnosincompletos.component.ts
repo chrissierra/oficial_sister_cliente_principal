@@ -27,7 +27,7 @@ export class RepturnosincompletosComponent {
 	public nombreEmpresa:any = localStorage.getItem("nombre_empresa");
 	public datosTrabajadores:DatosTrabajadores = { info: [] };
 	public DatosAsistencia:DatosDeAsistencia;
-	@ViewChild('TABLE') table: ElementRef;
+	@ViewChild('TABLE', { static: true }) table: ElementRef;
 
   constructor(	public MensajesSwalService_: MensajesSwalService,
   				private SueldosService_: SueldosService,

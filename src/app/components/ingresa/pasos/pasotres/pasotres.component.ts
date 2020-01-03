@@ -59,6 +59,13 @@ onUploadStateChanged(state: boolean) {
    }
 
 
+ saltarsePaso(){
+   this.mensaje();
+   this.router.navigate(['../Planilla/']);
+
+ }  
+
+
     public mensajeError(){
        swal({
           title: 'Imagen muy pesada',

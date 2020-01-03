@@ -81,6 +81,7 @@ peo(e){
   console.log(new Date(e.view.currentStart).getMonth() + 1)
   let mes = new Date(e.view.currentStart).getMonth() + 1;
   let mes_para_fecha;
+  let dia;
   if(mes <10){
   mes_para_fecha = '0'+mes;
   }else{
@@ -97,13 +98,13 @@ mes_para_fecha = mes;
          // code...
          console.log(JSON.parse(data[0].turno)['tipo_a_'+i])
 
-
+         dia = i < 10 ? '0'+i : i;
          if(JSON.parse(data[0].turno)['tipo_a_'+i] !== undefined && JSON.parse(data[0].turno)['tipo_a_'+i].length > 0){
            console.log( anio+'-0'+mes+ '-'+i)
-           arraycito.push({ title: JSON.parse(data[0].turno)['tipo_a_'+i]+": "+JSON.parse(data[0].turno)['hora_a_'+i], start: anio+'-'+mes_para_fecha+ '-'+i })
+           arraycito.push({ title: JSON.parse(data[0].turno)['tipo_a_'+i]+": "+JSON.parse(data[0].turno)['hora_a_'+i], start: anio+'-'+mes_para_fecha+ '-'+dia })
          }
          if(JSON.parse(data[0].turno)['tipo_b_'+i] !== undefined && JSON.parse(data[0].turno)['tipo_b_'+i].length > 0){
-           arraycito.push({ title: JSON.parse(data[0].turno)['tipo_b_'+i]+": "+JSON.parse(data[0].turno)['hora_b_'+i], start: anio+'-'+mes_para_fecha+ '-'+i})
+           arraycito.push({ title: JSON.parse(data[0].turno)['tipo_b_'+i]+": "+JSON.parse(data[0].turno)['hora_b_'+i], start: anio+'-'+mes_para_fecha+ '-'+dia})
          }
          console.log(JSON.parse(data[0].turno)['tipo_b_'+i])
 

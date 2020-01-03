@@ -37,7 +37,7 @@ export class ReplibroasistenciaComponent  {
   	public columnDefs: any;
 	public rowData: any;
   public responseForkJoin:any;
-  @ViewChild('TABLE') table: ElementRef;
+  @ViewChild('TABLE', { static: true }) table: ElementRef;
 
   constructor(public MensajesSwalService_: MensajesSwalService,
               public PlanillaservicesService_: PlanillaservicesService,

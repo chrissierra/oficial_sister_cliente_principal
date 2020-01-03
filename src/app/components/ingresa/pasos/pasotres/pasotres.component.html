@@ -1,1 +1,8 @@
-<app-upload [URL_REGRESO]="url_regreso"></app-upload>
+
+<div class="container">
+		<app-titulo titulo="INGRESA REGISTRO FOTOGRÁFICO DE TU TRABAJADOR" subtitulo="Puedes saltarte éste paso y dejar que el trabajador ingrese su imagen en su primer marcaje."></app-titulo>	
+
+		<app-upload [URL_REGRESO]="url_regreso"></app-upload>
+		<br>
+		<span style="cursor:pointer;" (click)="saltarsePaso()" class="badge badge-secondary">Saltarse el paso</span>
+</div>

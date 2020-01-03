@@ -14,6 +14,7 @@ export class VisualizacionDocumentacionEmpresaComponent implements OnInit {
 	imagen64:any;
 	resultData:any;
   rutEmpresa:any;
+  loading:any;
   constructor(	private sanitizer: DomSanitizer,
                 private param: ActivatedRoute,
                 private router: Router,
@@ -36,21 +37,38 @@ export class VisualizacionDocumentacionEmpresaComponent implements OnInit {
   }
 
 
+    avoidScroll(){
+    window.onscroll = function () { window.scrollTo(0, 0); };
+  }
+
+  enableScrolling(){
+    window.onscroll=function(){};
+  }
+
+
     refrescarIframe(item){
             this.CrudService_.Add({'cuerpoDocumento': item.CuerpoDocumento, 'rutEmpresa': localStorage.getItem('rut_empresa')}, 'armarDocumento')
             .subscribe(data => console.log(data), (err)=> console.log(err),
             ()=> {
-              setTimeout(()=> {
-                // this.URL_IFRAME = this.sanitizer.bypassSecurityTrustResourceUrl('https://sister.cl/laravel/index.php/presta/'+this.rutEmpresa);
-                location.href = 'https://sister.cl/laravel/index.php/presta/'+this.rutEmpresa;
-              }, 5000)
+                   setTimeout(()=> {
+                      // this.URL_IFRAME = this.sanitizer.bypassSecurityTrustResourceUrl('https://sister.cl/laravel/index.php/presta/'+this.rutEmpresa);
+                      //location.href = 'https://sister.cl/laravel/index.php/presta/'+this.rutEmpresa;
+                      window.open(
+                        'https://sister.cl/laravel/index.php/presta/'+this.rutEmpresa,
+                        '_blank' // <- This is what makes it open in a new window.
+                      );
+                      this.loading = false;
+                      this.enableScrolling()
+                    }, 3000)
 
             })
   }
 
   visualizarPDF(item){
   	console.log("ITEM", item)
-    if(item.tipocarta == 1){
+    this.loading = true;
+    this.avoidScroll()
+    /*if(item.tipocarta == 1){
       this.GeneradorDocumentosService_.generarPDFDocumentoFromServerTipoCarta(item, this.imagen64, item.ciudad, item.nombre, item.apellido, item.rut);
 
 
@@ -58,7 +76,7 @@ export class VisualizacionDocumentacionEmpresaComponent implements OnInit {
   
       this.GeneradorDocumentosService_.generarPDFDocumentoFromServer(item, this.imagen64, item.ciudad);
 
-    }
+    }*/
      this.refrescarIframe(item)
   }
 

@@ -31,6 +31,7 @@ export class RepgraficassucursalesComponent implements OnInit {
       public arrayResultado: any[]= []
       public arrayResultado1: any[]= []
       public arrayMeses:any[]= []
+      public loading:boolean;
 
   public barChartOptions:any = {
     scaleShowVerticalLines: false,
@@ -41,8 +42,8 @@ export class RepgraficassucursalesComponent implements OnInit {
   public barChartLegend:boolean = true;
   public barChartLabelsM = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic']
   public barChartData:any[] = [
-    {data: [65], label: 'Series A'},
-    {data: [28], label: 'Series B'}
+    {data: [65], label: ''},
+    {data: [28], label: ''}
   ];
   constructor(private store: Store<AppState>,
               public servicioLibroDiario:LibroremuneracionesService) { 
@@ -79,6 +80,10 @@ chartClicked(e){
          { data: [data['horasExactas'], 0],  label: 'Horas Normales' },
          { data: [0, data['horasExtras']],  label: 'Turnos' }
         ]
+      }, (error)=> {
+
+      }, ()=> {
+        this.loading= false;
       })
     }
   
@@ -117,6 +122,7 @@ chartClicked(e){
                { data: this.arrayResultado,  label: 'Horas Normales' },
                { data: this.arrayResultado1,  label: 'Turnos' }
               ]
+              this.loading= false;
       });
 
 
@@ -126,6 +132,7 @@ chartClicked(e){
 
 
     ActualizarPorSucursal(){
+      this.loading= true;
       this.anual = false;
       this.begin= true;
       this.getFromState();

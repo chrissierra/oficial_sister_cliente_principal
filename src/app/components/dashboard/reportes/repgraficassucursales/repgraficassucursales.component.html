@@ -6,7 +6,8 @@
 			    
 			    <div class="col-sm-12">
 			      <div class="text-center" >
-					 <app-select-sucursales></app-select-sucursales>
+			      	
+					 <app-select-sucursales LabelSelect="Selecciona Sucursal"></app-select-sucursales>
 					</div>
 			    </div>
 			   
@@ -40,7 +41,7 @@
 			    </div>
 			  
 			    <div class="col col-sm-6">
-			    		<p class="text-muted">Anio</p>
+			    		<p class="text-muted">Año</p>
 			    				<div class="form-group  mx-sm-3 mb-2">		    
 								       <select [(ngModel)]="anio" name="anio"  type="text" class="form-control" >		    	
 								    	  <option>Año</option>
@@ -105,3 +106,6 @@
 </div>
 
 </div>
+
+                <ngx-loading style="height:2000px !important;" [show]="loading" [config]="{ backdropBorderRadius: '3px', fullScreenBackdrop:'true' }" [template]="customLoadingTemplate"></ngx-loading> 
+              <ng-template  style="height:2000px !important;"  #customLoadingTemplate></ng-template>

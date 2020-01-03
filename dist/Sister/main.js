@@ -310,6 +310,75 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 
 /***/ }),
 
+/***/ "./src/app/Data/finiquito.ts":
+/*!***********************************!*\
+  !*** ./src/app/Data/finiquito.ts ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var FiniquitoBase = { 'pagos': [
+        { 'label': 'Mes de aviso', 'valor': '' },
+        { 'label': 'Liquidación de sueldo', 'valor': '', 'liquidacion': true, 'fechaLiquidacion': '' },
+        { 'label': 'Indemnización Sustitutiva', 'valor': '' },
+        { 'label': 'Vacaciones Proporcionales', 'valor': '' },
+        { 'label': 'Vacaciones Legales', 'valor': '' }
+    ],
+    'Articulos': [
+        { 'nombre': '159', 'numeros': [
+                { 'numero': 'N°1', 'nombre': 'Mutuo acuerdo de las partes' },
+                { 'numero': 'N°2', 'nombre': 'Renuncia del trabajador' },
+                { 'numero': 'N°3', 'nombre': 'Muerte del trabajador' },
+                { 'numero': 'N°4', 'nombre': 'Vencimiento del plazo convenido en el contrato' },
+                { 'numero': 'N°5', 'nombre': 'Conclusión del trabajo o servicio que dio origen al contrato' },
+                { 'numero': 'N°6', 'nombre': 'Caso fortuito o fuerza mayor' },
+                { 'numero': 'N°7', 'nombre': 'Mutuo acuerdo de las partes' },
+            ] },
+        { 'nombre': '160', 'numeros': [
+                { 'numero': 'N°1', 'nombre': 'Conductas indebidas de carácter grave', 'extra': true, 'puntos': [
+                        { 'A': 'Falta de probidad del trabajador en el desempeño de sus funciones' },
+                        { 'B': 'Conductas de acoso sexual' },
+                        { 'C': 'Vías de hecho ejercidas por el trabajador en contra del empleador o de cualquier trabajador que se desempeñe en la misma empresa' },
+                        { 'D': 'Injurias proferidas por el trabajador al empleador' },
+                        { 'E': 'Conducta inmoral del trabajador que afecte a la empresa donde se desempeña' },
+                        { 'F': 'Conductas de acoso laboral' },
+                    ] },
+                { 'numero': 'N°2', 'nombre': 'Negociaciones que ejecute el trabajador dentro del giro del negocio y que hubieren sido prohibidas por escrito en el respectivo contrato por el empleador' },
+                { 'numero': 'N°3', 'nombre': 'No concurrencia del trabajador a sus labores sin causa justificada durante dos días seguidos, dos lunes en el mes o un total de tres días durante igual período de tiempo; asimismo, la falta injustificada, o sin aviso previo de parte del trabajador que tuviere a su cargo una actividad, faena o máquina cuyo abandono o paralización signifique una perturbación grave en la marcha de la obra' },
+                { 'numero': 'N°4', 'nombre': 'Abandono del trabajo por parte del trabajador, entendiéndose por tal: a) la salida intempestiva e injustificada del trabajador del sitio de la faena y durante las horas de trabajo, sin permiso del empleador o de quien lo represente, y b) la negativa a trabajar sin causa justificada en las faenas convenidas en el contrato' },
+                { 'numero': 'N°5', 'nombre': 'Actos, omisiones o imprudencias temerarias que afecten a la seguridad o al funcionamiento del establecimiento, a la seguridad o a la actividad de los trabajadores, o a la salud de éstos' },
+                { 'numero': 'N°6', 'nombre': 'El perjuicio material causado intencionalmente en las instalaciones, maquinarias, herramientas, útiles de trabajo, productos o mercaderías' },
+                { 'numero': 'N°7', 'nombre': 'Incumplimiento grave de las obligaciones que impone el contrato' },
+            ] },
+        { 'nombre': '161', 'numeros': [
+                { 'numero': 'N°1', 'nombre': 'Por necesidades de la empresa' },
+            ] },
+        { 'nombre': '163', 'numeros': [
+                { 'numero': 'N°1', 'nombre': 'Por procedimiento concursal de liquidación de bienes' },
+            ] },
+    ],
+    'Otros': [
+        { 'label': 'Fecha Ingreso', 'valor': '' },
+        { 'label': 'Fecha Término', 'valor': '' },
+    ],
+    'Seleccionado': false,
+};
+/* harmony default export */ __webpack_exports__["default"] = (FiniquitoBase);
+/*
+
+        Mes de aviso
+        Liquidación de sueldo
+        Indemnización Sustitutiva
+        Vacaciones Proporcionales
+        Vacaciones Legales
+
+*/
+
+
+/***/ }),
+
 /***/ "./src/app/Data/variablesParametrizadas.ts":
 /*!*************************************************!*\
   !*** ./src/app/Data/variablesParametrizadas.ts ***!
@@ -386,7 +455,7 @@ var VariablesParametrizadas = [
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\nagm-map {\r\n  height: 300px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUNBO0VBQ0UsYUFBYTtBQUNmIiwiZmlsZSI6InNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcclxuYWdtLW1hcCB7XHJcbiAgaGVpZ2h0OiAzMDBweDtcclxufSJdfQ== */"
+module.exports = "\r\nagm-map {\r\n  height: 300px;\r\n}\r\n\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUNBO0VBQ0UsYUFBYTtBQUNmIiwiZmlsZSI6InNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcclxuYWdtLW1hcCB7XHJcbiAgaGVpZ2h0OiAzMDBweDtcclxufVxyXG5cclxuIl19 */"
 
 /***/ }),
 
@@ -397,7 +466,7 @@ module.exports = "\r\nagm-map {\r\n  height: 300px;\r\n}\r\n/*# sourceMappingURL
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<router-outlet></router-outlet>\r\n\r\n"
+module.exports = "<router-outlet></router-outlet>\r\n\r\n<app-footer></app-footer>"
 
 /***/ }),
 
@@ -463,111 +532,117 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @angular/material/datepicker */ "./node_modules/@angular/material/esm5/datepicker.es5.js");
 /* harmony import */ var _angular_material_slide_toggle__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @angular/material/slide-toggle */ "./node_modules/@angular/material/esm5/slide-toggle.es5.js");
 /* harmony import */ var angular_text_input_autocomplete__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! angular-text-input-autocomplete */ "./node_modules/angular-text-input-autocomplete/fesm5/angular-text-input-autocomplete.js");
-/* harmony import */ var _services_auth_guard__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./services/auth.guard */ "./src/app/services/auth.guard.ts");
-/* harmony import */ var _ngrx_store__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @ngrx/store */ "./node_modules/@ngrx/store/fesm5/store.js");
-/* harmony import */ var _components_marcaje_reducer__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./components/marcaje.reducer */ "./src/app/components/marcaje.reducer.ts");
-/* harmony import */ var _agm_core__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! @agm/core */ "./node_modules/@agm/core/index.js");
-/* harmony import */ var _app_routes__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./app.routes */ "./src/app/app.routes.ts");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _components_shared_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./components/shared/navbar/navbar.component */ "./src/app/components/shared/navbar/navbar.component.ts");
-/* harmony import */ var _components_login_login_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./components/login/login.component */ "./src/app/components/login/login.component.ts");
-/* harmony import */ var _components_home_home_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./components/home/home.component */ "./src/app/components/home/home.component.ts");
-/* harmony import */ var _components_ingresa_ingresa_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./components/ingresa/ingresa.component */ "./src/app/components/ingresa/ingresa.component.ts");
-/* harmony import */ var _components_ingresa_pasos_pasouno_pasouno_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./components/ingresa/pasos/pasouno/pasouno.component */ "./src/app/components/ingresa/pasos/pasouno/pasouno.component.ts");
-/* harmony import */ var _components_ingresa_pasos_pasodos_pasodos_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./components/ingresa/pasos/pasodos/pasodos.component */ "./src/app/components/ingresa/pasos/pasodos/pasodos.component.ts");
-/* harmony import */ var _components_ingresa_pasos_pasotres_pasotres_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./components/ingresa/pasos/pasotres/pasotres.component */ "./src/app/components/ingresa/pasos/pasotres/pasotres.component.ts");
-/* harmony import */ var _components_planilla_planilla_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./components/planilla/planilla.component */ "./src/app/components/planilla/planilla.component.ts");
-/* harmony import */ var _components_perfil_trabajador_perfil_trabajador_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./components/perfil-trabajador/perfil-trabajador.component */ "./src/app/components/perfil-trabajador/perfil-trabajador.component.ts");
-/* harmony import */ var _components_perfil_trabajador_turnos_variables_turnos_variables_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./components/perfil-trabajador/turnos-variables/turnos-variables.component */ "./src/app/components/perfil-trabajador/turnos-variables/turnos-variables.component.ts");
-/* harmony import */ var _components_perfil_trabajador_turnos_fijos_turnos_fijos_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./components/perfil-trabajador/turnos-fijos/turnos-fijos.component */ "./src/app/components/perfil-trabajador/turnos-fijos/turnos-fijos.component.ts");
-/* harmony import */ var _components_perfil_trabajador_perfil_perfil_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./components/perfil-trabajador/perfil/perfil.component */ "./src/app/components/perfil-trabajador/perfil/perfil.component.ts");
-/* harmony import */ var _components_perfil_trabajador_historial_turnos_historial_turnos_component__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./components/perfil-trabajador/historial-turnos/historial-turnos.component */ "./src/app/components/perfil-trabajador/historial-turnos/historial-turnos.component.ts");
-/* harmony import */ var _components_perfil_trabajador_liberar_turnos_liberar_turnos_component__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./components/perfil-trabajador/liberar-turnos/liberar-turnos.component */ "./src/app/components/perfil-trabajador/liberar-turnos/liberar-turnos.component.ts");
-/* harmony import */ var _components_dashboard_dash_board_dash_board_component__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./components/dashboard/dash-board/dash-board.component */ "./src/app/components/dashboard/dash-board/dash-board.component.ts");
-/* harmony import */ var _components_dashboard_perfil_empleador_perfil_empleador_component__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./components/dashboard/perfil-empleador/perfil-empleador.component */ "./src/app/components/dashboard/perfil-empleador/perfil-empleador.component.ts");
-/* harmony import */ var _components_dashboard_ingreso_sucursal_ingreso_sucursal_component__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./components/dashboard/ingreso-sucursal/ingreso-sucursal.component */ "./src/app/components/dashboard/ingreso-sucursal/ingreso-sucursal.component.ts");
-/* harmony import */ var _components_dashboard_reportes_reportes_component__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./components/dashboard/reportes/reportes.component */ "./src/app/components/dashboard/reportes/reportes.component.ts");
-/* harmony import */ var _components_perfil_trabajador_marcaje_marcaje_component__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./components/perfil-trabajador/marcaje/marcaje.component */ "./src/app/components/perfil-trabajador/marcaje/marcaje.component.ts");
-/* harmony import */ var _components_dashboard_sueldos_sueldos_component__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./components/dashboard/sueldos/sueldos.component */ "./src/app/components/dashboard/sueldos/sueldos.component.ts");
-/* harmony import */ var _components_perfil_trabajador_liberar_sueldos_liberar_sueldos_component__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./components/perfil-trabajador/liberar-sueldos/liberar-sueldos.component */ "./src/app/components/perfil-trabajador/liberar-sueldos/liberar-sueldos.component.ts");
-/* harmony import */ var _components_perfil_trabajador_haber_no_imponible_haber_no_imponible_component__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./components/perfil-trabajador/haber-no-imponible/haber-no-imponible.component */ "./src/app/components/perfil-trabajador/haber-no-imponible/haber-no-imponible.component.ts");
-/* harmony import */ var _components_perfil_trabajador_SueldosLiberados_SueldosLiberadosComponent_component__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ./components/perfil-trabajador/SueldosLiberados/SueldosLiberadosComponent.component */ "./src/app/components/perfil-trabajador/SueldosLiberados/SueldosLiberadosComponent.component.ts");
-/* harmony import */ var _components_perfil_trabajador_resumen_resumen_component__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ./components/perfil-trabajador/resumen/resumen.component */ "./src/app/components/perfil-trabajador/resumen/resumen.component.ts");
-/* harmony import */ var _components_perfil_trabajador_visualizacion_liquidaciones_visualizacion_liquidaciones_component__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ./components/perfil-trabajador/visualizacion-liquidaciones/visualizacion-liquidaciones.component */ "./src/app/components/perfil-trabajador/visualizacion-liquidaciones/visualizacion-liquidaciones.component.ts");
-/* harmony import */ var _components_perfil_trabajador_actualizar_turnos_fijos_actualizar_turnos_fijos_component__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ./components/perfil-trabajador/actualizar-turnos-fijos/actualizar-turnos-fijos.component */ "./src/app/components/perfil-trabajador/actualizar-turnos-fijos/actualizar-turnos-fijos.component.ts");
-/* harmony import */ var _components_dashboard_reportes_repasistenciadiario_repasistenciadiario_component__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ./components/dashboard/reportes/repasistenciadiario/repasistenciadiario.component */ "./src/app/components/dashboard/reportes/repasistenciadiario/repasistenciadiario.component.ts");
-/* harmony import */ var _components_dashboard_reportes_repasistenciamensual_repasistenciamensual_component__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ./components/dashboard/reportes/repasistenciamensual/repasistenciamensual.component */ "./src/app/components/dashboard/reportes/repasistenciamensual/repasistenciamensual.component.ts");
-/* harmony import */ var _components_perfil_trabajador_editar_perfil_trabajador_editar_perfil_trabajador_component__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(/*! ./components/perfil-trabajador/editar-perfil-trabajador/editar-perfil-trabajador.component */ "./src/app/components/perfil-trabajador/editar-perfil-trabajador/editar-perfil-trabajador.component.ts");
-/* harmony import */ var _components_perfil_trabajador_editar_foto_editar_foto_component__WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(/*! ./components/perfil-trabajador/editar-foto/editar-foto.component */ "./src/app/components/perfil-trabajador/editar-foto/editar-foto.component.ts");
-/* harmony import */ var _components_shared_select_sucursales_select_sucursales_component__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! ./components/shared/select-sucursales/select-sucursales.component */ "./src/app/components/shared/select-sucursales/select-sucursales.component.ts");
-/* harmony import */ var _components_dashboard_configuracion_configuracion_component__WEBPACK_IMPORTED_MODULE_57__ = __webpack_require__(/*! ./components/dashboard/configuracion/configuracion.component */ "./src/app/components/dashboard/configuracion/configuracion.component.ts");
-/* harmony import */ var _components_dashboard_actualizar_foto_actualizar_foto_component__WEBPACK_IMPORTED_MODULE_58__ = __webpack_require__(/*! ./components/dashboard/actualizar-foto/actualizar-foto.component */ "./src/app/components/dashboard/actualizar-foto/actualizar-foto.component.ts");
-/* harmony import */ var _components_dashboard_clientes_clientes_component__WEBPACK_IMPORTED_MODULE_59__ = __webpack_require__(/*! ./components/dashboard/clientes/clientes.component */ "./src/app/components/dashboard/clientes/clientes.component.ts");
-/* harmony import */ var _components_dashboard_cargos_cargos_component__WEBPACK_IMPORTED_MODULE_60__ = __webpack_require__(/*! ./components/dashboard/cargos/cargos.component */ "./src/app/components/dashboard/cargos/cargos.component.ts");
-/* harmony import */ var _components_ingresa_interfaces_empleado_service__WEBPACK_IMPORTED_MODULE_61__ = __webpack_require__(/*! ./components/ingresa/interfaces/empleado.service */ "./src/app/components/ingresa/interfaces/empleado.service.ts");
-/* harmony import */ var _services_ingreso_usuario_servidor_service__WEBPACK_IMPORTED_MODULE_62__ = __webpack_require__(/*! ./services/ingreso-usuario-servidor.service */ "./src/app/services/ingreso-usuario-servidor.service.ts");
-/* harmony import */ var _services_loginservices_service__WEBPACK_IMPORTED_MODULE_63__ = __webpack_require__(/*! ./services/loginservices.service */ "./src/app/services/loginservices.service.ts");
-/* harmony import */ var _services_rutasservidor_service__WEBPACK_IMPORTED_MODULE_64__ = __webpack_require__(/*! ./services/rutasservidor.service */ "./src/app/services/rutasservidor.service.ts");
-/* harmony import */ var _services_planillaservices_service__WEBPACK_IMPORTED_MODULE_65__ = __webpack_require__(/*! ./services/planillaservices.service */ "./src/app/services/planillaservices.service.ts");
-/* harmony import */ var _services_perfil_trabajador_service_service__WEBPACK_IMPORTED_MODULE_66__ = __webpack_require__(/*! ./services/perfil-trabajador-service.service */ "./src/app/services/perfil-trabajador-service.service.ts");
-/* harmony import */ var _services_liberar_turnos_service__WEBPACK_IMPORTED_MODULE_67__ = __webpack_require__(/*! ./services/liberar-turnos.service */ "./src/app/services/liberar-turnos.service.ts");
-/* harmony import */ var _services_guardar_sucursal_service__WEBPACK_IMPORTED_MODULE_68__ = __webpack_require__(/*! ./services/guardar-sucursal.service */ "./src/app/services/guardar-sucursal.service.ts");
-/* harmony import */ var _services_marcaje_service_service__WEBPACK_IMPORTED_MODULE_69__ = __webpack_require__(/*! ./services/marcaje-service.service */ "./src/app/services/marcaje-service.service.ts");
-/* harmony import */ var _services_sueldos_service__WEBPACK_IMPORTED_MODULE_70__ = __webpack_require__(/*! ./services/sueldos.service */ "./src/app/services/sueldos.service.ts");
-/* harmony import */ var _services_mensajes_swal_service__WEBPACK_IMPORTED_MODULE_71__ = __webpack_require__(/*! ./services/mensajes-swal.service */ "./src/app/services/mensajes-swal.service.ts");
-/* harmony import */ var _services_libroremuneraciones_service__WEBPACK_IMPORTED_MODULE_72__ = __webpack_require__(/*! ./services/libroremuneraciones.service */ "./src/app/services/libroremuneraciones.service.ts");
-/* harmony import */ var _services_geolocalizacion_service__WEBPACK_IMPORTED_MODULE_73__ = __webpack_require__(/*! ./services/geolocalizacion.service */ "./src/app/services/geolocalizacion.service.ts");
-/* harmony import */ var _components_dashboard_configuracion_Interfaces_claves_interface__WEBPACK_IMPORTED_MODULE_74__ = __webpack_require__(/*! ./components/dashboard/configuracion/Interfaces/claves.interface */ "./src/app/components/dashboard/configuracion/Interfaces/claves.interface.ts");
-/* harmony import */ var _services_claves_service__WEBPACK_IMPORTED_MODULE_75__ = __webpack_require__(/*! ./services/claves.service */ "./src/app/services/claves.service.ts");
-/* harmony import */ var _services_mandantes_service__WEBPACK_IMPORTED_MODULE_76__ = __webpack_require__(/*! ./services/mandantes.service */ "./src/app/services/mandantes.service.ts");
-/* harmony import */ var _services_cargos_service__WEBPACK_IMPORTED_MODULE_77__ = __webpack_require__(/*! ./services/cargos.service */ "./src/app/services/cargos.service.ts");
-/* harmony import */ var _services_clientesrrhh_service__WEBPACK_IMPORTED_MODULE_78__ = __webpack_require__(/*! ./services/clientesrrhh.service */ "./src/app/services/clientesrrhh.service.ts");
-/* harmony import */ var _services_desvinculacion_service__WEBPACK_IMPORTED_MODULE_79__ = __webpack_require__(/*! ./services/desvinculacion.service */ "./src/app/services/desvinculacion.service.ts");
-/* harmony import */ var _services_viaticos_service__WEBPACK_IMPORTED_MODULE_80__ = __webpack_require__(/*! ./services/viaticos.service */ "./src/app/services/viaticos.service.ts");
-/* harmony import */ var _pipes_entradaosalida_pipe__WEBPACK_IMPORTED_MODULE_81__ = __webpack_require__(/*! ./pipes/entradaosalida.pipe */ "./src/app/pipes/entradaosalida.pipe.ts");
-/* harmony import */ var _pipes_nombre_del_dia_del_mes_pipe__WEBPACK_IMPORTED_MODULE_82__ = __webpack_require__(/*! ./pipes/nombre-del-dia-del-mes.pipe */ "./src/app/pipes/nombre-del-dia-del-mes.pipe.ts");
-/* harmony import */ var _pipes_getHoraPipe_pipe__WEBPACK_IMPORTED_MODULE_83__ = __webpack_require__(/*! ./pipes/getHoraPipe.pipe */ "./src/app/pipes/getHoraPipe.pipe.ts");
-/* harmony import */ var _pipes_getDia_pipe__WEBPACK_IMPORTED_MODULE_84__ = __webpack_require__(/*! ./pipes/getDia.pipe */ "./src/app/pipes/getDia.pipe.ts");
-/* harmony import */ var _angular_service_worker__WEBPACK_IMPORTED_MODULE_85__ = __webpack_require__(/*! @angular/service-worker */ "./node_modules/@angular/service-worker/fesm5/service-worker.js");
-/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_86__ = __webpack_require__(/*! ../environments/environment */ "./src/environments/environment.ts");
-/* harmony import */ var _components_shared_upload_upload_component__WEBPACK_IMPORTED_MODULE_87__ = __webpack_require__(/*! ./components/shared/upload/upload.component */ "./src/app/components/shared/upload/upload.component.ts");
-/* harmony import */ var _components_dashboard_reportes_repasistenciareprobado_repasistenciareprobado_component__WEBPACK_IMPORTED_MODULE_88__ = __webpack_require__(/*! ./components/dashboard/reportes/repasistenciareprobado/repasistenciareprobado.component */ "./src/app/components/dashboard/reportes/repasistenciareprobado/repasistenciareprobado.component.ts");
-/* harmony import */ var _components_dashboard_reportes_repasistenciaxtrabajador_repasistenciaxtrabajador_component__WEBPACK_IMPORTED_MODULE_89__ = __webpack_require__(/*! ./components/dashboard/reportes/repasistenciaxtrabajador/repasistenciaxtrabajador.component */ "./src/app/components/dashboard/reportes/repasistenciaxtrabajador/repasistenciaxtrabajador.component.ts");
-/* harmony import */ var _ng_select_ng_select__WEBPACK_IMPORTED_MODULE_90__ = __webpack_require__(/*! @ng-select/ng-select */ "./node_modules/@ng-select/ng-select/fesm5/ng-select.js");
-/* harmony import */ var _components_perfil_trabajador_desvinculacion_basica_desvinculacion_basica_component__WEBPACK_IMPORTED_MODULE_91__ = __webpack_require__(/*! ./components/perfil-trabajador/desvinculacion-basica/desvinculacion-basica.component */ "./src/app/components/perfil-trabajador/desvinculacion-basica/desvinculacion-basica.component.ts");
-/* harmony import */ var _components_perfil_trabajador_turnos_noche_turnos_noche_component__WEBPACK_IMPORTED_MODULE_92__ = __webpack_require__(/*! ./components/perfil-trabajador/turnos-noche/turnos-noche.component */ "./src/app/components/perfil-trabajador/turnos-noche/turnos-noche.component.ts");
-/* harmony import */ var _components_dashboard_reportes_repviaticos_repviaticos_component__WEBPACK_IMPORTED_MODULE_93__ = __webpack_require__(/*! ./components/dashboard/reportes/repviaticos/repviaticos.component */ "./src/app/components/dashboard/reportes/repviaticos/repviaticos.component.ts");
-/* harmony import */ var _components_shared_footer_footer_component__WEBPACK_IMPORTED_MODULE_94__ = __webpack_require__(/*! ./components/shared/footer/footer.component */ "./src/app/components/shared/footer/footer.component.ts");
-/* harmony import */ var ngx_device_detector__WEBPACK_IMPORTED_MODULE_95__ = __webpack_require__(/*! ngx-device-detector */ "./node_modules/ngx-device-detector/ngx-device-detector.umd.js");
-/* harmony import */ var ngx_device_detector__WEBPACK_IMPORTED_MODULE_95___default = /*#__PURE__*/__webpack_require__.n(ngx_device_detector__WEBPACK_IMPORTED_MODULE_95__);
-/* harmony import */ var _components_dashboard_reportes_repunitario_repunitario_component__WEBPACK_IMPORTED_MODULE_96__ = __webpack_require__(/*! ./components/dashboard/reportes/repunitario/repunitario.component */ "./src/app/components/dashboard/reportes/repunitario/repunitario.component.ts");
-/* harmony import */ var _components_dashboard_reportes_repactualmentetrabajando_repactualmentetrabajando_component__WEBPACK_IMPORTED_MODULE_97__ = __webpack_require__(/*! ./components/dashboard/reportes/repactualmentetrabajando/repactualmentetrabajando.component */ "./src/app/components/dashboard/reportes/repactualmentetrabajando/repactualmentetrabajando.component.ts");
-/* harmony import */ var _components_dashboard_editar_sucursal_editar_sucursal_component__WEBPACK_IMPORTED_MODULE_98__ = __webpack_require__(/*! ./components/dashboard/editar-sucursal/editar-sucursal.component */ "./src/app/components/dashboard/editar-sucursal/editar-sucursal.component.ts");
-/* harmony import */ var _components_shared_titulo_titulo_component__WEBPACK_IMPORTED_MODULE_99__ = __webpack_require__(/*! ./components/shared/titulo/titulo.component */ "./src/app/components/shared/titulo/titulo.component.ts");
-/* harmony import */ var _components_dashboard_reportes_represumenmensual_represumenmensual_component__WEBPACK_IMPORTED_MODULE_100__ = __webpack_require__(/*! ./components/dashboard/reportes/represumenmensual/represumenmensual.component */ "./src/app/components/dashboard/reportes/represumenmensual/represumenmensual.component.ts");
-/* harmony import */ var _components_dashboard_reportes_repofflinemensual_repofflinemensual_component__WEBPACK_IMPORTED_MODULE_101__ = __webpack_require__(/*! ./components/dashboard/reportes/repofflinemensual/repofflinemensual.component */ "./src/app/components/dashboard/reportes/repofflinemensual/repofflinemensual.component.ts");
-/* harmony import */ var _components_dashboard_reportes_repturnosincompletos_repturnosincompletos_component__WEBPACK_IMPORTED_MODULE_102__ = __webpack_require__(/*! ./components/dashboard/reportes/repturnosincompletos/repturnosincompletos.component */ "./src/app/components/dashboard/reportes/repturnosincompletos/repturnosincompletos.component.ts");
-/* harmony import */ var _components_dashboard_reportes_repgraficassucursales_repgraficassucursales_component__WEBPACK_IMPORTED_MODULE_103__ = __webpack_require__(/*! ./components/dashboard/reportes/repgraficassucursales/repgraficassucursales.component */ "./src/app/components/dashboard/reportes/repgraficassucursales/repgraficassucursales.component.ts");
-/* harmony import */ var ng2_charts_ng2_charts__WEBPACK_IMPORTED_MODULE_104__ = __webpack_require__(/*! ng2-charts/ng2-charts */ "./node_modules/ng2-charts/ng2-charts.js");
-/* harmony import */ var ng2_charts_ng2_charts__WEBPACK_IMPORTED_MODULE_104___default = /*#__PURE__*/__webpack_require__.n(ng2_charts_ng2_charts__WEBPACK_IMPORTED_MODULE_104__);
-/* harmony import */ var _components_dashboard_reportes_replibroasistencia_replibroasistencia_component__WEBPACK_IMPORTED_MODULE_105__ = __webpack_require__(/*! ./components/dashboard/reportes/replibroasistencia/replibroasistencia.component */ "./src/app/components/dashboard/reportes/replibroasistencia/replibroasistencia.component.ts");
-/* harmony import */ var ag_grid_angular__WEBPACK_IMPORTED_MODULE_106__ = __webpack_require__(/*! ag-grid-angular */ "./node_modules/ag-grid-angular/main.js");
-/* harmony import */ var ag_grid_angular__WEBPACK_IMPORTED_MODULE_106___default = /*#__PURE__*/__webpack_require__.n(ag_grid_angular__WEBPACK_IMPORTED_MODULE_106__);
-/* harmony import */ var _components_dashboard_jefaturas_jefaturas_component__WEBPACK_IMPORTED_MODULE_107__ = __webpack_require__(/*! ./components/dashboard/jefaturas/jefaturas.component */ "./src/app/components/dashboard/jefaturas/jefaturas.component.ts");
-/* harmony import */ var _components_dashboard_centros_costos_centros_costos_component__WEBPACK_IMPORTED_MODULE_108__ = __webpack_require__(/*! ./components/dashboard/centros-costos/centros-costos.component */ "./src/app/components/dashboard/centros-costos/centros-costos.component.ts");
-/* harmony import */ var _components_dashboard_departamentos_departamentos_component__WEBPACK_IMPORTED_MODULE_109__ = __webpack_require__(/*! ./components/dashboard/departamentos/departamentos.component */ "./src/app/components/dashboard/departamentos/departamentos.component.ts");
-/* harmony import */ var _components_shared_crud_estandar_crud_estandar_component__WEBPACK_IMPORTED_MODULE_110__ = __webpack_require__(/*! ./components/shared/crud-estandar/crud-estandar.component */ "./src/app/components/shared/crud-estandar/crud-estandar.component.ts");
-/* harmony import */ var _components_dashboard_horarioxsucursal_horarioxsucursal_component__WEBPACK_IMPORTED_MODULE_111__ = __webpack_require__(/*! ./components/dashboard/horarioxsucursal/horarioxsucursal.component */ "./src/app/components/dashboard/horarioxsucursal/horarioxsucursal.component.ts");
-/* harmony import */ var _components_shared_select_centro_costos_select_centro_costos_component__WEBPACK_IMPORTED_MODULE_112__ = __webpack_require__(/*! ./components/shared/select-centro-costos/select-centro-costos.component */ "./src/app/components/shared/select-centro-costos/select-centro-costos.component.ts");
-/* harmony import */ var _components_shared_select_departamentos_select_departamentos_component__WEBPACK_IMPORTED_MODULE_113__ = __webpack_require__(/*! ./components/shared/select-departamentos/select-departamentos.component */ "./src/app/components/shared/select-departamentos/select-departamentos.component.ts");
-/* harmony import */ var _components_shared_select_jefaturas_select_jefaturas_component__WEBPACK_IMPORTED_MODULE_114__ = __webpack_require__(/*! ./components/shared/select-jefaturas/select-jefaturas.component */ "./src/app/components/shared/select-jefaturas/select-jefaturas.component.ts");
-/* harmony import */ var _components_ingresa_importacion_importacion_component__WEBPACK_IMPORTED_MODULE_115__ = __webpack_require__(/*! ./components/ingresa/importacion/importacion.component */ "./src/app/components/ingresa/importacion/importacion.component.ts");
-/* harmony import */ var _components_shared_visualizacion_contrastada_visualizacion_contrastada_component__WEBPACK_IMPORTED_MODULE_116__ = __webpack_require__(/*! ./components/shared/visualizacion-contrastada/visualizacion-contrastada.component */ "./src/app/components/shared/visualizacion-contrastada/visualizacion-contrastada.component.ts");
-/* harmony import */ var ngx_editor__WEBPACK_IMPORTED_MODULE_117__ = __webpack_require__(/*! ngx-editor */ "./node_modules/ngx-editor/fesm5/ngx-editor.js");
-/* harmony import */ var _components_perfil_trabajador_documentos_documentos_component__WEBPACK_IMPORTED_MODULE_118__ = __webpack_require__(/*! ./components/perfil-trabajador/documentos/documentos.component */ "./src/app/components/perfil-trabajador/documentos/documentos.component.ts");
-/* harmony import */ var _components_dashboard_generacion_documentos_generacion_documentos_component__WEBPACK_IMPORTED_MODULE_119__ = __webpack_require__(/*! ./components/dashboard/generacion-documentos/generacion-documentos.component */ "./src/app/components/dashboard/generacion-documentos/generacion-documentos.component.ts");
-/* harmony import */ var _components_perfil_trabajador_reporte_documentos_generados_reporte_documentos_generados_component__WEBPACK_IMPORTED_MODULE_120__ = __webpack_require__(/*! ./components/perfil-trabajador/reporte-documentos-generados/reporte-documentos-generados.component */ "./src/app/components/perfil-trabajador/reporte-documentos-generados/reporte-documentos-generados.component.ts");
-/* harmony import */ var _components_dashboard_visualizacion_documentacion_empresa_visualizacion_documentacion_empresa_component__WEBPACK_IMPORTED_MODULE_121__ = __webpack_require__(/*! ./components/dashboard/visualizacion-documentacion-empresa/visualizacion-documentacion-empresa.component */ "./src/app/components/dashboard/visualizacion-documentacion-empresa/visualizacion-documentacion-empresa.component.ts");
+/* harmony import */ var ngx_loading__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ngx-loading */ "./node_modules/ngx-loading/ngx-loading/ngx-loading.es5.js");
+/* harmony import */ var _services_auth_guard__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./services/auth.guard */ "./src/app/services/auth.guard.ts");
+/* harmony import */ var _ngrx_store__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! @ngrx/store */ "./node_modules/@ngrx/store/fesm5/store.js");
+/* harmony import */ var _components_marcaje_reducer__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./components/marcaje.reducer */ "./src/app/components/marcaje.reducer.ts");
+/* harmony import */ var _agm_core__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! @agm/core */ "./node_modules/@agm/core/index.js");
+/* harmony import */ var _app_routes__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./app.routes */ "./src/app/app.routes.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _components_shared_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./components/shared/navbar/navbar.component */ "./src/app/components/shared/navbar/navbar.component.ts");
+/* harmony import */ var _components_login_login_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./components/login/login.component */ "./src/app/components/login/login.component.ts");
+/* harmony import */ var _components_home_home_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./components/home/home.component */ "./src/app/components/home/home.component.ts");
+/* harmony import */ var _components_ingresa_ingresa_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./components/ingresa/ingresa.component */ "./src/app/components/ingresa/ingresa.component.ts");
+/* harmony import */ var _components_ingresa_pasos_pasouno_pasouno_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./components/ingresa/pasos/pasouno/pasouno.component */ "./src/app/components/ingresa/pasos/pasouno/pasouno.component.ts");
+/* harmony import */ var _components_ingresa_pasos_pasodos_pasodos_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./components/ingresa/pasos/pasodos/pasodos.component */ "./src/app/components/ingresa/pasos/pasodos/pasodos.component.ts");
+/* harmony import */ var _components_ingresa_pasos_pasotres_pasotres_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./components/ingresa/pasos/pasotres/pasotres.component */ "./src/app/components/ingresa/pasos/pasotres/pasotres.component.ts");
+/* harmony import */ var _components_planilla_planilla_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./components/planilla/planilla.component */ "./src/app/components/planilla/planilla.component.ts");
+/* harmony import */ var _components_perfil_trabajador_perfil_trabajador_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./components/perfil-trabajador/perfil-trabajador.component */ "./src/app/components/perfil-trabajador/perfil-trabajador.component.ts");
+/* harmony import */ var _components_perfil_trabajador_turnos_variables_turnos_variables_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./components/perfil-trabajador/turnos-variables/turnos-variables.component */ "./src/app/components/perfil-trabajador/turnos-variables/turnos-variables.component.ts");
+/* harmony import */ var _components_perfil_trabajador_turnos_fijos_turnos_fijos_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./components/perfil-trabajador/turnos-fijos/turnos-fijos.component */ "./src/app/components/perfil-trabajador/turnos-fijos/turnos-fijos.component.ts");
+/* harmony import */ var _components_perfil_trabajador_perfil_perfil_component__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./components/perfil-trabajador/perfil/perfil.component */ "./src/app/components/perfil-trabajador/perfil/perfil.component.ts");
+/* harmony import */ var _components_perfil_trabajador_historial_turnos_historial_turnos_component__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./components/perfil-trabajador/historial-turnos/historial-turnos.component */ "./src/app/components/perfil-trabajador/historial-turnos/historial-turnos.component.ts");
+/* harmony import */ var _components_perfil_trabajador_liberar_turnos_liberar_turnos_component__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./components/perfil-trabajador/liberar-turnos/liberar-turnos.component */ "./src/app/components/perfil-trabajador/liberar-turnos/liberar-turnos.component.ts");
+/* harmony import */ var _components_dashboard_dash_board_dash_board_component__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./components/dashboard/dash-board/dash-board.component */ "./src/app/components/dashboard/dash-board/dash-board.component.ts");
+/* harmony import */ var _components_dashboard_perfil_empleador_perfil_empleador_component__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./components/dashboard/perfil-empleador/perfil-empleador.component */ "./src/app/components/dashboard/perfil-empleador/perfil-empleador.component.ts");
+/* harmony import */ var _components_dashboard_ingreso_sucursal_ingreso_sucursal_component__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./components/dashboard/ingreso-sucursal/ingreso-sucursal.component */ "./src/app/components/dashboard/ingreso-sucursal/ingreso-sucursal.component.ts");
+/* harmony import */ var _components_dashboard_reportes_reportes_component__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./components/dashboard/reportes/reportes.component */ "./src/app/components/dashboard/reportes/reportes.component.ts");
+/* harmony import */ var _components_perfil_trabajador_marcaje_marcaje_component__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./components/perfil-trabajador/marcaje/marcaje.component */ "./src/app/components/perfil-trabajador/marcaje/marcaje.component.ts");
+/* harmony import */ var _components_dashboard_sueldos_sueldos_component__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./components/dashboard/sueldos/sueldos.component */ "./src/app/components/dashboard/sueldos/sueldos.component.ts");
+/* harmony import */ var _components_perfil_trabajador_liberar_sueldos_liberar_sueldos_component__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./components/perfil-trabajador/liberar-sueldos/liberar-sueldos.component */ "./src/app/components/perfil-trabajador/liberar-sueldos/liberar-sueldos.component.ts");
+/* harmony import */ var _components_perfil_trabajador_haber_no_imponible_haber_no_imponible_component__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ./components/perfil-trabajador/haber-no-imponible/haber-no-imponible.component */ "./src/app/components/perfil-trabajador/haber-no-imponible/haber-no-imponible.component.ts");
+/* harmony import */ var _components_perfil_trabajador_SueldosLiberados_SueldosLiberadosComponent_component__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ./components/perfil-trabajador/SueldosLiberados/SueldosLiberadosComponent.component */ "./src/app/components/perfil-trabajador/SueldosLiberados/SueldosLiberadosComponent.component.ts");
+/* harmony import */ var _components_perfil_trabajador_resumen_resumen_component__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ./components/perfil-trabajador/resumen/resumen.component */ "./src/app/components/perfil-trabajador/resumen/resumen.component.ts");
+/* harmony import */ var _components_perfil_trabajador_visualizacion_liquidaciones_visualizacion_liquidaciones_component__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ./components/perfil-trabajador/visualizacion-liquidaciones/visualizacion-liquidaciones.component */ "./src/app/components/perfil-trabajador/visualizacion-liquidaciones/visualizacion-liquidaciones.component.ts");
+/* harmony import */ var _components_perfil_trabajador_actualizar_turnos_fijos_actualizar_turnos_fijos_component__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ./components/perfil-trabajador/actualizar-turnos-fijos/actualizar-turnos-fijos.component */ "./src/app/components/perfil-trabajador/actualizar-turnos-fijos/actualizar-turnos-fijos.component.ts");
+/* harmony import */ var _components_dashboard_reportes_repasistenciadiario_repasistenciadiario_component__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ./components/dashboard/reportes/repasistenciadiario/repasistenciadiario.component */ "./src/app/components/dashboard/reportes/repasistenciadiario/repasistenciadiario.component.ts");
+/* harmony import */ var _components_dashboard_reportes_repasistenciamensual_repasistenciamensual_component__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(/*! ./components/dashboard/reportes/repasistenciamensual/repasistenciamensual.component */ "./src/app/components/dashboard/reportes/repasistenciamensual/repasistenciamensual.component.ts");
+/* harmony import */ var _components_perfil_trabajador_editar_perfil_trabajador_editar_perfil_trabajador_component__WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(/*! ./components/perfil-trabajador/editar-perfil-trabajador/editar-perfil-trabajador.component */ "./src/app/components/perfil-trabajador/editar-perfil-trabajador/editar-perfil-trabajador.component.ts");
+/* harmony import */ var _components_perfil_trabajador_editar_foto_editar_foto_component__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! ./components/perfil-trabajador/editar-foto/editar-foto.component */ "./src/app/components/perfil-trabajador/editar-foto/editar-foto.component.ts");
+/* harmony import */ var _components_shared_select_sucursales_select_sucursales_component__WEBPACK_IMPORTED_MODULE_57__ = __webpack_require__(/*! ./components/shared/select-sucursales/select-sucursales.component */ "./src/app/components/shared/select-sucursales/select-sucursales.component.ts");
+/* harmony import */ var _components_dashboard_configuracion_configuracion_component__WEBPACK_IMPORTED_MODULE_58__ = __webpack_require__(/*! ./components/dashboard/configuracion/configuracion.component */ "./src/app/components/dashboard/configuracion/configuracion.component.ts");
+/* harmony import */ var _components_dashboard_actualizar_foto_actualizar_foto_component__WEBPACK_IMPORTED_MODULE_59__ = __webpack_require__(/*! ./components/dashboard/actualizar-foto/actualizar-foto.component */ "./src/app/components/dashboard/actualizar-foto/actualizar-foto.component.ts");
+/* harmony import */ var _components_dashboard_clientes_clientes_component__WEBPACK_IMPORTED_MODULE_60__ = __webpack_require__(/*! ./components/dashboard/clientes/clientes.component */ "./src/app/components/dashboard/clientes/clientes.component.ts");
+/* harmony import */ var _components_dashboard_cargos_cargos_component__WEBPACK_IMPORTED_MODULE_61__ = __webpack_require__(/*! ./components/dashboard/cargos/cargos.component */ "./src/app/components/dashboard/cargos/cargos.component.ts");
+/* harmony import */ var _components_ingresa_interfaces_empleado_service__WEBPACK_IMPORTED_MODULE_62__ = __webpack_require__(/*! ./components/ingresa/interfaces/empleado.service */ "./src/app/components/ingresa/interfaces/empleado.service.ts");
+/* harmony import */ var _services_ingreso_usuario_servidor_service__WEBPACK_IMPORTED_MODULE_63__ = __webpack_require__(/*! ./services/ingreso-usuario-servidor.service */ "./src/app/services/ingreso-usuario-servidor.service.ts");
+/* harmony import */ var _services_loginservices_service__WEBPACK_IMPORTED_MODULE_64__ = __webpack_require__(/*! ./services/loginservices.service */ "./src/app/services/loginservices.service.ts");
+/* harmony import */ var _services_rutasservidor_service__WEBPACK_IMPORTED_MODULE_65__ = __webpack_require__(/*! ./services/rutasservidor.service */ "./src/app/services/rutasservidor.service.ts");
+/* harmony import */ var _services_planillaservices_service__WEBPACK_IMPORTED_MODULE_66__ = __webpack_require__(/*! ./services/planillaservices.service */ "./src/app/services/planillaservices.service.ts");
+/* harmony import */ var _services_perfil_trabajador_service_service__WEBPACK_IMPORTED_MODULE_67__ = __webpack_require__(/*! ./services/perfil-trabajador-service.service */ "./src/app/services/perfil-trabajador-service.service.ts");
+/* harmony import */ var _services_liberar_turnos_service__WEBPACK_IMPORTED_MODULE_68__ = __webpack_require__(/*! ./services/liberar-turnos.service */ "./src/app/services/liberar-turnos.service.ts");
+/* harmony import */ var _services_guardar_sucursal_service__WEBPACK_IMPORTED_MODULE_69__ = __webpack_require__(/*! ./services/guardar-sucursal.service */ "./src/app/services/guardar-sucursal.service.ts");
+/* harmony import */ var _services_marcaje_service_service__WEBPACK_IMPORTED_MODULE_70__ = __webpack_require__(/*! ./services/marcaje-service.service */ "./src/app/services/marcaje-service.service.ts");
+/* harmony import */ var _services_sueldos_service__WEBPACK_IMPORTED_MODULE_71__ = __webpack_require__(/*! ./services/sueldos.service */ "./src/app/services/sueldos.service.ts");
+/* harmony import */ var _services_mensajes_swal_service__WEBPACK_IMPORTED_MODULE_72__ = __webpack_require__(/*! ./services/mensajes-swal.service */ "./src/app/services/mensajes-swal.service.ts");
+/* harmony import */ var _services_libroremuneraciones_service__WEBPACK_IMPORTED_MODULE_73__ = __webpack_require__(/*! ./services/libroremuneraciones.service */ "./src/app/services/libroremuneraciones.service.ts");
+/* harmony import */ var _services_geolocalizacion_service__WEBPACK_IMPORTED_MODULE_74__ = __webpack_require__(/*! ./services/geolocalizacion.service */ "./src/app/services/geolocalizacion.service.ts");
+/* harmony import */ var _components_dashboard_configuracion_Interfaces_claves_interface__WEBPACK_IMPORTED_MODULE_75__ = __webpack_require__(/*! ./components/dashboard/configuracion/Interfaces/claves.interface */ "./src/app/components/dashboard/configuracion/Interfaces/claves.interface.ts");
+/* harmony import */ var _services_claves_service__WEBPACK_IMPORTED_MODULE_76__ = __webpack_require__(/*! ./services/claves.service */ "./src/app/services/claves.service.ts");
+/* harmony import */ var _services_mandantes_service__WEBPACK_IMPORTED_MODULE_77__ = __webpack_require__(/*! ./services/mandantes.service */ "./src/app/services/mandantes.service.ts");
+/* harmony import */ var _services_cargos_service__WEBPACK_IMPORTED_MODULE_78__ = __webpack_require__(/*! ./services/cargos.service */ "./src/app/services/cargos.service.ts");
+/* harmony import */ var _services_clientesrrhh_service__WEBPACK_IMPORTED_MODULE_79__ = __webpack_require__(/*! ./services/clientesrrhh.service */ "./src/app/services/clientesrrhh.service.ts");
+/* harmony import */ var _services_desvinculacion_service__WEBPACK_IMPORTED_MODULE_80__ = __webpack_require__(/*! ./services/desvinculacion.service */ "./src/app/services/desvinculacion.service.ts");
+/* harmony import */ var _services_viaticos_service__WEBPACK_IMPORTED_MODULE_81__ = __webpack_require__(/*! ./services/viaticos.service */ "./src/app/services/viaticos.service.ts");
+/* harmony import */ var _pipes_entradaosalida_pipe__WEBPACK_IMPORTED_MODULE_82__ = __webpack_require__(/*! ./pipes/entradaosalida.pipe */ "./src/app/pipes/entradaosalida.pipe.ts");
+/* harmony import */ var _pipes_nombre_del_dia_del_mes_pipe__WEBPACK_IMPORTED_MODULE_83__ = __webpack_require__(/*! ./pipes/nombre-del-dia-del-mes.pipe */ "./src/app/pipes/nombre-del-dia-del-mes.pipe.ts");
+/* harmony import */ var _pipes_getHoraPipe_pipe__WEBPACK_IMPORTED_MODULE_84__ = __webpack_require__(/*! ./pipes/getHoraPipe.pipe */ "./src/app/pipes/getHoraPipe.pipe.ts");
+/* harmony import */ var _pipes_getDia_pipe__WEBPACK_IMPORTED_MODULE_85__ = __webpack_require__(/*! ./pipes/getDia.pipe */ "./src/app/pipes/getDia.pipe.ts");
+/* harmony import */ var _angular_service_worker__WEBPACK_IMPORTED_MODULE_86__ = __webpack_require__(/*! @angular/service-worker */ "./node_modules/@angular/service-worker/fesm5/service-worker.js");
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_87__ = __webpack_require__(/*! ../environments/environment */ "./src/environments/environment.ts");
+/* harmony import */ var _components_shared_upload_upload_component__WEBPACK_IMPORTED_MODULE_88__ = __webpack_require__(/*! ./components/shared/upload/upload.component */ "./src/app/components/shared/upload/upload.component.ts");
+/* harmony import */ var _components_dashboard_reportes_repasistenciareprobado_repasistenciareprobado_component__WEBPACK_IMPORTED_MODULE_89__ = __webpack_require__(/*! ./components/dashboard/reportes/repasistenciareprobado/repasistenciareprobado.component */ "./src/app/components/dashboard/reportes/repasistenciareprobado/repasistenciareprobado.component.ts");
+/* harmony import */ var _components_dashboard_reportes_repasistenciaxtrabajador_repasistenciaxtrabajador_component__WEBPACK_IMPORTED_MODULE_90__ = __webpack_require__(/*! ./components/dashboard/reportes/repasistenciaxtrabajador/repasistenciaxtrabajador.component */ "./src/app/components/dashboard/reportes/repasistenciaxtrabajador/repasistenciaxtrabajador.component.ts");
+/* harmony import */ var _ng_select_ng_select__WEBPACK_IMPORTED_MODULE_91__ = __webpack_require__(/*! @ng-select/ng-select */ "./node_modules/@ng-select/ng-select/fesm5/ng-select.js");
+/* harmony import */ var _components_perfil_trabajador_desvinculacion_basica_desvinculacion_basica_component__WEBPACK_IMPORTED_MODULE_92__ = __webpack_require__(/*! ./components/perfil-trabajador/desvinculacion-basica/desvinculacion-basica.component */ "./src/app/components/perfil-trabajador/desvinculacion-basica/desvinculacion-basica.component.ts");
+/* harmony import */ var _components_perfil_trabajador_turnos_noche_turnos_noche_component__WEBPACK_IMPORTED_MODULE_93__ = __webpack_require__(/*! ./components/perfil-trabajador/turnos-noche/turnos-noche.component */ "./src/app/components/perfil-trabajador/turnos-noche/turnos-noche.component.ts");
+/* harmony import */ var _components_dashboard_reportes_repviaticos_repviaticos_component__WEBPACK_IMPORTED_MODULE_94__ = __webpack_require__(/*! ./components/dashboard/reportes/repviaticos/repviaticos.component */ "./src/app/components/dashboard/reportes/repviaticos/repviaticos.component.ts");
+/* harmony import */ var _components_shared_footer_footer_component__WEBPACK_IMPORTED_MODULE_95__ = __webpack_require__(/*! ./components/shared/footer/footer.component */ "./src/app/components/shared/footer/footer.component.ts");
+/* harmony import */ var ngx_device_detector__WEBPACK_IMPORTED_MODULE_96__ = __webpack_require__(/*! ngx-device-detector */ "./node_modules/ngx-device-detector/ngx-device-detector.umd.js");
+/* harmony import */ var ngx_device_detector__WEBPACK_IMPORTED_MODULE_96___default = /*#__PURE__*/__webpack_require__.n(ngx_device_detector__WEBPACK_IMPORTED_MODULE_96__);
+/* harmony import */ var _components_dashboard_reportes_repunitario_repunitario_component__WEBPACK_IMPORTED_MODULE_97__ = __webpack_require__(/*! ./components/dashboard/reportes/repunitario/repunitario.component */ "./src/app/components/dashboard/reportes/repunitario/repunitario.component.ts");
+/* harmony import */ var _components_dashboard_reportes_repactualmentetrabajando_repactualmentetrabajando_component__WEBPACK_IMPORTED_MODULE_98__ = __webpack_require__(/*! ./components/dashboard/reportes/repactualmentetrabajando/repactualmentetrabajando.component */ "./src/app/components/dashboard/reportes/repactualmentetrabajando/repactualmentetrabajando.component.ts");
+/* harmony import */ var _components_dashboard_editar_sucursal_editar_sucursal_component__WEBPACK_IMPORTED_MODULE_99__ = __webpack_require__(/*! ./components/dashboard/editar-sucursal/editar-sucursal.component */ "./src/app/components/dashboard/editar-sucursal/editar-sucursal.component.ts");
+/* harmony import */ var _components_shared_titulo_titulo_component__WEBPACK_IMPORTED_MODULE_100__ = __webpack_require__(/*! ./components/shared/titulo/titulo.component */ "./src/app/components/shared/titulo/titulo.component.ts");
+/* harmony import */ var _components_dashboard_reportes_represumenmensual_represumenmensual_component__WEBPACK_IMPORTED_MODULE_101__ = __webpack_require__(/*! ./components/dashboard/reportes/represumenmensual/represumenmensual.component */ "./src/app/components/dashboard/reportes/represumenmensual/represumenmensual.component.ts");
+/* harmony import */ var _components_dashboard_reportes_repofflinemensual_repofflinemensual_component__WEBPACK_IMPORTED_MODULE_102__ = __webpack_require__(/*! ./components/dashboard/reportes/repofflinemensual/repofflinemensual.component */ "./src/app/components/dashboard/reportes/repofflinemensual/repofflinemensual.component.ts");
+/* harmony import */ var _components_dashboard_reportes_repturnosincompletos_repturnosincompletos_component__WEBPACK_IMPORTED_MODULE_103__ = __webpack_require__(/*! ./components/dashboard/reportes/repturnosincompletos/repturnosincompletos.component */ "./src/app/components/dashboard/reportes/repturnosincompletos/repturnosincompletos.component.ts");
+/* harmony import */ var _components_dashboard_reportes_repgraficassucursales_repgraficassucursales_component__WEBPACK_IMPORTED_MODULE_104__ = __webpack_require__(/*! ./components/dashboard/reportes/repgraficassucursales/repgraficassucursales.component */ "./src/app/components/dashboard/reportes/repgraficassucursales/repgraficassucursales.component.ts");
+/* harmony import */ var ng2_charts_ng2_charts__WEBPACK_IMPORTED_MODULE_105__ = __webpack_require__(/*! ng2-charts/ng2-charts */ "./node_modules/ng2-charts/ng2-charts.js");
+/* harmony import */ var ng2_charts_ng2_charts__WEBPACK_IMPORTED_MODULE_105___default = /*#__PURE__*/__webpack_require__.n(ng2_charts_ng2_charts__WEBPACK_IMPORTED_MODULE_105__);
+/* harmony import */ var _components_dashboard_reportes_replibroasistencia_replibroasistencia_component__WEBPACK_IMPORTED_MODULE_106__ = __webpack_require__(/*! ./components/dashboard/reportes/replibroasistencia/replibroasistencia.component */ "./src/app/components/dashboard/reportes/replibroasistencia/replibroasistencia.component.ts");
+/* harmony import */ var ag_grid_angular__WEBPACK_IMPORTED_MODULE_107__ = __webpack_require__(/*! ag-grid-angular */ "./node_modules/ag-grid-angular/main.js");
+/* harmony import */ var ag_grid_angular__WEBPACK_IMPORTED_MODULE_107___default = /*#__PURE__*/__webpack_require__.n(ag_grid_angular__WEBPACK_IMPORTED_MODULE_107__);
+/* harmony import */ var _components_dashboard_jefaturas_jefaturas_component__WEBPACK_IMPORTED_MODULE_108__ = __webpack_require__(/*! ./components/dashboard/jefaturas/jefaturas.component */ "./src/app/components/dashboard/jefaturas/jefaturas.component.ts");
+/* harmony import */ var _components_dashboard_centros_costos_centros_costos_component__WEBPACK_IMPORTED_MODULE_109__ = __webpack_require__(/*! ./components/dashboard/centros-costos/centros-costos.component */ "./src/app/components/dashboard/centros-costos/centros-costos.component.ts");
+/* harmony import */ var _components_dashboard_departamentos_departamentos_component__WEBPACK_IMPORTED_MODULE_110__ = __webpack_require__(/*! ./components/dashboard/departamentos/departamentos.component */ "./src/app/components/dashboard/departamentos/departamentos.component.ts");
+/* harmony import */ var _components_shared_crud_estandar_crud_estandar_component__WEBPACK_IMPORTED_MODULE_111__ = __webpack_require__(/*! ./components/shared/crud-estandar/crud-estandar.component */ "./src/app/components/shared/crud-estandar/crud-estandar.component.ts");
+/* harmony import */ var _components_dashboard_horarioxsucursal_horarioxsucursal_component__WEBPACK_IMPORTED_MODULE_112__ = __webpack_require__(/*! ./components/dashboard/horarioxsucursal/horarioxsucursal.component */ "./src/app/components/dashboard/horarioxsucursal/horarioxsucursal.component.ts");
+/* harmony import */ var _components_shared_select_centro_costos_select_centro_costos_component__WEBPACK_IMPORTED_MODULE_113__ = __webpack_require__(/*! ./components/shared/select-centro-costos/select-centro-costos.component */ "./src/app/components/shared/select-centro-costos/select-centro-costos.component.ts");
+/* harmony import */ var _components_shared_select_departamentos_select_departamentos_component__WEBPACK_IMPORTED_MODULE_114__ = __webpack_require__(/*! ./components/shared/select-departamentos/select-departamentos.component */ "./src/app/components/shared/select-departamentos/select-departamentos.component.ts");
+/* harmony import */ var _components_shared_select_jefaturas_select_jefaturas_component__WEBPACK_IMPORTED_MODULE_115__ = __webpack_require__(/*! ./components/shared/select-jefaturas/select-jefaturas.component */ "./src/app/components/shared/select-jefaturas/select-jefaturas.component.ts");
+/* harmony import */ var _components_ingresa_importacion_importacion_component__WEBPACK_IMPORTED_MODULE_116__ = __webpack_require__(/*! ./components/ingresa/importacion/importacion.component */ "./src/app/components/ingresa/importacion/importacion.component.ts");
+/* harmony import */ var _components_shared_visualizacion_contrastada_visualizacion_contrastada_component__WEBPACK_IMPORTED_MODULE_117__ = __webpack_require__(/*! ./components/shared/visualizacion-contrastada/visualizacion-contrastada.component */ "./src/app/components/shared/visualizacion-contrastada/visualizacion-contrastada.component.ts");
+/* harmony import */ var ngx_editor__WEBPACK_IMPORTED_MODULE_118__ = __webpack_require__(/*! ngx-editor */ "./node_modules/ngx-editor/fesm5/ngx-editor.js");
+/* harmony import */ var _components_perfil_trabajador_documentos_documentos_component__WEBPACK_IMPORTED_MODULE_119__ = __webpack_require__(/*! ./components/perfil-trabajador/documentos/documentos.component */ "./src/app/components/perfil-trabajador/documentos/documentos.component.ts");
+/* harmony import */ var _components_dashboard_generacion_documentos_generacion_documentos_component__WEBPACK_IMPORTED_MODULE_120__ = __webpack_require__(/*! ./components/dashboard/generacion-documentos/generacion-documentos.component */ "./src/app/components/dashboard/generacion-documentos/generacion-documentos.component.ts");
+/* harmony import */ var _components_perfil_trabajador_reporte_documentos_generados_reporte_documentos_generados_component__WEBPACK_IMPORTED_MODULE_121__ = __webpack_require__(/*! ./components/perfil-trabajador/reporte-documentos-generados/reporte-documentos-generados.component */ "./src/app/components/perfil-trabajador/reporte-documentos-generados/reporte-documentos-generados.component.ts");
+/* harmony import */ var _components_dashboard_visualizacion_documentacion_empresa_visualizacion_documentacion_empresa_component__WEBPACK_IMPORTED_MODULE_122__ = __webpack_require__(/*! ./components/dashboard/visualizacion-documentacion-empresa/visualizacion-documentacion-empresa.component */ "./src/app/components/dashboard/visualizacion-documentacion-empresa/visualizacion-documentacion-empresa.component.ts");
+/* harmony import */ var _fullcalendar_angular__WEBPACK_IMPORTED_MODULE_123__ = __webpack_require__(/*! @fullcalendar/angular */ "./node_modules/@fullcalendar/angular/fesm5/fullcalendar-angular.js");
+/* harmony import */ var _components_perfil_trabajador_visualizacion_horario_visualizacion_horario_component__WEBPACK_IMPORTED_MODULE_124__ = __webpack_require__(/*! ./components/perfil-trabajador/visualizacion-horario/visualizacion-horario.component */ "./src/app/components/perfil-trabajador/visualizacion-horario/visualizacion-horario.component.ts");
+/* harmony import */ var _components_shared_visualizador_contrastado_registros_visualizador_contrastado_registros_component__WEBPACK_IMPORTED_MODULE_125__ = __webpack_require__(/*! ./components/shared/visualizador-contrastado-registros/visualizador-contrastado-registros.component */ "./src/app/components/shared/visualizador-contrastado-registros/visualizador-contrastado-registros.component.ts");
+/* harmony import */ var _components_perfil_trabajador_bonificaciones_bonificaciones_component__WEBPACK_IMPORTED_MODULE_126__ = __webpack_require__(/*! ./components/perfil-trabajador/bonificaciones/bonificaciones.component */ "./src/app/components/perfil-trabajador/bonificaciones/bonificaciones.component.ts");
+/* harmony import */ var _components_dashboard_reportes_rep_bonoficaciones_rep_bonoficaciones_component__WEBPACK_IMPORTED_MODULE_127__ = __webpack_require__(/*! ./components/dashboard/reportes/rep-bonoficaciones/rep-bonoficaciones.component */ "./src/app/components/dashboard/reportes/rep-bonoficaciones/rep-bonoficaciones.component.ts");
 
 
 
@@ -591,6 +666,8 @@ __webpack_require__.r(__webpack_exports__);
 //import {MatMomentDateModule} from '@angular/material-moment-adapter';
 
 
+
+//Loader
 
 //Guards
 
@@ -685,7 +762,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var config = { url: _environments_environment__WEBPACK_IMPORTED_MODULE_86__["environment"].wsUrl, options: { transport: ['websocket'] } };
+var config = { url: _environments_environment__WEBPACK_IMPORTED_MODULE_87__["environment"].wsUrl, options: { transport: ['websocket'] } };
+
+
+
+
+
 
 
 
@@ -708,96 +790,102 @@ var AppModule = /** @class */ (function () {
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_25__["AppComponent"],
-                _components_shared_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_26__["NavbarComponent"],
-                _components_login_login_component__WEBPACK_IMPORTED_MODULE_27__["LoginComponent"],
-                _components_home_home_component__WEBPACK_IMPORTED_MODULE_28__["HomeComponent"],
-                _components_ingresa_ingresa_component__WEBPACK_IMPORTED_MODULE_29__["IngresaComponent"],
-                _components_ingresa_pasos_pasouno_pasouno_component__WEBPACK_IMPORTED_MODULE_30__["PasounoComponent"],
-                _components_ingresa_pasos_pasodos_pasodos_component__WEBPACK_IMPORTED_MODULE_31__["PasodosComponent"],
-                _components_ingresa_pasos_pasotres_pasotres_component__WEBPACK_IMPORTED_MODULE_32__["PasotresComponent"],
-                _components_planilla_planilla_component__WEBPACK_IMPORTED_MODULE_33__["PlanillaComponent"],
-                _components_perfil_trabajador_perfil_trabajador_component__WEBPACK_IMPORTED_MODULE_34__["PerfilTrabajadorComponent"],
-                _components_perfil_trabajador_turnos_variables_turnos_variables_component__WEBPACK_IMPORTED_MODULE_35__["TurnosVariablesComponent"],
-                _components_perfil_trabajador_turnos_fijos_turnos_fijos_component__WEBPACK_IMPORTED_MODULE_36__["TurnosFijosComponent"],
-                _components_perfil_trabajador_perfil_perfil_component__WEBPACK_IMPORTED_MODULE_37__["PerfilComponent"],
-                _components_perfil_trabajador_historial_turnos_historial_turnos_component__WEBPACK_IMPORTED_MODULE_38__["HistorialTurnosComponent"],
-                _components_perfil_trabajador_liberar_turnos_liberar_turnos_component__WEBPACK_IMPORTED_MODULE_39__["LiberarTurnosComponent"],
-                _pipes_entradaosalida_pipe__WEBPACK_IMPORTED_MODULE_81__["EntradaosalidaPipe"],
-                _pipes_nombre_del_dia_del_mes_pipe__WEBPACK_IMPORTED_MODULE_82__["NombreDelDiaDelMesPipe"],
-                _pipes_getHoraPipe_pipe__WEBPACK_IMPORTED_MODULE_83__["getHoraPipe"],
-                _pipes_getDia_pipe__WEBPACK_IMPORTED_MODULE_84__["getDiaPipe"],
-                _components_dashboard_dash_board_dash_board_component__WEBPACK_IMPORTED_MODULE_40__["DashBoardComponent"],
-                _components_dashboard_perfil_empleador_perfil_empleador_component__WEBPACK_IMPORTED_MODULE_41__["PerfilEmpleadorComponent"],
-                _components_dashboard_ingreso_sucursal_ingreso_sucursal_component__WEBPACK_IMPORTED_MODULE_42__["IngresoSucursalComponent"],
-                _components_dashboard_reportes_reportes_component__WEBPACK_IMPORTED_MODULE_43__["ReportesComponent"],
-                _components_perfil_trabajador_marcaje_marcaje_component__WEBPACK_IMPORTED_MODULE_44__["MarcajeComponent"],
-                _components_dashboard_sueldos_sueldos_component__WEBPACK_IMPORTED_MODULE_45__["SueldosComponent"],
-                _components_perfil_trabajador_liberar_sueldos_liberar_sueldos_component__WEBPACK_IMPORTED_MODULE_46__["LiberarSueldosComponent"],
-                _components_perfil_trabajador_haber_no_imponible_haber_no_imponible_component__WEBPACK_IMPORTED_MODULE_47__["HaberNoImponibleComponent"],
-                _components_perfil_trabajador_SueldosLiberados_SueldosLiberadosComponent_component__WEBPACK_IMPORTED_MODULE_48__["SueldosLiberadosComponent"],
-                _components_perfil_trabajador_resumen_resumen_component__WEBPACK_IMPORTED_MODULE_49__["ResumenComponent"],
-                _components_perfil_trabajador_visualizacion_liquidaciones_visualizacion_liquidaciones_component__WEBPACK_IMPORTED_MODULE_50__["VisualizacionLiquidacionesComponent"],
-                _components_perfil_trabajador_actualizar_turnos_fijos_actualizar_turnos_fijos_component__WEBPACK_IMPORTED_MODULE_51__["ActualizarTurnosFijosComponent"],
-                _components_dashboard_reportes_repasistenciadiario_repasistenciadiario_component__WEBPACK_IMPORTED_MODULE_52__["RepasistenciadiarioComponent"],
-                _components_dashboard_reportes_repasistenciamensual_repasistenciamensual_component__WEBPACK_IMPORTED_MODULE_53__["RepasistenciamensualComponent"],
-                _components_perfil_trabajador_editar_perfil_trabajador_editar_perfil_trabajador_component__WEBPACK_IMPORTED_MODULE_54__["EditarPerfilTrabajadorComponent"],
-                _components_perfil_trabajador_editar_foto_editar_foto_component__WEBPACK_IMPORTED_MODULE_55__["EditarFotoComponent"],
-                _components_shared_select_sucursales_select_sucursales_component__WEBPACK_IMPORTED_MODULE_56__["SelectSucursalesComponent"],
-                _components_dashboard_configuracion_configuracion_component__WEBPACK_IMPORTED_MODULE_57__["ConfiguracionComponent"],
-                _components_dashboard_actualizar_foto_actualizar_foto_component__WEBPACK_IMPORTED_MODULE_58__["ActualizarFotoComponent"],
-                _components_dashboard_clientes_clientes_component__WEBPACK_IMPORTED_MODULE_59__["ClientesComponent"],
-                _components_dashboard_cargos_cargos_component__WEBPACK_IMPORTED_MODULE_60__["CargosComponent"],
-                _components_shared_upload_upload_component__WEBPACK_IMPORTED_MODULE_87__["UploadComponent"],
-                _components_dashboard_reportes_repasistenciareprobado_repasistenciareprobado_component__WEBPACK_IMPORTED_MODULE_88__["RepasistenciareprobadoComponent"],
-                _components_dashboard_reportes_repasistenciaxtrabajador_repasistenciaxtrabajador_component__WEBPACK_IMPORTED_MODULE_89__["RepasistenciaxtrabajadorComponent"],
-                _components_perfil_trabajador_desvinculacion_basica_desvinculacion_basica_component__WEBPACK_IMPORTED_MODULE_91__["DesvinculacionBasicaComponent"],
-                _components_perfil_trabajador_turnos_noche_turnos_noche_component__WEBPACK_IMPORTED_MODULE_92__["TurnosNocheComponent"],
-                _components_dashboard_reportes_repviaticos_repviaticos_component__WEBPACK_IMPORTED_MODULE_93__["RepviaticosComponent"],
-                _components_shared_footer_footer_component__WEBPACK_IMPORTED_MODULE_94__["FooterComponent"],
-                _components_dashboard_reportes_repunitario_repunitario_component__WEBPACK_IMPORTED_MODULE_96__["RepunitarioComponent"],
-                _components_dashboard_reportes_repactualmentetrabajando_repactualmentetrabajando_component__WEBPACK_IMPORTED_MODULE_97__["RepactualmentetrabajandoComponent"],
-                _components_dashboard_editar_sucursal_editar_sucursal_component__WEBPACK_IMPORTED_MODULE_98__["EditarSucursalComponent"],
-                _components_shared_titulo_titulo_component__WEBPACK_IMPORTED_MODULE_99__["TituloComponent"],
-                _components_dashboard_reportes_represumenmensual_represumenmensual_component__WEBPACK_IMPORTED_MODULE_100__["RepresumenmensualComponent"],
-                _components_dashboard_reportes_repofflinemensual_repofflinemensual_component__WEBPACK_IMPORTED_MODULE_101__["RepofflinemensualComponent"],
-                _components_dashboard_reportes_repturnosincompletos_repturnosincompletos_component__WEBPACK_IMPORTED_MODULE_102__["RepturnosincompletosComponent"],
-                _components_dashboard_reportes_repgraficassucursales_repgraficassucursales_component__WEBPACK_IMPORTED_MODULE_103__["RepgraficassucursalesComponent"],
-                _components_dashboard_reportes_replibroasistencia_replibroasistencia_component__WEBPACK_IMPORTED_MODULE_105__["ReplibroasistenciaComponent"],
-                _components_dashboard_jefaturas_jefaturas_component__WEBPACK_IMPORTED_MODULE_107__["JefaturasComponent"],
-                _components_dashboard_centros_costos_centros_costos_component__WEBPACK_IMPORTED_MODULE_108__["CentrosCostosComponent"],
-                _components_dashboard_departamentos_departamentos_component__WEBPACK_IMPORTED_MODULE_109__["DepartamentosComponent"],
-                _components_shared_crud_estandar_crud_estandar_component__WEBPACK_IMPORTED_MODULE_110__["CrudEstandarComponent"],
-                _components_dashboard_horarioxsucursal_horarioxsucursal_component__WEBPACK_IMPORTED_MODULE_111__["HorarioxsucursalComponent"],
-                _components_shared_select_centro_costos_select_centro_costos_component__WEBPACK_IMPORTED_MODULE_112__["SelectCentroCostosComponent"],
-                _components_shared_select_departamentos_select_departamentos_component__WEBPACK_IMPORTED_MODULE_113__["SelectDepartamentosComponent"],
-                _components_shared_select_jefaturas_select_jefaturas_component__WEBPACK_IMPORTED_MODULE_114__["SelectJefaturasComponent"],
-                _components_ingresa_importacion_importacion_component__WEBPACK_IMPORTED_MODULE_115__["ImportacionComponent"],
-                _components_shared_visualizacion_contrastada_visualizacion_contrastada_component__WEBPACK_IMPORTED_MODULE_116__["VisualizacionContrastadaComponent"],
-                _components_perfil_trabajador_documentos_documentos_component__WEBPACK_IMPORTED_MODULE_118__["DocumentosComponent"],
-                _components_dashboard_generacion_documentos_generacion_documentos_component__WEBPACK_IMPORTED_MODULE_119__["GeneracionDocumentosComponent"],
-                _components_perfil_trabajador_reporte_documentos_generados_reporte_documentos_generados_component__WEBPACK_IMPORTED_MODULE_120__["ReporteDocumentosGeneradosComponent"],
-                _components_dashboard_visualizacion_documentacion_empresa_visualizacion_documentacion_empresa_component__WEBPACK_IMPORTED_MODULE_121__["VisualizacionDocumentacionEmpresaComponent"]
+                _app_component__WEBPACK_IMPORTED_MODULE_26__["AppComponent"],
+                _components_shared_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_27__["NavbarComponent"],
+                _components_login_login_component__WEBPACK_IMPORTED_MODULE_28__["LoginComponent"],
+                _components_home_home_component__WEBPACK_IMPORTED_MODULE_29__["HomeComponent"],
+                _components_ingresa_ingresa_component__WEBPACK_IMPORTED_MODULE_30__["IngresaComponent"],
+                _components_ingresa_pasos_pasouno_pasouno_component__WEBPACK_IMPORTED_MODULE_31__["PasounoComponent"],
+                _components_ingresa_pasos_pasodos_pasodos_component__WEBPACK_IMPORTED_MODULE_32__["PasodosComponent"],
+                _components_ingresa_pasos_pasotres_pasotres_component__WEBPACK_IMPORTED_MODULE_33__["PasotresComponent"],
+                _components_planilla_planilla_component__WEBPACK_IMPORTED_MODULE_34__["PlanillaComponent"],
+                _components_perfil_trabajador_perfil_trabajador_component__WEBPACK_IMPORTED_MODULE_35__["PerfilTrabajadorComponent"],
+                _components_perfil_trabajador_turnos_variables_turnos_variables_component__WEBPACK_IMPORTED_MODULE_36__["TurnosVariablesComponent"],
+                _components_perfil_trabajador_turnos_fijos_turnos_fijos_component__WEBPACK_IMPORTED_MODULE_37__["TurnosFijosComponent"],
+                _components_perfil_trabajador_perfil_perfil_component__WEBPACK_IMPORTED_MODULE_38__["PerfilComponent"],
+                _components_perfil_trabajador_historial_turnos_historial_turnos_component__WEBPACK_IMPORTED_MODULE_39__["HistorialTurnosComponent"],
+                _components_perfil_trabajador_liberar_turnos_liberar_turnos_component__WEBPACK_IMPORTED_MODULE_40__["LiberarTurnosComponent"],
+                _pipes_entradaosalida_pipe__WEBPACK_IMPORTED_MODULE_82__["EntradaosalidaPipe"],
+                _pipes_nombre_del_dia_del_mes_pipe__WEBPACK_IMPORTED_MODULE_83__["NombreDelDiaDelMesPipe"],
+                _pipes_getHoraPipe_pipe__WEBPACK_IMPORTED_MODULE_84__["getHoraPipe"],
+                _pipes_getDia_pipe__WEBPACK_IMPORTED_MODULE_85__["getDiaPipe"],
+                _components_dashboard_dash_board_dash_board_component__WEBPACK_IMPORTED_MODULE_41__["DashBoardComponent"],
+                _components_dashboard_perfil_empleador_perfil_empleador_component__WEBPACK_IMPORTED_MODULE_42__["PerfilEmpleadorComponent"],
+                _components_dashboard_ingreso_sucursal_ingreso_sucursal_component__WEBPACK_IMPORTED_MODULE_43__["IngresoSucursalComponent"],
+                _components_dashboard_reportes_reportes_component__WEBPACK_IMPORTED_MODULE_44__["ReportesComponent"],
+                _components_perfil_trabajador_marcaje_marcaje_component__WEBPACK_IMPORTED_MODULE_45__["MarcajeComponent"],
+                _components_dashboard_sueldos_sueldos_component__WEBPACK_IMPORTED_MODULE_46__["SueldosComponent"],
+                _components_perfil_trabajador_liberar_sueldos_liberar_sueldos_component__WEBPACK_IMPORTED_MODULE_47__["LiberarSueldosComponent"],
+                _components_perfil_trabajador_haber_no_imponible_haber_no_imponible_component__WEBPACK_IMPORTED_MODULE_48__["HaberNoImponibleComponent"],
+                _components_perfil_trabajador_SueldosLiberados_SueldosLiberadosComponent_component__WEBPACK_IMPORTED_MODULE_49__["SueldosLiberadosComponent"],
+                _components_perfil_trabajador_resumen_resumen_component__WEBPACK_IMPORTED_MODULE_50__["ResumenComponent"],
+                _components_perfil_trabajador_visualizacion_liquidaciones_visualizacion_liquidaciones_component__WEBPACK_IMPORTED_MODULE_51__["VisualizacionLiquidacionesComponent"],
+                _components_perfil_trabajador_actualizar_turnos_fijos_actualizar_turnos_fijos_component__WEBPACK_IMPORTED_MODULE_52__["ActualizarTurnosFijosComponent"],
+                _components_dashboard_reportes_repasistenciadiario_repasistenciadiario_component__WEBPACK_IMPORTED_MODULE_53__["RepasistenciadiarioComponent"],
+                _components_dashboard_reportes_repasistenciamensual_repasistenciamensual_component__WEBPACK_IMPORTED_MODULE_54__["RepasistenciamensualComponent"],
+                _components_perfil_trabajador_editar_perfil_trabajador_editar_perfil_trabajador_component__WEBPACK_IMPORTED_MODULE_55__["EditarPerfilTrabajadorComponent"],
+                _components_perfil_trabajador_editar_foto_editar_foto_component__WEBPACK_IMPORTED_MODULE_56__["EditarFotoComponent"],
+                _components_shared_select_sucursales_select_sucursales_component__WEBPACK_IMPORTED_MODULE_57__["SelectSucursalesComponent"],
+                _components_dashboard_configuracion_configuracion_component__WEBPACK_IMPORTED_MODULE_58__["ConfiguracionComponent"],
+                _components_dashboard_actualizar_foto_actualizar_foto_component__WEBPACK_IMPORTED_MODULE_59__["ActualizarFotoComponent"],
+                _components_dashboard_clientes_clientes_component__WEBPACK_IMPORTED_MODULE_60__["ClientesComponent"],
+                _components_dashboard_cargos_cargos_component__WEBPACK_IMPORTED_MODULE_61__["CargosComponent"],
+                _components_shared_upload_upload_component__WEBPACK_IMPORTED_MODULE_88__["UploadComponent"],
+                _components_dashboard_reportes_repasistenciareprobado_repasistenciareprobado_component__WEBPACK_IMPORTED_MODULE_89__["RepasistenciareprobadoComponent"],
+                _components_dashboard_reportes_repasistenciaxtrabajador_repasistenciaxtrabajador_component__WEBPACK_IMPORTED_MODULE_90__["RepasistenciaxtrabajadorComponent"],
+                _components_perfil_trabajador_desvinculacion_basica_desvinculacion_basica_component__WEBPACK_IMPORTED_MODULE_92__["DesvinculacionBasicaComponent"],
+                _components_perfil_trabajador_turnos_noche_turnos_noche_component__WEBPACK_IMPORTED_MODULE_93__["TurnosNocheComponent"],
+                _components_dashboard_reportes_repviaticos_repviaticos_component__WEBPACK_IMPORTED_MODULE_94__["RepviaticosComponent"],
+                _components_shared_footer_footer_component__WEBPACK_IMPORTED_MODULE_95__["FooterComponent"],
+                _components_dashboard_reportes_repunitario_repunitario_component__WEBPACK_IMPORTED_MODULE_97__["RepunitarioComponent"],
+                _components_dashboard_reportes_repactualmentetrabajando_repactualmentetrabajando_component__WEBPACK_IMPORTED_MODULE_98__["RepactualmentetrabajandoComponent"],
+                _components_dashboard_editar_sucursal_editar_sucursal_component__WEBPACK_IMPORTED_MODULE_99__["EditarSucursalComponent"],
+                _components_shared_titulo_titulo_component__WEBPACK_IMPORTED_MODULE_100__["TituloComponent"],
+                _components_dashboard_reportes_represumenmensual_represumenmensual_component__WEBPACK_IMPORTED_MODULE_101__["RepresumenmensualComponent"],
+                _components_dashboard_reportes_repofflinemensual_repofflinemensual_component__WEBPACK_IMPORTED_MODULE_102__["RepofflinemensualComponent"],
+                _components_dashboard_reportes_repturnosincompletos_repturnosincompletos_component__WEBPACK_IMPORTED_MODULE_103__["RepturnosincompletosComponent"],
+                _components_dashboard_reportes_repgraficassucursales_repgraficassucursales_component__WEBPACK_IMPORTED_MODULE_104__["RepgraficassucursalesComponent"],
+                _components_dashboard_reportes_replibroasistencia_replibroasistencia_component__WEBPACK_IMPORTED_MODULE_106__["ReplibroasistenciaComponent"],
+                _components_dashboard_jefaturas_jefaturas_component__WEBPACK_IMPORTED_MODULE_108__["JefaturasComponent"],
+                _components_dashboard_centros_costos_centros_costos_component__WEBPACK_IMPORTED_MODULE_109__["CentrosCostosComponent"],
+                _components_dashboard_departamentos_departamentos_component__WEBPACK_IMPORTED_MODULE_110__["DepartamentosComponent"],
+                _components_shared_crud_estandar_crud_estandar_component__WEBPACK_IMPORTED_MODULE_111__["CrudEstandarComponent"],
+                _components_dashboard_horarioxsucursal_horarioxsucursal_component__WEBPACK_IMPORTED_MODULE_112__["HorarioxsucursalComponent"],
+                _components_shared_select_centro_costos_select_centro_costos_component__WEBPACK_IMPORTED_MODULE_113__["SelectCentroCostosComponent"],
+                _components_shared_select_departamentos_select_departamentos_component__WEBPACK_IMPORTED_MODULE_114__["SelectDepartamentosComponent"],
+                _components_shared_select_jefaturas_select_jefaturas_component__WEBPACK_IMPORTED_MODULE_115__["SelectJefaturasComponent"],
+                _components_ingresa_importacion_importacion_component__WEBPACK_IMPORTED_MODULE_116__["ImportacionComponent"],
+                _components_shared_visualizacion_contrastada_visualizacion_contrastada_component__WEBPACK_IMPORTED_MODULE_117__["VisualizacionContrastadaComponent"],
+                _components_perfil_trabajador_documentos_documentos_component__WEBPACK_IMPORTED_MODULE_119__["DocumentosComponent"],
+                _components_dashboard_generacion_documentos_generacion_documentos_component__WEBPACK_IMPORTED_MODULE_120__["GeneracionDocumentosComponent"],
+                _components_perfil_trabajador_reporte_documentos_generados_reporte_documentos_generados_component__WEBPACK_IMPORTED_MODULE_121__["ReporteDocumentosGeneradosComponent"],
+                _components_dashboard_visualizacion_documentacion_empresa_visualizacion_documentacion_empresa_component__WEBPACK_IMPORTED_MODULE_122__["VisualizacionDocumentacionEmpresaComponent"],
+                _components_perfil_trabajador_visualizacion_horario_visualizacion_horario_component__WEBPACK_IMPORTED_MODULE_124__["VisualizacionHorarioComponent"],
+                _components_shared_visualizador_contrastado_registros_visualizador_contrastado_registros_component__WEBPACK_IMPORTED_MODULE_125__["VisualizadorContrastadoRegistrosComponent"],
+                _components_perfil_trabajador_bonificaciones_bonificaciones_component__WEBPACK_IMPORTED_MODULE_126__["BonificacionesComponent"],
+                _components_dashboard_reportes_rep_bonoficaciones_rep_bonoficaciones_component__WEBPACK_IMPORTED_MODULE_127__["RepBonoficacionesComponent"]
             ],
             imports: [
+                ngx_loading__WEBPACK_IMPORTED_MODULE_20__["NgxLoadingModule"].forRoot({}),
                 fate_editor__WEBPACK_IMPORTED_MODULE_6__["FateModule"],
-                ngx_editor__WEBPACK_IMPORTED_MODULE_117__["NgxEditorModule"],
+                ngx_editor__WEBPACK_IMPORTED_MODULE_118__["NgxEditorModule"],
+                _fullcalendar_angular__WEBPACK_IMPORTED_MODULE_123__["FullCalendarModule"],
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
                 angular_text_input_autocomplete__WEBPACK_IMPORTED_MODULE_19__["TextInputAutocompleteModule"],
-                _ng_select_ng_select__WEBPACK_IMPORTED_MODULE_90__["NgSelectModule"],
-                _app_routes__WEBPACK_IMPORTED_MODULE_24__["peo"],
+                _ng_select_ng_select__WEBPACK_IMPORTED_MODULE_91__["NgSelectModule"],
+                _app_routes__WEBPACK_IMPORTED_MODULE_25__["peo"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ReactiveFormsModule"],
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"],
                 _angular_http__WEBPACK_IMPORTED_MODULE_5__["HttpModule"],
                 _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_7__["BrowserAnimationsModule"],
                 _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_9__["MatProgressSpinnerModule"],
-                _ngrx_store__WEBPACK_IMPORTED_MODULE_21__["StoreModule"].forRoot({ marcaje: _components_marcaje_reducer__WEBPACK_IMPORTED_MODULE_22__["MarcajeReducer"] }),
-                ag_grid_angular__WEBPACK_IMPORTED_MODULE_106__["AgGridModule"].withComponents([]),
+                _ngrx_store__WEBPACK_IMPORTED_MODULE_22__["StoreModule"].forRoot({ marcaje: _components_marcaje_reducer__WEBPACK_IMPORTED_MODULE_23__["MarcajeReducer"] }),
+                ag_grid_angular__WEBPACK_IMPORTED_MODULE_107__["AgGridModule"].withComponents([]),
                 _angular_material_tabs__WEBPACK_IMPORTED_MODULE_10__["MatTabsModule"],
-                ngx_device_detector__WEBPACK_IMPORTED_MODULE_95__["DeviceDetectorModule"].forRoot(),
+                ngx_device_detector__WEBPACK_IMPORTED_MODULE_96__["DeviceDetectorModule"].forRoot(),
                 // SocketIoModule.forRoot(config),
-                ng2_charts_ng2_charts__WEBPACK_IMPORTED_MODULE_104__["ChartsModule"],
+                ng2_charts_ng2_charts__WEBPACK_IMPORTED_MODULE_105__["ChartsModule"],
                 _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_8__["MatSnackBarModule"],
                 _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_11__["MatGridListModule"],
                 _angular_material_list__WEBPACK_IMPORTED_MODULE_12__["MatListModule"],
@@ -808,34 +896,34 @@ var AppModule = /** @class */ (function () {
                 _angular_material__WEBPACK_IMPORTED_MODULE_16__["MatInputModule"],
                 _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_17__["MatDatepickerModule"],
                 _angular_material__WEBPACK_IMPORTED_MODULE_16__["MatNativeDateModule"],
-                _agm_core__WEBPACK_IMPORTED_MODULE_23__["AgmCoreModule"].forRoot({
+                _agm_core__WEBPACK_IMPORTED_MODULE_24__["AgmCoreModule"].forRoot({
                     apiKey: 'AIzaSyDNSFFyJn6a_AIm44b_7atfg_ml4NI6ReY'
                 }),
-                _angular_service_worker__WEBPACK_IMPORTED_MODULE_85__["ServiceWorkerModule"].register('ngsw-worker.js', { enabled: _environments_environment__WEBPACK_IMPORTED_MODULE_86__["environment"].production })
+                _angular_service_worker__WEBPACK_IMPORTED_MODULE_86__["ServiceWorkerModule"].register('ngsw-worker.js', { enabled: _environments_environment__WEBPACK_IMPORTED_MODULE_87__["environment"].production })
             ],
-            providers: [_components_ingresa_interfaces_empleado_service__WEBPACK_IMPORTED_MODULE_61__["EmpleadoService"],
-                _services_ingreso_usuario_servidor_service__WEBPACK_IMPORTED_MODULE_62__["IngresoUsuarioServidorService"],
-                _services_loginservices_service__WEBPACK_IMPORTED_MODULE_63__["LoginservicesService"],
-                _services_rutasservidor_service__WEBPACK_IMPORTED_MODULE_64__["RutasservidorService"],
-                _services_planillaservices_service__WEBPACK_IMPORTED_MODULE_65__["PlanillaservicesService"],
-                _services_perfil_trabajador_service_service__WEBPACK_IMPORTED_MODULE_66__["PerfilTrabajadorServiceService"],
-                _services_liberar_turnos_service__WEBPACK_IMPORTED_MODULE_67__["LiberarTurnosService"],
-                _services_clientesrrhh_service__WEBPACK_IMPORTED_MODULE_78__["ClientesrrhhService"],
-                _services_claves_service__WEBPACK_IMPORTED_MODULE_75__["ClavesService"],
-                _agm_core__WEBPACK_IMPORTED_MODULE_23__["GoogleMapsAPIWrapper"],
-                _services_desvinculacion_service__WEBPACK_IMPORTED_MODULE_79__["DesvinculacionService"],
-                _services_guardar_sucursal_service__WEBPACK_IMPORTED_MODULE_68__["GuardarSucursalService"],
-                _services_marcaje_service_service__WEBPACK_IMPORTED_MODULE_69__["MarcajeServiceService"],
-                _services_cargos_service__WEBPACK_IMPORTED_MODULE_77__["CargosService"],
-                _components_dashboard_configuracion_Interfaces_claves_interface__WEBPACK_IMPORTED_MODULE_74__["contrasenias"],
-                _services_viaticos_service__WEBPACK_IMPORTED_MODULE_80__["ViaticosService"],
-                _services_sueldos_service__WEBPACK_IMPORTED_MODULE_70__["SueldosService"],
-                _services_mensajes_swal_service__WEBPACK_IMPORTED_MODULE_71__["MensajesSwalService"],
-                _services_libroremuneraciones_service__WEBPACK_IMPORTED_MODULE_72__["LibroremuneracionesService"],
-                _services_mandantes_service__WEBPACK_IMPORTED_MODULE_76__["MandantesService"],
-                _services_geolocalizacion_service__WEBPACK_IMPORTED_MODULE_73__["GeolocalizacionService"],
-                _services_auth_guard__WEBPACK_IMPORTED_MODULE_20__["AuthGuard"]],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_25__["AppComponent"]]
+            providers: [_components_ingresa_interfaces_empleado_service__WEBPACK_IMPORTED_MODULE_62__["EmpleadoService"],
+                _services_ingreso_usuario_servidor_service__WEBPACK_IMPORTED_MODULE_63__["IngresoUsuarioServidorService"],
+                _services_loginservices_service__WEBPACK_IMPORTED_MODULE_64__["LoginservicesService"],
+                _services_rutasservidor_service__WEBPACK_IMPORTED_MODULE_65__["RutasservidorService"],
+                _services_planillaservices_service__WEBPACK_IMPORTED_MODULE_66__["PlanillaservicesService"],
+                _services_perfil_trabajador_service_service__WEBPACK_IMPORTED_MODULE_67__["PerfilTrabajadorServiceService"],
+                _services_liberar_turnos_service__WEBPACK_IMPORTED_MODULE_68__["LiberarTurnosService"],
+                _services_clientesrrhh_service__WEBPACK_IMPORTED_MODULE_79__["ClientesrrhhService"],
+                _services_claves_service__WEBPACK_IMPORTED_MODULE_76__["ClavesService"],
+                _agm_core__WEBPACK_IMPORTED_MODULE_24__["GoogleMapsAPIWrapper"],
+                _services_desvinculacion_service__WEBPACK_IMPORTED_MODULE_80__["DesvinculacionService"],
+                _services_guardar_sucursal_service__WEBPACK_IMPORTED_MODULE_69__["GuardarSucursalService"],
+                _services_marcaje_service_service__WEBPACK_IMPORTED_MODULE_70__["MarcajeServiceService"],
+                _services_cargos_service__WEBPACK_IMPORTED_MODULE_78__["CargosService"],
+                _components_dashboard_configuracion_Interfaces_claves_interface__WEBPACK_IMPORTED_MODULE_75__["contrasenias"],
+                _services_viaticos_service__WEBPACK_IMPORTED_MODULE_81__["ViaticosService"],
+                _services_sueldos_service__WEBPACK_IMPORTED_MODULE_71__["SueldosService"],
+                _services_mensajes_swal_service__WEBPACK_IMPORTED_MODULE_72__["MensajesSwalService"],
+                _services_libroremuneraciones_service__WEBPACK_IMPORTED_MODULE_73__["LibroremuneracionesService"],
+                _services_mandantes_service__WEBPACK_IMPORTED_MODULE_77__["MandantesService"],
+                _services_geolocalizacion_service__WEBPACK_IMPORTED_MODULE_74__["GeolocalizacionService"],
+                _services_auth_guard__WEBPACK_IMPORTED_MODULE_21__["AuthGuard"]],
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_26__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -911,8 +999,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_dashboard_generacion_documentos_generacion_documentos_component__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ./components/dashboard/generacion-documentos/generacion-documentos.component */ "./src/app/components/dashboard/generacion-documentos/generacion-documentos.component.ts");
 /* harmony import */ var _components_perfil_trabajador_reporte_documentos_generados_reporte_documentos_generados_component__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(/*! ./components/perfil-trabajador/reporte-documentos-generados/reporte-documentos-generados.component */ "./src/app/components/perfil-trabajador/reporte-documentos-generados/reporte-documentos-generados.component.ts");
 /* harmony import */ var _components_dashboard_visualizacion_documentacion_empresa_visualizacion_documentacion_empresa_component__WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(/*! ./components/dashboard/visualizacion-documentacion-empresa/visualizacion-documentacion-empresa.component */ "./src/app/components/dashboard/visualizacion-documentacion-empresa/visualizacion-documentacion-empresa.component.ts");
+/* harmony import */ var _components_perfil_trabajador_visualizacion_horario_visualizacion_horario_component__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! ./components/perfil-trabajador/visualizacion-horario/visualizacion-horario.component */ "./src/app/components/perfil-trabajador/visualizacion-horario/visualizacion-horario.component.ts");
+/* harmony import */ var _components_perfil_trabajador_bonificaciones_bonificaciones_component__WEBPACK_IMPORTED_MODULE_57__ = __webpack_require__(/*! ./components/perfil-trabajador/bonificaciones/bonificaciones.component */ "./src/app/components/perfil-trabajador/bonificaciones/bonificaciones.component.ts");
+/* harmony import */ var _components_dashboard_reportes_rep_bonoficaciones_rep_bonoficaciones_component__WEBPACK_IMPORTED_MODULE_58__ = __webpack_require__(/*! ./components/dashboard/reportes/rep-bonoficaciones/rep-bonoficaciones.component */ "./src/app/components/dashboard/reportes/rep-bonoficaciones/rep-bonoficaciones.component.ts");
 
 //Guard
+
+
+
 
 
 
@@ -998,6 +1092,7 @@ var routes = [
                     { path: 'Repturnosincompletos', component: _components_dashboard_reportes_repturnosincompletos_repturnosincompletos_component__WEBPACK_IMPORTED_MODULE_44__["RepturnosincompletosComponent"] },
                     { path: 'Repgraficassucursales', component: _components_dashboard_reportes_repgraficassucursales_repgraficassucursales_component__WEBPACK_IMPORTED_MODULE_45__["RepgraficassucursalesComponent"] },
                     { path: 'Replibroasistencia', component: _components_dashboard_reportes_replibroasistencia_replibroasistencia_component__WEBPACK_IMPORTED_MODULE_46__["ReplibroasistenciaComponent"] },
+                    { path: 'RepBonoficaciones', component: _components_dashboard_reportes_rep_bonoficaciones_rep_bonoficaciones_component__WEBPACK_IMPORTED_MODULE_58__["RepBonoficacionesComponent"] },
                 ] },
             { path: '**', canActivate: [_services_auth_guard__WEBPACK_IMPORTED_MODULE_1__["AuthGuard"]], component: _components_dashboard_perfil_empleador_perfil_empleador_component__WEBPACK_IMPORTED_MODULE_17__["PerfilEmpleadorComponent"] }
         ] },
@@ -1020,6 +1115,8 @@ var routes = [
             { path: 'LiberarTurnos/:mes/:anio', component: _components_perfil_trabajador_liberar_turnos_liberar_turnos_component__WEBPACK_IMPORTED_MODULE_14__["LiberarTurnosComponent"] },
             { path: 'EditarFoto/:rut', component: _components_perfil_trabajador_editar_foto_editar_foto_component__WEBPACK_IMPORTED_MODULE_29__["EditarFotoComponent"] },
             { path: 'ReporteDocumentosGenerados', component: _components_perfil_trabajador_reporte_documentos_generados_reporte_documentos_generados_component__WEBPACK_IMPORTED_MODULE_54__["ReporteDocumentosGeneradosComponent"] },
+            { path: 'VisualizacionHorario', component: _components_perfil_trabajador_visualizacion_horario_visualizacion_horario_component__WEBPACK_IMPORTED_MODULE_56__["VisualizacionHorarioComponent"] },
+            { path: 'Bonificaciones', component: _components_perfil_trabajador_bonificaciones_bonificaciones_component__WEBPACK_IMPORTED_MODULE_57__["BonificacionesComponent"] },
         ] },
     { path: 'Importacion', component: _components_ingresa_importacion_importacion_component__WEBPACK_IMPORTED_MODULE_51__["ImportacionComponent"] },
     { path: 'Ingresa', canActivate: [_services_auth_guard__WEBPACK_IMPORTED_MODULE_1__["AuthGuard"]], component: _components_ingresa_ingresa_component__WEBPACK_IMPORTED_MODULE_4__["IngresaComponent"], children: [
@@ -2173,7 +2270,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav aria-label=\"breadcrumb\" class=\"shadow p-0 mb-5 bg-white rounded\" >\n      <ol class=\"breadcrumb \" style=\"background-color: white\">\n        <li class=\"breadcrumb-item\"><a [routerLink]=\"['../']\">Perfil</a></li>\n        <li class=\"breadcrumb-item active\" aria-current=\"page\">Generación Documentos</li>\n      </ol>\n</nav>\n\n\n\n<div class=\"container-fluid\" style=\"margin-top:50px\">\n\t\t\t  \t<div class=\"row\">\n\t\t\t  \t\t<div class=\"col-sm-4\">\n\t\t\t\t\t  \t\t\t\n\t\t\t\t\t  \t\t\t<div class=\"alert alert-dark\" role=\"alert\">\n\t\t\t\t\t\t\t\t  <h4 class=\"alert-heading\">Documentos Dinámicos</h4>\n\t\t\t\t\t\t\t\t  <p>Desde ésta sección podrás generar documentos tipo. Deberás agregar el titulo que tendrá el documento y agregar\n\t\t\t\t\t\t\t\t  las variables que luego se llenarán para cada trabajador. El cuerpo del documento tendrá cada variable,\n\t\t\t\t\t\t\t\ty luego al ir al trabajador que requieres sea generado el documento; te pedirá rellenar esas variables para generar el\n\t\t\t\t\t\t\tdocumento. También puedes usar variables propias de cada trabajador, están en la lista desplegable de más abajo.</p>\n\n\t\t\t\t\t\t\t<div>\n\t\t\t\t\t\t\t\t<button (click)=\"agregarSaltoDeLinea()\" class=\"btn btn-outline-warning\">Agregar Salto De Línea<i class=\"fas fa-level-down-alt\"></i></button>\n\t\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t\t\t  <hr>\n\t\t\t\t\t\t\t\t  <button class=\"btn btn-primary\" (click)=\"agregarVariableNoParametrizada()\">Agrega\n\t\t\t\t\t\t\t\t  <i class=\"fas fa-plus-circle\"></i>\n\t\t\t\t\t\t\t\t\t</button><br>\n\t\t\t\t\t\t\t\t  <div *ngFor=\"let item of variablesNoParametrizadas\">\n\t\t\t\t\t\t\t\t  \t<input placeholder=\"Nombra tu variable\" type=\"text\" [(ngModel)]=\"item.valor\" name=\"item\"><button (click)=\"implementarVariable(item.valor)\">Implementar</button>\n\t\t\t\t\t\t\t\t  </div>\n\t\t\t\t\t\t\t\t  <br>\n\t\t\t\t\t\t\t\t  <p class=\"mb-0\"><strong>Al finalizar el documento estará disponible en el perfil de cada trabajador.</strong>.</p>\n\t\t\t\t\t\t\t\t</div>\n\n\n\t\t\t\t\t\t\t\t\t<div class=\"form-group\">\t\n\t\t\t\t\t\t\t\t    \t<select name=\"Parametrizadas\" [(ngModel)]=\"valorSelectParametrizado\" class=\"form-control\">\n\t\t\t\t\t\t\t\t    \t\t<option *ngFor=\"let item of SelectParametrizadas\" >{{ item }}</option>\n\t\t\t\t\t\t\t\t    \t</select> <br>\n\t\t\t\t\t\t\t\t    \t<button class=\"btn btn-outline-primary btn-block\" (click)=\"implementarVariableParametrizada(valorSelectParametrizado)\">Implementar</button>\n\t\t\t\t\t\t\t\t    </div>\n\n\n\t\t\t  \t\t</div>\n\t\t\t  \t\t<!-- ****** Separación de columnas *******  -->\n\t\t\t  \t\t<div class=\"col-sm-8\">\n\n\t\t\t  \t\t\t<form>\n\t\t\t\t\t\t  <div class=\"form-group\">\n\t\t\t\t\t\t    <label for=\"exampleInputEmail1\">Titulo</label>\n\t\t\t\t\t\t    <input type=\"email\" name=\"titulo\" [(ngModel)]=\"titulo\" class=\"form-control\" id=\"exampleInputEmail1\" aria-describedby=\"emailHelp\" placeholder=\"Titulo del documento\">\n\t\t\t\t\t\t    <small id=\"emailHelp\" class=\"form-text text-muted\">Debes escribir la cabecera del documento.</small>\n\t\t\t\t\t\t  </div>\n\t\t\t\t\t\t  <div class=\"form-group\">\n\t\t\t\t\t\t    <label for=\"exampleInputPassword1\">Cuerpo Documento</label>\n\t\t\t\t\t\t     <textarea [(ngModel)]=\"CuerpoDocumento\" name=\"Cuerpo\" class=\"form-control\" id=\"exampleFormControlTextarea1\" rows=\"3\"></textarea>\n\t\t\t\t\t\t  </div>\n\t\t\t\t\t\t \n\t\t\t\t\t<!-- Firmas Sección{{firmas | json}} -->\n\t\t\t\t\t\t  <div *ngFor=\"let item of firmas\" class=\"form-group form-check\">\n\t\t\t\t\t\t    <input  [(checked)]=\"item.estado\"(change)=\"item.estado = !item.estado\" type=\"checkbox\" class=\"form-check-input\">\n\t\t\t\t\t\t    <label class=\"form-check-label\" for=\"exampleCheck1\">{{item.nombre}}</label>\n\t\t\t\t\t\t    <input [(ngModel)]=\"item.valor\" placeholder=\"Nombre firma\" type=\"text\" class=\"form-control\" name=\"firmas\">\n\t\t\t\t\t\t  </div>\n\n\t\t\t\t\t\t  <hr>\n\t\t\t\t    <!-- Formato carta-->\n\t\t\t\t\t\t  <div class=\"form-group form-check\">\n\t\t\t\t\t\t    <input  [(checked)]=\"tipocarta\"(change)=\"tipocarta = !tipocarta\" type=\"checkbox\" class=\"form-check-input\">\n\t\t\t\t\t\t    <label class=\"form-check-label\" for=\"exampleCheck1\">Tipo Carta</label>\n\t\t\t\t\t\t  </div>\n\t\t\t\t\t\t \n\n\n\n\t\t\t\t\t\t  <button (click)=\"Envio()\" class=\"btn btn-primary\">Enviar</button>\n\t\t\t\t\t\t</form>\n\t\t\t\t\t\t\t\n\n\n\t\t\t\t\t</div>\n\n\t\t\t</div><!-- Fin Row -->\n\t</div>"
+module.exports = "<nav aria-label=\"breadcrumb\" class=\"shadow p-0 mb-5 bg-white rounded\" >\n      <ol class=\"breadcrumb \" style=\"background-color: white\">\n        <li class=\"breadcrumb-item\"><a [routerLink]=\"['../']\">Perfil</a></li>\n        <li class=\"breadcrumb-item active\" aria-current=\"page\">Generación Documentos</li>\n      </ol>\n</nav>\n\n\n\n<div class=\"container-fluid\" style=\"margin-top:50px\">\n\t\t\t  \t<div class=\"row\">\n\t\t\t  \t\t<div class=\"col-sm-4\">\n\t\t\t\t\t  \t\t\t\n\t\t\t\t\t  \t\t\t<div class=\"alert alert-dark\" role=\"alert\">\n\t\t\t\t\t\t\t\t  <h4 class=\"alert-heading\">Documentos Dinámicos</h4>\n\t\t\t\t\t\t\t\t  <p>Desde ésta sección podrás generar documentos tipo. Deberás agregar el titulo que tendrá el documento y agregar\n\t\t\t\t\t\t\t\t  las variables que luego se llenarán para cada trabajador. El cuerpo del documento tendrá cada variable,\n\t\t\t\t\t\t\t\ty luego al ir al trabajador que requieres sea generado el documento; te pedirá rellenar esas variables para generar el\n\t\t\t\t\t\t\tdocumento. También puedes usar variables propias de cada trabajador, están en la lista desplegable de más abajo.</p>\n\n\t\t\t\t\t\t<!--\t<div>\n\t\t\t\t\t\t\t\t<button (click)=\"agregarSaltoDeLinea()\" class=\"btn btn-outline-warning\">Agregar Salto De Línea<i class=\"fas fa-level-down-alt\"></i></button>\n\t\t\t\t\t\t\t</div> -->\n\n\t\t\t\t\t\t\t\t  <hr>\n\n\t\t\t\t\t\t\t\t</div>\n\n\n\t\t\t\t\t\t\t\t\t<div class=\"form-group\">\t\n\t\t\t\t\t\t\t\t\t\t<label>Selecciona datos de tu trabajador: </label>\n\t\t\t\t\t\t\t\t    \t<select name=\"Parametrizadas\" [(ngModel)]=\"valorSelectParametrizado\" class=\"form-control\">\n\t\t\t\t\t\t\t\t    \t\t<option *ngFor=\"let item of SelectParametrizadas\" >{{ item }}</option>\n\t\t\t\t\t\t\t\t    \t</select> <br>\n\t\t\t\t\t\t\t\t    \t<button class=\"btn btn-outline-primary btn-block\" (click)=\"implementarVariableParametrizada(valorSelectParametrizado)\">Implementar</button>\n\t\t\t\t\t\t\t\t    </div>\n\n\n\t\t\t  \t\t</div>\n\t\t\t  \t\t<!-- ****** Separación de columnas *******  -->\n\t\t\t  \t\t<div class=\"col-sm-8\">\n\n\t\t\t  \t\t\t\n\t\t\t\t\t\t  <div class=\"form-group\">\n\t\t\t\t\t\t    <label for=\"exampleInputEmail1\">Titulo</label>\n\t\t\t\t\t\t    <input type=\"email\" name=\"titulo\" [(ngModel)]=\"titulo\" class=\"form-control\" id=\"exampleInputEmail1\" aria-describedby=\"emailHelp\" placeholder=\"Titulo del documento\">\n\t\t\t\t\t\t   <!-- <small id=\"emailHelp\" class=\"form-text text-muted\">Debes escribir la cabecera del documento.</small>-->\n\t\t\t\t\t\t  </div>\n\t\t\t\t\t\t  \n\t\t\t\t\t\t  <!--<div class=\"form-group\">\n\t\t\t\t\t\t    <label for=\"exampleInputPassword1\">Cuerpo Documento</label>\n\t\t\t\t\t\t     <textarea [(ngModel)]=\"CuerpoDocumento\" name=\"Cuerpo\" class=\"form-control\" id=\"exampleFormControlTextarea1\" rows=\"3\"></textarea>\n\t\t\t\t\t\t  </div>-->\n\n\t\t\t\t\t\t  \n\t\t\t\t\t\t  <div>\n\t\t\t\t\t\t\t  \t\n\n\t\t\t\t\t\t\t  \t<div class=\"card\">\n\t\t\t\t\t\t\t\t  <div class=\"card-body\">\n\t\t\t\t\t\t\t\t  \t\t\t\t <h5 class=\"card-title\">Agrega variables para tu documento: </h5>\n\t\t\t\t\t\t\t\t    \t\t\t\t<button class=\"btn btn-outline-success btn-block\" (click)=\"agregarVariableNoParametrizada()\">Agrega\n\t\t\t\t\t\t\t\t\t\t\t\t\t  \t<i class=\"fas fa-plus-circle\"></i>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</button>\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t  <div *ngFor=\"let item of variablesNoParametrizadas\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t  \t<input \n\t\t\t\t\t\t\t\t\t\t\t\t\t  \tstyle=\"margin:5px\" \n\t\t\t\t\t\t\t\t\t\t\t\t\t  \tclass=\"form-control\" \n\t\t\t\t\t\t\t\t\t\t\t\t\t  \tplaceholder=\"Nombra tu variable\" \n\t\t\t\t\t\t\t\t\t\t\t\t\t  \ttype=\"text\" \n\t\t\t\t\t\t\t\t\t\t\t\t\t  \t[(ngModel)]=\"item.valor\" \n\t\t\t\t\t\t\t\t\t\t\t\t\t  \tname=\"item\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t  \t<br>\n\t\t\t\t\t\t\t\t\t\t\t\t\t  \t<button class=\"btn btn-outline-primary\" (click)=\"implementarVariable(item.valor)\">Implementar</button>\n\t\t\t\t\t\t\t\t\t\t\t\t\t  \t<hr>\n\t\t\t\t\t\t\t\t\t\t\t\t\t  </div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t  <br>\n\t\t\t\t\t\t\t\t  </div>\n\t\t\t\t\t\t\t\t</div>\n\n\n\n\t\t\t\t\t\t  </div>\n\t\t\t\t\t\t \n\t\t\t\t\t<!-- Firmas Sección{{firmas | json}} \n\t\t\t\t\t\t  <div *ngFor=\"let item of firmas\" class=\"form-group form-check\">\n\t\t\t\t\t\t    <input  [(checked)]=\"item.estado\"(change)=\"item.estado = !item.estado\" type=\"checkbox\" class=\"form-check-input\">\n\t\t\t\t\t\t    <label class=\"form-check-label\" for=\"exampleCheck1\">{{item.nombre}}</label>\n\t\t\t\t\t\t    <input [(ngModel)]=\"item.valor\" placeholder=\"Nombre firma\" type=\"text\" class=\"form-control\" name=\"firmas\">\n\t\t\t\t\t\t  </div>-->\n\n\t\t\t\t\t\t  <hr>\n\t\t\t\t    <!-- Formato carta\n\t\t\t\t\t\t  <div class=\"form-group form-check\">\n\t\t\t\t\t\t    <input  [(checked)]=\"tipocarta\"(change)=\"tipocarta = !tipocarta\" type=\"checkbox\" class=\"form-check-input\">\n\t\t\t\t\t\t    <label class=\"form-check-label\" for=\"exampleCheck1\">Tipo Carta</label>\n\t\t\t\t\t\t  </div>\n\t\t\t\t\t\t -->\n\n\n\n\t\t\t\t\t\t  <button (click)=\"Envio()\" class=\"btn btn-warning btn-block\">¿ Terminaste el documento ? Envíalo !</button>\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\n\n\t\t\t\t\t</div>\n\n\t\t\t</div><!-- Fin Row -->\n\t\t\t\t\t\t\n\n\t\t\t\t\t\t<div class=\"container\" style=\"padding:50px\">\n\t\t\t\t\t\t\t\t<fate-ui  uiId=\"foo\"></fate-ui>\n\t\t\t\t\t\t\t\t<fate-input uiId=\"foo\" [(ngModel)]=\"someHtml\" ></fate-input>\n\t\t\t\t\t\t</div>\n\n\n\n\t\t\t\t\t\t<div class=\"container text-center\"  style=\"padding:50px\">\n\t\t\t\t\t\t\t<button class=\"btn btn-outline-primary btn-block\" style=\"margin:10px\" (click)=\"refrescarIframe()\" >Refrescar</button>\n\t\t\t\t\t\t\t<br>\n\t\t\t\t\t\t\t<iframe \n\t\t\t\t\t\t\tid=\"iframeID\" \n\t\t\t\t\t\t\t[src]=\"URL_IFRAME\" \n\t\t\t\t\t\t\tframeborder=\"0\" \n\t\t\t\t\t\t\twidth=\"655\" \n\t\t\t\t\t\t\theight=\"550\" \n\t\t\t\t\t\t\tmarginheight=\"0\" \n\t\t\t\t\t\t\tmarginwidth=\"0\">\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t</iframe>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</div>\n\n\n\t</div>\n\n\n<!--\n\nASESORIAS AGR CIA. LTDA. \nRut: 63.558.517-7 \nCalle negrete n°1871 \nConchalí-Santiago \n\n                                                                                                             FINIQUITO DE TRABAJO \n\nEn Concepción a 30 de agosto de 2019, ASESORIAS A.G.R. COMPAÑÍA LIMITADA, Rut: 63.558.517-7 representada en este acto por don LUIS ALFREDO GALDAMES ROJO, cédula nacional N° 6.248.002-5 en adelante El Empleador, y don (ña) CONSTANZA JAVIERA HENRIQUEZ MUÑOZ, cédula de identidad N° 18.626.339-1 domiciliada AV. MEXICO N° 0764, comuna de RECOLETA en adelante “El Trabajador” vienen en suscribir el presente finiquito. \n\nPRIMERO: Las partes dejan constancia que la relación laboral se inició con fecha 01 de ABRIL de 2019 y concluyó el día 10 de JULIO de 2019. \n\nSEGUNDO: El término de la relación laboral se verificó por la causal del Artículo 159, Número 2 del Código del Trabajo, esto es, RENUNCIA VOLUNTARIA. \n\nTERCERO: En este acto, el Empleador paga al Trabajador, lo siguiente: - Vacaciones proporcionales $45.000 - Liquidación de sueldo mes Julio 2019 $45.000 - Indemnización Sustitutiva $45.000 - Mes de aviso $45.000 - Vacaciones legales $45.000 \n\nCUARTO: El trabajador acepta y está conforme con el monto indicado en la cláusula precedente, y declara haber recibido el pago de la suma a plena conformidad. \n\nQUINTO: Doña CONSTANZA HENRIQUEZ MUÑOZ, deja constancia que durante el tiempo que prestó servicios a ASESORIAS A.G.R. COMPAÑÍA LIMITADA recibió de forma correcta y oportunamente el total de las remuneraciones convenidas, de acuerdo a su contrato de trabajo, clase de trabajo ejecutado, reajustes legales, feriados legales en conformidad a la ley y que nada se le adeuda por los conceptos antes indicados ni por ningún otro, sea de origen legal o contractual derivado de la prestación de sus servicios. Motivo por el cual, no teniendo reclamo ni cargo alguno que formular en contra de ASESORIAS A.G.R. COMPAÑÍA LIMITADA ni en contra de don LUIS ALFREDO GALDAMES ROJO, ni en contra de DANHER CORPGRUP COMPAÑIA LIMITADA, ni empresas relacionadas ni filiales, por lo que otorga el más amplio y total finiquito, renunciando expresamente a las acciones de naturaleza laboral, penal, civil o administrativa en contra de ASESORIAS A.G.R. COMPAÑÍA LIMITADA, LUIS ALFREDO GALDAMES ROJO, SOCIEDAD DANHER LIMITADA, así como respecto de empresas relacionadas o filiales, declaración que formula libre y espontáneamente, en perfecto y cabal conocimiento de cada uno de todos sus derechos, sin perjuicio de reservarse el derecho a exigir el cumplimiento de las obligaciones asumidas en este contrato. \n\nSEXTO: Las partes asimismo se otorgan el más completo y amplio finiquito respecto de cualquier accidente laboral o enfermedad profesional que haya tenido su origen durante la relación laboral, renunciando el Trabajador a ejercer todo tipo de acciones. SEPTIMO: Se suscribe el presente finiquito en dos ejemplares, quedando uno en poder de la cada parte.\n\nSEPTIMO: Se suscribe el presente finiquito en dos ejemplares, quedando uno en poder de la cada parte. \n\n\n\n\n\n_____________________________________           \n                 TRABAJADOR \n               RUT 17.961.493-6 \n    CHRISTOPHER SIERRA MELÉNDEZ\n\n\n    -->"
 
 /***/ }),
 
@@ -2192,13 +2289,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Data_variablesParametrizadas__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../Data/variablesParametrizadas */ "./src/app/Data/variablesParametrizadas.ts");
 /* harmony import */ var _services_crud_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../services/crud.service */ "./src/app/services/crud.service.ts");
 /* harmony import */ var _services_rutasservidor_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../services/rutasservidor.service */ "./src/app/services/rutasservidor.service.ts");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
+
 
 
 
 
 
 var GeneracionDocumentosComponent = /** @class */ (function () {
-    function GeneracionDocumentosComponent(RutasservidorService_, CrudService_) {
+    function GeneracionDocumentosComponent(sanitizer, RutasservidorService_, CrudService_) {
+        this.sanitizer = sanitizer;
         this.RutasservidorService_ = RutasservidorService_;
         this.CrudService_ = CrudService_;
         this.variablesNoParametrizadas = [];
@@ -2208,6 +2308,8 @@ var GeneracionDocumentosComponent = /** @class */ (function () {
         this.SelectParametrizadas = _Data_variablesParametrizadas__WEBPACK_IMPORTED_MODULE_2__["default"];
     }
     GeneracionDocumentosComponent.prototype.ngOnInit = function () {
+        this.rutEmpresa = localStorage.getItem('rut_empresa');
+        this.URL_IFRAME = this.sanitizer.bypassSecurityTrustResourceUrl('https://sister.cl/laravel/index.php/presta/' + this.rutEmpresa);
         this.firmas = [{
                 'nombre': 'Firma1',
                 'estado': false,
@@ -2225,25 +2327,29 @@ var GeneracionDocumentosComponent = /** @class */ (function () {
             }];
     };
     GeneracionDocumentosComponent.prototype.agregarSaltoDeLinea = function () {
-        this.CuerpoDocumento = this.CuerpoDocumento + " <<SALTODELINEA>>";
+        this.CuerpoDocumento = this.CuerpoDocumento + " ~~SALTODELINEA~~";
     };
     GeneracionDocumentosComponent.prototype.agregarVariableNoParametrizada = function () {
-        /*let borrar1= "Por haber  <<TipoFalta>> se le aplicará la siguiente sanción :  <<Tipo Sancion>>";
-        let borrar2 = "<<TipoFalta>>";
+        /*let borrar1= "Por haber  ~~TipoFalta~~ se le aplicará la siguiente sanción :  ~~Tipo Sancion~~";
+        let borrar2 = "~~TipoFalta~~";
         let variableReal = "Faltas reiteradas"
         const stripped = borrar1.replace(borrar2, variableReal)
         console.log(stripped) */
-        this.variablesNoParametrizadas.push({ 'nombre': 'variable_' + this.n++, 'valor': '' });
+        this.variablesNoParametrizadas.push({ 'nombre': 'variable_' + this.n++ });
+        console.log(this.variablesNoParametrizadas);
     };
     GeneracionDocumentosComponent.prototype.implementarVariable = function (textoVariable) {
-        this.CuerpoDocumento = this.CuerpoDocumento + " <<" + textoVariable + ">>";
+        this.CuerpoDocumento = this.CuerpoDocumento + " ~~" + textoVariable + "~~";
+        this.someHtml = this.someHtml + " ~~" + textoVariable + "~~";
     };
     GeneracionDocumentosComponent.prototype.implementarVariableParametrizada = function (textoParametrizado) {
         console.log(textoParametrizado);
         this.variablesParametrizadas.push({ 'valor': textoParametrizado });
-        this.CuerpoDocumento = this.CuerpoDocumento + " <<" + textoParametrizado + ">>";
+        this.CuerpoDocumento = this.CuerpoDocumento + " ~~" + textoParametrizado + "~~";
+        this.someHtml = this.someHtml + " ~~" + textoParametrizado + "~~";
     };
     GeneracionDocumentosComponent.prototype.Envio = function () {
+        console.log(this.someHtml);
         console.log(this.CuerpoDocumento);
         console.log(this.variablesNoParametrizadas);
         console.log(this.variablesParametrizadas);
@@ -2251,7 +2357,7 @@ var GeneracionDocumentosComponent = /** @class */ (function () {
         this.CrudService_.Add({
             'empresa_id': localStorage.getItem('id'),
             'empresa': localStorage.getItem('nombre_empresa'),
-            'CuerpoDocumento': this.CuerpoDocumento,
+            'CuerpoDocumento': this.someHtml,
             'variablesNoParametrizadas': JSON.stringify(this.variablesNoParametrizadas),
             'variablesParametrizadas': JSON.stringify(this.variablesParametrizadas),
             'titulo': this.titulo,
@@ -2264,13 +2370,23 @@ var GeneracionDocumentosComponent = /** @class */ (function () {
             console.log("ERROR", error);
         });
     };
+    GeneracionDocumentosComponent.prototype.refrescarIframe = function () {
+        var _this = this;
+        this.CrudService_.Add({ 'cuerpoDocumento': this.someHtml, 'rutEmpresa': localStorage.getItem('rut_empresa') }, 'armarDocumento')
+            .subscribe(function (data) { return console.log(data); }, function (err) { return console.log(err); }, function () {
+            setTimeout(function () {
+                _this.URL_IFRAME = _this.sanitizer.bypassSecurityTrustResourceUrl('https://sister.cl/laravel/index.php/presta/' + _this.rutEmpresa);
+            }, 3000);
+        });
+    };
     GeneracionDocumentosComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-generacion-documentos',
             template: __webpack_require__(/*! ./generacion-documentos.component.html */ "./src/app/components/dashboard/generacion-documentos/generacion-documentos.component.html"),
             styles: [__webpack_require__(/*! ./generacion-documentos.component.css */ "./src/app/components/dashboard/generacion-documentos/generacion-documentos.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_services_rutasservidor_service__WEBPACK_IMPORTED_MODULE_4__["RutasservidorService"],
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_5__["DomSanitizer"],
+            _services_rutasservidor_service__WEBPACK_IMPORTED_MODULE_4__["RutasservidorService"],
             _services_crud_service__WEBPACK_IMPORTED_MODULE_3__["CrudService"]])
     ], GeneracionDocumentosComponent);
     return GeneracionDocumentosComponent;
@@ -2900,6 +3016,135 @@ var PerfilEmpleadorComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/components/dashboard/reportes/rep-bonoficaciones/rep-bonoficaciones.component.css":
+/*!***************************************************************************************************!*\
+  !*** ./src/app/components/dashboard/reportes/rep-bonoficaciones/rep-bonoficaciones.component.css ***!
+  \***************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvZGFzaGJvYXJkL3JlcG9ydGVzL3JlcC1ib25vZmljYWNpb25lcy9yZXAtYm9ub2ZpY2FjaW9uZXMuY29tcG9uZW50LmNzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/components/dashboard/reportes/rep-bonoficaciones/rep-bonoficaciones.component.html":
+/*!****************************************************************************************************!*\
+  !*** ./src/app/components/dashboard/reportes/rep-bonoficaciones/rep-bonoficaciones.component.html ***!
+  \****************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = " <div class=\"row justify-content-center\">\n        <div class=\"form-group mx-sm-3 mb-2\">\t\t   \n\t\t    <select [(ngModel)]=\"mes\" name=\"mes\" type=\"text\" class=\"form-control\">\t\n\t\t    \t  <option>Mes</option>\n\t\t    \t  <option>1</option>\n\t\t\t      <option>2</option>\n\t\t\t      <option>3</option>\n\t\t\t      <option>4</option>\n\t\t\t      <option>5</option>\n\t\t\t      <option>6</option>\n\t\t\t      <option>7</option>\n\t\t\t      <option>8</option>\n\t\t\t      <option>9</option>\n\t\t\t      <option>10</option>\n\t\t\t      <option>11</option>\n\t\t\t      <option>12</option>\n\t\t    </select>  \n\t\t</div>\n\t\t\n\n\t\t<div class=\"form-group  mx-sm-3 mb-2\">\t\t    \n\t\t       <select [(ngModel)]=\"anio\" name=\"anio\"  type=\"text\" class=\"form-control\" >\t\t    \t\n\t\t    \t  <option>Año</option>\n\t\t    \t  <option>2017</option>\n            <option>2018</option>          \n            <option>2019</option>          \n            <option>2020</option>          \n            <option>2021</option>          \n            <option>2022</option>          \n\t\t    </select>\n  \t\t</div>\n\n\n        <div class=\"form-group mx-sm-3 mb-2\">\n              <button (click)=\"exportAsExcel()\" mat-raised-button color=\"success\">Excel</button>\n        </div>\n               \n</div>\n\t  <app-select-sucursales (onSucursalSelected)=\"SucursalSelected($event)\" ></app-select-sucursales>\n           <button style=\"margin:10px;\" (click)=\"ActualizarPorSucursal()\" class=\"btn btn-outline-primary\">Por sucursal</button>\n           <br>\n<div class=\"table-responsive\">\n\n<table #TABLE class=\"table\">\n  <thead>\n    <tr>\n      <th scope=\"col\">#</th>\n      <th scope=\"col\">Nombre</th>\n      <th scope=\"col\">Apellido</th>\n      <th scope=\"col\">Rut</th>\n      <th scope=\"col\">Tipo</th>\n      <th scope=\"col\">Supervisor</th>\n      <th scope=\"col\">Instalacion</th>\n      <th scope=\"col\">Fecha realización</th>\n      <th scope=\"col\">Fecha Ingreso</th>\n      <th scope=\"col\">Monto</th>\n\n\n\n    </tr>\t\n  </thead>\n  <tbody>\n    <tr *ngFor=\"let movimientos of movimiento?.response.data; let i = index\">\n      <th scope=\"row\">{{ i+1 }}</th>\n      <td>{{movimientos.trabajador.nombre}}</td>\n      <td>{{movimientos.trabajador.apellido}}</td>\n      <td>{{movimientos.trabajador.rut}}</td>\n      <td>{{movimientos?.tipo}}</td>\n      <td>{{movimientos?.supervisor.nombre + ' ' + movimientos?.supervisor.apellido}}</td>\n      <td>{{movimientos?.sucursal.nombre }}</td>\n      <td>{{movimientos?.dia + '/' + movimientos?.mes + '/' +movimientos?.anio}}</td>\n      <td>{{movimientos?.created_at}}</td>\n      <td>{{movimientos?.monto}}</td>\n\n    </tr>\n   \n  </tbody>\n</table>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/components/dashboard/reportes/rep-bonoficaciones/rep-bonoficaciones.component.ts":
+/*!**************************************************************************************************!*\
+  !*** ./src/app/components/dashboard/reportes/rep-bonoficaciones/rep-bonoficaciones.component.ts ***!
+  \**************************************************************************************************/
+/*! exports provided: RepBonoficacionesComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RepBonoficacionesComponent", function() { return RepBonoficacionesComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var xlsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! xlsx */ "./node_modules/xlsx/xlsx.js");
+/* harmony import */ var xlsx__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(xlsx__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _ngrx_store__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ngrx/store */ "./node_modules/@ngrx/store/fesm5/store.js");
+/* harmony import */ var _services_mensajes_swal_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./../../../../services/mensajes-swal.service */ "./src/app/services/mensajes-swal.service.ts");
+/* harmony import */ var _services_crud_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./../../../../services/crud.service */ "./src/app/services/crud.service.ts");
+
+
+
+
+
+
+
+
+var RepBonoficacionesComponent = /** @class */ (function () {
+    function RepBonoficacionesComponent(MensajesSwalService_, store, CrudService_) {
+        this.MensajesSwalService_ = MensajesSwalService_;
+        this.store = store;
+        this.CrudService_ = CrudService_;
+        this.mes = 'mes';
+        this.date = new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]();
+        this.movimientos = [];
+        this.nombreEmpresa = localStorage.getItem("nombre_empresa");
+    }
+    RepBonoficacionesComponent.prototype.ActualizarFecha = function () {
+        var _this = this;
+        var FORMATO_ENTRADA = 'MM-DD-YYYY';
+        var FORMATO_SALIDA = 'MM-YYYY';
+        var fecha1 = moment__WEBPACK_IMPORTED_MODULE_3__(this.calendario, FORMATO_ENTRADA);
+        //alert(fecha1.format(FORMATO_SALIDA));
+        this.CrudService_.Add({ 'id': this.sucursal }, 'GetResExtra_porSucursal').subscribe(function (data) {
+            console.log(data);
+            if (data.length === 0)
+                return _this.MensajesSwalService_.error();
+            _this.movimiento = data;
+        }, function (error) {
+            _this.MensajesSwalService_.error();
+            console.log(error);
+        });
+    };
+    RepBonoficacionesComponent.prototype.exportAsExcel = function () {
+        this.exportAsExcelFile(this.movimiento, 'Asistencia');
+    };
+    RepBonoficacionesComponent.prototype.SucursalSelected = function (e) {
+        this.sucursal = e;
+    }; // Fin getFromState
+    RepBonoficacionesComponent.prototype.ActualizarPorSucursal = function () {
+        var _this = this;
+        // this.geolocalizacion.findAddressByCoordinates( -33.4067802, -70.668223);     
+        // this.arrayDirecciones = this.geolocalizacion.array_direccion;
+        var FORMATO_ENTRADA = 'MM-DD-YYYY';
+        var FORMATO_SALIDA = 'MM-DD-YYYY';
+        var fecha1 = moment__WEBPACK_IMPORTED_MODULE_3__(this.calendario, FORMATO_ENTRADA);
+        console.log(this.sucursal);
+        this.CrudService_.Add({ 'id': this.sucursal, 'mes': this.mes, 'anio': this.anio }, 'GetResExtra_porSucursal').subscribe(function (data) {
+            console.log(data);
+            if (data.length === 0)
+                return _this.MensajesSwalService_.error();
+            _this.movimiento = data;
+        }, function (error) {
+            _this.MensajesSwalService_.error();
+            console.log(error);
+        });
+    };
+    RepBonoficacionesComponent.prototype.exportAsExcelFile = function (json, excelFileName) {
+        var worksheet = xlsx__WEBPACK_IMPORTED_MODULE_4__["utils"].json_to_sheet(json);
+        var workbook = { Sheets: { 'data': worksheet }, SheetNames: ['data'] };
+        xlsx__WEBPACK_IMPORTED_MODULE_4__["writeFile"](workbook, this.toExportFileName(excelFileName));
+    };
+    RepBonoficacionesComponent.prototype.toExportFileName = function (excelFileName) {
+        return excelFileName + "_export_" + new Date().getTime() + ".xlsx";
+    };
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('TABLE'),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"])
+    ], RepBonoficacionesComponent.prototype, "table", void 0);
+    RepBonoficacionesComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-rep-bonoficaciones',
+            template: __webpack_require__(/*! ./rep-bonoficaciones.component.html */ "./src/app/components/dashboard/reportes/rep-bonoficaciones/rep-bonoficaciones.component.html"),
+            styles: [__webpack_require__(/*! ./rep-bonoficaciones.component.css */ "./src/app/components/dashboard/reportes/rep-bonoficaciones/rep-bonoficaciones.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_services_mensajes_swal_service__WEBPACK_IMPORTED_MODULE_6__["MensajesSwalService"],
+            _ngrx_store__WEBPACK_IMPORTED_MODULE_5__["Store"],
+            _services_crud_service__WEBPACK_IMPORTED_MODULE_7__["CrudService"]])
+    ], RepBonoficacionesComponent);
+    return RepBonoficacionesComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/components/dashboard/reportes/repactualmentetrabajando/repactualmentetrabajando.component.css":
 /*!***************************************************************************************************************!*\
   !*** ./src/app/components/dashboard/reportes/repactualmentetrabajando/repactualmentetrabajando.component.css ***!
@@ -3057,7 +3302,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<div class=\"row justify-content-center\">\r\n        <form class=\"form-inline\">\r\n          <div class=\"form-group mb-2\">\r\n            <label for=\"staticEmail2\" class=\"sr-only\">Email</label>\r\n                  <mat-form-field>\r\n                    <input [(ngModel)]=\"calendario\" name=\"calendario\" matInput [matDatepicker]=\"picker\" placeholder=\"Selecciona una fecha\">\r\n                    <mat-datepicker-toggle matSuffix [for]=\"picker\"></mat-datepicker-toggle>\r\n                    <mat-datepicker #picker></mat-datepicker>\r\n                  </mat-form-field>\r\n          </div>\r\n\r\n        <div class=\"form-group mx-sm-3 mb-2\">\r\n            \r\n          </div>\r\n           <app-select-sucursales></app-select-sucursales>\r\n           <button (click)=\"ActualizarPorSucursal()\" class=\"btn btn-outline-primary\">Por sucursal</button>\r\n           <button (click)=\"ActualizarFecha()\" mat-raised-button color=\"primary\">Ir </button>\r\n            <button (click)=\"exportAsExcel()\" mat-raised-button color=\"success\">Excel</button>\r\n        </form>\r\n\r\n            <div class=\"form-group mx-sm-3 mb-2\">\r\n             \r\n            </div>\r\n</div>\r\n\r\n<div class=\"table-responsive\">\r\n\r\n<table #TABLE class=\"table\">\r\n  <thead>\r\n    <tr>\r\n      <th scope=\"col\">#</th>\r\n      <th scope=\"col\">Nombre</th>\r\n      <th scope=\"col\">Apellido</th>\r\n      <th scope=\"col\">Rut</th>\r\n      <th scope=\"col\">Movimiento</th>\r\n      <th scope=\"col\">Hora</th>\r\n      \r\n      <th scope=\"col\">Locación</th>\r\n      <th scope=\"col\">Respaldo</th>\r\n\r\n\r\n\r\n    </tr>\t\r\n  </thead>\r\n  <tbody>\r\n    <tr *ngFor=\"let movimientos of movimiento; let i = index\">\r\n      <th scope=\"row\">{{ i + 1 }}</th>\r\n      <td>{{movimientos.nombre}}</td>\r\n      <td>{{movimientos.apellido}}</td>\r\n      <td>{{movimientos.rut}}</td>\r\n      <td>{{movimientos.tipo_movimiento}}</td>\r\n      <td>{{movimientos.hora}}</td>\r\n      \r\n      <td>{{movimientos.locacion }}</td>\r\n      <th scope=\"col\">\r\n        <!-- Aca va el modal -->\r\n                  <!-- Button trigger modal -->\r\n                <button type=\"button\" class=\"btn btn-primary\" data-toggle=\"modal\" [attr.data-target]=\"'#s' + movimientos.id\">\r\n                        Visualizar Registro\r\n                      </button>\r\n\r\n                              <!-- Modal -->\r\n                              <div class=\"modal fade\" [id]=\"'s'+movimientos.id\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalLabel\" aria-hidden=\"true\">\r\n                            <div class=\"modal-dialog\" role=\"document\">\r\n                              <div class=\"modal-content\">\r\n                                <div class=\"modal-header\">\r\n                                  <h5 class=\"modal-title\" id=\"exampleModalLabel\">Registro</h5>\r\n                                  <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\r\n                                    <span aria-hidden=\"true\">&times;</span>\r\n                                  </button>\r\n                                </div>\r\n                                <div class=\"modal-body\">\r\n                                 <div class=\"text-center\">\r\n                                   <img [src]=\"movimientos.url\" class=\"rounded\" alt=\"...\">\r\n                                 </div>    \r\n                                </div>\r\n                                <div class=\"modal-footer\">\r\n                                  <button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Cerrar</button>\r\n                                <!--  <button type=\"button\" class=\"btn btn-primary\">Save changes</button> -->\r\n                                </div>\r\n                              </div>\r\n                            </div>\r\n                          </div>  \r\n        <!-- Aca va el modal -->\r\n      </th>\r\n\r\n    </tr>\r\n   \r\n  </tbody>\r\n</table>\r\n</div>"
+module.exports = "\r\n<div class=\"row justify-content-center\">\r\n        <form class=\"form-inline\">\r\n          <div class=\"form-group mb-2\">\r\n            <label for=\"staticEmail2\" class=\"sr-only\">Email</label>\r\n                  <mat-form-field>\r\n                    <input [(ngModel)]=\"calendario\" name=\"calendario\" matInput [matDatepicker]=\"picker\" placeholder=\"Selecciona una fecha\">\r\n                    <mat-datepicker-toggle matSuffix [for]=\"picker\"></mat-datepicker-toggle>\r\n                    <mat-datepicker #picker></mat-datepicker>\r\n                  </mat-form-field>\r\n          </div>\r\n\r\n        <div class=\"form-group mx-sm-3 mb-2\">\r\n            \r\n          </div>\r\n           <app-select-sucursales></app-select-sucursales>\r\n           <button (click)=\"ActualizarPorSucursal()\" class=\"btn btn-outline-primary\">Por sucursal</button>\r\n           <button (click)=\"ActualizarFecha()\" mat-raised-button color=\"primary\">Ir </button>\r\n            <button (click)=\"exportAsExcel()\" mat-raised-button color=\"success\">Excel</button>\r\n        </form>\r\n\r\n            <div class=\"form-group mx-sm-3 mb-2\">\r\n             \r\n            </div>\r\n</div>\r\n\r\n<div class=\"table-responsive\">\r\n\r\n<table #TABLE class=\"table\">\r\n  <thead>\r\n    <tr>\r\n      <th scope=\"col\">#</th>\r\n      <th scope=\"col\">Nombre</th>\r\n      <th scope=\"col\">Apellido</th>\r\n      <th scope=\"col\">Rut</th>\r\n      <th scope=\"col\">Movimiento</th>\r\n      <th scope=\"col\">Hora</th>\r\n      \r\n      <th scope=\"col\">Locación</th>\r\n      <th scope=\"col\">Respaldo</th>\r\n\r\n\r\n\r\n    </tr>\t\r\n  </thead>\r\n  <tbody>\r\n    <tr *ngFor=\"let movimientos of movimiento; let i = index\">\r\n      <th scope=\"row\">{{ i + 1 }}</th>\r\n      <td>{{movimientos.nombre}}</td>\r\n      <td>{{movimientos.apellido}}</td>\r\n      <td>{{movimientos.rut}}</td>\r\n      <td>{{movimientos.tipo_movimiento}}</td>\r\n      <td>{{movimientos.hora}}</td>\r\n      \r\n      <td>{{movimientos.locacion }}</td>\r\n      <th scope=\"col\">\r\n        <!-- Aca va el modal -->\r\n                  <!-- Button trigger modal -->\r\n                <button type=\"button\" class=\"btn btn-primary\" data-toggle=\"modal\" [attr.data-target]=\"'#s' + movimientos.id\">\r\n                        Visualizar Registro\r\n                      </button>\r\n\r\n                              <!-- Modal -->\r\n                              <div class=\"modal fade\" [id]=\"'s'+movimientos.id\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalLabel\" aria-hidden=\"true\">\r\n                            <div class=\"modal-dialog\" role=\"document\">\r\n                              <div class=\"modal-content\">\r\n                                <div class=\"modal-header\">\r\n                                  <h5 class=\"modal-title\" id=\"exampleModalLabel\">Registro</h5>\r\n                                  <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\r\n                                    <span aria-hidden=\"true\">&times;</span>\r\n                                  </button>\r\n                                </div>\r\n                                <div class=\"modal-body\">\r\n                                 <div class=\"text-center\">\r\n                                  <!-- <img [src]=\"movimientos.url\" class=\"rounded\" alt=\"...\">-->\r\n                                   <app-visualizador-contrastado-registros [urlMovimiento]=\"movimientos.url\" [rut]=\"movimientos.rut\"></app-visualizador-contrastado-registros>\r\n                                 </div>    \r\n                                </div>\r\n                                <div class=\"modal-footer\">\r\n                                  <button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Cerrar</button>\r\n                                <!--  <button type=\"button\" class=\"btn btn-primary\">Save changes</button> -->\r\n                                </div>\r\n                              </div>\r\n                            </div>\r\n                          </div>  \r\n        <!-- Aca va el modal -->\r\n      </th>\r\n\r\n    </tr>\r\n   \r\n  </tbody>\r\n</table>\r\n</div>"
 
 /***/ }),
 
@@ -3140,6 +3385,7 @@ var RepasistenciadiarioComponent = /** @class */ (function () {
         var FORMATO_ENTRADA = 'MM-DD-YYYY';
         var FORMATO_SALIDA = 'MM-DD-YYYY';
         var fecha1 = moment__WEBPACK_IMPORTED_MODULE_2__(this.calendario, FORMATO_ENTRADA);
+        console.log(fecha1.format('M-D-YYYY'));
         //  alert(fecha1.format(FORMATO_SALIDA));
         this.servicioLibroDiario.GetLibroDiario({ 'id': this.nombreEmpresa, 'dia': fecha1.format(FORMATO_SALIDA) }).subscribe(function (data) {
             console.log(data);
@@ -3479,7 +3725,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"text-center\" >\r\n<label>Selecciona un trabajador por RUT:</label>\r\n<ng-select \r\n\t\t   [items]=\"arrayNombres\"\r\n           bindLabel=\"rut\"\r\n           autofocus\r\n           bindValue=\"id\"\r\n            (change)=\"onChange($event)\"\r\n           [(ngModel)]=\"selectedPersonId\">\r\n</ng-select>\r\n</div>\r\n\r\n\r\n{{nombreSeleccion}}\r\n{{apellidoSeleccion}}\r\n\r\n <div  class=\"row justify-content-center\">\r\n        <div class=\"form-group mx-sm-3 mb-2\">\t\t   \r\n\t\t    <select [(ngModel)]=\"mes\" name=\"mes\" type=\"text\" class=\"form-control\">\t\r\n\t\t    \t  <option>Mes</option>\r\n\t\t    \t  <option>1</option>\r\n\t\t\t      <option>2</option>\r\n\t\t\t      <option>3</option>\r\n\t\t\t      <option>4</option>\r\n\t\t\t      <option>5</option>\r\n\t\t\t      <option>6</option>\r\n\t\t\t      <option>7</option>\r\n\t\t\t      <option>8</option>\r\n\t\t\t      <option>9</option>\r\n\t\t\t      <option>10</option>\r\n\t\t\t      <option>11</option>\r\n\t\t\t      <option>12</option>\r\n\t\t    </select>  \r\n\t\t</div>\r\n\t\t\r\n\r\n\t\t<div class=\"form-group  mx-sm-3 mb-2\">\t\t    \r\n\t\t       <select [(ngModel)]=\"anio\" name=\"anio\"  type=\"text\" class=\"form-control\" >\t\t    \t\r\n\t\t    \t  <option>Año</option>\r\n            <option>2017</option>\r\n            <option>2018</option>          \r\n            <option>2019</option>          \r\n            <option>2020</option>          \r\n            <option>2021</option>          \r\n            <option>2022</option>  \t     \r\n\t\t    </select>\r\n  \t\t</div>\r\n\r\n        <div class=\"form-group mx-sm-3 mb-2\">\r\n              <button (click)=\"ActualizarFecha()\" mat-raised-button color=\"primary\">Ir </button>\r\n        </div>\r\n\r\n\r\n       <!-- <div class=\"form-group mx-sm-3 mb-2\">\r\n              <button (click)=\"exportAsExcel()\" mat-raised-button color=\"success\">Excel</button>\r\n        </div>-->\r\n               \r\n</div>\r\n       <!--<app-select-sucursales></app-select-sucursales>\r\n           <button (click)=\"ActualizarPorSucursal()\" class=\"btn btn-outline-primary\">Por sucursal</button>-->    \r\n\r\n<div class=\"table-responsive\">\r\n\r\n<table #TABLE class=\"table\">\r\n  <thead>\r\n    <tr>\r\n      <th scope=\"col\">#</th>\r\n      <th scope=\"col\">Nombre</th>\r\n      <th scope=\"col\">Apellido</th>\r\n      <th scope=\"col\">Rut</th>\r\n      <th scope=\"col\">Movimiento</th>\r\n      <th scope=\"col\">Hora</th>\r\n      <th scope=\"col\">Día</th>\r\n      <th scope=\"col\">Locación</th>\r\n      <th scope=\"col\">Cuantía</th>\r\n      <th scope=\"col\">Registro</th>\r\n\r\n\r\n    </tr>\t\r\n  </thead>\r\n  <tbody>\r\n    <tr *ngFor=\"let movimientos of movimiento; let i = index\">\r\n      <th scope=\"row\">{{ i+1 }}</th>\r\n      <td>{{movimientos.nombre}}</td>\r\n      <td>{{movimientos.apellido}}</td>\r\n      <td>{{movimientos.rut}}</td>\r\n      <td>{{movimientos.tipo_movimiento}}</td>\r\n      <td>{{movimientos.hora}}</td>\r\n      <td>{{movimientos.fecha }}</td>\r\n      <td>{{movimientos.locacion}}</td>\r\n      <td *ngIf=\"movimientos.tipo_movimiento == 'entrada'\">{{movimientos.cuantia_entrada}}</td>\r\n      <td *ngIf=\"movimientos.tipo_movimiento == 'salida'\">{{movimientos.cuantia_salida}}</td>\r\n      <th scope=\"col\">\r\n        <!-- Aca va el modal -->\r\n                  <!-- Button trigger modal -->\r\n           <button type=\"button\" class=\"btn btn-primary\" data-toggle=\"modal\" [attr.data-target]=\"'#s' + movimientos.id\">\r\n                        Visualizar Registro\r\n                      </button>\r\n\r\n                              <!-- Modal -->\r\n                              <div class=\"modal fade\" [id]=\"'s'+movimientos.id\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalLabel\" aria-hidden=\"true\">\r\n                            <div class=\"modal-dialog\" role=\"document\">\r\n                              <div class=\"modal-content\">\r\n                                <div class=\"modal-header\">\r\n                                  <h5 class=\"modal-title\" id=\"exampleModalLabel\">Registro</h5>\r\n                                  <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\r\n                                    <span aria-hidden=\"true\">&times;</span>\r\n                                  </button>\r\n                                </div>\r\n                                <div class=\"modal-body\">\r\n                                 <div class=\"text-center\">\r\n                                   <img [src]=\"movimientos.url\" class=\"rounded\" alt=\"...\">\r\n                                 </div>    \r\n                                </div>\r\n                                <div class=\"modal-footer\">\r\n                                  <button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Cerrar</button>\r\n                                <!--  <button type=\"button\" class=\"btn btn-primary\">Save changes</button> -->\r\n                                </div>\r\n                              </div>\r\n                            </div>\r\n                          </div>  \r\n        <!-- Aca va el modal -->\r\n      </th>\r\n    </tr>\r\n   \r\n  </tbody>\r\n</table>\r\n</div>"
+module.exports = "<div class=\"text-center\" >\r\n<label>Selecciona un trabajador por RUT:</label>\r\n<ng-select \r\n\t\t   [items]=\"arrayNombres\"\r\n           bindLabel=\"rut\"\r\n           autofocus\r\n           bindValue=\"id\"\r\n            (change)=\"onChange($event)\"\r\n           [(ngModel)]=\"selectedPersonId\">\r\n</ng-select>\r\n</div>\r\n\r\n\r\n{{nombreSeleccion}}\r\n{{apellidoSeleccion}}\r\n\r\n <div  class=\"row justify-content-center\">\r\n        <div class=\"form-group mx-sm-3 mb-2\">\t\t   \r\n\t\t    <select [(ngModel)]=\"mes\" name=\"mes\" type=\"text\" class=\"form-control\">\t\r\n\t\t    \t  <option>Mes</option>\r\n\t\t    \t  <option>1</option>\r\n\t\t\t      <option>2</option>\r\n\t\t\t      <option>3</option>\r\n\t\t\t      <option>4</option>\r\n\t\t\t      <option>5</option>\r\n\t\t\t      <option>6</option>\r\n\t\t\t      <option>7</option>\r\n\t\t\t      <option>8</option>\r\n\t\t\t      <option>9</option>\r\n\t\t\t      <option>10</option>\r\n\t\t\t      <option>11</option>\r\n\t\t\t      <option>12</option>\r\n\t\t    </select>  \r\n\t\t</div>\r\n\t\t\r\n\r\n\t\t<div class=\"form-group  mx-sm-3 mb-2\">\t\t    \r\n\t\t       <select [(ngModel)]=\"anio\" name=\"anio\"  type=\"text\" class=\"form-control\" >\t\t    \t\r\n\t\t    \t  <option>Año</option>\r\n            <option>2017</option>\r\n            <option>2018</option>          \r\n            <option>2019</option>          \r\n            <option>2020</option>          \r\n            <option>2021</option>          \r\n            <option>2022</option>  \t     \r\n\t\t    </select>\r\n  \t\t</div>\r\n\r\n        <div class=\"form-group mx-sm-3 mb-2\">\r\n              <button (click)=\"ActualizarFecha()\" mat-raised-button color=\"primary\">Ir </button>\r\n        </div>\r\n\r\n\r\n       <!-- <div class=\"form-group mx-sm-3 mb-2\">\r\n              <button (click)=\"exportAsExcel()\" mat-raised-button color=\"success\">Excel</button>\r\n        </div>-->\r\n               \r\n</div>\r\n       <!--<app-select-sucursales></app-select-sucursales>\r\n           <button (click)=\"ActualizarPorSucursal()\" class=\"btn btn-outline-primary\">Por sucursal</button>-->    \r\n\r\n<div class=\"table-responsive\">\r\n\r\n<table #TABLE class=\"table\">\r\n  <thead>\r\n    <tr>\r\n      <th scope=\"col\">#</th>\r\n      <th scope=\"col\">Nombre</th>\r\n      <th scope=\"col\">Apellido</th>\r\n      <th scope=\"col\">Rut</th>\r\n      <th scope=\"col\">Movimiento</th>\r\n      <th scope=\"col\">Hora</th>\r\n      <th scope=\"col\">Día</th>\r\n      <th scope=\"col\">Locación</th>\r\n      <th scope=\"col\">Cuantía</th>\r\n      <th scope=\"col\">Registro</th>\r\n\r\n\r\n    </tr>\t\r\n  </thead>\r\n  <tbody>\r\n    <tr *ngFor=\"let movimientos of movimiento; let i = index\">\r\n      <th scope=\"row\">{{ i+1 }}</th>\r\n      <td>{{movimientos.nombre}}</td>\r\n      <td>{{movimientos.apellido}}</td>\r\n      <td>{{movimientos.rut}}</td>\r\n      <td>{{movimientos.tipo_movimiento}}</td>\r\n      <td>{{movimientos.hora}}</td>\r\n      <td>{{movimientos.fecha }}</td>\r\n      <td>{{movimientos.locacion}}</td>\r\n      <td *ngIf=\"movimientos.tipo_movimiento == 'entrada'\">{{movimientos.cuantia_entrada}}</td>\r\n      <td *ngIf=\"movimientos.tipo_movimiento == 'salida'\">{{movimientos.cuantia_salida}}</td>\r\n      <th scope=\"col\">\r\n        <!-- Aca va el modal -->\r\n                  <!-- Button trigger modal -->\r\n           <button type=\"button\" class=\"btn btn-primary\" data-toggle=\"modal\" [attr.data-target]=\"'#s' + movimientos.id\">\r\n                        Visualizar Registro\r\n                      </button>\r\n\r\n                              <!-- Modal -->\r\n                              <div class=\"modal fade\" [id]=\"'s'+movimientos.id\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalLabel\" aria-hidden=\"true\">\r\n                            <div class=\"modal-dialog\" role=\"document\">\r\n                              <div class=\"modal-content\">\r\n                                <div class=\"modal-header\">\r\n                                  <h5 class=\"modal-title\" id=\"exampleModalLabel\">Registro</h5>\r\n                                  <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\r\n                                    <span aria-hidden=\"true\">&times;</span>\r\n                                  </button>\r\n                                </div>\r\n                                <div class=\"modal-body\">\r\n                                 <div class=\"text-center\">\r\n                                      <app-visualizador-contrastado-registros [urlMovimiento]=\"movimientos.url\" [rut]=\"movimientos.rut\"></app-visualizador-contrastado-registros>\r\n                                 </div>    \r\n                                </div>\r\n                                <div class=\"modal-footer\">\r\n                                  <button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Cerrar</button>\r\n                                <!--  <button type=\"button\" class=\"btn btn-primary\">Save changes</button> -->\r\n                                </div>\r\n                              </div>\r\n                            </div>\r\n                          </div>  \r\n        <!-- Aca va el modal -->\r\n      </th>\r\n    </tr>\r\n   \r\n  </tbody>\r\n</table>\r\n</div>"
 
 /***/ }),
 
@@ -3587,7 +3833,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = " <div class=\"container\">\t\r\n\r\n\t\t    <hr>\r\n\r\n\t\t    <div class=\"row justify-content-md-center mb-2\">\r\n\t\t\t    \r\n\t\t\t    <div class=\"col-sm-12\">\r\n\t\t\t      <div class=\"text-center\" >\r\n\t\t\t\t\t <app-select-sucursales></app-select-sucursales>\r\n\t\t\t\t\t</div>\r\n\t\t\t    </div>\r\n\t\t\t   \r\n\t\t    </div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\t\t \t<div class=\"row justify-content-sm-center m-2\">\r\n\t\t\t    <div class=\"col col-sm-6\">\r\n\t\t\t    \t<p class=\"text-muted\">Mes</p>\r\n\t\t\t    \t        <div class=\"form-group mx-sm-3 mb-2\">\t\t   \r\n\t\t\t\t\t\t\t    <select [(ngModel)]=\"mes\" name=\"mes\" type=\"text\" class=\"form-control\">\t\r\n\t\t\t\t\t\t\t    \t  <option>Mes</option>\r\n\t\t\t\t\t\t\t    \t  <option>1</option>\r\n\t\t\t\t\t\t\t\t      <option>2</option>\r\n\t\t\t\t\t\t\t\t      <option>3</option>\r\n\t\t\t\t\t\t\t\t      <option>4</option>\r\n\t\t\t\t\t\t\t\t      <option>5</option>\r\n\t\t\t\t\t\t\t\t      <option>6</option>\r\n\t\t\t\t\t\t\t\t      <option>7</option>\r\n\t\t\t\t\t\t\t\t      <option>8</option>\r\n\t\t\t\t\t\t\t\t      <option>9</option>\r\n\t\t\t\t\t\t\t\t      <option>10</option>\r\n\t\t\t\t\t\t\t\t      <option>11</option>\r\n\t\t\t\t\t\t\t\t      <option>12</option>\r\n\t\t\t\t\t\t\t    </select>  \r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t    </div>\r\n\t\t\t  \r\n\t\t\t    <div class=\"col col-sm-6\">\r\n\t\t\t    \t\t<p class=\"text-muted\">Anio</p>\r\n\t\t\t    \t\t\t\t<div class=\"form-group  mx-sm-3 mb-2\">\t\t    \r\n\t\t\t\t\t\t\t\t       <select [(ngModel)]=\"anio\" name=\"anio\"  type=\"text\" class=\"form-control\" >\t\t    \t\r\n\t\t\t\t\t\t\t\t    \t  <option>Año</option>\r\n\t\t\t\t\t\t\t\t    \t  <option>2017</option>\r\n\t\t\t\t\t\t            <option>2018</option>          \r\n\t\t\t\t\t\t            <option>2019</option>          \r\n\t\t\t\t\t\t            <option>2020</option>          \r\n\t\t\t\t\t\t            <option>2021</option>          \r\n\t\t\t\t\t\t            <option>2022</option>          \r\n\t\t\t\t\t\t\t\t    </select>\r\n\t\t\t\t\t\t  \t\t</div>\r\n\t\t\t    </div>\r\n\t\t    </div>\r\n\r\n\t\t    <div class=\"row justify-content-sm-center m-2\">\r\n\t\t\t  \t\t\t\t<div class=\"col col-sm-6\">\r\n\t\t\t\t\t\t\t  \t\t\t\t  \t<div class=\"form-group mx-sm-3 mb-2\">\r\n\t\t\t\t\t\t\t\t\t\t              <button \r\n\t\t\t\t\t\t\t\t\t\t              (click)=\"ActualizarPorSucursal()\"\r\n\t\t\t\t\t\t\t\t\t\t               mat-raised-button \r\n\t\t\t\t\t\t\t\t\t\t               color=\"primary\">Por mes </button>\r\n\t\t\t\t\t\t\t\t\t\t       </div>    \r\n\t\t\t  \t\t\t\t</div>\t\r\n\r\n\r\n\t\t\t  \t\t\t\t<div class=\"col col-sm-6\">\r\n\t\t\t\t\t\t\t  \t\t\t\t  \t<div class=\"form-group mx-sm-3 mb-2\">\r\n\t\t\t\t\t\t\t\t\t\t              <button \r\n\t\t\t\t\t\t\t\t\t\t              (click)=\"Anual()\" \r\n\t\t\t\t\t\t\t\t\t\t              mat-raised-button \r\n\t\t\t\t\t\t\t\t\t\t              color=\"warning\">Anual </button>\r\n\t\t\t\t\t\t\t\t\t\t       </div>    \r\n\t\t\t  \t\t\t\t</div>\t\t\t  \t\t\t  \r\n\t\t    </div>\r\n\r\n<hr>\r\n<div *ngIf=\"!anual && begin\" class=\"container\">\r\n  <div style=\"display: block\">\r\n    <canvas #primero baseChart\r\n            [datasets]=\"barChartData\"\r\n            [labels]=\"barChartLabels\"\r\n            [options]=\"barChartOptions\"\r\n            [legend]=\"barChartLegend\"\r\n            [chartType]=\"barChartType\"\r\n            (chartHover)=\"chartHovered($event)\"\r\n            (chartClick)=\"chartClicked($event)\"></canvas>\r\n  </div>\r\n</div>\r\n\r\n\r\n<div *ngIf=\"anual && begin\" class=\"container\">\r\n  <div style=\"display: block\">\r\n    <canvas baseChart\r\n            [datasets]=\"barChartData\"\r\n            [labels]=\"barChartLabelsM\"\r\n            [options]=\"barChartOptions\"\r\n            [legend]=\"barChartLegend\"\r\n            [chartType]=\"barChartType\"\r\n            (chartHover)=\"chartHovered($event)\"\r\n            (chartClick)=\"chartClicked($event)\"></canvas>\r\n  </div>\r\n</div>\r\n\r\n</div>"
+module.exports = " <div class=\"container\">\t\r\n\r\n\t\t    <hr>\r\n\r\n\t\t    <div class=\"row justify-content-md-center mb-2\">\r\n\t\t\t    \r\n\t\t\t    <div class=\"col-sm-12\">\r\n\t\t\t      <div class=\"text-center\" >\r\n\t\t\t      \t\r\n\t\t\t\t\t <app-select-sucursales LabelSelect=\"Selecciona Sucursal\"></app-select-sucursales>\r\n\t\t\t\t\t</div>\r\n\t\t\t    </div>\r\n\t\t\t   \r\n\t\t    </div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\t\t \t<div class=\"row justify-content-sm-center m-2\">\r\n\t\t\t    <div class=\"col col-sm-6\">\r\n\t\t\t    \t<p class=\"text-muted\">Mes</p>\r\n\t\t\t    \t        <div class=\"form-group mx-sm-3 mb-2\">\t\t   \r\n\t\t\t\t\t\t\t    <select [(ngModel)]=\"mes\" name=\"mes\" type=\"text\" class=\"form-control\">\t\r\n\t\t\t\t\t\t\t    \t  <option>Mes</option>\r\n\t\t\t\t\t\t\t    \t  <option>1</option>\r\n\t\t\t\t\t\t\t\t      <option>2</option>\r\n\t\t\t\t\t\t\t\t      <option>3</option>\r\n\t\t\t\t\t\t\t\t      <option>4</option>\r\n\t\t\t\t\t\t\t\t      <option>5</option>\r\n\t\t\t\t\t\t\t\t      <option>6</option>\r\n\t\t\t\t\t\t\t\t      <option>7</option>\r\n\t\t\t\t\t\t\t\t      <option>8</option>\r\n\t\t\t\t\t\t\t\t      <option>9</option>\r\n\t\t\t\t\t\t\t\t      <option>10</option>\r\n\t\t\t\t\t\t\t\t      <option>11</option>\r\n\t\t\t\t\t\t\t\t      <option>12</option>\r\n\t\t\t\t\t\t\t    </select>  \r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t    </div>\r\n\t\t\t  \r\n\t\t\t    <div class=\"col col-sm-6\">\r\n\t\t\t    \t\t<p class=\"text-muted\">Año</p>\r\n\t\t\t    \t\t\t\t<div class=\"form-group  mx-sm-3 mb-2\">\t\t    \r\n\t\t\t\t\t\t\t\t       <select [(ngModel)]=\"anio\" name=\"anio\"  type=\"text\" class=\"form-control\" >\t\t    \t\r\n\t\t\t\t\t\t\t\t    \t  <option>Año</option>\r\n\t\t\t\t\t\t\t\t    \t  <option>2017</option>\r\n\t\t\t\t\t\t            <option>2018</option>          \r\n\t\t\t\t\t\t            <option>2019</option>          \r\n\t\t\t\t\t\t            <option>2020</option>          \r\n\t\t\t\t\t\t            <option>2021</option>          \r\n\t\t\t\t\t\t            <option>2022</option>          \r\n\t\t\t\t\t\t\t\t    </select>\r\n\t\t\t\t\t\t  \t\t</div>\r\n\t\t\t    </div>\r\n\t\t    </div>\r\n\r\n\t\t    <div class=\"row justify-content-sm-center m-2\">\r\n\t\t\t  \t\t\t\t<div class=\"col col-sm-6\">\r\n\t\t\t\t\t\t\t  \t\t\t\t  \t<div class=\"form-group mx-sm-3 mb-2\">\r\n\t\t\t\t\t\t\t\t\t\t              <button \r\n\t\t\t\t\t\t\t\t\t\t              (click)=\"ActualizarPorSucursal()\"\r\n\t\t\t\t\t\t\t\t\t\t               mat-raised-button \r\n\t\t\t\t\t\t\t\t\t\t               color=\"primary\">Por mes </button>\r\n\t\t\t\t\t\t\t\t\t\t       </div>    \r\n\t\t\t  \t\t\t\t</div>\t\r\n\r\n\r\n\t\t\t  \t\t\t\t<div class=\"col col-sm-6\">\r\n\t\t\t\t\t\t\t  \t\t\t\t  \t<div class=\"form-group mx-sm-3 mb-2\">\r\n\t\t\t\t\t\t\t\t\t\t              <button \r\n\t\t\t\t\t\t\t\t\t\t              (click)=\"Anual()\" \r\n\t\t\t\t\t\t\t\t\t\t              mat-raised-button \r\n\t\t\t\t\t\t\t\t\t\t              color=\"warning\">Anual </button>\r\n\t\t\t\t\t\t\t\t\t\t       </div>    \r\n\t\t\t  \t\t\t\t</div>\t\t\t  \t\t\t  \r\n\t\t    </div>\r\n\r\n<hr>\r\n<div *ngIf=\"!anual && begin\" class=\"container\">\r\n  <div style=\"display: block\">\r\n    <canvas #primero baseChart\r\n            [datasets]=\"barChartData\"\r\n            [labels]=\"barChartLabels\"\r\n            [options]=\"barChartOptions\"\r\n            [legend]=\"barChartLegend\"\r\n            [chartType]=\"barChartType\"\r\n            (chartHover)=\"chartHovered($event)\"\r\n            (chartClick)=\"chartClicked($event)\"></canvas>\r\n  </div>\r\n</div>\r\n\r\n\r\n<div *ngIf=\"anual && begin\" class=\"container\">\r\n  <div style=\"display: block\">\r\n    <canvas baseChart\r\n            [datasets]=\"barChartData\"\r\n            [labels]=\"barChartLabelsM\"\r\n            [options]=\"barChartOptions\"\r\n            [legend]=\"barChartLegend\"\r\n            [chartType]=\"barChartType\"\r\n            (chartHover)=\"chartHovered($event)\"\r\n            (chartClick)=\"chartClicked($event)\"></canvas>\r\n  </div>\r\n</div>\r\n\r\n</div>\r\n\r\n                <ngx-loading style=\"height:2000px !important;\" [show]=\"loading\" [config]=\"{ backdropBorderRadius: '3px', fullScreenBackdrop:'true' }\" [template]=\"customLoadingTemplate\"></ngx-loading> \r\n              <ng-template  style=\"height:2000px !important;\"  #customLoadingTemplate></ng-template>"
 
 /***/ }),
 
@@ -3634,8 +3880,8 @@ var RepgraficassucursalesComponent = /** @class */ (function () {
         this.barChartLegend = true;
         this.barChartLabelsM = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'];
         this.barChartData = [
-            { data: [65], label: 'Series A' },
-            { data: [28], label: 'Series B' }
+            { data: [65], label: '' },
+            { data: [28], label: '' }
         ];
         this.nombreEmpresa = localStorage.getItem("nombre_empresa");
         console.log(this.barChartLabels);
@@ -3664,6 +3910,9 @@ var RepgraficassucursalesComponent = /** @class */ (function () {
                 { data: [data['horasExactas'], 0], label: 'Horas Normales' },
                 { data: [0, data['horasExtras']], label: 'Turnos' }
             ];
+        }, function (error) {
+        }, function () {
+            _this.loading = false;
         });
     };
     RepgraficassucursalesComponent.prototype.Anual = function () {
@@ -3694,9 +3943,11 @@ var RepgraficassucursalesComponent = /** @class */ (function () {
                 { data: _this.arrayResultado, label: 'Horas Normales' },
                 { data: _this.arrayResultado1, label: 'Turnos' }
             ];
+            _this.loading = false;
         });
     };
     RepgraficassucursalesComponent.prototype.ActualizarPorSucursal = function () {
+        this.loading = true;
         this.anual = false;
         this.begin = true;
         this.getFromState();
@@ -4023,7 +4274,7 @@ var RepofflinemensualComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<div class=\"card text-center\">\r\n\r\n  <div class=\"card-header\">\r\n\r\n    <ul class=\"nav nav-tabs card-header-tabs\">\r\n\t\t      <li class=\"nav-item\">\r\n\t\t        <a class=\"nav-link\" routerLinkActive=\"active\" [routerLink]=\"['./ReporteDiarioAsistencia/']\">Reporte asistencia diario</a>\r\n\t\t      </li>\r\n\t\t     \r\n\t\t      <li class=\"nav-item\">\r\n\t\t        <a class=\"nav-link\" routerLinkActive=\"active\" [routerLink]=\"['./ReporteMensualAsistencia/']\">Reporte mensual</a>\r\n\t\t      </li>\r\n\r\n\t\t      <li class=\"nav-item\">\r\n\t\t        <a class=\"nav-link\" routerLinkActive=\"active\" [routerLink]=\"['./Repasistenciareprobado/']\">Reporte Reprobados</a>\r\n\t\t      </li>\r\n\t\t     \r\n\r\n\t\t      <li class=\"nav-item\">\r\n\t\t        <a class=\"nav-link\" routerLinkActive=\"active\" [routerLink]=\"['./Repasistenciaxtrabajador/']\">Reporte Por Trabajador</a>\r\n\t\t      </li>\r\n\r\n\r\n\t\t      <li class=\"nav-item\">\r\n\t\t        <a class=\"nav-link\" routerLinkActive=\"active\" [routerLink]=\"['./Repviaticos/']\">Reporte Viáticos</a>\r\n\t\t      </li>\r\n\r\n\t\t      <li class=\"nav-item\">\r\n\t\t        <a class=\"nav-link\" routerLinkActive=\"active\" [routerLink]=\"['./Repofflinemensual/']\">Reporte Offline</a>\r\n\t\t      </li>\r\n\r\n\t\t      <li class=\"nav-item\">\r\n\t\t        <a class=\"nav-link\" routerLinkActive=\"active\" [routerLink]=\"['./Represumenmensual/']\">Libro Resumido</a>\r\n\t\t      </li>\r\n\r\n\t\t     <li class=\"nav-item\">\r\n\t\t        <a class=\"nav-link\" routerLinkActive=\"active\" [routerLink]=\"['./Repturnosincompletos/']\">Marcajes Incompletos</a>\r\n\t\t      </li>\r\n\r\n\t\t     <li class=\"nav-item\">\r\n\t\t        <a class=\"nav-link\" routerLinkActive=\"active\" [routerLink]=\"['./Repgraficassucursales/']\">Gráficas Sucursales</a>\r\n\t\t      </li>\r\n\r\n\r\n\t\t\t  <li class=\"nav-item\">\r\n\t\t        <a class=\"nav-link\" routerLinkActive=\"active\" [routerLink]=\"['./Replibroasistencia/']\">Libro Extendido </a>\r\n\t\t      </li>\r\n\r\n\r\n\t\t      <li class=\"nav-item\">\r\n\t\t     <!--   <a class=\"nav-link disabled\" href=\"#\">Disabled</a>-->\r\n\t\t      </li>\r\n    </ul>\r\n  </div>\r\n      <nav aria-label=\"breadcrumb\" class=\"shadow p-0 mb-5 bg-white rounded\" >\r\n          <ol class=\"breadcrumb \" style=\"background-color: white\">\r\n            <li class=\"breadcrumb-item\"><a [routerLink]=\"['../']\">Perfil</a></li>\r\n            <li class=\"breadcrumb-item active\" aria-current=\"page\">Reportes</li>\r\n          </ol>\r\n    </nav>\r\n  <div class=\"card-body\">\r\n\r\n\t\t<router-outlet></router-outlet>\r\n  </div>\r\n\r\n</div>"
+module.exports = "\r\n<div class=\"card text-center\">\r\n\r\n  <div class=\"card-header\">\r\n\r\n    <ul class=\"nav nav-tabs card-header-tabs\">\r\n\t\t      <li class=\"nav-item\">\r\n\t\t        <a class=\"nav-link\" routerLinkActive=\"active\" [routerLink]=\"['./ReporteDiarioAsistencia/']\">Reporte asistencia diario</a>\r\n\t\t      </li>\r\n\t\t     \r\n\t\t      <li class=\"nav-item\">\r\n\t\t        <a class=\"nav-link\" routerLinkActive=\"active\" [routerLink]=\"['./ReporteMensualAsistencia/']\">Reporte mensual</a>\r\n\t\t      </li>\r\n\r\n\t\t      <li class=\"nav-item\">\r\n\t\t        <a class=\"nav-link\" routerLinkActive=\"active\" [routerLink]=\"['./Repasistenciareprobado/']\">Reporte Reprobados</a>\r\n\t\t      </li>\r\n\t\t     \r\n\r\n\t\t      <li class=\"nav-item\">\r\n\t\t        <a class=\"nav-link\" routerLinkActive=\"active\" [routerLink]=\"['./Repasistenciaxtrabajador/']\">Reporte Por Trabajador</a>\r\n\t\t      </li>\r\n\r\n\r\n\t\t      <li class=\"nav-item\">\r\n\t\t        <a class=\"nav-link\" routerLinkActive=\"active\" [routerLink]=\"['./Repviaticos/']\">Reporte Viáticos</a>\r\n\t\t      </li>\r\n\r\n\t\t      <li class=\"nav-item\">\r\n\t\t        <a class=\"nav-link\" routerLinkActive=\"active\" [routerLink]=\"['./Repofflinemensual/']\">Reporte Offline</a>\r\n\t\t      </li>\r\n\r\n\t\t      <li class=\"nav-item\">\r\n\t\t        <a class=\"nav-link\" routerLinkActive=\"active\" [routerLink]=\"['./Represumenmensual/']\">Libro Resumido</a>\r\n\t\t      </li>\r\n\r\n\t\t     <li class=\"nav-item\">\r\n\t\t        <a class=\"nav-link\" routerLinkActive=\"active\" [routerLink]=\"['./Repturnosincompletos/']\">Marcajes Incompletos</a>\r\n\t\t      </li>\r\n\r\n\t\t     <li class=\"nav-item\">\r\n\t\t        <a class=\"nav-link\" routerLinkActive=\"active\" [routerLink]=\"['./Repgraficassucursales/']\">Gráficas Sucursales</a>\r\n\t\t      </li>\r\n\r\n\r\n\t\t\t  <li class=\"nav-item\">\r\n\t\t        <a class=\"nav-link\" routerLinkActive=\"active\" [routerLink]=\"['./Replibroasistencia/']\">Libro Extendido </a>\r\n\t\t      </li>\r\n\r\n\t\t\t  <li class=\"nav-item\">\r\n\t\t        <a class=\"nav-link\" routerLinkActive=\"active\" [routerLink]=\"['./RepBonoficaciones/']\">Bonificaciones </a>\r\n\t\t      </li>\t\t      \r\n\r\n\r\n\t\t      <li class=\"nav-item\">\r\n\t\t     <!--   <a class=\"nav-link disabled\" href=\"#\">Disabled</a>-->\r\n\t\t      </li>\r\n    </ul>\r\n  </div>\r\n      <nav aria-label=\"breadcrumb\" class=\"shadow p-0 mb-5 bg-white rounded\" >\r\n          <ol class=\"breadcrumb \" style=\"background-color: white\">\r\n            <li class=\"breadcrumb-item\"><a [routerLink]=\"['../']\">Perfil</a></li>\r\n            <li class=\"breadcrumb-item active\" aria-current=\"page\">Reportes</li>\r\n          </ol>\r\n    </nav>\r\n  <div class=\"card-body\">\r\n\r\n\t\t<router-outlet></router-outlet>\r\n  </div>\r\n\r\n</div>"
 
 /***/ }),
 
@@ -4596,19 +4847,47 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SueldosComponent", function() { return SueldosComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _services_crud_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../services/crud.service */ "./src/app/services/crud.service.ts");
+
 
 
 var SueldosComponent = /** @class */ (function () {
-    function SueldosComponent() {
+    function SueldosComponent(CrudService_) {
+        this.CrudService_ = CrudService_;
     }
     SueldosComponent.prototype.ngOnInit = function () {
+        this.CrudService_.Add({ 'id': 4 }, 'GetResExtra_porSucursal')
+            .subscribe(function (data) { return console.log("data", data); }, function (err) { return console.log(err); }, function () { return console.log("Fin.."); });
+        /*
+    
+        this.CrudService_.Add({
+            'empresa_id':5,
+            'sucursal_id':4,
+            'trabajador_id':235,
+            'supervisor_id':235,
+            'id_movimiento_unico':4,
+            'monto':5000,
+            'dia': 5,
+            'mes': 8,
+            'anio': 2019,
+            'tipo': 'Turno Extra'
+        }, 'ingresarResExtra')
+        .subscribe(data => {
+            console.log(data)
+        })
+    
+    
+        this.CrudService_.Add({'id': 2}, 'GetResExtra_unico')
+        .subscribe(data => {//console.log(data)
+            }
+            )*/
     };
     SueldosComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-sueldos',
             template: __webpack_require__(/*! ./sueldos.component.html */ "./src/app/components/dashboard/sueldos/sueldos.component.html")
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_services_crud_service__WEBPACK_IMPORTED_MODULE_2__["CrudService"]])
     ], SueldosComponent);
     return SueldosComponent;
 }());
@@ -4635,7 +4914,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "      <nav aria-label=\"breadcrumb\" class=\"shadow p-0 mb-5 bg-white rounded\" >\n          <ol class=\"breadcrumb \" style=\"background-color: white\">\n            <li class=\"breadcrumb-item\"><a [routerLink]=\"['../']\">Perfil</a></li>\n            <li class=\"breadcrumb-item active\" aria-current=\"page\">Visualización Documentación</li>\n\n          </ol>\n    </nav>\n<body style=\"margin:50px;\">\n\n    <app-titulo titulo=\"Visualización de documentos\" subtitulo=\"Visualiza y exporta los documentos generador en tu empresa.\" ></app-titulo>\n\n<div class=\"table-responsive-sm\">\n<table class=\"table table-sm\">\n  <thead>\n    <tr>\n      <th scope=\"col\">Nombre</th>\n      <th scope=\"col\">Fecha Emisión</th>\n      <th scope=\"col\">Documento</th>\n      <th scope=\"col\">Nombre</th>\n      <th scope=\"col\">Apellido</th>\n      <th scope=\"col\">Rut</th>\n\n    </tr>\n  </thead>\n  <tbody>\n\t    <tr *ngFor=\"let item of resultData\" >\n\t      <th scope=\"row\">{{item.titulo}}</th>\n\t      <td>{{item.fecha_emision}}</td>\n\t      <td><button class=\"btn btn-outline-primary\" (click)=\"visualizarPDF(item)\" >Descargar</button></td>\n        <th>{{item.nombre}}</th>\n        <th>{{item.apellido}}</th>\n        <th>{{item.rut}}</th>\n\t    </tr>\n  </tbody>\n</table>\n</div>\n\n </body>"
+module.exports = "      <nav aria-label=\"breadcrumb\" class=\"shadow p-0 mb-5 bg-white rounded\" >\n          <ol class=\"breadcrumb \" style=\"background-color: white\">\n            <li class=\"breadcrumb-item\"><a [routerLink]=\"['../']\">Perfil</a></li>\n            <li class=\"breadcrumb-item active\" aria-current=\"page\">Visualización Documentación</li>\n\n          </ol>\n    </nav>\n<body style=\"margin:50px;\">\n\n    <app-titulo titulo=\"Visualización de documentos\" subtitulo=\"Visualiza y exporta los documentos generador en tu empresa.\" ></app-titulo>\n\n<div class=\"table-responsive-sm\">\n<table class=\"table table-sm\">\n  <thead>\n    <tr>\n      <th scope=\"col\">Nombre</th>\n      <th scope=\"col\">Fecha Emisión</th>\n      <th scope=\"col\">Documento</th>\n      <th scope=\"col\">Nombre</th>\n      <th scope=\"col\">Apellido</th>\n      <th scope=\"col\">Rut</th>\n\n    </tr>\n  </thead>\n  <tbody>\n\t    <tr *ngFor=\"let item of resultData\" >\n\t      <th scope=\"row\">{{item.titulo}}</th>\n\t      <td>{{item.fecha_emision}}</td>\n\t      <td><button class=\"btn btn-outline-primary\" (click)=\"visualizarPDF(item)\" >Visualizar</button></td>\n        <th>{{item.nombre}}</th>\n        <th>{{item.apellido}}</th>\n        <th>{{item.rut}}</th>\n\t    </tr>\n  </tbody>\n</table>\n</div>\n\n </body>\n\n                <ngx-loading style=\"height:2000px !important;\" [show]=\"loading\" [config]=\"{ backdropBorderRadius: '3px', fullScreenBackdrop:'true' }\" [template]=\"customLoadingTemplate\"></ngx-loading> \n              <ng-template  style=\"height:2000px !important;\"  #customLoadingTemplate></ng-template>"
 
 /***/ }),
 
@@ -4654,13 +4933,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _services_crud_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../services/crud.service */ "./src/app/services/crud.service.ts");
 /* harmony import */ var _services_generador_documentos_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../services/generador-documentos.service */ "./src/app/services/generador-documentos.service.ts");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
+
 
 
 
 
 
 var VisualizacionDocumentacionEmpresaComponent = /** @class */ (function () {
-    function VisualizacionDocumentacionEmpresaComponent(param, router, GeneradorDocumentosService_, CrudService_) {
+    function VisualizacionDocumentacionEmpresaComponent(sanitizer, param, router, GeneradorDocumentosService_, CrudService_) {
+        this.sanitizer = sanitizer;
         this.param = param;
         this.router = router;
         this.GeneradorDocumentosService_ = GeneradorDocumentosService_;
@@ -4668,6 +4950,7 @@ var VisualizacionDocumentacionEmpresaComponent = /** @class */ (function () {
     }
     VisualizacionDocumentacionEmpresaComponent.prototype.ngOnInit = function () {
         var _this = this;
+        this.rutEmpresa = localStorage.getItem('rut_empresa');
         this.id = this.param.parent.snapshot.paramMap.get('id');
         //alert(this.id)   
         this.CrudService_.get({ 'empresa_id': localStorage.getItem('id'), 'rut_empresa': localStorage.getItem('rut_empresa') }, 'GetDocumentosGeneradorPorEmpresa')
@@ -4679,14 +4962,40 @@ var VisualizacionDocumentacionEmpresaComponent = /** @class */ (function () {
             console.log(data);
         });
     };
+    VisualizacionDocumentacionEmpresaComponent.prototype.avoidScroll = function () {
+        window.onscroll = function () { window.scrollTo(0, 0); };
+    };
+    VisualizacionDocumentacionEmpresaComponent.prototype.enableScrolling = function () {
+        window.onscroll = function () { };
+    };
+    VisualizacionDocumentacionEmpresaComponent.prototype.refrescarIframe = function (item) {
+        var _this = this;
+        this.CrudService_.Add({ 'cuerpoDocumento': item.CuerpoDocumento, 'rutEmpresa': localStorage.getItem('rut_empresa') }, 'armarDocumento')
+            .subscribe(function (data) { return console.log(data); }, function (err) { return console.log(err); }, function () {
+            setTimeout(function () {
+                // this.URL_IFRAME = this.sanitizer.bypassSecurityTrustResourceUrl('https://sister.cl/laravel/index.php/presta/'+this.rutEmpresa);
+                //location.href = 'https://sister.cl/laravel/index.php/presta/'+this.rutEmpresa;
+                window.open('https://sister.cl/laravel/index.php/presta/' + _this.rutEmpresa, '_blank' // <- This is what makes it open in a new window.
+                );
+                _this.loading = false;
+                _this.enableScrolling();
+            }, 3000);
+        });
+    };
     VisualizacionDocumentacionEmpresaComponent.prototype.visualizarPDF = function (item) {
         console.log("ITEM", item);
-        if (item.tipocarta == 1) {
-            this.GeneradorDocumentosService_.generarPDFDocumentoFromServerTipoCarta(item, this.imagen64, item.ciudad, item.nombre, item.apellido, item.rut);
-        }
-        else {
-            this.GeneradorDocumentosService_.generarPDFDocumentoFromServer(item, this.imagen64, item.ciudad);
-        }
+        this.loading = true;
+        this.avoidScroll();
+        /*if(item.tipocarta == 1){
+          this.GeneradorDocumentosService_.generarPDFDocumentoFromServerTipoCarta(item, this.imagen64, item.ciudad, item.nombre, item.apellido, item.rut);
+    
+    
+        }else{
+      
+          this.GeneradorDocumentosService_.generarPDFDocumentoFromServer(item, this.imagen64, item.ciudad);
+    
+        }*/
+        this.refrescarIframe(item);
     };
     VisualizacionDocumentacionEmpresaComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -4694,7 +5003,8 @@ var VisualizacionDocumentacionEmpresaComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./visualizacion-documentacion-empresa.component.html */ "./src/app/components/dashboard/visualizacion-documentacion-empresa/visualizacion-documentacion-empresa.component.html"),
             styles: [__webpack_require__(/*! ./visualizacion-documentacion-empresa.component.css */ "./src/app/components/dashboard/visualizacion-documentacion-empresa/visualizacion-documentacion-empresa.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"],
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_5__["DomSanitizer"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"],
             _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"],
             _services_generador_documentos_service__WEBPACK_IMPORTED_MODULE_3__["GeneradorDocumentosService"],
             _services_crud_service__WEBPACK_IMPORTED_MODULE_2__["CrudService"]])
@@ -4713,7 +5023,7 @@ var VisualizacionDocumentacionEmpresaComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-navbar></app-navbar>\r\n<div class=\"row justify-content-center container-fluid animacion fadeIn\" style=\"margin-top:30px;padding:50px\">\r\n\r\n    <div class=\"col-sm-3\"> <!-- Lateral con algunas notificaciones -->\r\n      <h6 class=\"card-title\"> <i class=\"fas fa-bell\"></i> NOTIFICACIONES</h6>\r\n      \r\n      <hr>\r\n\r\n\r\n\r\n  <h4 class=\"card-subtitle mb-2 text-muted\" style=\"font-family: 'Dosis', sans-serif !important; margin-bottom: 20px !important\">TRABAJANDO AHORA</h4>\r\n\r\n  <app-select-sucursales (onSucursalSelected)=\"SucursalSelected($event)\" ></app-select-sucursales>\r\n       <div class=\"row justify-content-center\"><mat-spinner *ngIf=\"boleanoLoader\"></mat-spinner></div>\r\n        <ul class=\"list-group\" *ngIf=\"actualmenteTrabajando?.info !== undefined\">\r\n               <li *ngIf=\"actualmenteTrabajando?.info.length === 0 && sucursal\" class=\"list-group-item p-1\"><p class=\"text-muted\">No hay funcionarios trabajando actualmente en ésta sucursal</p><p *ngIf=\"cantidad_trabajadores !== false\"> Deberían haber {{ cantidad_trabajadores }} trabajadores. </p></li>\r\n\r\n              <li *ngIf=\"cantidad_trabajadores !== false && actualmenteTrabajando?.info.length > 0 && sucursal\" class=\"list-group-item p-1\"><p class=\"text-muted\">Hay {{actualmenteTrabajando?.info.length}}  de {{cantidad_trabajadores}} trabajadores.</p></li>\r\n              <ng-container *ngFor=\"let actualmenteTrabajando of actualmenteTrabajando?.info\" >\r\n                   <li  class=\"list-group-item p-1\">\r\n\r\n                   <small class=\"text-muted\">\r\n                       <a [routerLink]=\"['../DashBoard/Reportes/Repactualmentetrabajando']\">\r\n                         {{ actualmenteTrabajando.nombre }} {{ actualmenteTrabajando.apellido }} {{ actualmenteTrabajando.hora }}  \r\n                       </a>\r\n                   </small>   \r\n                  <!-- Button trigger modal -->\r\n                         <span aria-label=\"Activo(a) ahora\" style=\"background: rgb(66, 183, 42); border-radius: 50%; display: inline-block; height: 6px; margin-left: 4px; width: 6px;\"></span>\r\n\r\n                         <!--&nbsp;<a href=\"tel:+1-303-499-7111\"><i class=\"fas fa-phone\"></i></a>-->\r\n\r\n                   </li>   \r\n\r\n              </ng-container>\r\n                  \r\n        </ul>\r\n\r\n        <br>\r\n          <!-- Aca va el modal -->\r\n\r\n\r\n\r\n       <h4 *ngIf=\"boolean_distancia_alerta\" class=\"card-subtitle mb-2 text-muted\" style=\"font-family: 'Dosis', sans-serif !important; margin-bottom: 20px !important\">ANALISIS GPS</h4>\r\n\r\n        <ul class=\"list-group\" *ngIf=\"ultimosIngresos?.info.length !== 0 \">\r\n          \r\n          <ng-container *ngFor=\"let ingresos of ultimosIngresos.info\" >\r\n               <li *ngIf=\"ingresos.distancia > 1 \" class=\"list-group-item\">\r\n                 {{ ingresos.nombre }} {{ ingresos.apellido }} Marcó {{ ingresos.distancia | number : '1.2-2'}} Km. fuera del radio\r\n               </li>   \r\n\r\n               \r\n          </ng-container>\r\n                  \r\n        </ul>\r\n\r\n        <br>\r\n        <h4 *ngIf=\"boolean_biometrico_alerta\"  class=\"card-subtitle mb-2 text-muted\" style=\"font-family: 'Dosis', sans-serif !important; margin-bottom: 20px !important\">ANÁLISIS BIÓMETRICO</h4>\r\n        <ul class=\"list-group\" *ngIf=\"ultimosIngresos?.info.length !== 0 \">\r\n          \r\n          <ng-container *ngFor=\"let ingresos of ultimosIngresos.info\" >\r\n               <li *ngIf=\"ingresos.biometrica > 0.61 \" class=\"list-group-item\">\r\n                 {{ ingresos.nombre }} {{ ingresos.apellido }} Marcó con desaprobación biométrica ( {{ ingresos.biometrica  | number : '1.2-2' }} )\r\n               </li>   \r\n          </ng-container>\r\n                  \r\n        </ul>\r\n\r\n\r\n    </div>              <!-- Lateral con algunas notificaciones -->\r\n\r\n  <div class=\"col-sm-9\">\r\n    <div class=\"jumbotron\">\r\n        <div class=\"row\">\r\n                        <div class=\"col-sm-10\">  \r\n                                <h3 style=\"font-family: 'Dosis', sans-serif !important;\"> {{ 'Bienvenido ' + nombre_empresa | uppercase }}</h3>\r\n                                <small>RUT EMPRESA: {{ rut_empresa }}</small>\r\n                            </div>\r\n            \r\n                <div class=\"col-sm-2\">\r\n                    <a href=\"/users\" class=\"pull-right\">\r\n                        <img title=\"profile image\" width=\"100px\" class=\"img-thumbnail\" [src]=\"url\">\r\n                    </a>\r\n                </div>\r\n        </div>\r\n        <hr>\r\n\r\n        <h1 *ngIf=\"ultimosIngresos?.info.length === 0 \" class=\"display-6\" style=\"font-family: 'Dosis', sans-serif !important;\">{{'Hoy no ha habido ingresos' | uppercase}}</h1>\r\n        <h3 *ngIf=\"ultimosIngresos?.info.length !== 0 \" class=\"display-5\" style=\"font-family: 'Dosis', sans-serif !important;\">{{'Últimos Marcajes' | uppercase}}</h3>\r\n        <br>\r\n\r\n        <div class=\"list-group\">\r\n\r\n              <a  *ngFor=\"let ingresos of ultimosIngresos.info\"  class=\"list-group-item list-group-item-action\" [routerLink]=\"['../DashBoard/Reportes/Repunitario/', ingresos.id]\">\r\n                <div class=\"d-flex w-100 justify-content-between\">\r\n                  <h5 *ngIf=\"ingresos.tipo_movimiento === 'entrada' && ingresos.turnoExtra !== 1\" class=\"mb-1\">\r\n                     {{ingresos.nombre}}    {{ingresos.apellido}} ha comenzado su jornada laboral   <span class=\"badge badge-primary badge-pill\"> {{ingresos.tipo_movimiento | titlecase }} </span>\r\n                  </h5>\r\n                  <h5 *ngIf=\"ingresos.tipo_movimiento !== 'entrada' && ingresos.turnoExtra !== 1\"  class=\"mb-1\">\r\n                    {{ingresos.nombre}}    {{ingresos.apellido}} ha finalizado su jornada   <span class=\"badge badge-danger badge-pill\"> {{ingresos.tipo_movimiento | titlecase }} </span>\r\n                  </h5>\r\n\r\n\r\n                  <!-- PAra turnos extras, -->\r\n\r\n                  <h5 *ngIf=\"ingresos.tipo_movimiento === 'entrada' && ingresos.turnoExtra === 1\" class=\"mb-1\">\r\n                     {{ingresos.nombre}}    {{ingresos.apellido}} ha empezado un turno extra   <span class=\"badge badge-primary badge-pill\"> {{ingresos.tipo_movimiento | titlecase }} </span>\r\n                  </h5>\r\n                  <h5 *ngIf=\"ingresos.tipo_movimiento !== 'entrada' && ingresos.turnoExtra === 1\"  class=\"mb-1\">\r\n                    {{ingresos.nombre}}    {{ingresos.apellido}} ha finalizado su turno extra   <span class=\"badge badge-danger badge-pill\"> {{ingresos.tipo_movimiento | titlecase }} </span>\r\n                  </h5>\r\n\r\n                  <!-- Fin estatus turnos extras -->\r\n                  <small>A las {{ingresos.hora}} </small>\r\n                </div>\r\n                <p class=\"mb-1\">El marcaje fue realizado en {{ingresos.locacion | titlecase }}.</p>\r\n                <small>{{ingresos.fecha}} .</small>\r\n              </a>\r\n \r\n        </div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n      \r\n    </div>\r\n  </div>  \r\n\r\n</div> <!-- Fin row -->\r\n\r\n<app-footer></app-footer>"
+module.exports = "<app-navbar></app-navbar>\r\n<div class=\"row justify-content-center container-fluid animacion fadeIn\" style=\"margin-top:30px;padding:50px\">\r\n\r\n    <div class=\"col-sm-3\"> <!-- Lateral con algunas notificaciones -->\r\n      <h6 class=\"card-title\"> <i class=\"fas fa-bell\"></i> NOTIFICACIONES</h6>\r\n      \r\n      <hr>\r\n\r\n\r\n\r\n  <h4 class=\"card-subtitle mb-2 text-muted\" style=\"font-family: 'Dosis', sans-serif !important; margin-bottom: 20px !important\">TRABAJANDO AHORA</h4>\r\n\r\n  <app-select-sucursales (onSucursalSelected)=\"SucursalSelected($event)\" ></app-select-sucursales>\r\n       <div class=\"row justify-content-center\"><mat-spinner *ngIf=\"boleanoLoader\"></mat-spinner></div>\r\n        <ul class=\"list-group\" *ngIf=\"actualmenteTrabajando?.info !== undefined\">\r\n               <li *ngIf=\"actualmenteTrabajando?.info.length === 0 && sucursal\" class=\"list-group-item p-1\"><p class=\"text-muted\">No hay funcionarios trabajando actualmente en ésta sucursal</p><p *ngIf=\"cantidad_trabajadores !== false\"> Deberían haber {{ cantidad_trabajadores }} trabajadores. </p></li>\r\n\r\n              <li *ngIf=\"cantidad_trabajadores !== false && actualmenteTrabajando?.info.length > 0 && sucursal\" class=\"list-group-item p-1\"><p class=\"text-muted\">Hay {{actualmenteTrabajando?.info.length}}  de {{cantidad_trabajadores}} trabajadores.</p></li>\r\n              <ng-container *ngFor=\"let actualmenteTrabajando of actualmenteTrabajando?.info\" >\r\n                   <li  class=\"list-group-item p-1\">\r\n\r\n                   <small class=\"text-muted\">\r\n                       <a [routerLink]=\"['../DashBoard/Reportes/Repactualmentetrabajando']\">\r\n                         {{ actualmenteTrabajando.nombre }} {{ actualmenteTrabajando.apellido }} {{ actualmenteTrabajando.hora }}  \r\n                       </a>\r\n                   </small>   \r\n                  <!-- Button trigger modal -->\r\n                         <span aria-label=\"Activo(a) ahora\" style=\"background: rgb(66, 183, 42); border-radius: 50%; display: inline-block; height: 6px; margin-left: 4px; width: 6px;\"></span>\r\n\r\n                         <!--&nbsp;<a href=\"tel:+1-303-499-7111\"><i class=\"fas fa-phone\"></i></a>-->\r\n\r\n                   </li>   \r\n\r\n              </ng-container>\r\n                  \r\n        </ul>\r\n\r\n        <br>\r\n          <!-- Aca va el modal -->\r\n\r\n\r\n\r\n       <h4 *ngIf=\"boolean_distancia_alerta\" class=\"card-subtitle mb-2 text-muted\" style=\"font-family: 'Dosis', sans-serif !important; margin-bottom: 20px !important\">ANALISIS GPS</h4>\r\n\r\n        <ul class=\"list-group\" *ngIf=\"ultimosIngresos?.info.length !== 0 \">\r\n          \r\n          <ng-container *ngFor=\"let ingresos of ultimosIngresos.info\" >\r\n               <li *ngIf=\"ingresos.distancia > 1 \" class=\"list-group-item\">\r\n                 {{ ingresos.nombre }} {{ ingresos.apellido }} Marcó {{ ingresos.distancia | number : '1.2-2'}} Km. fuera del radio\r\n               </li>   \r\n\r\n               \r\n          </ng-container>\r\n                  \r\n        </ul>\r\n\r\n        <br>\r\n        <h4 *ngIf=\"boolean_biometrico_alerta\"  class=\"card-subtitle mb-2 text-muted\" style=\"font-family: 'Dosis', sans-serif !important; margin-bottom: 20px !important\">ANÁLISIS BIÓMETRICO</h4>\r\n        <ul class=\"list-group\" *ngIf=\"ultimosIngresos?.info.length !== 0 \">\r\n          \r\n          <ng-container *ngFor=\"let ingresos of ultimosIngresos.info\" >\r\n               <li *ngIf=\"ingresos.biometrica > 0.61 \" class=\"list-group-item\">\r\n                 {{ ingresos.nombre }} {{ ingresos.apellido }} Marcó con desaprobación biométrica ( {{ ingresos.biometrica  | number : '1.2-2' }} )\r\n               </li>   \r\n          </ng-container>\r\n                  \r\n        </ul>\r\n\r\n\r\n    </div>              <!-- Lateral con algunas notificaciones -->\r\n\r\n  <div class=\"col-sm-9\">\r\n    <div class=\"jumbotron\">\r\n        <div class=\"row\">\r\n                        <div class=\"col-sm-10\">  \r\n                                <h3 style=\"font-family: 'Dosis', sans-serif !important;\"> {{ 'Bienvenido ' + nombre_empresa | uppercase }}</h3>\r\n                                <small>RUT EMPRESA: {{ rut_empresa }}</small>\r\n                            </div>\r\n            \r\n                <div class=\"col-sm-2\">\r\n                    <a href=\"/users\" class=\"pull-right\">\r\n                        <img title=\"profile image\" width=\"100px\" class=\"img-thumbnail\" [src]=\"url\">\r\n                    </a>\r\n                </div>\r\n        </div>\r\n        <hr>\r\n\r\n        <h1 *ngIf=\"ultimosIngresos?.info.length === 0 \" class=\"display-6\" style=\"font-family: 'Dosis', sans-serif !important;\">{{'Hoy no ha habido ingresos' | uppercase}}</h1>\r\n        <h3 *ngIf=\"ultimosIngresos?.info.length !== 0 \" class=\"display-5\" style=\"font-family: 'Dosis', sans-serif !important;\">{{'Últimos Marcajes' | uppercase}}</h3>\r\n        <br>\r\n\r\n        <div class=\"list-group\">\r\n\r\n              <a  *ngFor=\"let ingresos of ultimosIngresos.info\"  class=\"list-group-item list-group-item-action\" [routerLink]=\"['../DashBoard/Reportes/Repunitario/', ingresos.id]\">\r\n                <div class=\"d-flex w-100 justify-content-between\">\r\n                  <h5 *ngIf=\"ingresos.tipo_movimiento === 'entrada' && ingresos.turnoExtra !== 1\" class=\"mb-1\">\r\n                     {{ingresos.nombre}}    {{ingresos.apellido}} ha comenzado su jornada laboral   <span class=\"badge badge-primary badge-pill\"> {{ingresos.tipo_movimiento | titlecase }} </span>\r\n                  </h5>\r\n                  <h5 *ngIf=\"ingresos.tipo_movimiento !== 'entrada' && ingresos.turnoExtra !== 1\"  class=\"mb-1\">\r\n                    {{ingresos.nombre}}    {{ingresos.apellido}} ha finalizado su jornada   <span class=\"badge badge-danger badge-pill\"> {{ingresos.tipo_movimiento | titlecase }} </span>\r\n                  </h5>\r\n\r\n\r\n                  <!-- PAra turnos extras, -->\r\n\r\n                  <h5 *ngIf=\"ingresos.tipo_movimiento === 'entrada' && ingresos.turnoExtra === 1\" class=\"mb-1\">\r\n                     {{ingresos.nombre}}    {{ingresos.apellido}} ha empezado un turno extra   <span class=\"badge badge-primary badge-pill\"> {{ingresos.tipo_movimiento | titlecase }} </span>\r\n                  </h5>\r\n                  <h5 *ngIf=\"ingresos.tipo_movimiento !== 'entrada' && ingresos.turnoExtra === 1\"  class=\"mb-1\">\r\n                    {{ingresos.nombre}}    {{ingresos.apellido}} ha finalizado su turno extra   <span class=\"badge badge-danger badge-pill\"> {{ingresos.tipo_movimiento | titlecase }} </span>\r\n                  </h5>\r\n\r\n                  <!-- Fin estatus turnos extras -->\r\n                  <small>A las {{ingresos.hora}} </small>\r\n                </div>\r\n                <p class=\"mb-1\">El marcaje fue realizado en {{ingresos.locacion | titlecase }}.</p>\r\n                <small>{{ingresos.fecha}} .</small>\r\n              </a>\r\n \r\n        </div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n      \r\n    </div>\r\n  </div>  \r\n\r\n</div> <!-- Fin row -->\r\n\r\n"
 
 /***/ }),
 
@@ -5350,7 +5660,7 @@ var EmpleadoService = /** @class */ (function () {
                 tipo: 'select',
                 select: true,
                 opciones: ['Horario Variable', 'Horario Fijo'],
-                valores: ['Turnos', 'Horario Fijo'],
+                valores: ['Noches', 'Horario Fijo'],
                 value: ''
             },
             /*      opciones: [ 'Turnos', 'Horario Fijo', 'Noches'],
@@ -5410,6 +5720,16 @@ var EmpleadoService = /** @class */ (function () {
                 info: 'Escribe la fecha de ingreso del trabajador',
                 tipo: 'text',
                 select: false,
+                value: ''
+            },
+            {
+                label: 'Estado',
+                name: 'estatus',
+                info: 'Selecciona si el trabajador está activo o es simplemente un postulante.',
+                tipo: 'select',
+                select: true,
+                opciones: ['Activo', 'Postulante'],
+                valores: ['Activo', 'Postulante'],
                 value: ''
             },
         ];
@@ -5478,6 +5798,7 @@ var EmpleadoService = /** @class */ (function () {
         this.array_empleado[38].value = empleado.fono1;
         this.array_empleado[39].value = empleado.email1;
         this.array_empleado[40].value = empleado.ingreso;
+        this.array_empleado[40].value = empleado.estatus;
         return this.array_empleado;
     };
     EmpleadoService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -5596,7 +5917,7 @@ var PasodosComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-upload [URL_REGRESO]=\"url_regreso\"></app-upload>"
+module.exports = "\r\n<div class=\"container\">\r\n\t\t<app-titulo titulo=\"INGRESA REGISTRO FOTOGRÁFICO DE TU TRABAJADOR\" subtitulo=\"Puedes saltarte éste paso y dejar que el trabajador ingrese su imagen en su primer marcaje.\"></app-titulo>\t\r\n\r\n\t\t<app-upload [URL_REGRESO]=\"url_regreso\"></app-upload>\r\n\t\t<br>\r\n\t\t<span style=\"cursor:pointer;\" (click)=\"saltarsePaso()\" class=\"badge badge-secondary\">Saltarse el paso</span>\r\n</div>"
 
 /***/ }),
 
@@ -5660,6 +5981,10 @@ var PasotresComponent = /** @class */ (function () {
             type: 'success',
             confirmButtonText: 'Ok'
         });
+    };
+    PasotresComponent.prototype.saltarsePaso = function () {
+        this.mensaje();
+        this.router.navigate(['../Planilla/']);
     };
     PasotresComponent.prototype.mensajeError = function () {
         sweetalert2__WEBPACK_IMPORTED_MODULE_3___default()({
@@ -5759,7 +6084,7 @@ var PasounoComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<body class=\"text-center\" style=\"padding:40px;\">\r\n    <div class=\"container\">\r\n        <form [formGroup]=\"forma\" class=\"form-signin\" (ngSubmit)=\"onSubmit(forma)\">\r\n            <img class=\"mb-4\" src=\"../../assets/img/logo1.png\" alt=\"\">\r\n            <h1 class=\"h3 mb-3 font-weight-normal\">Ingresa tus datos: </h1>\r\n            <label for=\"inputEmail\" class=\"sr-only\">Rut empresa</label>\r\n            <input formControlName=\"rut_empresa\" data-toggle=\"popover\" data-content=\"asdf\" data-placement=\"top\" title=\"Ingresa tu rut sin guion\" type=\"text\" id=\"inputEmail\" class=\"form-control\" placeholder=\"Rut empresa\" required autofocus>\r\n            <br>\r\n            <label for=\"inputPassword\" class=\"sr-only\">Clave</label>\r\n            <input formControlName=\"clave\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"Ingresa tu clave\" type=\"password\" id=\"inputPassword\" class=\"form-control\" placeholder=\"Clave\" required>\r\n            <div class=\"checkbox mb-3\">\r\n                <label>\r\n        <input type=\"checkbox\" value=\"remember-me\"> Recordarme\r\n      </label>\r\n            </div>\r\n            <button [disabled]=\"!forma.valid\" class=\"btn btn-lg btn-primary\">Ingresar</button>\r\n            <hr>\r\n            <div *ngIf=\"!forma.valid\" class=\"alert alert-danger\" role=\"alert\">\r\n                El formulario no está completo\r\n            </div>\r\n            <div *ngIf=\"forma.valid\" class=\"alert alert-success\" role=\"alert\">\r\n                El formulario es válido\r\n            </div>\r\n            <p class=\"mt-5 mb-3 text-muted\">&copy; Sister 2018</p>\r\n        </form>\r\n    </div>\r\n</body>"
+module.exports = "<body class=\"text-center\" style=\"padding:40px;\">\r\n    <div *ngIf=\"PrimerLogin\" class=\"container\">\r\n        <form [formGroup]=\"forma\" class=\"form-signin\" (ngSubmit)=\"onSubmit(forma)\">\r\n            <img class=\"mb-4\" src=\"../../assets/img/logo1.png\" alt=\"logo\">\r\n            <h1 class=\"h3 mb-3 font-weight-normal nice_font\">INGRESA DATOS EMPRESA: </h1>\r\n            <label for=\"inputEmail\" class=\"sr-only\">Rut empresa</label>\r\n            <input formControlName=\"rut_empresa\" data-toggle=\"popover\" data-content=\"asdf\" data-placement=\"top\" title=\"Ingresa tu rut sin guion\" type=\"text\" id=\"inputEmail\" class=\"form-control\" placeholder=\"Rut empresa\" required autofocus>\r\n            <br>\r\n            <label for=\"inputPassword\" class=\"sr-only\">Clave</label>\r\n            <input formControlName=\"clave\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"Ingresa tu clave\" type=\"password\" id=\"inputPassword\" class=\"form-control\" placeholder=\"Clave\" required>\r\n            <div class=\"checkbox mb-3\">\r\n                <label>\r\n        <input type=\"checkbox\" value=\"remember-me\"> Recordarme\r\n      </label>\r\n            </div>\r\n            <button [disabled]=\"!forma.valid\" class=\"btn btn-lg btn-primary\">Ingresar</button>\r\n            <hr>\r\n            <div *ngIf=\"!forma.valid\" class=\"alert alert-danger\" role=\"alert\">\r\n                El formulario no está completo\r\n            </div>\r\n            <div *ngIf=\"forma.valid\" class=\"alert alert-success\" role=\"alert\">\r\n                El formulario es válido\r\n            </div>\r\n            <p class=\"mt-5 mb-3 text-muted\">&copy; Sister 2019 - 2020</p>\r\n        </form>\r\n    </div>\r\n\r\n    <div *ngIf=\"!PrimerLogin\" class=\"container\">\r\n        <form [formGroup]=\"forma_segunda\" class=\"form-signin\" (ngSubmit)=\"onSubmit_dos(forma_segunda)\">\r\n            <img class=\"mb-4\" src=\"../../assets/img/logov10.png\" alt=\"LOGO\">\r\n            <h2 class=\"h3 mb-3 font-weight-normal nice_font\" >BIENVENIDO, INGRESA TUS DATOS DE USUARIO: </h2>\r\n            <label for=\"input_datos_usuario_rut\" class=\"sr-only\">Rut Usuario</label>\r\n            <input formControlName=\"rut\" data-toggle=\"popover\" data-content=\"asdf\" data-placement=\"top\" title=\"Ingresa tu rut sin guion\" type=\"text\" id=\"input_datos_usuario_rut\" class=\"form-control\" placeholder=\"Rut Usuario\" required autofocus>\r\n            <br>\r\n            <label for=\"input_clave_usuario\" class=\"sr-only\">Contraseña Usuario</label>\r\n            <input formControlName=\"claveTrabajador\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"Ingresa tu clave\" type=\"password\" id=\"input_clave_usuario\" class=\"form-control\" placeholder=\"Clave\" required>\r\n\r\n\r\n            <br>\r\n            <button [disabled]=\"!forma_segunda.valid\" class=\"btn btn-lg btn-primary\">Ingresar</button>\r\n            <hr>\r\n            <div *ngIf=\"!forma_segunda.valid\" class=\"alert alert-danger\" role=\"alert\">\r\n                El formulario no está completo\r\n            </div>\r\n            <div *ngIf=\"forma_segunda.valid\" class=\"alert alert-success\" role=\"alert\">\r\n                El formulario es válido\r\n            </div>\r\n            <p class=\"mt-5 mb-3 text-muted\">&copy; Sister 2019 - 2020</p>\r\n        </form>\r\n    </div>\r\n</body>\r\n\r\n                <ngx-loading style=\"height:2000px !important;\" [show]=\"loading\" [config]=\"{ backdropBorderRadius: '3px', fullScreenBackdrop:'true' }\" [template]=\"customLoadingTemplate\"></ngx-loading> \r\n              <ng-template  style=\"height:2000px !important;\"  #customLoadingTemplate></ng-template>"
 
 /***/ }),
 
@@ -5790,17 +6115,24 @@ var LoginComponent = /** @class */ (function () {
     function LoginComponent(router, login_) {
         this.router = router;
         this.login_ = login_;
+        this.PrimerLogin = true;
         this.forma = new _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormGroup"]({
             'rut_empresa': new _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].required]),
             'clave': new _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].required]),
         });
+        this.forma_segunda = new _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormGroup"]({
+            'rut': new _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].required]),
+            'claveTrabajador': new _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormControl"]('', [_angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].required]),
+        });
     }
     LoginComponent.prototype.onSubmit = function (forma) {
         var _this = this;
-        this.respuesta_servidor_login = this.login_.login(forma.value).subscribe(function (a) {
+        this.loading = true;
+        this.login_.login(forma.value).subscribe(function (a) {
             console.log(a);
             if (a['error'] === 'Contraseña Errónea') {
                 _this.mensajeError('Contraseña no corresponde');
+                _this.loading = false;
             }
             else {
                 // nada que ver -> localStorage.setItem('horario_con_o_sin_turnos', a['horario_con_o_sin_turnos'].toString());
@@ -5809,10 +6141,32 @@ var LoginComponent = /** @class */ (function () {
                 localStorage.setItem('nombre_empresa', a["nombre_empresa"].toString());
                 localStorage.setItem('nombre_rep', a["nombre_rep"].toString());
                 localStorage.setItem('id', a["id"].toString());
-                _this.router.navigate(['./Home']);
+            }
+        }, function (error) {
+            _this.loading = false;
+            _this.mensajeError('Rut de cliente no existe');
+        }, function () {
+            _this.loading = false;
+            //this.router.navigate(['./Home']);
+            _this.PrimerLogin = false;
+        });
+    }; // Fin funcion onSubmit
+    LoginComponent.prototype.onSubmit_dos = function (form) {
+        var _this = this;
+        console.log(form.value);
+        this.login_.loginTrabajador(form.value)
+            .subscribe(function (a) {
+            //alert(JSON.stringify(a))
+            if (a['error'] === 'Contraseña Errónea') {
+                _this.mensajeError('Contraseña no corresponde');
+            }
+            else {
+                localStorage.setItem('datos_rol_usuario', JSON.stringify(a));
             }
         }, function (error) {
             _this.mensajeError('Rut de cliente no existe');
+        }, function () {
+            _this.router.navigate(['./Home']);
         });
     };
     LoginComponent.prototype.mensajeError = function (texto) {
@@ -6351,6 +6705,120 @@ var ActualizarTurnosFijosComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/components/perfil-trabajador/bonificaciones/bonificaciones.component.css":
+/*!******************************************************************************************!*\
+  !*** ./src/app/components/perfil-trabajador/bonificaciones/bonificaciones.component.css ***!
+  \******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcGVyZmlsLXRyYWJhamFkb3IvYm9uaWZpY2FjaW9uZXMvYm9uaWZpY2FjaW9uZXMuY29tcG9uZW50LmNzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/components/perfil-trabajador/bonificaciones/bonificaciones.component.html":
+/*!*******************************************************************************************!*\
+  !*** ./src/app/components/perfil-trabajador/bonificaciones/bonificaciones.component.html ***!
+  \*******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "  <!--<form #forma='ngForm' (ngSubmit)=\"guardar(forma)\" #forma=\"ngForm\">-->\n  \t<nav aria-label=\"breadcrumb\" class=\"shadow p-0 mb-5 bg-white rounded\" >\n\t\t  <ol class=\"breadcrumb \" style=\"background-color: white\">\n\t\t    <li class=\"breadcrumb-item\"><a [routerLink]=\"['../Perfil']\">Perfil</a></li>\n\t\t    <li class=\"breadcrumb-item active\" aria-current=\"page\">Bonificaciones</li>\n\t\t  </ol>\n    </nav>\n<app-titulo\n titulo=\"Bonificaciones\"\n subtitulo=\"Ingresa turnos u horas extras realizadas por tu trabajador\"></app-titulo>\n\n<div class=\"container\" style=\"margin-bottom: 100px\">\n\t\t  <div class=\"form-group mb-2\">\n                  <mat-form-field>\n                    <input [(ngModel)]=\"calendario\" name=\"calendario\" matInput [matDatepicker]=\"picker\" placeholder=\"Selecciona una fecha\">\n                    <mat-datepicker-toggle matSuffix [for]=\"picker\"></mat-datepicker-toggle>\n                    <mat-datepicker #picker></mat-datepicker>\n                  </mat-form-field>\n          </div>\n\n\t  <app-select-sucursales (onSucursalSelected)=\"SucursalSelected($event)\" ></app-select-sucursales>\n\n\n\n\t  \t <div class=\"form-group\">\n\t\t    <label for=\"exampleFormControlSelect1\">Tipo de bonificación</label>\n\t\t    <select class=\"form-control\" [(ngModel)]=\"BonoficacionGenerada.tipo\">\n\t\t      <option>Turno Extra</option>\n\t\t      <option>Hora Extra</option>\n\t\t    </select>\n\t\t  </div>\n\n\t\t  <div class=\"form-group\">\n\t\t    <label for=\"exampleInputEmail1\">Monto</label>\n\t\t    <input type=\"number\" class=\"form-control\"  [(ngModel)]=\"BonoficacionGenerada.monto\"  placeholder=\"Ingresa monto\">\n\t\t    <small id=\"emailHelp\" class=\"form-text text-muted\">Cantidad a pagar por bonificación</small>\n\t\t  </div>\n\n\t  \t  <div class=\"form-group\">\n\t\t    <label for=\"exampleInputEmail1\">Comentarios</label>\n\t\t    <input type=\"text\" class=\"form-control\"  [(ngModel)]=\"BonoficacionGenerada.Comentarios\" placeholder=\"Agrega un comentario si lo deseas\">\n\t\t    <small id=\"emailHelp\" class=\"form-text text-muted\">Opcional.</small>\n\t\t  </div>\n\n\n\n\t\t  <button (click)=\"enviar()\"  class=\"btn btn-primary\">Enviar</button>\n\t\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/components/perfil-trabajador/bonificaciones/bonificaciones.component.ts":
+/*!*****************************************************************************************!*\
+  !*** ./src/app/components/perfil-trabajador/bonificaciones/bonificaciones.component.ts ***!
+  \*****************************************************************************************/
+/*! exports provided: BonificacionesComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BonificacionesComponent", function() { return BonificacionesComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _services_crud_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../services/crud.service */ "./src/app/services/crud.service.ts");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
+var BonificacionesComponent = /** @class */ (function () {
+    function BonificacionesComponent(CrudService_) {
+        this.CrudService_ = CrudService_;
+    }
+    BonificacionesComponent.prototype.ngOnInit = function () {
+        console.log(JSON.parse(localStorage.getItem('TrabajadorSeleccionadoPerfil')).id);
+        this.BonoficacionGenerada = {
+            'empresa_id': Number(localStorage.getItem('id')),
+            'sucursal_id': this.sucursal_id,
+            'trabajador_id': Number(JSON.parse(localStorage.getItem('TrabajadorSeleccionadoPerfil')).id),
+            'supervisor_id': Number(JSON.parse(localStorage.getItem('datos_rol_usuario')).id),
+            'id_movimiento_unico': '',
+            'monto': '',
+            'dia': 0,
+            'mes': 0,
+            'anio': 0,
+            'tipo': '',
+            'Comentarios': '',
+        };
+    };
+    BonificacionesComponent.prototype.SucursalSelected = function (e) {
+        console.log(e);
+        this.sucursal_id = e;
+    };
+    BonificacionesComponent.prototype.enviar = function () {
+        var FORMATO_ENTRADA = 'MM-DD-YYYY';
+        var FORMATO_SALIDA = 'MM-DD-YYYY';
+        var fecha1 = moment__WEBPACK_IMPORTED_MODULE_3__(this.calendario, FORMATO_ENTRADA);
+        console.log("MES", fecha1.format('M'));
+        console.log("Dia", fecha1.format('D'));
+        console.log("Anio", fecha1.format('YYYY'));
+        this.BonoficacionGenerada.mes = Number(fecha1.format('M'));
+        this.BonoficacionGenerada.dia = Number(fecha1.format('D'));
+        this.BonoficacionGenerada.anio = Number(fecha1.format('YYYY'));
+        this.BonoficacionGenerada.id_movimiento_unico = this.BonoficacionGenerada.tipo + JSON.parse(localStorage.getItem('TrabajadorSeleccionadoPerfil')).rut + fecha1.format('M') + fecha1.format('D') + fecha1.format('YYYY');
+        this.BonoficacionGenerada.sucursal_id = this.sucursal_id;
+        console.log("Enviando..", this.BonoficacionGenerada);
+        this.CrudService_.Add(this.BonoficacionGenerada, 'ingresarResExtra')
+            .subscribe(function (data) {
+            console.log(data);
+        }, function (err) {
+            console.log("Error", err);
+        });
+    };
+    BonificacionesComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-bonificaciones',
+            template: __webpack_require__(/*! ./bonificaciones.component.html */ "./src/app/components/perfil-trabajador/bonificaciones/bonificaciones.component.html"),
+            styles: [__webpack_require__(/*! ./bonificaciones.component.css */ "./src/app/components/perfil-trabajador/bonificaciones/bonificaciones.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_services_crud_service__WEBPACK_IMPORTED_MODULE_2__["CrudService"]])
+    ], BonificacionesComponent);
+    return BonificacionesComponent;
+}());
+
+/*
+empresa_id
+sucursal_id
+trabajador_id
+supervisor_id
+id_movimiento_unico
+monto
+dia
+mes
+anio
+tipo
+Comentarios
+
+*/
+
+
+/***/ }),
+
 /***/ "./src/app/components/perfil-trabajador/desvinculacion-basica/desvinculacion-basica.component.css":
 /*!********************************************************************************************************!*\
   !*** ./src/app/components/perfil-trabajador/desvinculacion-basica/desvinculacion-basica.component.css ***!
@@ -6479,7 +6947,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "    <nav aria-label=\"breadcrumb\" class=\"shadow p-0 mb-5 bg-white rounded\" >\n          <ol class=\"breadcrumb \" style=\"background-color: white\">\n            <li class=\"breadcrumb-item\"><a [routerLink]=\"['../Perfil']\">Perfil</a></li>\n            <li class=\"breadcrumb-item active\" aria-current=\"page\">Emisión documentos</li>\n          </ol>\n    </nav>\n    <body style=\"margin:50px;\">\n\n    <app-titulo titulo=\"Documentos y cartas\" subtitulo=\"Selecciona la carta o documento que deseas asociar a tu trabajador\" ></app-titulo>\n\n<div class=\"form-group\">\t\n \t<select (change)=\"onChange($event, selectTipoDocumentos)\" name=\"Parametrizadas\" [(ngModel)]=\"TipoDocumento\" class=\"form-control\" #selectTipoDocumentos>\n \t\t<option *ngFor=\"let item of selectTipoDocumento;let index = i\" [value]=\"item.id\"   >{{ item.titulo }}</option>\n \t</select> \n \t<br>\n \t<button class=\"btn btn-outline-success\" (click)=\"armarFormularioDocumento(TipoDocumento)\">Implementar</button>\n </div>\n <hr>\n<!--{{ variablesDefinitivasNoParametrizadas | json}}-->\n<br>\n<h3 class=\"text-center\">{{seleccionEnCurso?.titulo}}</h3>\n<div class=\"container\" style=\"padding:50px\">\n\t<div  *ngFor=\"let item of variablesDefinitivasNoParametrizadas;let index = i\" class=\"form-group\">\t\n\t\t<label>{{item.valor}}</label>\n\t\t<input  class=\"form-control\" [(ngModel)]=\"item.value\" type=\"text\" name=\"variables\"> \n\t \t\n\t </div>\n\n\n    \n\n\n\t<div  class=\"form-group\">\t\n\t\t<label>Ciudad donde se emite documento</label>\n\t\t<input  class=\"form-control\" [(ngModel)]=\"ciudad\" type=\"text\" name=\"ciudad\"> \t\n\t </div>\n\n\t <button class=\"btn btn-block btn-outline-danger\" (click)=\"revisarFinal()\" >EMITIR DOCUMENTO</button>\n </div>\n\n <div #peito [innerHTML]=\"todo\"></div>\n\n </body>"
+module.exports = "    <nav aria-label=\"breadcrumb\" class=\"shadow p-0 mb-5 bg-white rounded\" >\n          <ol class=\"breadcrumb \" style=\"background-color: white\">\n            <li class=\"breadcrumb-item\"><a [routerLink]=\"['../Perfil']\">Perfil</a></li>\n            <li class=\"breadcrumb-item active\" aria-current=\"page\">Emisión documentos</li>\n          </ol>\n    </nav>\n    <body style=\"margin:50px;\">\n\n    <app-titulo titulo=\"Documentos y cartas\" subtitulo=\"Selecciona la carta o documento que deseas asociar a tu trabajador\" ></app-titulo>\n\n<div class=\"form-group\">\t\n\t<label>Documentos</label>\n \t<select (change)=\"onChange($event, selectTipoDocumentos)\" name=\"Parametrizadas\" [(ngModel)]=\"TipoDocumento\" class=\"form-control\" #selectTipoDocumentos>\n \t\t<option *ngFor=\"let item of selectTipoDocumento;let index = i\" [value]=\"item.id\"   >{{ item.titulo }}</option>\n \t</select> \n \t<br>\n \t<button class=\"btn btn-outline-success\" (click)=\"armarFormularioDocumento(TipoDocumento)\">Implementar</button>\n </div>\n\n<!--\n <div class=\"form-group\">\t\n\t<label>Documentos Estándar</label>\n \t<select (change)=\"onChangeEstandar($event, selectTipoDocumentosEstandar)\" name=\"Estandar\" [(ngModel)]=\"TipoDocumentoEstandar\" class=\"form-control\" #selectTipoDocumentosEstandar>\n \t\t<option >Finiquito</option>\n \t\t<option >Amonestación</option>\n \t</select> \n \t<br>\n \t<button class=\"btn btn-outline-primary\" (click)=\"armarFormularioDocumentoEstandar(TipoDocumentoEstandar)\">Implementar</button>\n </div>-->\n\n\n <hr>\n<!--{{ variablesDefinitivasNoParametrizadas | json}}-->\n<br>\n<h3 class=\"text-center\">{{seleccionEnCurso?.titulo}}</h3>\n<div class=\"container\" style=\"padding:50px\">\n\t\n\n\t<div  *ngFor=\"let item1 of variablesDefinitivasNoParametrizadas;let index = i\" >\n\t\t<div class=\"form-group\">\t\n\t\t\t<label>{{item1.valor}}</label>\n\t\t\t<input  class=\"form-control\" [(ngModel)]=\"item1.value\" type=\"text\" name=\"variables\"> \n\t\t\t<br>\n\t\t\t\t\t<!-- Aca va el modal -->\n                  <!-- Button trigger modal -->\n             <div class=\"container\">\n                <button type=\"button\" style=\"float: right\" class=\"btn btn-primary btn-sm\" data-toggle=\"modal\" [attr.data-target]=\"'#s' + item1.nombre\">\n                        ASOCIAR A VARIABLES \n                </button>\n\t\t\t</div>\n\t\t</div>\t\n\t\t \n\n\n\n                              <!-- Modal -->\n                              <div class=\"modal fade\" [id]=\"'s'+item1.nombre\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalLabel\" aria-hidden=\"true\">\n                            <div class=\"modal-dialog\" role=\"document\">\n                              <div class=\"modal-content\">\n                                <div class=\"modal-header\">\n                                  <h5 class=\"modal-title\" id=\"exampleModalLabel\">Registro</h5>\n                                  <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\n                                    <span aria-hidden=\"true\">&times;</span>\n                                  </button>\n                                </div>\n                                <div class=\"modal-body\">\n                                 <div class=\"text-center\">\n                                   <!-- *************** CONTENIDO DEL MODAL ************************ -->\n\t\t\t\t\t\t\t\t\t\t<div *ngFor=\"let item of TipoDocumentoEstandarSeleccionado.Articulos\" >\n\t\t\t\t\t\t\t\t\t\t\t    \t\t<div>\n\t\t\t\t\t\t\t\t\t\t\t\t    \t\t\t<h5>Art. {{ item.nombre }}</h5>\n\t\t\t\t\t\t\t\t\t\t\t\t    \t\t\t<div *ngFor=\"let peo of item.numeros\" class=\"form-check\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  <input name=\"Articulado\" [value]=\"peo.nombre\" (change)=\"checkValue(peo, item1, item.nombre)\" #ArticuloInput class=\"form-check-input\" type=\"radio\" >\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  <label class=\"form-check-label\" for=\"defaultCheck1\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t    {{peo.nombre}} {{item.nombre}}\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  </label>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t    \t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t    \t\t\t<hr>\n\t\t\t\t\t\t\t\t\t\t\t    \t\t</div>   \t\t\n\t\t\t\t\t\t\t\t\t\t </div>\n\n\n                                   <!-- **************** Fin contenido modal ¨**************************-->\n                                 </div>    \n                                </div>\n                                <div class=\"modal-footer\">\n                                  <button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Cerrar</button>\n                                <!--  <button type=\"button\" class=\"btn btn-primary\">Save changes</button> -->\n                                </div>\n                              </div>\n                            </div>\n                          </div>  \n        <!-- Aca va el modal -->\n         <div><br><hr>\t</div>\n\t </div>\n\t \n\n    <!--<div *ngIf=\"TipoDocumentoEstandarSeleccionado.Seleccionado\"> -->\n\n\n    \t<!--<div *ngFor=\"let item of TipoDocumentoEstandarSeleccionado.pagos\" >\n\t    \t\t<div>\n\t\t    \t\t\t\n\t\t    \t\t\t<div class=\"form-group row\">\n\t\t    \t\t\t\t<label class=\"form-check-label\" for=\"defaultCheck1\">\n\t\t\t\t\t\t    \t{{item.label}}\n\t\t\t\t\t\t  \t</label>\n\t\t\t\t\t\t  \t<input class=\"form-control\" type=\"number\" name=\"valores\" [(ngModel)]=\"item.valor\" value=\"\"><br>\n\t\t\t\t\t\t  \t<input style=\"margin-top:10px\"  class=\"form-control\"  *ngIf=\"item.liquidacion\" placeholder=\"Ingresa la fecha de la liquidacion, EJ: Julio 2019\" [(ngModel)]=\"item.fechaLiquidacion\" type=\"text\" name=\"\">\n\t\t\t\t\t\t</div>\t\t\t\t\t\t    \t\t\t\n\t\t    \t\t\t<hr>\n\t    \t\t</div>   \t\t\n    \t</div>  \n\n\n    \t<hr>-->\n    \t\n    \t<!--<div *ngFor=\"let item of TipoDocumentoEstandarSeleccionado.Articulos\" >\n\t    \t\t<div>\n\t\t    \t\t\t<h1>Art. {{ item.nombre }}</h1>\n\t\t    \t\t\t<div *ngFor=\"let peo of item.numeros\" class=\"form-check\">\n\t\t\t\t\t\t  <input name=\"Articulado\" [value]=\"peo.nombre\" (change)=\"checkValue(peo)\" #ArticuloInput class=\"form-check-input\" type=\"radio\" >\n\t\t\t\t\t\t  <label class=\"form-check-label\" for=\"defaultCheck1\">\n\t\t\t\t\t\t    {{peo.nombre}}\n\t\t\t\t\t\t  </label>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t    \t\t\t\n\t\t    \t\t\t<hr>\n\t    \t\t</div>   \t\t\n    \t</div>\n\n\n    \t\t    <div>\n\t\t    \t\t\t<h4>Por parte de ( PP )</h4>\n\t\t    \t\t\t<div class=\"form-check\">\n\t\t\t\t\t\t  <input name=\"PP\" (change)=\"checkValuePP(true)\" class=\"form-check-input\" type=\"radio\" >\n\t\t\t\t\t\t  <label class=\"form-check-label\" for=\"defaultCheck1\">\n\t\t\t\t\t\t    PP\n\t\t\t\t\t\t  </label>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t    \t\t\t\n\t\t    \t\t\t<hr>\n\t    \t\t</div>   \n\n    \t<button (click)=\"Generarfiniquito()\" >Generar Finiquito</button> -->\n\n\n\n  <!--  </div>-->\n\n<!--\n <hr style=\"height: 12px; border: 0; box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);\">\n\n\t <div  class=\"form-group\">\t\n\t\t<label>Ciudad donde se emite documento</label>\n\t\t<input  class=\"form-control\" [(ngModel)]=\"ciudad\" type=\"text\" name=\"ciudad\"> \t\n\t </div>-->\n\n\n\t <div  class=\"form-group\">\t\n \t\t<button class=\"btn btn-block btn-outline-danger\" (click)=\"revisarFinal()\" >EMITIR DOCUMENTO</button>\n\t </div>\n\n\n\t<div class=\"container text-center\"  style=\"padding:50px\">\n\t\t\t\t\t\t<!--\t<button class=\"btn btn-outline-primary btn-block\" style=\"margin:10px\" (click)=\"refrescarIframe()\" >Refrescar</button>-->\n\t\t\t\t\t\t\t<br>\n\t\t\t\t\t\t\t<iframe *ngIf=\"DocumentoEmitidoBoleano\"\n\t\t\t\t\t\t\tid=\"iframeID\" \n\t\t\t\t\t\t\t[src]=\"URL_IFRAME\" \n\t\t\t\t\t\t\tframeborder=\"0\" \n\t\t\t\t\t\t\twidth=\"655\" \n\t\t\t\t\t\t\theight=\"550\" \n\t\t\t\t\t\t\tmarginheight=\"0\" \n\t\t\t\t\t\t\tmarginwidth=\"0\">\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t</iframe>\n\t\t\t\t\t\t\t\n\t</div>\n\n\t\n </div>\n\n\n </body>"
 
 /***/ }),
 
@@ -6502,6 +6970,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! sweetalert2 */ "./node_modules/sweetalert2/dist/sweetalert2.all.js");
 /* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(sweetalert2__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _Data_finiquito__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./../../../Data/finiquito */ "./src/app/Data/finiquito.ts");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
+
+
 
 
 
@@ -6510,14 +6982,49 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var DocumentosComponent = /** @class */ (function () {
-    function DocumentosComponent(param, router, GeneradorDocumentosService_, CrudService_) {
+    function DocumentosComponent(sanitizer, param, router, GeneradorDocumentosService_, CrudService_) {
+        this.sanitizer = sanitizer;
         this.param = param;
         this.router = router;
         this.GeneradorDocumentosService_ = GeneradorDocumentosService_;
         this.CrudService_ = CrudService_;
+        this.ciudad = "NOAPLICA";
+        this.TipoDocumentoEstandarSeleccionado = false;
+        this.articuloSeleccionado = null;
     }
+    DocumentosComponent.prototype.onChangeEstandar = function (event, selectTipoDocumentosEstandar) {
+        console.log(event);
+        console.log(selectTipoDocumentosEstandar);
+    };
+    DocumentosComponent.prototype.armarFormularioDocumentoEstandar = function (tipoDocumentoEstandar) {
+        if (tipoDocumentoEstandar === 'Finiquito') {
+            this.TipoDocumentoEstandarSeleccionado = _Data_finiquito__WEBPACK_IMPORTED_MODULE_7__["default"];
+            this.TipoDocumentoEstandarSeleccionado.Seleccionado = true;
+        }
+        console.log(tipoDocumentoEstandar);
+    };
+    DocumentosComponent.prototype.checkValuePP = function (valor) {
+        console.log(valor);
+        this.pp = valor;
+    };
+    DocumentosComponent.prototype.Generarfiniquito = function () {
+        console.log(this.TipoDocumentoEstandarSeleccionado);
+        console.log(this.articuloSeleccionado);
+        if (this.articuloSeleccionado === null) {
+            return alert('Debes seleccionar un artículo que fundamente el finiquito.');
+        }
+        else {
+            this.GeneradorDocumentosService_.generarFiniquito(this.articuloSeleccionado, this.TipoDocumentoEstandarSeleccionado, this.pp, this.ciudad);
+        }
+    };
     DocumentosComponent.prototype.ngOnInit = function () {
         var _this = this;
+        this.TipoDocumentoEstandarSeleccionado = _Data_finiquito__WEBPACK_IMPORTED_MODULE_7__["default"];
+        this.rutEmpresa = localStorage.getItem('rut_empresa');
+        this.URL_IFRAME = this.sanitizer.bypassSecurityTrustResourceUrl('https://sister.cl/laravel/index.php/presta/' + this.rutEmpresa);
+        console.log(_Data_finiquito__WEBPACK_IMPORTED_MODULE_7__["default"]);
+        console.log("FiniquitoBase.Articulos", _Data_finiquito__WEBPACK_IMPORTED_MODULE_7__["default"].Articulos);
+        console.log("FiniquitoBase.Articulos[0]", _Data_finiquito__WEBPACK_IMPORTED_MODULE_7__["default"].Articulos[0].n159);
         this.id = this.param.parent.snapshot.paramMap.get('id');
         //alert(this.id)   
         this.CrudService_.get({ 'empresa_id': localStorage.getItem('id'), 'rut_empresa': localStorage.getItem('rut_empresa') }, 'GetDocumento')
@@ -6527,6 +7034,13 @@ var DocumentosComponent = /** @class */ (function () {
             _this.imagen64 = data.image64;
             _this.selectTipoDocumento = data.response;
         });
+    };
+    DocumentosComponent.prototype.checkValue = function (e, input, numeroArticulo) {
+        console.log("Viendo si funcionan los check de articulos ", e);
+        console.log(input);
+        this.articuloSeleccionado = e;
+        input.value = "artículo " + numeroArticulo + " " + e.numero + " " + e.nombre;
+        console.log(this.articuloSeleccionado);
     };
     DocumentosComponent.prototype.armarFormularioDocumento = function (seleccion) {
         var _this = this;
@@ -6565,14 +7079,16 @@ var DocumentosComponent = /** @class */ (function () {
         if (this.DocumentoEspecificoSeleccionado === undefined)
             return this.errorRespuesta();
         this.variablesDefinitivasNoParametrizadas.map(function (data) {
-            console.log('<<' + data.valor + '>>');
-            peito = _this.DocumentoEspecificoSeleccionado.CuerpoDocumento.replace('<<' + data.valor + '>>', data.value);
+            console.log('~~' + data.valor + '~~'); // new RegExp('hello', 'g')
+            peito = _this.DocumentoEspecificoSeleccionado.CuerpoDocumento.replace('~~' + data.valor + '~~', data.value);
             _this.DocumentoEspecificoSeleccionado.CuerpoDocumento = peito;
             console.log(peito);
         });
         this.variablesDefinitivasParametrizadas.map(function (data) {
-            console.log('<<' + data + '>>');
-            peito = _this.DocumentoEspecificoSeleccionado.CuerpoDocumento.replace('<<' + _this.KeysvariablesDefinitivasParametrizadas[n] + '>>', data);
+            if (_this.KeysvariablesDefinitivasParametrizadas[n] === 'rut')
+                data = _this.GeneradorDocumentosService_.format(data);
+            console.log('~~' + data + '~~');
+            peito = _this.DocumentoEspecificoSeleccionado.CuerpoDocumento.replace(new RegExp('~~' + _this.KeysvariablesDefinitivasParametrizadas[n] + '~~', 'g'), data);
             _this.DocumentoEspecificoSeleccionado.CuerpoDocumento = peito;
             console.log(peito);
             n++;
@@ -6614,13 +7130,23 @@ var DocumentosComponent = /** @class */ (function () {
             .subscribe(function (data) {
             console.log(data);
             if (data.estado === 'ok') {
-                _this.router.navigate(['/PerfilTrabajador/' + _this.id + '/Perfil']);
+                //this.router.navigate(['/PerfilTrabajador/'+this.id+'/Perfil'])
                 _this.mensajeExito();
             }
+        }, function (err) {
+            console.log(err);
+        }, function () {
+            _this.CrudService_.Add({ 'cuerpoDocumento': _this.DocumentoEspecificoSeleccionado.CuerpoDocumento, 'rutEmpresa': localStorage.getItem('rut_empresa') }, 'armarDocumento')
+                .subscribe(function (data) { return console.log(data); }, function (err) { return console.log(err); }, function () {
+                setTimeout(function () {
+                    _this.DocumentoEmitidoBoleano = true;
+                    _this.URL_IFRAME = _this.sanitizer.bypassSecurityTrustResourceUrl('https://sister.cl/laravel/index.php/presta/' + _this.rutEmpresa);
+                }, 3000);
+            });
         });
     };
-    /*let borrar1= "Por haber  <<TipoFalta>> se le aplicará la siguiente sanción :  <<Tipo Sancion>>";
-    let borrar2 = "<<TipoFalta>>";
+    /*let borrar1= "Por haber  ~~TipoFalta~~ se le aplicará la siguiente sanción :  ~~Tipo Sancion~~";
+    let borrar2 = "~~TipoFalta~~";
     let variableReal = "Faltas reiteradas"
     const stripped = borrar1.replace(borrar2, variableReal)
     console.log(stripped) */
@@ -6667,7 +7193,8 @@ var DocumentosComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./documentos.component.html */ "./src/app/components/perfil-trabajador/documentos/documentos.component.html"),
             styles: [__webpack_require__(/*! ./documentos.component.css */ "./src/app/components/perfil-trabajador/documentos/documentos.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"],
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_8__["DomSanitizer"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"],
             _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"],
             _services_generador_documentos_service__WEBPACK_IMPORTED_MODULE_3__["GeneradorDocumentosService"],
             _services_crud_service__WEBPACK_IMPORTED_MODULE_2__["CrudService"]])
@@ -6819,6 +7346,7 @@ var EditarPerfilTrabajadorComponent = /** @class */ (function () {
         this.empleadoService_ = empleadoService_;
         this.id = this.param.parent.snapshot.paramMap.get('id');
         this.perfilServicio_.getPerfil(this.param.parent.snapshot.paramMap.get('id')).subscribe(function (data) {
+            console.log(data);
             _this.urlImagenTrabajador = 'https://sister.cl/trabajadores/' + data[0].rut + '/registro/' + data[0].rut + '.jpg';
             _this.Empleado = _this.empleadoService_.editarEmpleado(data[0]);
             console.log(_this.Empleado[0].name);
@@ -7301,7 +7829,7 @@ var PerfilTrabajadorComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"card text-center\">\r\n\r\n  <div class=\"card-header\">\r\n\r\n    <ul class=\"nav nav-tabs card-header-tabs\">\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link active\" routerLinkActive=\"active\">Perfil</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLinkActive=\"active\"  [routerLink]=\"['../EditarPerfilTrabajador']\">Editar</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLinkActive=\"active\"  [routerLink]=\"['../Documentos']\">Emisión Documentación</a>\r\n      </li>  \r\n       <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLinkActive=\"active\"  [routerLink]=\"['../ReporteDocumentosGenerados']\">Documentos Generados</a>\r\n      </li>       \r\n      <li class=\"nav-item\">\r\n     <!--   <a class=\"nav-link disabled\" href=\"#\">Disabled</a>-->\r\n      </li>\r\n    </ul>\r\n  </div>\r\n  <div class=\"card-body\">\r\n    <h5 class=\"card-title\">{{ empleado_?.nombre }} {{ empleado_?.apellido }}</h5>\r\n    <h6 class=\"card-subtitle mb-2 text-muted\">Administrativo</h6>\r\n\r\n    <hr>\r\n    <small *ngIf=\"EstadoFotografiaTrabajador\" class=\"text-muted\">Imagen Válida</small>\r\n    <small *ngIf=\"!EstadoFotografiaTrabajador\" class=\"text-muted\">Imagen No Válida</small>\r\n\r\n    <br>\r\n    <mat-slide-toggle\r\n   [(ngModel)]=\"EstadoFotografiaTrabajador\"\r\n   (change)=\"changed()\"\r\n   color=\"primary\">\r\n    <!-- Slide me! {{checked}} -->\r\n</mat-slide-toggle>\r\n<br>\r\n\r\n    <!-- FIN TOGGLE -->\r\n\r\n\r\n\r\n\r\n        <a (click)=\"editarImagen()\"> <img  class=\"img-thumbnail\" [src]=\"urlImagenTrabajador\" style=\"width:100px; max-height:120px\"></a><!-- antes img-thumbnail    v rounded-circle-->\r\n\r\n        <div class=\"text-center m-1 p-2\">   \r\n            <button class=\"btn btn-primary btn-sm\" (click)=\"RotarImagen()\" >\r\n               <small>ROTAR</small>&nbsp; <i  class=\"fas fa-sync-alt\"></i>\r\n            </button>       \r\n        </div>\r\n\r\n    <p class=\"card-text\">Jefatura:  {{ empleado_?.jefatura }}.</p>\r\n\r\n        <div style=\"display:flex;justify-content: center\">\r\n            <ul class=\"list-group\" style=\"width: 600px;\">\r\n                    <li class=\"list-group-item\">\r\n                     <p class=\"text-muted\">  Aprobar sueldo para generación de liq. de sueldo</p>\r\n                      <button class=\"btn btn-danger btn-sm\" [routerLink]=\"['../LiberarSueldos/']\">Liberar Sueldos</button>\r\n                    </li>\r\n                    \r\n                    <li class=\"list-group-item\">\r\n                        <p class=\"text-muted\"> Desvincular trabajador  </p>\r\n                        <button [routerLink]=\"['../DesvinculacionBasica/']\"  class=\"btn btn-warning btn-sm\">Desvinculación </button>\r\n                    </li>\r\n                    \r\n                    <li class=\"list-group-item\" style=\"display:none\">\r\n                        <p class=\"text-muted\"> Marcar Asistencia de trabajador</p>\r\n                        \r\n                        <button *ngIf=\"trabaja_dia_en_curso == 1\" class=\"btn btn-danger btn-sm\" [routerLink]=\"['../Marcaje/']\">Marcar asistencia</button>\r\n\r\n                        <button *ngIf=\"trabaja_dia_en_curso == 0\" class=\"btn btn-danger btn-sm\" [routerLink]=\"['../Marcaje/']\" disabled>Marcar asistencia</button>\r\n                    </li>\r\n                    \r\n                    <li class=\"list-group-item\">\r\n                               <div *ngIf=\"tipoTurno === 'Turnos'\">\r\n                                    <button [routerLink]=\"['../TurnosVariables/']\" class=\"btn btn-primary\" type=\"submit\">Ir a turnos</button>\r\n                                </div>\r\n\r\n                                <div *ngIf=\"tipoTurno === 'Horario Fijo' && TrabajadorSinTurno\">\r\n                                   \r\n                                    <p  class=\"text-muted\">Tu trabajador no tiene generado los turnos aún. Genéralos</p>\r\n                                    <button  [routerLink]=\"['../TurnosFijos/']\"  class=\"btn btn-primary btn-sm\" type=\"submit\">Turnos fijos</button>\r\n                                </div>\r\n\r\n\r\n\r\n                               <div *ngIf=\"tipoTurno === 'Noches'\">\r\n                                   \r\n                                    <p *ngIf=\"TrabajadorSinTurno\" class=\"text-muted\">Tu trabajador no tiene generado los turnos aún. Genéralos</p>                                \r\n                                    <p *ngIf=\"!TrabajadorSinTurno\" class=\"text-muted\">El mes en curso tiene turno. </p>\r\n                                    <button  [routerLink]=\"['../TurnosNoche/']\"  class=\"btn btn-primary btn-sm\" type=\"submit\">Horario Variable</button>\r\n                                </div>\r\n\r\n\r\n                                  \r\n\r\n                                    <div *ngIf=\"!TrabajadorSinTurno && tipoTurno === 'Horario Fijo'\">\r\n                                    <p  class=\"text-muted\">Puedes modificar los turnos si lo deseas. Pero debe ser en común acuerdo con el trabajador.</p>\r\n\r\n                                    <button  [routerLink]=\"['../ActualizarTurnosFijos/']\"  class=\"btn btn-success btn-sm\" type=\"submit\">Modificar turnos fijos</button>\r\n                                </div>\r\n                    </li>\r\n                    \r\n\r\n\r\n                      <li *ngFor=\"let turnos_sin_liberar of turnos_sin_liberar\" class=\"list-group-item\">Liberación pendiente {{turnos_sin_liberar.mes}}/{{turnos_sin_liberar.anio}} <button [routerLink]=\"['../LiberarTurnos/',turnos_sin_liberar.mes, turnos_sin_liberar.anio]\" style=\"float:right\" type=\"button\" class=\"btn btn-success btn-sm\">Liberar</button>\r\n                    </li>\r\n\r\n                  <!--  <li class=\"list-group-item\">\r\n                            Vestibulum at eros\r\n                    </li> -->\r\n            </ul>\r\n        </div>\r\n        <br>\r\n<div >\r\n       <!-- <fate-ui uiId=\"foo\"></fate-ui>\r\n<fate-input uiId=\"foo\" [(ngModel)]=\"someHtml\"></fate-input>-->\r\n<!--<app-ngx-editor [placeholder]=\"'Enter text here...'\" [spellcheck]=\"true\" [(ngModel)]=\"someHtml\"></app-ngx-editor>-->\r\n\r\n<!--<button (click)=\"verHTML(someHtml)\"> LISTO</button>-->\r\n    \r\n</div>\r\n<!--<div id=\"parentdiv\" [innerHTML]=\"logoHtml+ someHtml\"></div>-->\r\n    <a [routerLink]=\"['../../../Planilla/']\" class=\"btn btn-primary\">Volver a planilla</a>\r\n  </div>\r\n</div>\r\n\r\n\r\n\r\n<!--\r\n<div class=\"container\" style=\"margin-top:50px;padding:35px;\">\r\n\r\n    <div>\r\n        <button class=\"btn btn-danger btn-sm\" [routerLink]=\"['../LiberarSueldos/']\">Liberar Sueldos</button>\r\n    </div>\r\n\r\n\r\n    <div>\r\n        <button class=\"btn btn-danger\" [routerLink]=\"['../Marcaje/']\">Marcar asistencia</button>\r\n    </div>\r\n\r\n    <div *ngIf=\"boleano_boton == 'Turnos'\">\r\n        <button [routerLink]=\"['../TurnosVariables/']\" class=\"btn btn-primary\" type=\"submit\">Ir a turnos</button>\r\n    </div>\r\n\r\n    <div *ngIf=\"boleano_boton != 'Turnos' && turnoFijoSinTurno\">\r\n        <button  [routerLink]=\"['../TurnosFijos/']\"  class=\"btn btn-primary\" type=\"submit\">Turnos fijos</button>\r\n        <small>Tu trabajador no tiene generado los turnos aún. Genéralos</small>\r\n    </div>\r\n\r\n        <div *ngIf=\"boleano_boton != 'Turnos' && !turnoFijoSinTurno\">\r\n        <button  [routerLink]=\"['../ActualizarTurnosFijos/']\"  class=\"btn btn-primary\" type=\"submit\">Actualizar turnos fijos</button>\r\n        <small>Tu trabajador no tiene generado los turnos aún. Genéralos</small>\r\n    </div>\r\n\r\n    <br>\r\n    <ul class=\"list-group\">\r\n\r\n        <li *ngFor=\"let turnos_sin_liberar of turnos_sin_liberar\" class=\"list-group-item\">Liberación pendiente {{turnos_sin_liberar.mes}}/{{turnos_sin_liberar.anio}} <button [routerLink]=\"['../LiberarTurnos/',turnos_sin_liberar.mes, turnos_sin_liberar.anio]\" style=\"float:right\" type=\"button\" class=\"btn btn-success btn-sm\">Liberar</button>\r\n        </li>\r\n\r\n    </ul>\r\n\r\n    <img [src]=\"urlImagenTrabajador\" class=\"img-thumbnail\" style=\"width:100px; height:100px;\">\r\n\r\n    <div *ngIf=\"entrada !== 0\">\r\n\r\n        <h2> Resumen Asistencia del día: </h2>\r\n        <div class=\"card\">\r\n            <div class=\"card-body\">\r\n                <p>Hora Entrada: {{entrada}}</p>\r\n                <p>Estatus Movimiento: {{ statusEntrada }} </p>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"card\">\r\n            <div class=\"card-body\">\r\n                <p>Hora Salida: {{salida}}</p>\r\n                <p>Estatus Movimiento: {{ statusSalida }} </p>\r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n\r\n\r\n\r\n</div>-->"
+module.exports = "<div class=\"card text-center\">\r\n\r\n  <div class=\"card-header\">\r\n\r\n    <ul class=\"nav nav-tabs card-header-tabs\">\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link active\" routerLinkActive=\"active\">Perfil</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLinkActive=\"active\"  [routerLink]=\"['../EditarPerfilTrabajador']\">Editar</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLinkActive=\"active\"  [routerLink]=\"['../Documentos']\">Emisión Documentación</a>\r\n      </li>  \r\n       <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLinkActive=\"active\"  [routerLink]=\"['../ReporteDocumentosGenerados']\">Documentos Generados</a>\r\n      </li>       \r\n\r\n       <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLinkActive=\"active\"  [routerLink]=\"['../VisualizacionHorario']\">Visualizacion Horario </a>\r\n      </li>\r\n\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLinkActive=\"active\"  [routerLink]=\"['../Bonificaciones']\">Ingresar Bonificaciones </a>\r\n      </li>          \r\n\r\n\r\n      <li class=\"nav-item\">\r\n     <!--   <a class=\"nav-link disabled\" href=\"#\">Disabled</a>-->\r\n      </li>\r\n    </ul>\r\n  </div>\r\n  <div class=\"card-body\">\r\n    <h5 class=\"card-title\">{{ empleado_?.nombre }} {{ empleado_?.apellido }}</h5>\r\n    <h6 class=\"card-subtitle mb-2 text-muted\">Administrativo</h6>\r\n\r\n    <hr>\r\n    <small *ngIf=\"EstadoFotografiaTrabajador\" class=\"text-muted\">Imagen Válida</small>\r\n    <small *ngIf=\"!EstadoFotografiaTrabajador\" class=\"text-muted\">Imagen No Válida</small>\r\n\r\n    <br>\r\n    <mat-slide-toggle\r\n   [(ngModel)]=\"EstadoFotografiaTrabajador\"\r\n   (change)=\"changed()\"\r\n   color=\"primary\">\r\n    <!-- Slide me! {{checked}} -->\r\n</mat-slide-toggle>\r\n<br>\r\n\r\n    <!-- FIN TOGGLE -->\r\n\r\n\r\n\r\n\r\n        <a (click)=\"editarImagen()\"> <img  class=\"img-thumbnail\" [src]=\"urlImagenTrabajador\" style=\"width:100px; max-height:120px\"></a><!-- antes img-thumbnail    v rounded-circle-->\r\n\r\n        <div class=\"text-center m-1 p-2\">   \r\n            <button class=\"btn btn-primary btn-sm\" (click)=\"RotarImagen()\" >\r\n               <small>ROTAR</small>&nbsp; <i  class=\"fas fa-sync-alt\"></i>\r\n            </button>       \r\n        </div>\r\n\r\n    <p class=\"card-text\">Jefatura:  {{ empleado_?.jefatura }}.</p>\r\n\r\n        <div style=\"display:flex;justify-content: center\">\r\n            <ul class=\"list-group\" style=\"width: 600px;\">\r\n                    <li class=\"list-group-item\">\r\n                     <p class=\"text-muted\">  Aprobar sueldo para generación de liq. de sueldo</p>\r\n                      <button class=\"btn btn-danger btn-sm\" [routerLink]=\"['../LiberarSueldos/']\">Liberar Sueldos</button>\r\n                    </li>\r\n                    \r\n                    <li class=\"list-group-item\">\r\n                        <p class=\"text-muted\"> Desvincular trabajador  </p>\r\n                        <button [routerLink]=\"['../DesvinculacionBasica/']\"  class=\"btn btn-warning btn-sm\">Desvinculación </button>\r\n                    </li>\r\n                    \r\n                    <li class=\"list-group-item\" style=\"display:none\">\r\n                        <p class=\"text-muted\"> Marcar Asistencia de trabajador</p>\r\n                        \r\n                        <button *ngIf=\"trabaja_dia_en_curso == 1\" class=\"btn btn-danger btn-sm\" [routerLink]=\"['../Marcaje/']\">Marcar asistencia</button>\r\n\r\n                        <button *ngIf=\"trabaja_dia_en_curso == 0\" class=\"btn btn-danger btn-sm\" [routerLink]=\"['../Marcaje/']\" disabled>Marcar asistencia</button>\r\n                    </li>\r\n                    \r\n                    <li class=\"list-group-item\">\r\n                               <div *ngIf=\"tipoTurno === 'Turnos'\">\r\n                                    <button [routerLink]=\"['../TurnosVariables/']\" class=\"btn btn-primary\" type=\"submit\">Ir a turnos</button>\r\n                                </div>\r\n\r\n                                <div *ngIf=\"tipoTurno === 'Horario Fijo' && TrabajadorSinTurno\">\r\n                                   \r\n                                    <p  class=\"text-muted\">Tu trabajador no tiene generado los turnos aún. Genéralos</p>\r\n                                    <button  [routerLink]=\"['../TurnosFijos/']\"  class=\"btn btn-primary btn-sm\" type=\"submit\">Turnos fijos</button>\r\n                                </div>\r\n\r\n\r\n\r\n                               <div *ngIf=\"tipoTurno === 'Noches'\">\r\n                                   \r\n                                    <p *ngIf=\"TrabajadorSinTurno\" class=\"text-muted\">Tu trabajador no tiene generado los turnos aún. Genéralos</p>                                \r\n                                    <p *ngIf=\"!TrabajadorSinTurno\" class=\"text-muted\">El mes en curso tiene turno. </p>\r\n                                    <button  [routerLink]=\"['../TurnosNoche/']\"  class=\"btn btn-primary btn-sm\" type=\"submit\">Horario Variable</button>\r\n                                </div>\r\n\r\n\r\n                                  \r\n\r\n                                    <div *ngIf=\"!TrabajadorSinTurno && tipoTurno === 'Horario Fijo'\">\r\n                                    <p  class=\"text-muted\">Puedes modificar los turnos si lo deseas. Pero debe ser en común acuerdo con el trabajador.</p>\r\n\r\n                                    <button  [routerLink]=\"['../ActualizarTurnosFijos/']\"  class=\"btn btn-success btn-sm\" type=\"submit\">Modificar turnos fijos</button>\r\n                                </div>\r\n                    </li>\r\n                    \r\n\r\n\r\n                      <li *ngFor=\"let turnos_sin_liberar of turnos_sin_liberar\" class=\"list-group-item\">Liberación pendiente {{turnos_sin_liberar.mes}}/{{turnos_sin_liberar.anio}} <button [routerLink]=\"['../LiberarTurnos/',turnos_sin_liberar.mes, turnos_sin_liberar.anio]\" style=\"float:right\" type=\"button\" class=\"btn btn-success btn-sm\">Liberar</button>\r\n                    </li>\r\n\r\n                  <!--  <li class=\"list-group-item\">\r\n                            Vestibulum at eros\r\n                    </li> -->\r\n            </ul>\r\n        </div>\r\n        <br>\r\n<div >\r\n       <!-- <fate-ui uiId=\"foo\"></fate-ui>\r\n<fate-input uiId=\"foo\" [(ngModel)]=\"someHtml\"></fate-input>-->\r\n<!--<app-ngx-editor [placeholder]=\"'Enter text here...'\" [spellcheck]=\"true\" [(ngModel)]=\"someHtml\"></app-ngx-editor>-->\r\n\r\n<!--<button (click)=\"verHTML(someHtml)\"> LISTO</button>-->\r\n    \r\n</div>\r\n<!--<div id=\"parentdiv\" [innerHTML]=\"logoHtml+ someHtml\"></div>-->\r\n    <a [routerLink]=\"['../../../Planilla/']\" class=\"btn btn-primary\">Volver a planilla</a>\r\n  </div>\r\n</div>\r\n\r\n\r\n\r\n<!--\r\n<div class=\"container\" style=\"margin-top:50px;padding:35px;\">\r\n\r\n    <div>\r\n        <button class=\"btn btn-danger btn-sm\" [routerLink]=\"['../LiberarSueldos/']\">Liberar Sueldos</button>\r\n    </div>\r\n\r\n\r\n    <div>\r\n        <button class=\"btn btn-danger\" [routerLink]=\"['../Marcaje/']\">Marcar asistencia</button>\r\n    </div>\r\n\r\n    <div *ngIf=\"boleano_boton == 'Turnos'\">\r\n        <button [routerLink]=\"['../TurnosVariables/']\" class=\"btn btn-primary\" type=\"submit\">Ir a turnos</button>\r\n    </div>\r\n\r\n    <div *ngIf=\"boleano_boton != 'Turnos' && turnoFijoSinTurno\">\r\n        <button  [routerLink]=\"['../TurnosFijos/']\"  class=\"btn btn-primary\" type=\"submit\">Turnos fijos</button>\r\n        <small>Tu trabajador no tiene generado los turnos aún. Genéralos</small>\r\n    </div>\r\n\r\n        <div *ngIf=\"boleano_boton != 'Turnos' && !turnoFijoSinTurno\">\r\n        <button  [routerLink]=\"['../ActualizarTurnosFijos/']\"  class=\"btn btn-primary\" type=\"submit\">Actualizar turnos fijos</button>\r\n        <small>Tu trabajador no tiene generado los turnos aún. Genéralos</small>\r\n    </div>\r\n\r\n    <br>\r\n    <ul class=\"list-group\">\r\n\r\n        <li *ngFor=\"let turnos_sin_liberar of turnos_sin_liberar\" class=\"list-group-item\">Liberación pendiente {{turnos_sin_liberar.mes}}/{{turnos_sin_liberar.anio}} <button [routerLink]=\"['../LiberarTurnos/',turnos_sin_liberar.mes, turnos_sin_liberar.anio]\" style=\"float:right\" type=\"button\" class=\"btn btn-success btn-sm\">Liberar</button>\r\n        </li>\r\n\r\n    </ul>\r\n\r\n    <img [src]=\"urlImagenTrabajador\" class=\"img-thumbnail\" style=\"width:100px; height:100px;\">\r\n\r\n    <div *ngIf=\"entrada !== 0\">\r\n\r\n        <h2> Resumen Asistencia del día: </h2>\r\n        <div class=\"card\">\r\n            <div class=\"card-body\">\r\n                <p>Hora Entrada: {{entrada}}</p>\r\n                <p>Estatus Movimiento: {{ statusEntrada }} </p>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"card\">\r\n            <div class=\"card-body\">\r\n                <p>Hora Salida: {{salida}}</p>\r\n                <p>Estatus Movimiento: {{ statusSalida }} </p>\r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n\r\n\r\n\r\n</div>-->"
 
 /***/ }),
 
@@ -7477,7 +8005,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "    <nav aria-label=\"breadcrumb\" class=\"shadow p-0 mb-5 bg-white rounded\" >\n          <ol class=\"breadcrumb \" style=\"background-color: white\">\n            <li class=\"breadcrumb-item\"><a [routerLink]=\"['../Perfil']\">Perfil</a></li>\n            <li class=\"breadcrumb-item active\" aria-current=\"page\">Visualización documentos</li>\n          </ol>\n    </nav>\n\n<body style=\"margin:50px;\">\n\n    <app-titulo titulo=\"Visualización de documentos\" subtitulo=\"Visualiza y exporta los documentos de tu trabajador.\" ></app-titulo>\n\n<div class=\"table-responsive-sm\">\n<table class=\"table table-sm\">\n  <thead>\n    <tr>\n      <th scope=\"col\">Nombre</th>\n      <th scope=\"col\">Fecha Emisión</th>\n      <th scope=\"col\">Visualizar</th>\n    </tr>\n  </thead>\n  <tbody>\n\t    <tr *ngFor=\"let item of resultData\" >\n\t      <th scope=\"row\">{{item.titulo}}</th>\n\t      <td>{{item.fecha_emision}}</td>\n\t      <td><button class=\"btn btn-outline-primary\" (click)=\"visualizarPDF(item)\" >Descargar</button></td>\n\t    </tr>\n  </tbody>\n</table>\n</div>\n\n </body>\n"
+module.exports = "    <nav aria-label=\"breadcrumb\" class=\"shadow p-0 mb-5 bg-white rounded\" >\n          <ol class=\"breadcrumb \" style=\"background-color: white\">\n            <li class=\"breadcrumb-item\"><a [routerLink]=\"['../Perfil']\">Perfil</a></li>\n            <li class=\"breadcrumb-item active\" aria-current=\"page\">Visualización documentos</li>\n          </ol>\n    </nav>\n\n<body style=\"margin:50px;\">\n\n    <app-titulo titulo=\"Visualización de documentos\" subtitulo=\"Visualiza y exporta los documentos de tu trabajador.\" ></app-titulo>\n\n<div class=\"table-responsive-sm\">\n<table class=\"table table-sm\">\n  <thead>\n    <tr>\n      <th scope=\"col\">Nombre</th>\n      <th scope=\"col\">Fecha Emisión</th>\n      <th scope=\"col\">Visualizar</th>\n    </tr>\n  </thead>\n  <tbody>\n\t    <tr *ngFor=\"let item of resultData\" >\n\t      <th scope=\"row\">{{item.titulo}}</th>\n\t      <td>{{item.fecha_emision}}</td>\n\t      <td><button class=\"btn btn-outline-primary\" (click)=\"visualizarPDF(item)\" >Visualizar</button></td>\n\t    </tr>\n  </tbody>\n</table>\n</div>\n\n </body>\n\n               <ngx-loading style=\"height:2000px !important;\" [show]=\"loading\" [config]=\"{ backdropBorderRadius: '3px', fullScreenBackdrop:'true' }\" [template]=\"customLoadingTemplate\"></ngx-loading> \n              <ng-template  style=\"height:2000px !important;\"  #customLoadingTemplate></ng-template>\n"
 
 /***/ }),
 
@@ -7496,13 +8024,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _services_crud_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../services/crud.service */ "./src/app/services/crud.service.ts");
 /* harmony import */ var _services_generador_documentos_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../services/generador-documentos.service */ "./src/app/services/generador-documentos.service.ts");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
+
 
 
 
 
 
 var ReporteDocumentosGeneradosComponent = /** @class */ (function () {
-    function ReporteDocumentosGeneradosComponent(param, router, GeneradorDocumentosService_, CrudService_) {
+    function ReporteDocumentosGeneradosComponent(sanitizer, param, router, GeneradorDocumentosService_, CrudService_) {
+        this.sanitizer = sanitizer;
         this.param = param;
         this.router = router;
         this.GeneradorDocumentosService_ = GeneradorDocumentosService_;
@@ -7510,6 +8041,7 @@ var ReporteDocumentosGeneradosComponent = /** @class */ (function () {
     }
     ReporteDocumentosGeneradosComponent.prototype.ngOnInit = function () {
         var _this = this;
+        this.rutEmpresa = localStorage.getItem('rut_empresa');
         this.id = this.param.parent.snapshot.paramMap.get('id');
         //alert(this.id)   
         this.CrudService_.get({ 'trabajador_id': this.id, 'rut_empresa': localStorage.getItem('rut_empresa') }, 'GetDocumentoPorTrabajador')
@@ -7521,15 +8053,41 @@ var ReporteDocumentosGeneradosComponent = /** @class */ (function () {
             console.log(data);
         });
     };
+    ReporteDocumentosGeneradosComponent.prototype.avoidScroll = function () {
+        window.onscroll = function () { window.scrollTo(0, 0); };
+    };
+    ReporteDocumentosGeneradosComponent.prototype.enableScrolling = function () {
+        window.onscroll = function () { };
+    };
+    ReporteDocumentosGeneradosComponent.prototype.refrescarIframe = function (item) {
+        var _this = this;
+        this.CrudService_.Add({ 'cuerpoDocumento': item.CuerpoDocumento, 'rutEmpresa': localStorage.getItem('rut_empresa') }, 'armarDocumento')
+            .subscribe(function (data) { return console.log(data); }, function (err) { return console.log(err); }, function () {
+            setTimeout(function () {
+                // this.URL_IFRAME = this.sanitizer.bypassSecurityTrustResourceUrl('https://sister.cl/laravel/index.php/presta/'+this.rutEmpresa);
+                //location.href = 'https://sister.cl/laravel/index.php/presta/'+this.rutEmpresa;
+                window.open('https://sister.cl/laravel/index.php/presta/' + _this.rutEmpresa, '_blank' // <- This is what makes it open in a new window.
+                );
+                _this.loading = false;
+                _this.enableScrolling();
+            }, 3000);
+        });
+    };
     ReporteDocumentosGeneradosComponent.prototype.visualizarPDF = function (item) {
+        this.loading = true;
+        this.avoidScroll();
         console.log("ITEM", item);
-        if (item.tipocarta == 1) {
-            var nombre = JSON.parse(localStorage.getItem('TrabajadorSeleccionadoPerfil'));
-            this.GeneradorDocumentosService_.generarPDFDocumentoFromServerTipoCarta(item, this.imagen64, item.ciudad, nombre.nombre, nombre.apellido, nombre.rut);
-        }
-        else {
-            this.GeneradorDocumentosService_.generarPDFDocumentoFromServer(item, this.imagen64, item.ciudad);
-        }
+        /*
+            if(item.tipocarta == 1){
+                let nombre = JSON.parse(localStorage.getItem('TrabajadorSeleccionadoPerfil'))
+                this.GeneradorDocumentosService_.generarPDFDocumentoFromServerTipoCarta(item, this.imagen64, item.ciudad, nombre.nombre,nombre.apellido, nombre.rut);
+        
+            }else{
+                
+                this.GeneradorDocumentosService_.generarPDFDocumentoFromServer(item, this.imagen64, item.ciudad);
+        
+            }*/
+        this.refrescarIframe(item);
     };
     ReporteDocumentosGeneradosComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -7537,7 +8095,8 @@ var ReporteDocumentosGeneradosComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./reporte-documentos-generados.component.html */ "./src/app/components/perfil-trabajador/reporte-documentos-generados/reporte-documentos-generados.component.html"),
             styles: [__webpack_require__(/*! ./reporte-documentos-generados.component.css */ "./src/app/components/perfil-trabajador/reporte-documentos-generados/reporte-documentos-generados.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"],
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_5__["DomSanitizer"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"],
             _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"],
             _services_generador_documentos_service__WEBPACK_IMPORTED_MODULE_3__["GeneradorDocumentosService"],
             _services_crud_service__WEBPACK_IMPORTED_MODULE_2__["CrudService"]])
@@ -8179,6 +8738,157 @@ var TurnosVariablesComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/components/perfil-trabajador/visualizacion-horario/visualizacion-horario.component.css":
+/*!********************************************************************************************************!*\
+  !*** ./src/app/components/perfil-trabajador/visualizacion-horario/visualizacion-horario.component.css ***!
+  \********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcGVyZmlsLXRyYWJhamFkb3IvdmlzdWFsaXphY2lvbi1ob3JhcmlvL3Zpc3VhbGl6YWNpb24taG9yYXJpby5jb21wb25lbnQuY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/components/perfil-trabajador/visualizacion-horario/visualizacion-horario.component.html":
+/*!*********************************************************************************************************!*\
+  !*** ./src/app/components/perfil-trabajador/visualizacion-horario/visualizacion-horario.component.html ***!
+  \*********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "  <!--<form #forma='ngForm' (ngSubmit)=\"guardar(forma)\" #forma=\"ngForm\">-->\n    <nav aria-label=\"breadcrumb\" class=\"shadow p-0 mb-5 bg-white rounded\" >\n      <ol class=\"breadcrumb \" style=\"background-color: white\">\n        <li class=\"breadcrumb-item\"><a [routerLink]=\"['../Perfil']\">Perfil</a></li>\n        <li class=\"breadcrumb-item active\" aria-current=\"page\">Visualización horario</li>\n      </ol>\n    </nav>\n\n  <body style=\"margin:50px; padding:50px\">\n    <app-titulo titulo=\"Visualiza el horario de tu trabajador\" subtitulo=\"Puedes imprimir el horario para hacer entrega física del mismo. Recuerda que tu trabajador si usa su perfil podrá también visualizarlo.\"></app-titulo>\n  \t<div class=\"container\">\n  \t\t\t<div class='app-calendar' *ngIf=\"calendarVisible\">\n  \t\t\t  <full-calendar\n  \t\t\t    locale=\"es\"\n  \t\t\t    #calendar\n  \t\t\t    defaultView=\"dayGridMonth\"\n  \t\t\t    [header]=\"{\n  \t\t\t      left: 'prev,next today',\n  \t\t\t      center: 'title',\n  \t\t\t      right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'\n  \t\t\t    }\"\n  \t\t\t    [plugins]=\"calendarPlugins\"\n  \t\t\t    [weekends]=\"calendarWeekends\"\n  \t\t\t    [events]=\"calendarEvents\"\n  \t\t\t    (datesRender)=\"peo($event)\"\n  \t\t\t    (dateClick)=\"handleDateClick($event)\"\n  \t\t\t    \n  \t\t\t  ></full-calendar>\n  \t\t\t</div>\n  </div>\n  </body>"
+
+/***/ }),
+
+/***/ "./src/app/components/perfil-trabajador/visualizacion-horario/visualizacion-horario.component.ts":
+/*!*******************************************************************************************************!*\
+  !*** ./src/app/components/perfil-trabajador/visualizacion-horario/visualizacion-horario.component.ts ***!
+  \*******************************************************************************************************/
+/*! exports provided: VisualizacionHorarioComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VisualizacionHorarioComponent", function() { return VisualizacionHorarioComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _services_perfil_trabajador_service_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../services/perfil-trabajador-service.service */ "./src/app/services/perfil-trabajador-service.service.ts");
+/* harmony import */ var _services_ingreso_usuario_servidor_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../../../services/ingreso-usuario-servidor.service */ "./src/app/services/ingreso-usuario-servidor.service.ts");
+/* harmony import */ var _fullcalendar_angular__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @fullcalendar/angular */ "./node_modules/@fullcalendar/angular/fesm5/fullcalendar-angular.js");
+/* harmony import */ var _fullcalendar_daygrid__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @fullcalendar/daygrid */ "./node_modules/@fullcalendar/daygrid/main.esm.js");
+/* harmony import */ var _fullcalendar_timegrid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @fullcalendar/timegrid */ "./node_modules/@fullcalendar/timegrid/main.esm.js");
+/* harmony import */ var _fullcalendar_interaction__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @fullcalendar/interaction */ "./node_modules/@fullcalendar/interaction/main.esm.js");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_9__);
+
+
+
+
+
+
+
+
+
+ // for dateClick
+
+var VisualizacionHorarioComponent = /** @class */ (function () {
+    function VisualizacionHorarioComponent(perfilServicio_, param, router, servicio_empleado) {
+        this.perfilServicio_ = perfilServicio_;
+        this.param = param;
+        this.router = router;
+        this.servicio_empleado = servicio_empleado;
+        this.booleanoBotonActualizar = false;
+        this.booleanoDatosServidor = false;
+        this.calendarVisible = true;
+        this.calendarPlugins = [_fullcalendar_daygrid__WEBPACK_IMPORTED_MODULE_6__["default"], _fullcalendar_timegrid__WEBPACK_IMPORTED_MODULE_7__["default"], _fullcalendar_interaction__WEBPACK_IMPORTED_MODULE_8__["default"]];
+        this.calendarWeekends = true;
+        this.calendarEvents = [
+            { title: 'Event Now', start: new Date() }
+        ];
+    }
+    VisualizacionHorarioComponent.prototype.ngOnInit = function () {
+        this.id = this.param.parent.snapshot.paramMap.get('id');
+        this.anio = new Date().getFullYear();
+        this.mes = new Date().getMonth() + 1;
+        this.procesado();
+        this.perfilServicio_.getTurnoNocheService({ id: this.id, mes: this.mes, anio: this.anio })
+            .subscribe(function (data) {
+            console.log(data);
+            console.log(data[0].turno);
+        });
+    };
+    VisualizacionHorarioComponent.prototype.procesado = function () {
+        var fecha = "2019-08";
+        console.log(moment__WEBPACK_IMPORTED_MODULE_9__(fecha, "YYYY-MM").daysInMonth()); // 29)
+    };
+    VisualizacionHorarioComponent.prototype.handleDateClick = function (e) {
+        console.log(e);
+        var calendarApi = this.calendarComponent.getApi();
+        console.log(calendarApi.getDate());
+        //console.log(calendarApi.getEventById())
+    };
+    VisualizacionHorarioComponent.prototype.peo = function (e) {
+        var _this = this;
+        console.log(e.view.currentEnd);
+        console.log(new Date(e.view.currentStart).getMonth() + 1);
+        var mes = new Date(e.view.currentStart).getMonth() + 1;
+        var mes_para_fecha;
+        var dia;
+        if (mes < 10) {
+            mes_para_fecha = '0' + mes;
+        }
+        else {
+            mes_para_fecha = mes;
+        }
+        var anio = new Date(e.view.currentStart).getFullYear();
+        var arraycito = [];
+        this.perfilServicio_.getTurnoNocheService({ id: this.id, mes: mes, anio: this.anio })
+            .subscribe(function (data) {
+            console.log(data);
+            console.log(JSON.parse(data[0].turno).tipo_b_31);
+            console.log(data[0].turno);
+            for (var i = 1; i < 32; ++i) {
+                // code...
+                console.log(JSON.parse(data[0].turno)['tipo_a_' + i]);
+                dia = i < 10 ? '0' + i : i;
+                if (JSON.parse(data[0].turno)['tipo_a_' + i] !== undefined && JSON.parse(data[0].turno)['tipo_a_' + i].length > 0) {
+                    console.log(anio + '-0' + mes + '-' + i);
+                    arraycito.push({ title: JSON.parse(data[0].turno)['tipo_a_' + i] + ": " + JSON.parse(data[0].turno)['hora_a_' + i], start: anio + '-' + mes_para_fecha + '-' + dia });
+                }
+                if (JSON.parse(data[0].turno)['tipo_b_' + i] !== undefined && JSON.parse(data[0].turno)['tipo_b_' + i].length > 0) {
+                    arraycito.push({ title: JSON.parse(data[0].turno)['tipo_b_' + i] + ": " + JSON.parse(data[0].turno)['hora_b_' + i], start: anio + '-' + mes_para_fecha + '-' + dia });
+                }
+                console.log(JSON.parse(data[0].turno)['tipo_b_' + i]);
+            }
+            console.log(_this.calendarEvents);
+            _this.calendarEvents = arraycito;
+        });
+        console.log(e.view);
+        console.log(e.view.calendar);
+    };
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('calendar'),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _fullcalendar_angular__WEBPACK_IMPORTED_MODULE_5__["FullCalendarComponent"])
+    ], VisualizacionHorarioComponent.prototype, "calendarComponent", void 0);
+    VisualizacionHorarioComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-visualizacion-horario',
+            template: __webpack_require__(/*! ./visualizacion-horario.component.html */ "./src/app/components/perfil-trabajador/visualizacion-horario/visualizacion-horario.component.html"),
+            styles: [__webpack_require__(/*! ./visualizacion-horario.component.css */ "./src/app/components/perfil-trabajador/visualizacion-horario/visualizacion-horario.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_services_perfil_trabajador_service_service__WEBPACK_IMPORTED_MODULE_3__["PerfilTrabajadorServiceService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"],
+            _services_ingreso_usuario_servidor_service__WEBPACK_IMPORTED_MODULE_4__["IngresoUsuarioServidorService"]])
+    ], VisualizacionHorarioComponent);
+    return VisualizacionHorarioComponent;
+}()); // Fin clase de Componente
+
+
+
+/***/ }),
+
 /***/ "./src/app/components/perfil-trabajador/visualizacion-liquidaciones/visualizacion-liquidaciones.component.css":
 /*!********************************************************************************************************************!*\
   !*** ./src/app/components/perfil-trabajador/visualizacion-liquidaciones/visualizacion-liquidaciones.component.css ***!
@@ -8242,7 +8952,7 @@ var VisualizacionLiquidacionesComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-navbar></app-navbar>\r\n      <nav aria-label=\"breadcrumb\" class=\"shadow p-0 mb-5 bg-white rounded\" >\r\n          <ol class=\"breadcrumb \" style=\"background-color: white\">\r\n            <li class=\"breadcrumb-item\"><a [routerLink]=\"['../Home']\">Inicio</a></li>\r\n            <li class=\"breadcrumb-item active\" aria-current=\"page\">Planilla</li>\r\n          </ol>\r\n    </nav>\r\n<div class=\"container\" style=\"margin-top:50px;padding:35px;\">\r\n\r\n\r\n    <div class=\"input-group mb-3\">\r\n        <div class=\"input-group-prepend\">\r\n            <span class=\"input-group-text\" id=\"basic-addon1\">Busca un trabajador</span>\r\n        </div>\r\n\r\n        <input type=\"text\" class=\"form-control\" aria-label=\"Username\" aria-describedby=\"basic-addon1\" [(ngModel)]=\"name\" #ctrl=\"ngModel\">\r\n    </div>\r\n\r\n    <!-- <div class=\"input-group mb-3 row justify-content-center\"><button type=\"button\" class=\"btn btn-outline-primary\">Buscar</button></div>\r\n     <p>Value: {{ name }}</p> <p>Valid: {{ ctrl.dirty }}</p>\r\n   -->\r\n\r\n    <table class=\"table table-hover table-responsive-lg\">\r\n        <thead>\r\n            <tr>\r\n                <th scope=\"col\">Nombre</th>\r\n                <th scope=\"col\">Apellido</th>\r\n                <th scope=\"col\">Puesto</th>\r\n                <th scope=\"col\">Isapre</th>\r\n                  <th scope=\"col\">Acción</th>\r\n            </tr>\r\n        </thead>\r\n\r\n        <tbody *ngIf=\"ctrl.dirty == false || name.length == 0\">\r\n\r\n            <tr *ngFor=\"let empleados of empleados\">\r\n\r\n                <th scope=\"row\" style=\"cursor:pointer\">{{ empleados.nombre }}</th>\r\n                <td>{{ empleados.apellido }}</td>\r\n                <td>{{ empleados.puesto }}</td>\r\n                <td>{{ empleados.isapre }}</td>\r\n                <td><button (click)=\"ir(empleados)\" class=\"btn btn-outline-primary\">Revisar</button></td>\r\n            </tr>\r\n\r\n        </tbody>\r\n\r\n        <tbody *ngIf=\"ctrl.dirty == true && name.length > 0\">\r\n\r\n            <tr *ngFor=\"let empleados of empleados\">\r\n\r\n                <th *ngIf=\"empleados.nombre.toLowerCase().search(name.toLowerCase()) >= 0 || empleados.apellido.toLowerCase().search(name.toLowerCase()) >= 0\" scope=\"row\">{{ empleados.nombre }}</th>\r\n                <td *ngIf=\"empleados.nombre.toLowerCase().search(name.toLowerCase()) >= 0 || empleados.apellido.toLowerCase().search(name.toLowerCase()) >= 0\">{{ empleados.apellido }}</td>\r\n                <td *ngIf=\"empleados.nombre.toLowerCase().search(name.toLowerCase()) >= 0 || empleados.apellido.toLowerCase().search(name.toLowerCase()) >= 0\">{{ empleados.puesto }}</td>\r\n                <td *ngIf=\"empleados.nombre.toLowerCase().search(name.toLowerCase()) >= 0 || empleados.apellido.toLowerCase().search(name.toLowerCase()) >= 0\">{{ empleados.isapre }}mdo</td>\r\n            </tr>\r\n        </tbody>\r\n    </table>\r\n</div>"
+module.exports = "<app-navbar></app-navbar>\r\n      <nav aria-label=\"breadcrumb\" class=\"shadow p-0 mb-5 bg-white rounded\" >\r\n          <ol class=\"breadcrumb \" style=\"background-color: white\">\r\n            <li class=\"breadcrumb-item\"><a [routerLink]=\"['../Home']\">Inicio</a></li>\r\n            <li class=\"breadcrumb-item active\" aria-current=\"page\">Planilla</li>\r\n          </ol>\r\n    </nav>\r\n<div class=\"container\" style=\"margin-top:50px;padding:35px;\">\r\n\r\n    <app-select-sucursales LabelSelect=\"Filtra trabajadores por sucursal: \" (onSucursalSelected)=\"peo($event)\"></app-select-sucursales>\r\n    <br>\r\n    <div class=\"input-group mb-3\">\r\n        <div class=\"input-group-prepend\">\r\n            <span class=\"input-group-text\" id=\"basic-addon1\">Busca un trabajador</span>\r\n        </div>\r\n\r\n        <input type=\"text\" class=\"form-control\" aria-label=\"Username\" aria-describedby=\"basic-addon1\" [(ngModel)]=\"name\" #ctrl=\"ngModel\">\r\n    </div>\r\n\r\n    <br>\r\n      <div class=\"form-group\">\r\n        <label>Visualizar Postulantes</label>\r\n        <select   (change)=\"onChangePostulantesOactivos($event)\" [(ngModel)]=\"PostulantesOactivos\" class=\"form-control\">\r\n          <option>Selecciona</option>\r\n          \r\n          <option>Postulante</option>\r\n          <option>Activo</option>\r\n\r\n        </select>\r\n      </div>\r\n\r\n\r\n    <br>\r\n\r\n    <button (click)=\"LimpiarFiltros()\" class=\"btn btn-outline-danger btn-block\">Limpiar Filtros</button>\r\n\r\n    <br>\r\n    <hr>\r\n    <!-- <div class=\"input-group mb-3 row justify-content-center\"><button type=\"button\" class=\"btn btn-outline-primary\">Buscar</button></div>\r\n     <p>Value: {{ name }}</p> <p>Valid: {{ ctrl.dirty }}</p>\r\n   -->\r\n\r\n    <table class=\"table table-hover table-responsive-lg\">\r\n        <thead>\r\n            <tr>\r\n                <th scope=\"col\">Nombre</th>\r\n                <th scope=\"col\">Apellido</th>\r\n                <th scope=\"col\">Puesto</th>\r\n                <th scope=\"col\">Isapre</th>\r\n                <th scope=\"col\">Acción</th>\r\n            </tr>\r\n        </thead>\r\n\r\n        <tbody *ngIf=\"ctrl.dirty == false || name.length == 0\">\r\n\r\n            <tr *ngFor=\"let empleados of empleados\">\r\n\r\n                <th scope=\"row\" style=\"cursor:pointer\">{{ empleados.nombre }}</th>\r\n                <td>{{ empleados.apellido }}</td>\r\n                <td>{{ empleados.puesto }}</td>\r\n                <td>{{ empleados.isapre }}</td>\r\n                <td><button (click)=\"ir(empleados)\" class=\"btn btn-outline-primary\">Revisar</button></td>\r\n            </tr>\r\n\r\n        </tbody>\r\n\r\n        <tbody *ngIf=\"ctrl.dirty == true && name.length > 0\">\r\n\r\n            <tr *ngFor=\"let empleados of empleados\">\r\n\r\n                <th *ngIf=\"empleados.nombre.toLowerCase().search(name.toLowerCase()) >= 0 || empleados.apellido.toLowerCase().search(name.toLowerCase()) >= 0\" scope=\"row\">{{ empleados.nombre }}</th>\r\n                <td *ngIf=\"empleados.nombre.toLowerCase().search(name.toLowerCase()) >= 0 || empleados.apellido.toLowerCase().search(name.toLowerCase()) >= 0\">{{ empleados.apellido }}</td>\r\n                <td *ngIf=\"empleados.nombre.toLowerCase().search(name.toLowerCase()) >= 0 || empleados.apellido.toLowerCase().search(name.toLowerCase()) >= 0\">{{ empleados.puesto }}</td>\r\n                <td *ngIf=\"empleados.nombre.toLowerCase().search(name.toLowerCase()) >= 0 || empleados.apellido.toLowerCase().search(name.toLowerCase()) >= 0\">{{ empleados.isapre }}</td>\r\n                <td *ngIf=\"empleados.nombre.toLowerCase().search(name.toLowerCase()) >= 0 || empleados.apellido.toLowerCase().search(name.toLowerCase()) >= 0\"><button (click)=\"ir(empleados)\" class=\"btn btn-outline-primary\">Revisar</button></td>\r\n            </tr>\r\n        </tbody>\r\n    </table>\r\n</div>\r\n              <ngx-loading style=\"height:2000px !important;\" [show]=\"loading\" [config]=\"{ backdropBorderRadius: '3px', fullScreenBackdrop:'true' }\" [template]=\"customLoadingTemplate\"></ngx-loading> \r\n              <ng-template  style=\"height:2000px !important;\"  #customLoadingTemplate></ng-template>"
 
 /***/ }),
 
@@ -8260,22 +8970,84 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _services_planillaservices_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../services/planillaservices.service */ "./src/app/services/planillaservices.service.ts");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _ngrx_store__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ngrx/store */ "./node_modules/@ngrx/store/fesm5/store.js");
+
 
 
 
 
 var PlanillaComponent = /** @class */ (function () {
-    function PlanillaComponent(router, planillaServicio_) {
-        var _this = this;
+    function PlanillaComponent(store, router, planillaServicio_) {
+        this.store = store;
         this.router = router;
         this.planillaServicio_ = planillaServicio_;
+        this.loading = true;
+        this.getTodos();
+    } // Fin constructor
+    PlanillaComponent.prototype.onChangePostulantesOactivos = function (e) {
+        var _this = this;
+        console.log(e);
+        this.planillaServicio_.obtener_postulantes({
+            'nombre_empresa_usuario_plataforma': localStorage.getItem('nombre_empresa'),
+            'estatus': e.srcElement.value
+        }).subscribe(function (data) {
+            console.log('data', data);
+            _this.empleados = data;
+            //this.empleados_todos = data;
+        }, function (error) {
+        }, function () {
+            _this.loading = false;
+        });
+    };
+    PlanillaComponent.prototype.getTodos = function () {
+        var _this = this;
         this.planillaServicio_.obtener_planilla(localStorage.getItem('nombre_empresa')).subscribe(function (data) {
             console.log('data', data);
             _this.empleados = data;
+            _this.empleados_todos = data;
+        }, function (error) {
+        }, function () {
+            _this.loading = false;
         });
-    } // Fin constructor
+    };
     PlanillaComponent.prototype.ir_perfil_empleado = function () {
         alert("asdf");
+    };
+    PlanillaComponent.prototype.peo = function (e) {
+        var _this = this;
+        console.log("EN PEOI:;;;:;;", e);
+        setTimeout(function () {
+            _this.getFromState("sucursal", e);
+        }, 2000);
+    };
+    PlanillaComponent.prototype.LimpiarFiltros = function () {
+        this.empleados = this.empleados_todos;
+    };
+    PlanillaComponent.prototype.getFromState = function (sucursal, e) {
+        var _this = this;
+        this.store.select('marcaje')
+            .subscribe(function (result) {
+            _this.idSucursal = result.Sucursal;
+            console.log("****Resultado *****", result);
+            console.log("****Resultado *****", result.Sucursal);
+            if (sucursal === 'sucursal') {
+                _this.empleados = [];
+                _this.empleados_todos.map(function (valor) {
+                    //console.log(valor['sucursal_id'] + " " + this.idSucursal)
+                    console.log("typeof valor['sucursal_id']" + valor['sucursal_id'], typeof valor['sucursal_id']);
+                    console.log("e " + e, typeof e);
+                    if (valor['sucursal_id'] === e) {
+                        //console.log(valor)
+                        //this.PerfilTrabajadorServiceService_.getContrasteFotograficoValidacion(valor['id'])
+                        //.subscribe( data => console.log(data) )
+                        _this.empleados.push(valor);
+                    }
+                });
+            }
+        }, function (err) {
+            console.log("ERROE?", err);
+        }, function () {
+        });
     };
     PlanillaComponent.prototype.ir = function (empleado) {
         console.log(empleado);
@@ -8287,7 +9059,8 @@ var PlanillaComponent = /** @class */ (function () {
             selector: 'app-planilla',
             template: __webpack_require__(/*! ./planilla.component.html */ "./src/app/components/planilla/planilla.component.html")
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"],
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ngrx_store__WEBPACK_IMPORTED_MODULE_4__["Store"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"],
             _services_planillaservices_service__WEBPACK_IMPORTED_MODULE_2__["PlanillaservicesService"]])
     ], PlanillaComponent);
     return PlanillaComponent;
@@ -8816,7 +9589,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "  <div class=\"form-group\">\r\n    <label>Selecciona Sucursal</label>\r\n    <select #select  (change)=\"onChange($event, select)\" [(ngModel)]=\"SucursalElegida\" class=\"form-control\" id=\"exampleFormControlSelect1\">\r\n      <option *ngFor=\"let sucursal of sucursales\" [value]=\"sucursal.id\">{{ sucursal.nombre }}</option>\r\n    </select>\r\n  </div>"
+module.exports = "  <div class=\"form-group\">\r\n    <label>{{ LabelSelect }}</label>\r\n    <select #select  (change)=\"onChange($event, select)\" [(ngModel)]=\"SucursalElegida\" class=\"form-control\" id=\"exampleFormControlSelect1\">\r\n      <option *ngFor=\"let sucursal of sucursales\" [value]=\"sucursal.id\">{{ sucursal.nombre }}</option>\r\n    </select>\r\n  </div>"
 
 /***/ }),
 
@@ -8848,6 +9621,12 @@ var SelectSucursalesComponent = /** @class */ (function () {
         this.onSucursalSelected = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
         this.getSucursal();
     }
+    SelectSucursalesComponent.prototype.ngOnInit = function () {
+        console.log(this.LabelSelect);
+        if (this.LabelSelect === undefined) {
+            this.LabelSelect = "Sucursales";
+        }
+    };
     SelectSucursalesComponent.prototype.getSucursal = function () {
         var _this = this;
         this.GuardarSucursalService_.get_sucursales_servidor(JSON.stringify({ usuario: this.nombreEmpresa }))
@@ -8872,6 +9651,10 @@ var SelectSucursalesComponent = /** @class */ (function () {
             }
         }
     };
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)
+    ], SelectSucursalesComponent.prototype, "LabelSelect", void 0);
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"])
@@ -9144,6 +9927,71 @@ var VisualizacionContrastadaComponent = /** @class */ (function () {
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_services_libroremuneraciones_service__WEBPACK_IMPORTED_MODULE_2__["LibroremuneracionesService"]])
     ], VisualizacionContrastadaComponent);
     return VisualizacionContrastadaComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/shared/visualizador-contrastado-registros/visualizador-contrastado-registros.component.css":
+/*!***********************************************************************************************************************!*\
+  !*** ./src/app/components/shared/visualizador-contrastado-registros/visualizador-contrastado-registros.component.css ***!
+  \***********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".imagen1 {\r\n  display: block;\r\n  position: relative;\t\t\r\n  width: 300px;\r\n}\r\n\r\n.texto1 {\r\n  background-color: rgba(255,255,255,.8);\r\n  display: block;\r\n  position: absolute;\r\n  bottom: -16px;\r\n  left: 0;\r\n  padding: 5px;\r\n  width: 100%;\r\n  font-size: 12px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9zaGFyZWQvdmlzdWFsaXphZG9yLWNvbnRyYXN0YWRvLXJlZ2lzdHJvcy92aXN1YWxpemFkb3ItY29udHJhc3RhZG8tcmVnaXN0cm9zLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxjQUFjO0VBQ2Qsa0JBQWtCO0VBQ2xCLFlBQVk7QUFDZDs7QUFFQTtFQUNFLHNDQUFzQztFQUN0QyxjQUFjO0VBQ2Qsa0JBQWtCO0VBQ2xCLGFBQWE7RUFDYixPQUFPO0VBQ1AsWUFBWTtFQUNaLFdBQVc7RUFDWCxlQUFlO0FBQ2pCIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9zaGFyZWQvdmlzdWFsaXphZG9yLWNvbnRyYXN0YWRvLXJlZ2lzdHJvcy92aXN1YWxpemFkb3ItY29udHJhc3RhZG8tcmVnaXN0cm9zLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuaW1hZ2VuMSB7XHJcbiAgZGlzcGxheTogYmxvY2s7XHJcbiAgcG9zaXRpb246IHJlbGF0aXZlO1x0XHRcclxuICB3aWR0aDogMzAwcHg7XHJcbn1cclxuXHJcbi50ZXh0bzEge1xyXG4gIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMjU1LDI1NSwyNTUsLjgpO1xyXG4gIGRpc3BsYXk6IGJsb2NrO1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICBib3R0b206IC0xNnB4O1xyXG4gIGxlZnQ6IDA7XHJcbiAgcGFkZGluZzogNXB4O1xyXG4gIHdpZHRoOiAxMDAlO1xyXG4gIGZvbnQtc2l6ZTogMTJweDtcclxufSJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/components/shared/visualizador-contrastado-registros/visualizador-contrastado-registros.component.html":
+/*!************************************************************************************************************************!*\
+  !*** ./src/app/components/shared/visualizador-contrastado-registros/visualizador-contrastado-registros.component.html ***!
+  \************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\t  \t<div class=\"text-center\" style=\" display: flex; justify-content: center; align-items: center; \">\n\t  \t\t\t\n\n\t  \t\t<div class=\"imagen1\">\n\t\t\t\t<img [src]=\"urlMovimiento\"  class=\"img-thumbnail\" alt=\"...\">\n\t  \t\t\t<p class=\"texto1\">Registro del movimiento</p>\n\t  \t\t</div>\t\n\n\t  \t\t<div class=\"imagen1\">\n\t\t\t\t<img [src]=\"urlRegistro\"  class=\"img-thumbnail\" alt=\"...\">\n\t  \t\t\t<p class=\"texto1\">Fotografía Original</p>\n\t  \t\t</div>\t\n\t  \t\t\t\n\n\t  \t</div>"
+
+/***/ }),
+
+/***/ "./src/app/components/shared/visualizador-contrastado-registros/visualizador-contrastado-registros.component.ts":
+/*!**********************************************************************************************************************!*\
+  !*** ./src/app/components/shared/visualizador-contrastado-registros/visualizador-contrastado-registros.component.ts ***!
+  \**********************************************************************************************************************/
+/*! exports provided: VisualizadorContrastadoRegistrosComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VisualizadorContrastadoRegistrosComponent", function() { return VisualizadorContrastadoRegistrosComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var VisualizadorContrastadoRegistrosComponent = /** @class */ (function () {
+    function VisualizadorContrastadoRegistrosComponent() {
+    }
+    VisualizadorContrastadoRegistrosComponent.prototype.ngOnInit = function () {
+        this.urlRegistro = 'https://sister.cl/trabajadores/' + this.rut + '/registro/' + this.rut + '.jpg?id=' + new Date().getTime();
+    };
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)
+    ], VisualizadorContrastadoRegistrosComponent.prototype, "urlMovimiento", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)
+    ], VisualizadorContrastadoRegistrosComponent.prototype, "rut", void 0);
+    VisualizadorContrastadoRegistrosComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-visualizador-contrastado-registros',
+            template: __webpack_require__(/*! ./visualizador-contrastado-registros.component.html */ "./src/app/components/shared/visualizador-contrastado-registros/visualizador-contrastado-registros.component.html"),
+            styles: [__webpack_require__(/*! ./visualizador-contrastado-registros.component.css */ "./src/app/components/shared/visualizador-contrastado-registros/visualizador-contrastado-registros.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], VisualizadorContrastadoRegistrosComponent);
+    return VisualizadorContrastadoRegistrosComponent;
 }());
 
 
@@ -9778,6 +10626,70 @@ __webpack_require__.r(__webpack_exports__);
 var GeneradorDocumentosService = /** @class */ (function () {
     function GeneradorDocumentosService() {
     }
+    GeneradorDocumentosService.prototype.generarFiniquito = function (articulo, Compendio, pp, ciudad) {
+        // You'll need to make your image into a Data URL
+        // Use http://dataurl.net/#dataurlmaker
+        var doc = new jspdf__WEBPACK_IMPORTED_MODULE_2__();
+        doc.setFontSize(10);
+        doc.text(20, 35, 'ASESORIAS AGR CIA. LTDA.');
+        doc.text(20, 39, "Rut: " + this.format(localStorage.getItem('rut_empresa')));
+        doc.text(20, 43, 'Calle negrete n°1871');
+        doc.text(20, 47, 'Conchalí-Santiago');
+        doc.setFontSize(12);
+        doc.text(105, 60, 'FINIQUITO DE TRABAJO', { align: 'center' });
+        doc.text(20, 80, "En " + ciudad.charAt(0).toUpperCase() + ciudad.slice(1) + "  a " + moment__WEBPACK_IMPORTED_MODULE_3__().locale("es").format('LL') + ", ASESORIAS A.G.R. COMPAÑÍA LIMITADA, Rut: " + this.format(localStorage.getItem('rut_empresa')) + " representada en este acto por don LUIS ALFREDO GALDAMES ROJO, cédula nacional N° 6.248.002-5 en adelante El Empleador, y don (ña) CONSTANZA JAVIERA HENRIQUEZ MUÑOZ, cédula  de identidad N° 18.626.339-1 domiciliada AV. MEXICO N° 0764, comuna de RECOLETA en adelante “El Trabajador” vienen en suscribir el presente finiquito.", { align: 'justify', maxWidth: 180 });
+        doc.text(20, 123, "PRIMERO: Las partes dejan constancia que la relación laboral se inició con fecha 01 de  ABRIL de  2019 y concluyó el día 10 de JULIO de 2019.", { align: 'justify', maxWidth: 180 });
+        doc.text(20, 143, "SEGUNDO: El término de la relación laboral se verificó por la causal del Artículo 159, Número 2 del Código del Trabajo, esto es, RENUNCIA VOLUNTARIA.", { align: 'justify', maxWidth: 180 });
+        doc.text(20, 163, "TERCERO: En este acto, el Empleador paga al Trabajador, lo siguiente:", { align: 'justify', maxWidth: 180 });
+        doc.setFontSize(11);
+        doc.text(20, 175, "- Vacaciones proporcionales", { align: 'justify', maxWidth: 180 });
+        doc.text('$45.000', 200, 175, null, null, 'right');
+        doc.text(20, 183, "- Liquidación de sueldo mes Julio 2019", { align: 'justify', maxWidth: 180 });
+        doc.text('$45.000', 200, 183, null, null, 'right');
+        doc.text(20, 191, "- Indemnización Sustitutiva", { align: 'justify', maxWidth: 180 });
+        doc.text('$45.000', 200, 191, null, null, 'right');
+        doc.text(20, 199, "- Mes de aviso", { align: 'justify', maxWidth: 180 });
+        doc.text('$45.000', 200, 199, null, null, 'right');
+        doc.text(20, 207, "- Vacaciones legales", { align: 'justify', maxWidth: 180 });
+        doc.text('$45.000', 200, 207, null, null, 'right');
+        doc.setFontSize(12);
+        doc.text(20, 223, "CUARTO: El trabajador acepta y está conforme con el monto indicado en la cláusula precedente, y declara haber recibido el pago de la suma a plena conformidad.", { align: 'justify', maxWidth: 180 });
+        doc.text(20, 249, "QUINTO: Doña CONSTANZA HENRIQUEZ MUÑOZ, deja constancia que durante el tiempo que prestó servicios a ASESORIAS A.G.R. COMPAÑÍA LIMITADA recibió de forma correcta y oportunamente el total de las remuneraciones convenidas, de acuerdo a su contrato de trabajo, clase de trabajo ejecutado, reajustes legales, feriados legales en conformidad a la ley y que nada se le adeuda por los conceptos antes indicados ni por ningún otro, sea de origen legal o contractual derivado de la prestación de sus servicios. ", { align: 'justify', maxWidth: 180 });
+        doc.addPage('a4');
+        doc.text(20, 20, "Motivo por el cual, no teniendo reclamo ni cargo alguno que formular en contra de ASESORIAS A.G.R. COMPAÑÍA LIMITADA ni en contra de don LUIS ALFREDO GALDAMES ROJO, ni en contra de DANHER CORPGRUP COMPAÑIA LIMITADA, ni empresas relacionadas ni filiales, por lo que otorga el más amplio y total finiquito, renunciando expresamente a las acciones de naturaleza laboral, penal, civil o administrativa en contra de ASESORIAS A.G.R. COMPAÑÍA LIMITADA, LUIS ALFREDO GALDAMES ROJO, SOCIEDAD DANHER LIMITADA, así como respecto de empresas relacionadas o filiales, declaración que formula libre y espontáneamente, en perfecto y cabal conocimiento de cada uno de todos sus derechos, sin perjuicio de reservarse el derecho a exigir el cumplimiento de las obligaciones asumidas en este contrato.                     ", { align: 'justify', maxWidth: 180 });
+        doc.text(20, 85, "SEXTO: Las partes asimismo se otorgan el más completo y amplio finiquito respecto de cualquier accidente laboral o enfermedad profesional que haya tenido su origen durante la relación laboral, renunciando el Trabajador a ejercer todo tipo de acciones.", { align: 'justify', maxWidth: 180 });
+        doc.text(20, 110, "SEPTIMO: Se suscribe el presente finiquito en dos ejemplares, quedando uno en poder de la cada parte.", { align: 'justify', maxWidth: 180 });
+        doc.line(20, 250, 70, 250); // horizontal line
+        doc.text(45, 260, "TRABAJADOR", { align: 'center', maxWidth: 40 });
+        doc.text(45, 265, "RUT 17.961.493-6", { align: 'center', maxWidth: 60 });
+        doc.text(45, 270, "CHRISTOPHER SIERRA MELÉNDEZ", { align: 'center', maxWidth: 60 });
+        doc.line(145, 250, 190, 250); // horizontal line
+        doc.text(165, 260, "EMPLEADOR", { align: 'center', maxWidth: 40 });
+        doc.text(165, 265, "Rut: " + this.format(localStorage.getItem('rut_empresa')), { align: 'center', maxWidth: 60 });
+        if (pp) {
+            doc.text(165, 270, "PP " + localStorage.getItem('nombre_rep'), { align: 'center', maxWidth: 70 });
+        }
+        else {
+            doc.text(165, 270, localStorage.getItem('nombre_rep'), { align: 'center', maxWidth: 70 });
+        }
+        doc.save('temp.pdf');
+    };
+    GeneradorDocumentosService.prototype.format = function (input) {
+        var lastChar = input.substr(input.length - 1); // => "1"
+        var rut_por_formatear = input.replace(lastChar, '');
+        rut_por_formatear = rut_por_formatear;
+        input = rut_por_formatear;
+        var num = input.replace(/\./g, '');
+        if (!isNaN(num)) {
+            num = num.toString().split('').reverse().join('').replace(/(?=\d*\.?)(\d{3})/g, '$1.');
+            num = num.split('').reverse().join('').replace(/^[\.]/, '');
+            input = num;
+        }
+        else { //alert('Solo se permiten numeros');
+            input = input.replace(/[^\d\.]*/g, '');
+        }
+        return input + "-" + lastChar;
+    };
     GeneradorDocumentosService.prototype.generarPDFDocumentoTipoCarta = function (datos, imagen, ciudad, nombre, apellido, rut) {
         var doc = new jspdf__WEBPACK_IMPORTED_MODULE_2__();
         var dim = 0;
@@ -9791,7 +10703,7 @@ var GeneradorDocumentosService = /** @class */ (function () {
         doc.text(20, 47, 'Rut: ' + rut);
         doc.text(20, 53, 'Presente.');
         // Titulo    
-        doc.setFontSize(18); //doc.text(65, 40, datos.titulo, {align:'right'}) 
+        doc.setFontSize(16); //doc.text(65, 40, datos.titulo, {align:'right'}) 
         var textWidth = doc.getStringUnitWidth(datos.titulo) * doc.internal.getFontSize() / doc.internal.scaleFactor;
         var textOffset = (doc.internal.pageSize.width - textWidth) / 2;
         doc.text(textOffset, 60, datos.titulo);
@@ -9864,7 +10776,7 @@ var GeneradorDocumentosService = /** @class */ (function () {
         // Imagen Cabecera Logo
         doc.addImage(imagen, 'JPEG', 15, 10, 20, 20);
         // Titulo  	
-        doc.setFontSize(22); //doc.text(65, 40, datos.titulo, {align:'right'}) 
+        doc.setFontSize(16); //doc.text(65, 40, datos.titulo, {align:'right'}) 
         var textWidth = doc.getStringUnitWidth(datos.titulo) * doc.internal.getFontSize() / doc.internal.scaleFactor;
         var textOffset = (doc.internal.pageSize.width - textWidth) / 2;
         doc.text(textOffset, 40, datos.titulo);
@@ -9937,7 +10849,7 @@ var GeneradorDocumentosService = /** @class */ (function () {
         // Imagen Cabecera Logo
         doc.addImage(imagen, 'JPEG', 15, 10, 20, 20);
         // Titulo    
-        doc.setFontSize(22); //doc.text(65, 40, datos.titulo, {align:'right'}) 
+        doc.setFontSize(16); //doc.text(65, 40, datos.titulo, {align:'right'}) 
         var textWidth = doc.getStringUnitWidth(datos.titulo) * doc.internal.getFontSize() / doc.internal.scaleFactor;
         var textOffset = (doc.internal.pageSize.width - textWidth) / 2;
         doc.text(textOffset, 40, datos.titulo);
@@ -9948,7 +10860,7 @@ var GeneradorDocumentosService = /** @class */ (function () {
         //console.log(doc.getTextDimensions(arrayDocumento))
         //doc.text(20, 60, arrayDocumento,  {align:'justify' , maxWidth:180})  
         //doc.text(20, dimensiones.h, "HOLAAA Q TALLLLL")
-        doc.setFontSize(8);
+        doc.setFontSize(10);
         for (var i = 0; i < arrayDocumento.length; ++i) {
             // code...
             if (i === 0) {
@@ -10010,7 +10922,7 @@ var GeneradorDocumentosService = /** @class */ (function () {
         // Imagen Cabecera Logo
         doc.addImage(imagen, 'JPEG', 15, 10, 20, 20);
         // Titulo    
-        doc.setFontSize(22); //doc.text(65, 40, datos.titulo, {align:'right'}) 
+        doc.setFontSize(16); //doc.text(65, 40, datos.titulo, {align:'right'}) 
         var textWidth = doc.getStringUnitWidth(datos.titulo) * doc.internal.getFontSize() / doc.internal.scaleFactor;
         var textOffset = (doc.internal.pageSize.width - textWidth) / 2;
         doc.text(textOffset, 60, datos.titulo);
@@ -10027,7 +10939,7 @@ var GeneradorDocumentosService = /** @class */ (function () {
         //console.log(doc.getTextDimensions(arrayDocumento))
         //doc.text(20, 60, arrayDocumento,  {align:'justify' , maxWidth:180})  
         //doc.text(20, dimensiones.h, "HOLAAA Q TALLLLL")
-        doc.setFontSize(8);
+        doc.setFontSize(10);
         for (var i = 0; i < arrayDocumento.length; ++i) {
             // code...
             if (i === 0) {
@@ -10459,6 +11371,9 @@ var LoginservicesService = /** @class */ (function () {
     LoginservicesService.prototype.login = function (data) {
         return this.http.post(this.rutasService_.rutas['login'], JSON.stringify(data));
     }; // Fin funcion login
+    LoginservicesService.prototype.loginTrabajador = function (data) {
+        return this.http.post(this.rutasService_.rutas['loginTrabajador'], JSON.stringify(data));
+    }; // Fin funcion login
     LoginservicesService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])(),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"], _rutasservidor_service__WEBPACK_IMPORTED_MODULE_3__["RutasservidorService"]])
@@ -10717,6 +11632,12 @@ var PlanillaservicesService = /** @class */ (function () {
     PlanillaservicesService.prototype.obtener_planilla = function (nombre_empresa) {
         return this.http.get(this.rutasService_.rutas['planilla'] + nombre_empresa);
     };
+    PlanillaservicesService.prototype.obtener_postulantes = function (datos) {
+        return this.http.post(this.rutasService_.rutas['getPostulantes'], JSON.stringify(datos));
+    };
+    PlanillaservicesService.prototype.obtener_planilla_completa = function (datos) {
+        return this.http.post(this.rutasService_.rutas['getTodos'], JSON.stringify(datos));
+    };
     PlanillaservicesService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])(),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"], _rutasservidor_service__WEBPACK_IMPORTED_MODULE_3__["RutasservidorService"]])
@@ -10819,6 +11740,10 @@ var RutasservidorService = /** @class */ (function () {
             'ingresarDocumentoPorTrabajador': this.urlBase + 'api/ingresarDocumentoPorTrabajador/',
             'GetDocumentoPorTrabajador': this.urlBase + 'api/GetDocumentoPorTrabajador/',
             'GetDocumentosGeneradorPorEmpresa': this.urlBase + 'api/GetDocumentosGeneradorPorEmpresa/',
+            'ingresarResExtra': this.urlBase + 'api/ingresarResExtra/',
+            'GetResExtra_unico': this.urlBase + 'api/GetResExtra_unico/',
+            'GetResExtra_porSucursal': this.urlBase + 'api/GetResExtra_porSucursal',
+            'loginTrabajador': this.urlBase + 'api/loginTrabajador',
             'ingresardepartamento': this.urlBase + 'api/ingresardepartamento/',
             'actualizardepartamento': this.urlBase + 'api/actualizardepartamento/',
             'getdepartamento': this.urlBase + 'api/getdepartamento/',
@@ -10837,6 +11762,9 @@ var RutasservidorService = /** @class */ (function () {
             'delete_horario_por_sucursal': this.urlBase + 'api/delete_horario_por_sucursal/',
             'InsertContrasteFotograficoValidacion': this.urlBase + 'api/InsertContrasteFotograficoValidacion/',
             'getContrasteFotograficoValidacion': this.urlBase + 'api/getContrasteFotograficoValidacion/',
+            'armarDocumento': this.urlBase + 'api/armarDocumento/',
+            'getPostulantes': this.urlBase + 'api/getPostulantes/',
+            'getTodos': this.urlBase + 'api/getTodos/',
             // Turnos sin terminar:
             'TurnosSinTerminar': this.urlBase + '/TurnosSinTerminar/',
             'TurnosSinTerminarPorTrabajador': this.urlBase + '/TurnosSinTerminarPorTrabajador/',

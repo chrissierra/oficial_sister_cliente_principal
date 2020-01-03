@@ -159,6 +159,9 @@ import { ReporteDocumentosGeneradosComponent } from './components/perfil-trabaja
 import { VisualizacionDocumentacionEmpresaComponent } from './components/dashboard/visualizacion-documentacion-empresa/visualizacion-documentacion-empresa.component';
 import { FullCalendarModule } from '@fullcalendar/angular';
 import { VisualizacionHorarioComponent } from './components/perfil-trabajador/visualizacion-horario/visualizacion-horario.component';
+import { VisualizadorContrastadoRegistrosComponent } from './components/shared/visualizador-contrastado-registros/visualizador-contrastado-registros.component';
+import { BonificacionesComponent } from './components/perfil-trabajador/bonificaciones/bonificaciones.component';
+import { RepBonoficacionesComponent } from './components/dashboard/reportes/rep-bonoficaciones/rep-bonoficaciones.component';
 
 @NgModule({
   declarations: [
@@ -232,7 +235,10 @@ import { VisualizacionHorarioComponent } from './components/perfil-trabajador/vi
     GeneracionDocumentosComponent,
     ReporteDocumentosGeneradosComponent,
     VisualizacionDocumentacionEmpresaComponent,
-    VisualizacionHorarioComponent
+    VisualizacionHorarioComponent,
+    VisualizadorContrastadoRegistrosComponent,
+    BonificacionesComponent,
+    RepBonoficacionesComponent
   ],
   imports: [
   NgxLoadingModule.forRoot({}),

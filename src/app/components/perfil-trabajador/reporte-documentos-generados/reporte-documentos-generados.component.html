@@ -22,10 +22,13 @@
 	    <tr *ngFor="let item of resultData" >
 	      <th scope="row">{{item.titulo}}</th>
 	      <td>{{item.fecha_emision}}</td>
-	      <td><button class="btn btn-outline-primary" (click)="visualizarPDF(item)" >Descargar</button></td>
+	      <td><button class="btn btn-outline-primary" (click)="visualizarPDF(item)" >Visualizar</button></td>
 	    </tr>
   </tbody>
 </table>
 </div>
 
  </body>
+
+               <ngx-loading style="height:2000px !important;" [show]="loading" [config]="{ backdropBorderRadius: '3px', fullScreenBackdrop:'true' }" [template]="customLoadingTemplate"></ngx-loading> 
+              <ng-template  style="height:2000px !important;"  #customLoadingTemplate></ng-template>

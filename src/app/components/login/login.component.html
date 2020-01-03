@@ -1,13 +1,13 @@
 <body class="text-center" style="padding:40px;">
-    <div class="container">
+    <div *ngIf="PrimerLogin" class="container">
         <form [formGroup]="forma" class="form-signin" (ngSubmit)="onSubmit(forma)">
-            <img class="mb-4" src="../../assets/img/logo1.png" alt="">
-            <h1 class="h3 mb-3 font-weight-normal">Ingresa tus datos: </h1>
+            <img class="mb-4" src="../../assets/img/logo1.png" alt="logo">
+            <h1 class="h3 mb-3 font-weight-normal nice_font">INGRESA DATOS EMPRESA: </h1>
             <label for="inputEmail" class="sr-only">Rut empresa</label>
-            <input formControlName="rut_empresa" data-toggle="popover" data-content="asdf" data-placement="top" title="Ingresa tu rut sin guion" type="text" id="inputEmail" class="form-control" placeholder="Rut empresa" required autofocus>
+            <input  name="rut_empresa"  formControlName="rut_empresa" data-toggle="popover" data-content="asdf" data-placement="top" title="Ingresa tu rut sin guion" type="text" id="inputEmail" class="form-control" placeholder="Rut empresa" required autofocus>
             <br>
             <label for="inputPassword" class="sr-only">Clave</label>
-            <input formControlName="clave" data-toggle="tooltip" data-placement="top" title="Ingresa tu clave" type="password" id="inputPassword" class="form-control" placeholder="Clave" required>
+            <input  name="clave_empresa"  formControlName="clave" data-toggle="tooltip" data-placement="top" title="Ingresa tu clave" type="password" id="inputPassword" class="form-control" placeholder="Clave" required>
             <div class="checkbox mb-3">
                 <label>
         <input type="checkbox" value="remember-me"> Recordarme
@@ -21,7 +21,34 @@
             <div *ngIf="forma.valid" class="alert alert-success" role="alert">
                 El formulario es válido
             </div>
-            <p class="mt-5 mb-3 text-muted">&copy; Sister 2018</p>
+            <p class="mt-5 mb-3 text-muted">&copy; Sister 2019 - 2020</p>
+        </form>
+    </div>
+
+    <div *ngIf="!PrimerLogin" class="container">
+        <form [formGroup]="forma_segunda" class="form-signin" (ngSubmit)="onSubmit_dos(forma_segunda)">
+            <img class="mb-4" src="../../assets/img/logov10.png" alt="LOGO">
+            <h2 class="h3 mb-3 font-weight-normal nice_font" >BIENVENIDO, INGRESA TUS DATOS DE USUARIO: </h2>
+            <label for="input_datos_usuario_rut" class="sr-only">Rut Usuario</label>
+            <input name="rut_usuario" formControlName="rut" data-toggle="popover" data-content="asdf" data-placement="top" title="Ingresa tu rut sin guion" type="text" id="input_datos_usuario_rut" class="form-control" placeholder="Rut Usuario" required autofocus>
+            <br>
+            <label for="input_clave_usuario" class="sr-only">Contraseña Usuario</label>
+            <input  name="clave_usuario"  formControlName="claveTrabajador" data-toggle="tooltip" data-placement="top" title="Ingresa tu clave" type="password" id="input_clave_usuario" class="form-control" placeholder="Clave" required>
+
+
+            <br>
+            <button [disabled]="!forma_segunda.valid" class="btn btn-lg btn-primary">Ingresar</button>
+            <hr>
+            <div *ngIf="!forma_segunda.valid" class="alert alert-danger" role="alert">
+                El formulario no está completo
+            </div>
+            <div *ngIf="forma_segunda.valid" class="alert alert-success" role="alert">
+                El formulario es válido
+            </div>
+            <p class="mt-5 mb-3 text-muted">&copy; Sister 2019 - 2020</p>
         </form>
     </div>
 </body>
+
+                <ngx-loading style="height:2000px !important;" [show]="loading" [config]="{ backdropBorderRadius: '3px', fullScreenBackdrop:'true' }" [template]="customLoadingTemplate"></ngx-loading> 
+              <ng-template  style="height:2000px !important;"  #customLoadingTemplate></ng-template>

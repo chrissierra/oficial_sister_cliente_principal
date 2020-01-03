@@ -10,3 +10,7 @@
 @import '~@fullcalendar/core/main.css';
 @import '~@fullcalendar/daygrid/main.css';
 @import '~@fullcalendar/timegrid/main.css';
+
+.nice_font{
+	font-family: 'Dosis', sans-serif !important;
+}

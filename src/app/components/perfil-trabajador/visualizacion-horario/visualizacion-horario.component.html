@@ -1,4 +1,13 @@
+  <!--<form #forma='ngForm' (ngSubmit)="guardar(forma)" #forma="ngForm">-->
+    <nav aria-label="breadcrumb" class="shadow p-0 mb-5 bg-white rounded" >
+      <ol class="breadcrumb " style="background-color: white">
+        <li class="breadcrumb-item"><a [routerLink]="['../Perfil']">Perfil</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Visualización horario</li>
+      </ol>
+    </nav>
+
   <body style="margin:50px; padding:50px">
+    <app-titulo titulo="Visualiza el horario de tu trabajador" subtitulo="Puedes imprimir el horario para hacer entrega física del mismo. Recuerda que tu trabajador si usa su perfil podrá también visualizarlo."></app-titulo>
   	<div class="container">
   			<div class='app-calendar' *ngIf="calendarVisible">
   			  <full-calendar

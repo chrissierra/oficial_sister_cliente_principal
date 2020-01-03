@@ -26,7 +26,7 @@ export class RepasistenciadiarioComponent  {
   public mes:any = 'mes';
   public sucursal:any;
   public anio:any;
-  @ViewChild('TABLE') table: ElementRef;
+  @ViewChild('TABLE', { static: true }) table: ElementRef;
   constructor(public MensajesSwalService_: MensajesSwalService,
               private store: Store<AppState>,
               public servicioLibroDiario:LibroremuneracionesService,
@@ -83,6 +83,7 @@ exportAsExcel()
             const FORMATO_ENTRADA = 'MM-DD-YYYY';
             const FORMATO_SALIDA = 'MM-DD-YYYY';
             const fecha1 = moment(this.calendario, FORMATO_ENTRADA);
+            console.log(fecha1.format('M-D-YYYY'))
           //  alert(fecha1.format(FORMATO_SALIDA));
             this.servicioLibroDiario.GetLibroDiario({'id': this.nombreEmpresa, 'dia': fecha1.format(FORMATO_SALIDA) }).subscribe( (data:any[])=> {
             	console.log(data);
